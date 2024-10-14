@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Flow\CLI\Command;
 
-use function Flow\CLI\{option_bool, option_int_nullable};
-use function Flow\ETL\DSL\{df, from_array, ref, schema_to_json, to_output};
+use function Flow\CLI\{option_bool, option_int, option_int_nullable};
+use function Flow\ETL\DSL\{df};
 use Flow\CLI\Arguments\{FilePathArgument};
 use Flow\CLI\Command\Traits\{
     CSVExtractorOptions,
@@ -16,20 +16,23 @@ use Flow\CLI\Command\Traits\{
 };
 use Flow\CLI\Factory\ExtractorFactory;
 use Flow\CLI\Options\{ConfigOption, FileFormat, FileFormatOption};
-use Flow\ETL\Config;
+use Flow\ETL\Formatter\AsciiTableFormatter;
+use Flow\ETL\{Config, Rows};
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\{InputArgument, InputInterface, InputOption};
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
-final class FileSchemaCommand extends Command
+final class FileReadCommand extends Command
 {
     use ConfigOptions;
     use CSVExtractorOptions;
     use JSONExtractorOptions;
     use ParquetExtractorOptions;
     use XMLExtractorOptions;
+
+    private const DEFAULT_BATCH_SIZE = 100;
 
     private ?FileFormat $fileFormat = null;
 
@@ -40,13 +43,13 @@ final class FileSchemaCommand extends Command
     public function configure() : void
     {
         $this
-            ->setName('file:schema')
-            ->setDescription('Read data schema from a file.')
+            ->setName('file:read')
+            ->setDescription('Read data from a file.')
             ->addArgument('file', InputArgument::REQUIRED, 'Path to a file from which schema should be extracted.')
-            ->addOption('file-format', null, InputArgument::OPTIONAL, 'Source file format. When not set file format is guessed from source file path extension', null)
+            ->addOption('file-format', null, InputArgument::OPTIONAL, 'File format. When not set file format is guessed from source file path extension', null)
+            ->addOption('file-batch-size', null, InputOption::VALUE_REQUIRED, 'Number of rows that are going to be read and displayed in one batch, when set to -1 whole dataset will be displayed at once', self::DEFAULT_BATCH_SIZE)
             ->addOption('file-limit', null, InputOption::VALUE_REQUIRED, 'Limit number of rows that are going to be used to infer file schema, when not set whole file is analyzed', null)
-            ->addOption('output-pretty', null, InputOption::VALUE_NONE, 'Pretty print schema')
-            ->addOption('output-table', null, InputOption::VALUE_NONE, 'Pretty schema as ascii table')
+            ->addOption('output-truncate', null, InputOption::VALUE_REQUIRED, 'Truncate output to given number of characters, when set to -1 output is not truncated at all', 20)
             ->addOption('schema-auto-cast', null, InputOption::VALUE_OPTIONAL, 'When set Flow will try to automatically cast values to more precise data types, for example datetime strings will be casted to datetime type', false);
 
         $this->addConfigOptions($this);
@@ -62,6 +65,17 @@ final class FileSchemaCommand extends Command
 
         $df = df($this->flowConfig)->read((new ExtractorFactory($this->sourcePath, $this->fileFormat))->get($input));
 
+        $batchSize = option_int('file-batch-size', $input, self::DEFAULT_BATCH_SIZE);
+        $outputTruncate = option_int('output-truncate', $input, 20);
+
+        if ($batchSize <= 0) {
+            $style->error('Batch size must be greater than 0.');
+
+            return Command::FAILURE;
+        }
+
+        $df->batchSize($batchSize);
+
         if (option_bool('schema-auto-cast', $input)) {
             $df->autoCast();
         }
@@ -72,26 +86,11 @@ final class FileSchemaCommand extends Command
             $df->limit($limit);
         }
 
-        $schema = $df->schema();
+        $formatter = new AsciiTableFormatter();
 
-        if (option_bool('output-table', $input)) {
-            ob_start();
-            df()
-                ->read(from_array($schema->normalize()))
-                ->withEntry('type', ref('type')->unpack())
-                ->renameAll('type.', '')
-                ->rename('ref', 'name')
-                ->collect()
-                ->select('name', 'type', 'nullable', 'scalar_type', 'metadata')
-                ->write(to_output())
-                ->run();
-
-            $style->write(ob_get_clean());
-
-            return Command::SUCCESS;
-        }
-
-        $style->writeln(schema_to_json($schema, option_bool('output-pretty', $input) ? JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR : JSON_THROW_ON_ERROR));
+        $df->run(function (Rows $rows) use ($style, $formatter, $outputTruncate) : void {
+            $style->write($formatter->format($rows, $outputTruncate));
+        });
 
         return Command::SUCCESS;
     }
