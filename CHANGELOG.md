@@ -1,6 +1,8 @@
 ## [Unreleased] - 2025-01-26
 
 ### Added
+- [#1408](https://github.com/flow-php/flow/pull/1408) - **Custom transformations into to_branch() loader** - [@norberttech](https://github.com/norberttech)
+- [#1408](https://github.com/flow-php/flow/pull/1408) - **Transformations into to_transformation() loader** - [@norberttech](https://github.com/norberttech)
 - [#1400](https://github.com/flow-php/flow/pull/1400) - **Allow Scalar Functions to defined return Type** - [@norberttech](https://github.com/norberttech)
 - [#1400](https://github.com/flow-php/flow/pull/1400) - **EntryFactory::createAs method to create entry from value and specific expected type** - [@norberttech](https://github.com/norberttech)
 - [#1392](https://github.com/flow-php/flow/pull/1392) - **DataFrame::with(Transformer|Transformation) : self** - [@norberttech](https://github.com/norberttech)
