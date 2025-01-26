@@ -65,6 +65,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1406](https://github.com/flow-php/flow/pull/1406) - **Improve `Expression::dropDuplicate*Entries` methods** - [@stloyd](https://github.com/stloyd)
 - [#1405](https://github.com/flow-php/flow/pull/1405) - **Join columns from a join expression won't trigger the join duplicated columns exception anymore.** - [@norberttech](https://github.com/norberttech)
 - [#1404](https://github.com/flow-php/flow/pull/1404) - **Updated dependencies** - [@norberttech](https://github.com/norberttech)
 - [#1402](https://github.com/flow-php/flow/pull/1402) - **NativeEntryFactory renamed to EntryFactory** - [@mleczakm](https://github.com/mleczakm)
