@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-01-27
 
 ### Added
+- [#1413](https://github.com/flow-php/flow/pull/1413) - **Blog Post - Data Processing in PHP** - [@norberttech](https://github.com/norberttech)
 - [#1410](https://github.com/flow-php/flow/pull/1410) - **high resolution time to pipeline report execution time** - [@norberttech](https://github.com/norberttech)
 - [#1408](https://github.com/flow-php/flow/pull/1408) - **Custom transformations into to_branch() loader** - [@norberttech](https://github.com/norberttech)
 - [#1408](https://github.com/flow-php/flow/pull/1408) - **Transformations into to_transformation() loader** - [@norberttech](https://github.com/norberttech)
