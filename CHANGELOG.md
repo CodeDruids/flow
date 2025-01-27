@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-01-26
+## [Unreleased] - 2025-01-27
 
 ### Added
+- [#1410](https://github.com/flow-php/flow/pull/1410) - **high resolution time to pipeline report execution time** - [@norberttech](https://github.com/norberttech)
 - [#1408](https://github.com/flow-php/flow/pull/1408) - **Custom transformations into to_branch() loader** - [@norberttech](https://github.com/norberttech)
 - [#1408](https://github.com/flow-php/flow/pull/1408) - **Transformations into to_transformation() loader** - [@norberttech](https://github.com/norberttech)
 - [#1400](https://github.com/flow-php/flow/pull/1400) - **Allow Scalar Functions to defined return Type** - [@norberttech](https://github.com/norberttech)
