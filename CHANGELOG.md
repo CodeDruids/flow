@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-01-27
+## [Unreleased] - 2025-01-28
 
 ### Added
 - [#1413](https://github.com/flow-php/flow/pull/1413) - **Blog Post - Data Processing in PHP** - [@norberttech](https://github.com/norberttech)
@@ -69,6 +69,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1415](https://github.com/flow-php/flow/pull/1415) - **Significantly reduced complexity of parquet schema converter** - [@norberttech](https://github.com/norberttech)
 - [#1407](https://github.com/flow-php/flow/pull/1407) - **Remove usage of `References::init` in `Row` class** - [@stloyd](https://github.com/stloyd)
 - [#1406](https://github.com/flow-php/flow/pull/1406) - **Improve `Expression::dropDuplicate*Entries` methods** - [@stloyd](https://github.com/stloyd)
 - [#1405](https://github.com/flow-php/flow/pull/1405) - **Join columns from a join expression won't trigger the join duplicated columns exception anymore.** - [@norberttech](https://github.com/norberttech)
@@ -130,6 +131,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1415](https://github.com/flow-php/flow/pull/1415) - **Date String detection** - [@norberttech](https://github.com/norberttech)
 - [3dee6e](https://github.com/flow-php/flow/commit/3dee6e88d3c268b7e51a8d7c62dd78ce9ea4bf1f) - **article title** - [@norberttech](https://github.com/norberttech)
 - [#1400](https://github.com/flow-php/flow/pull/1400) - **Casting non deterministic values like empty array to list/map will create list/map entry** - [@norberttech](https://github.com/norberttech)
 - [#1395](https://github.com/flow-php/flow/pull/1395) - **Carry metadata and type nullability when creating entries from Schema Definition** - [@norberttech](https://github.com/norberttech)
@@ -179,6 +181,7 @@
 - [afb55b](https://github.com/flow-php/flow/commit/afb55b8a8d8f7678257b29cbd34737fbbb9f0fce) - **introduction.md** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
+- [#1415](https://github.com/flow-php/flow/pull/1415) - **EntryClass from Schema Definition** - [@norberttech](https://github.com/norberttech)
 - [#1402](https://github.com/flow-php/flow/pull/1402) - **EntryFactory interface** - [@mleczakm](https://github.com/mleczakm)
 - [#1343](https://github.com/flow-php/flow/pull/1343) - **MapKey** - [@norberttech](https://github.com/norberttech)
 - [#1343](https://github.com/flow-php/flow/pull/1343) - **MapValue** - [@norberttech](https://github.com/norberttech)
