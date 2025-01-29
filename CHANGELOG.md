@@ -69,6 +69,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1427](https://github.com/flow-php/flow/pull/1427) - **Revert "Bump friendsofphp/php-cs-fixer from 3.68.0 to 3.68.2 in /tools/cs-fixer"** - [@norberttech](https://github.com/norberttech)
 - [#1415](https://github.com/flow-php/flow/pull/1415) - **Significantly reduced complexity of parquet schema converter** - [@norberttech](https://github.com/norberttech)
 - [#1407](https://github.com/flow-php/flow/pull/1407) - **Remove usage of `References::init` in `Row` class** - [@stloyd](https://github.com/stloyd)
 - [#1406](https://github.com/flow-php/flow/pull/1406) - **Improve `Expression::dropDuplicate*Entries` methods** - [@stloyd](https://github.com/stloyd)
