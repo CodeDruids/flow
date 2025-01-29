@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-01-28
+## [Unreleased] - 2025-01-29
 
 ### Added
 - [#1413](https://github.com/flow-php/flow/pull/1413) - **Blog Post - Data Processing in PHP** - [@norberttech](https://github.com/norberttech)
@@ -131,6 +131,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1417](https://github.com/flow-php/flow/pull/1417) - **Removed redundant evaluation of transformer function.** - [@christianc1](https://github.com/christianc1)
 - [#1415](https://github.com/flow-php/flow/pull/1415) - **Date String detection** - [@norberttech](https://github.com/norberttech)
 - [3dee6e](https://github.com/flow-php/flow/commit/3dee6e88d3c268b7e51a8d7c62dd78ce9ea4bf1f) - **article title** - [@norberttech](https://github.com/norberttech)
 - [#1400](https://github.com/flow-php/flow/pull/1400) - **Casting non deterministic values like empty array to list/map will create list/map entry** - [@norberttech](https://github.com/norberttech)
@@ -2154,6 +2155,7 @@
 
 - @alexislefebvre
 - @Bellangelo
+- @christianc1
 - @DawidSajdak
 - @drupol
 - @flavioheleno
