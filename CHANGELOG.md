@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-01-30
 
 ### Added
+- [#1429](https://github.com/flow-php/flow/pull/1429) - **Flow to Doctrine Dbal schema converter** - [@norberttech](https://github.com/norberttech)
 - [#1413](https://github.com/flow-php/flow/pull/1413) - **Blog Post - Data Processing in PHP** - [@norberttech](https://github.com/norberttech)
 - [#1410](https://github.com/flow-php/flow/pull/1410) - **high resolution time to pipeline report execution time** - [@norberttech](https://github.com/norberttech)
 - [#1408](https://github.com/flow-php/flow/pull/1408) - **Custom transformations into to_branch() loader** - [@norberttech](https://github.com/norberttech)
@@ -69,6 +70,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1429](https://github.com/flow-php/flow/pull/1429) - **Moved UPGRADE.md to documentation folder to make it available as a static website** - [@norberttech](https://github.com/norberttech)
 - [#1427](https://github.com/flow-php/flow/pull/1427) - **Revert "Bump friendsofphp/php-cs-fixer from 3.68.0 to 3.68.2 in /tools/cs-fixer"** - [@norberttech](https://github.com/norberttech)
 - [#1415](https://github.com/flow-php/flow/pull/1415) - **Significantly reduced complexity of parquet schema converter** - [@norberttech](https://github.com/norberttech)
 - [#1407](https://github.com/flow-php/flow/pull/1407) - **Remove usage of `References::init` in `Row` class** - [@stloyd](https://github.com/stloyd)
@@ -132,6 +134,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1429](https://github.com/flow-php/flow/pull/1429) - **links in all repos readme** - [@norberttech](https://github.com/norberttech)
 - [#1417](https://github.com/flow-php/flow/pull/1417) - **Removed redundant evaluation of transformer function.** - [@christianc1](https://github.com/christianc1)
 - [#1415](https://github.com/flow-php/flow/pull/1415) - **Date String detection** - [@norberttech](https://github.com/norberttech)
 - [3dee6e](https://github.com/flow-php/flow/commit/3dee6e88d3c268b7e51a8d7c62dd78ce9ea4bf1f) - **article title** - [@norberttech](https://github.com/norberttech)
