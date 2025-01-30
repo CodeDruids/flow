@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-01-29
+## [Unreleased] - 2025-01-30
 
 ### Added
 - [#1413](https://github.com/flow-php/flow/pull/1413) - **Blog Post - Data Processing in PHP** - [@norberttech](https://github.com/norberttech)
@@ -172,6 +172,7 @@
 - [#1243](https://github.com/flow-php/flow/pull/1243) - **Fixed flow cli autoloading** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
+- [a1731c](https://github.com/flow-php/flow/commit/a1731cb09238bbc8b76be274590b86b74a9d646c) - **dependencies** - [@norberttech](https://github.com/norberttech)
 - [5fa15b](https://github.com/flow-php/flow/commit/5fa15bf99f0fefa6294a5e7f4102cbc2f339a3f8) - **SECURITY.md** - [@norberttech](https://github.com/norberttech)
 - [0e18bb](https://github.com/flow-php/flow/commit/0e18bb836c96d4a7166182ed81ad6ac1169a4382) - **README.md** - [@norberttech](https://github.com/norberttech)
 - [716443](https://github.com/flow-php/flow/commit/716443664886ffe8c9f40e168c22b17970afc4d6) - **dependencies** - [@norberttech](https://github.com/norberttech)
