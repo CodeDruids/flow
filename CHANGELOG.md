@@ -135,6 +135,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1436](https://github.com/flow-php/flow/pull/1436) - **typo in documentation** - [@paul-court](https://github.com/paul-court)
 - [#1435](https://github.com/flow-php/flow/pull/1435) - **Read scale from float type in Dbal Schema Converter** - [@norberttech](https://github.com/norberttech)
 - [#1429](https://github.com/flow-php/flow/pull/1429) - **links in all repos readme** - [@norberttech](https://github.com/norberttech)
 - [#1417](https://github.com/flow-php/flow/pull/1417) - **Removed redundant evaluation of transformer function.** - [@christianc1](https://github.com/christianc1)
@@ -2176,6 +2177,7 @@
 - @norbertmwk
 - @norberttech
 - @owsiakl
+- @paul-court
 - @peter279k
 - @rzarno
 - @scyzoryck
