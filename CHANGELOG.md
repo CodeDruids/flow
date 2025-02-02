@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-02
 
 ### Added
+- [#1440](https://github.com/flow-php/flow/pull/1440) - **composer.json file to each example** - [@norberttech](https://github.com/norberttech)
 - [#1438](https://github.com/flow-php/flow/pull/1438) - **Added file analyze command to CLI** - [@norberttech](https://github.com/norberttech)
 - [#1429](https://github.com/flow-php/flow/pull/1429) - **Flow to Doctrine Dbal schema converter** - [@norberttech](https://github.com/norberttech)
 - [#1413](https://github.com/flow-php/flow/pull/1413) - **Blog Post - Data Processing in PHP** - [@norberttech](https://github.com/norberttech)
