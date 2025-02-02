@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-02-01
+## [Unreleased] - 2025-02-02
 
 ### Added
 - [#1438](https://github.com/flow-php/flow/pull/1438) - **Added file analyze command to CLI** - [@norberttech](https://github.com/norberttech)
@@ -181,6 +181,7 @@
 - [#1243](https://github.com/flow-php/flow/pull/1243) - **Fixed flow cli autoloading** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
+- [c01992](https://github.com/flow-php/flow/commit/c0199221d27d1c3d17ba376734cab25ca9ae3160) - **composer.json** - [@norberttech](https://github.com/norberttech)
 - [03468f](https://github.com/flow-php/flow/commit/03468f9acc8672447322ee4520dafe35490d58b6) - **dependencies** - [@norberttech](https://github.com/norberttech)
 - [a1731c](https://github.com/flow-php/flow/commit/a1731cb09238bbc8b76be274590b86b74a9d646c) - **dependencies** - [@norberttech](https://github.com/norberttech)
 - [5fa15b](https://github.com/flow-php/flow/commit/5fa15bf99f0fefa6294a5e7f4102cbc2f339a3f8) - **SECURITY.md** - [@norberttech](https://github.com/norberttech)
