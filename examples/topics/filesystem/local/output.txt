@@ -1,6 +1,8 @@
 Files List
 
 File: code.php
+File: composer.json
+File: composer.lock
 File: description.md
 File: output.txt
 File: priority.txt
