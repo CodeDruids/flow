@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-03
 
 ### Added
+- [0d0601](https://github.com/flow-php/flow/commit/0d060180469dbf279df168da7c0f07de92ef3a18) - **permalinks to headlines rendered from markdown** - [@norberttech](https://github.com/norberttech)
 - [#1442](https://github.com/flow-php/flow/pull/1442) - **Added support for JSONL - https://github.com/jmortlock/flow/pull/new/add-jsonl-support** - [@jmortlock](https://github.com/jmortlock)
 - [#1440](https://github.com/flow-php/flow/pull/1440) - **composer.json file to each example** - [@norberttech](https://github.com/norberttech)
 - [#1438](https://github.com/flow-php/flow/pull/1438) - **Added file analyze command to CLI** - [@norberttech](https://github.com/norberttech)
