@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-03
 
 ### Added
+- [#1442](https://github.com/flow-php/flow/pull/1442) - **Added support for JSONL - https://github.com/jmortlock/flow/pull/new/add-jsonl-support** - [@jmortlock](https://github.com/jmortlock)
 - [#1440](https://github.com/flow-php/flow/pull/1440) - **composer.json file to each example** - [@norberttech](https://github.com/norberttech)
 - [#1438](https://github.com/flow-php/flow/pull/1438) - **Added file analyze command to CLI** - [@norberttech](https://github.com/norberttech)
 - [#1429](https://github.com/flow-php/flow/pull/1429) - **Flow to Doctrine Dbal schema converter** - [@norberttech](https://github.com/norberttech)
@@ -2178,6 +2179,7 @@
 - @ghost
 - @inmanturbo
 - @jguittard
+- @jmortlock
 - @jpiatko
 - @jwojtyra-aterian
 - @mleczakm
