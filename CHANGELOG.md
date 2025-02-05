@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-02-03
+## [Unreleased] - 2025-02-05
 
 ### Added
 - [0d0601](https://github.com/flow-php/flow/commit/0d060180469dbf279df168da7c0f07de92ef3a18) - **permalinks to headlines rendered from markdown** - [@norberttech](https://github.com/norberttech)
@@ -141,6 +141,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1448](https://github.com/flow-php/flow/pull/1448) - **ParquetOutput didn't implement Output interface** - [@radozato](https://github.com/radozato)
 - [#1441](https://github.com/flow-php/flow/pull/1441) - **Added missing lock files to examples** - [@norberttech](https://github.com/norberttech)
 - [#1437](https://github.com/flow-php/flow/pull/1437) - **Setting up the offset for reading remote parquet files** - [@norberttech](https://github.com/norberttech)
 - [#1436](https://github.com/flow-php/flow/pull/1436) - **typo in documentation** - [@paul-court](https://github.com/paul-court)
@@ -2189,6 +2190,7 @@
 - @owsiakl
 - @paul-court
 - @peter279k
+- @radozato
 - @rzarno
 - @scyzoryck
 - @stloyd
