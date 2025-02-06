@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-06
 
 ### Added
+- [#1449](https://github.com/flow-php/flow/pull/1449) - **string folded function** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1447](https://github.com/flow-php/flow/pull/1447) - **Add read support for JSONL files** - [@jmortlock](https://github.com/jmortlock)
 - [0d0601](https://github.com/flow-php/flow/commit/0d060180469dbf279df168da7c0f07de92ef3a18) - **permalinks to headlines rendered from markdown** - [@norberttech](https://github.com/norberttech)
 - [#1442](https://github.com/flow-php/flow/pull/1442) - **Added support for JSONL - https://github.com/jmortlock/flow/pull/new/add-jsonl-support** - [@jmortlock](https://github.com/jmortlock)
@@ -2179,6 +2180,7 @@
 - @christianc1
 - @DawidSajdak
 - @drupol
+- @f-lapinski
 - @flavioheleno
 - @ghost
 - @inmanturbo
