@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-07
 
 ### Added
+- [add439](https://github.com/flow-php/flow/commit/add4392aa8c73aa04117a5322da38fbefedd2671) - **missing composer scripts and phpdoc configurations** - [@norberttech](https://github.com/norberttech)
 - [#1454](https://github.com/flow-php/flow/pull/1454) - **Api References to all packages** - [@norberttech](https://github.com/norberttech)
 - [#1449](https://github.com/flow-php/flow/pull/1449) - **string folded function** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1447](https://github.com/flow-php/flow/pull/1447) - **Add read support for JSONL files** - [@jmortlock](https://github.com/jmortlock)
