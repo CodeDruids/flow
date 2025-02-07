@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-02-06
+## [Unreleased] - 2025-02-07
 
 ### Added
 - [#1449](https://github.com/flow-php/flow/pull/1449) - **string folded function** - [@f-lapinski](https://github.com/f-lapinski)
