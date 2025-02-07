@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-07
 
 ### Added
+- [#1454](https://github.com/flow-php/flow/pull/1454) - **Api References to all packages** - [@norberttech](https://github.com/norberttech)
 - [#1449](https://github.com/flow-php/flow/pull/1449) - **string folded function** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1447](https://github.com/flow-php/flow/pull/1447) - **Add read support for JSONL files** - [@jmortlock](https://github.com/jmortlock)
 - [0d0601](https://github.com/flow-php/flow/commit/0d060180469dbf279df168da7c0f07de92ef3a18) - **permalinks to headlines rendered from markdown** - [@norberttech](https://github.com/norberttech)
