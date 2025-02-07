@@ -450,7 +450,8 @@
             "composer install --working-dir=./tools/phpbench",
             "composer install --working-dir=./tools/phpstan",
             "composer install --working-dir=./tools/phpunit",
-            "composer install --working-dir=./tools/rector"
+            "composer install --working-dir=./tools/rector",
+            "composer install --working-dir=./tools/phpdocumentor"
         ],
         "tools:update": [
             "composer update --working-dir=./tools/blackfire",
@@ -461,7 +462,8 @@
             "composer update --working-dir=./tools/phpbench",
             "composer update --working-dir=./tools/phpstan",
             "composer update --working-dir=./tools/phpunit",
-            "composer update --working-dir=./tools/rector"
+            "composer update --working-dir=./tools/rector",
+            "composer update --working-dir=./tools/phpdocumentor"
         ]
     }
 }
