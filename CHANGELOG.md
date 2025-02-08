@@ -79,6 +79,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1453](https://github.com/flow-php/flow/pull/1453) - **Change StringCamel to StringStyle to using with exisitng Enum StringStyles and get's StringStyle as parameter** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1456](https://github.com/flow-php/flow/pull/1456) - **Count aggregating function does not require reference anymore** - [@norberttech](https://github.com/norberttech)
 - [#1441](https://github.com/flow-php/flow/pull/1441) - **removed archive section from composer.json of examples for readability** - [@norberttech](https://github.com/norberttech)
 - [#1437](https://github.com/flow-php/flow/pull/1437) - **Allow to not pass primary key name to dbal metadata since it's not used in some cases** - [@norberttech](https://github.com/norberttech)
@@ -208,6 +209,7 @@
 - [afb55b](https://github.com/flow-php/flow/commit/afb55b8a8d8f7678257b29cbd34737fbbb9f0fce) - **introduction.md** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
+- [#1453](https://github.com/flow-php/flow/pull/1453) - **Previous StringCamle function, methods and tests** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1415](https://github.com/flow-php/flow/pull/1415) - **EntryClass from Schema Definition** - [@norberttech](https://github.com/norberttech)
 - [#1402](https://github.com/flow-php/flow/pull/1402) - **EntryFactory interface** - [@mleczakm](https://github.com/mleczakm)
 - [#1343](https://github.com/flow-php/flow/pull/1343) - **MapKey** - [@norberttech](https://github.com/norberttech)
