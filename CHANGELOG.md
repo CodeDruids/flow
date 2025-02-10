@@ -79,6 +79,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1462](https://github.com/flow-php/flow/pull/1462) - **Improve error message when schema definition is duplicated** - [@norberttech](https://github.com/norberttech)
 - [#1453](https://github.com/flow-php/flow/pull/1453) - **Change StringCamel to StringStyle to using with exisitng Enum StringStyles and get's StringStyle as parameter** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1456](https://github.com/flow-php/flow/pull/1456) - **Count aggregating function does not require reference anymore** - [@norberttech](https://github.com/norberttech)
 - [#1441](https://github.com/flow-php/flow/pull/1441) - **removed archive section from composer.json of examples for readability** - [@norberttech](https://github.com/norberttech)
