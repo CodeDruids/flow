@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-10
 
 ### Added
+- [566506](https://github.com/flow-php/flow/commit/5665061429cb78f33b5abbccd27b21e9a38336b3) - **documentation/security page** - [@norberttech](https://github.com/norberttech)
 - [#1455](https://github.com/flow-php/flow/pull/1455) - **DbalMetadata::type - allowing to change the type mapping on a specific column level** - [@norberttech](https://github.com/norberttech)
 - [add439](https://github.com/flow-php/flow/commit/add4392aa8c73aa04117a5322da38fbefedd2671) - **missing composer scripts and phpdoc configurations** - [@norberttech](https://github.com/norberttech)
 - [#1454](https://github.com/flow-php/flow/pull/1454) - **Api References to all packages** - [@norberttech](https://github.com/norberttech)
