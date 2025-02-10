@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-02-08
+## [Unreleased] - 2025-02-10
 
 ### Added
 - [#1455](https://github.com/flow-php/flow/pull/1455) - **DbalMetadata::type - allowing to change the type mapping on a specific column level** - [@norberttech](https://github.com/norberttech)
@@ -148,6 +148,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1457](https://github.com/flow-php/flow/pull/1457) - **missing entry types to JSON/CSV entry normalizers** - [@norberttech](https://github.com/norberttech)
 - [d82381](https://github.com/flow-php/flow/commit/d823813af9be12d5cc21d4b8e2a01171ce0e0c90) - **failing example test** - [@norberttech](https://github.com/norberttech)
 - [#1448](https://github.com/flow-php/flow/pull/1448) - **ParquetOutput didn't implement Output interface** - [@radozato](https://github.com/radozato)
 - [#1441](https://github.com/flow-php/flow/pull/1441) - **Added missing lock files to examples** - [@norberttech](https://github.com/norberttech)
