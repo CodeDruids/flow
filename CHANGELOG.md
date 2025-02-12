@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-12
 
 ### Added
+- [#1473](https://github.com/flow-php/flow/pull/1473) - **Added IndexOf function with $offset and $ignoreCase parameters and Tests** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1470](https://github.com/flow-php/flow/pull/1470) - **ByteString IsUTF8 function with Test** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1465](https://github.com/flow-php/flow/pull/1465) - **jsonl writing example** - [@norberttech](https://github.com/norberttech)
 - [#1465](https://github.com/flow-php/flow/pull/1465) - **csv writing example** - [@norberttech](https://github.com/norberttech)
