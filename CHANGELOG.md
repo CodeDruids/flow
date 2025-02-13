@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-02-12
+## [Unreleased] - 2025-02-13
 
 ### Added
+- [#1475](https://github.com/flow-php/flow/pull/1475) - **Early detection of XML type in dbal bulk** - [@norberttech](https://github.com/norberttech)
 - [#1473](https://github.com/flow-php/flow/pull/1473) - **Added IndexOf function with $offset and $ignoreCase parameters and Tests** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1470](https://github.com/flow-php/flow/pull/1470) - **ByteString IsUTF8 function with Test** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1465](https://github.com/flow-php/flow/pull/1465) - **jsonl writing example** - [@norberttech](https://github.com/norberttech)
@@ -157,6 +158,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1475](https://github.com/flow-php/flow/pull/1475) - **Incosistency between XMLEntry::toString and Casting XML's to strings** - [@norberttech](https://github.com/norberttech)
 - [#1470](https://github.com/flow-php/flow/pull/1470) - **Add Missing Test for return type of function** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1469](https://github.com/flow-php/flow/pull/1469) - **JSONLines Loader would occasionally write a newline to the start of the file.** - [@jmortlock](https://github.com/jmortlock)
 - [#1457](https://github.com/flow-php/flow/pull/1457) - **missing entry types to JSON/CSV entry normalizers** - [@norberttech](https://github.com/norberttech)
