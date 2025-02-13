@@ -87,6 +87,8 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1476](https://github.com/flow-php/flow/pull/1476) - **Allow to pass single type to is_type() method** - [@norberttech](https://github.com/norberttech)
+- [#1476](https://github.com/flow-php/flow/pull/1476) - **Allow using concat ws on collections** - [@norberttech](https://github.com/norberttech)
 - [#1465](https://github.com/flow-php/flow/pull/1465) - **Improved contributing md** - [@norberttech](https://github.com/norberttech)
 - [#1462](https://github.com/flow-php/flow/pull/1462) - **Improve error message when schema definition is duplicated** - [@norberttech](https://github.com/norberttech)
 - [#1453](https://github.com/flow-php/flow/pull/1453) - **Change StringCamel to StringStyle to using with exisitng Enum StringStyles and get's StringStyle as parameter** - [@f-lapinski](https://github.com/f-lapinski)
