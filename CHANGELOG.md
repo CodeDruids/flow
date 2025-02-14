@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-02-13
+## [Unreleased] - 2025-02-14
 
 ### Added
+- [#1477](https://github.com/flow-php/flow/pull/1477) - **Add Title function with argument allWords set false as default with Tests** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1475](https://github.com/flow-php/flow/pull/1475) - **Early detection of XML type in dbal bulk** - [@norberttech](https://github.com/norberttech)
 - [#1473](https://github.com/flow-php/flow/pull/1473) - **Added IndexOf function with $offset and $ignoreCase parameters and Tests** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1470](https://github.com/flow-php/flow/pull/1470) - **ByteString IsUTF8 function with Test** - [@f-lapinski](https://github.com/f-lapinski)
