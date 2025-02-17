@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-02-15
+## [Unreleased] - 2025-02-17
 
 ### Added
 - [#1477](https://github.com/flow-php/flow/pull/1477) - **Add Title function with argument allWords set false as default with Tests** - [@f-lapinski](https://github.com/f-lapinski)
@@ -161,6 +161,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1482](https://github.com/flow-php/flow/pull/1482) - **JSON was being double encoded.** - [@jmortlock](https://github.com/jmortlock)
 - [#1483](https://github.com/flow-php/flow/pull/1483) - **Fix typo in README.md** - [@jmortlock](https://github.com/jmortlock)
 - [#1475](https://github.com/flow-php/flow/pull/1475) - **Incosistency between XMLEntry::toString and Casting XML's to strings** - [@norberttech](https://github.com/norberttech)
 - [#1470](https://github.com/flow-php/flow/pull/1470) - **Add Missing Test for return type of function** - [@f-lapinski](https://github.com/f-lapinski)
