@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-20
 
 ### Added
+- [#1491](https://github.com/flow-php/flow/pull/1491) - **Added missing tests to string functions** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1488](https://github.com/flow-php/flow/pull/1488) - **DataStream builder** - [@norberttech](https://github.com/norberttech)
 - [#1488](https://github.com/flow-php/flow/pull/1488) - **AddRowIdex Transformation** - [@norberttech](https://github.com/norberttech)
 - [#1488](https://github.com/flow-php/flow/pull/1488) - **Batch Size Transformation** - [@norberttech](https://github.com/norberttech)
