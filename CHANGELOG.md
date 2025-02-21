@@ -96,6 +96,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1493](https://github.com/flow-php/flow/pull/1493) - **Doctrine Dbal Adapter loader now expect options as an object** - [@norberttech](https://github.com/norberttech)
 - [#1488](https://github.com/flow-php/flow/pull/1488) - **Moved Transformations to ETL Core** - [@norberttech](https://github.com/norberttech)
 - [#1476](https://github.com/flow-php/flow/pull/1476) - **Allow to pass single type to is_type() method** - [@norberttech](https://github.com/norberttech)
 - [#1476](https://github.com/flow-php/flow/pull/1476) - **Allow using concat ws on collections** - [@norberttech](https://github.com/norberttech)
