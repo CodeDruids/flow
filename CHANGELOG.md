@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-23
 
 ### Added
+- [#1496](https://github.com/flow-php/flow/pull/1496) - **helper methods on Schema/Definition to manipulate metadata** - [@norberttech](https://github.com/norberttech)
 - [#1495](https://github.com/flow-php/flow/pull/1495) - **Adds method `TransformerLoader::closure()` to delegate generator stop signals to proxied loaders.** - [@christianc1](https://github.com/christianc1)
 - [#1468](https://github.com/flow-php/flow/pull/1468) - **Nix - for local development environment** - [@norberttech](https://github.com/norberttech)
 - [#1492](https://github.com/flow-php/flow/pull/1492) - **Respect limit/offset from query builder in dbal query loader** - [@norberttech](https://github.com/norberttech)
@@ -98,6 +99,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1496](https://github.com/flow-php/flow/pull/1496) - **Removed readonly from Schema Definition** - [@norberttech](https://github.com/norberttech)
 - [#1493](https://github.com/flow-php/flow/pull/1493) - **Doctrine Dbal Adapter loader now expect options as an object** - [@norberttech](https://github.com/norberttech)
 - [#1488](https://github.com/flow-php/flow/pull/1488) - **Moved Transformations to ETL Core** - [@norberttech](https://github.com/norberttech)
 - [#1476](https://github.com/flow-php/flow/pull/1476) - **Allow to pass single type to is_type() method** - [@norberttech](https://github.com/norberttech)
