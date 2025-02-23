@@ -172,6 +172,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [457164](https://github.com/flow-php/flow/commit/457164b233c9168df44ccf298a777121e1891861) - **broken upsert example** - [@norberttech](https://github.com/norberttech)
 - [#1482](https://github.com/flow-php/flow/pull/1482) - **JSON was being double encoded.** - [@jmortlock](https://github.com/jmortlock)
 - [#1483](https://github.com/flow-php/flow/pull/1483) - **Fix typo in README.md** - [@jmortlock](https://github.com/jmortlock)
 - [#1475](https://github.com/flow-php/flow/pull/1475) - **Incosistency between XMLEntry::toString and Casting XML's to strings** - [@norberttech](https://github.com/norberttech)
