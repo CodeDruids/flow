@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-23
 
 ### Added
+- [#1495](https://github.com/flow-php/flow/pull/1495) - **Adds method `TransformerLoader::closure()` to delegate generator stop signals to proxied loaders.** - [@christianc1](https://github.com/christianc1)
 - [#1468](https://github.com/flow-php/flow/pull/1468) - **Nix - for local development environment** - [@norberttech](https://github.com/norberttech)
 - [#1492](https://github.com/flow-php/flow/pull/1492) - **Respect limit/offset from query builder in dbal query loader** - [@norberttech](https://github.com/norberttech)
 - [#1491](https://github.com/flow-php/flow/pull/1491) - **Added missing tests to string functions** - [@f-lapinski](https://github.com/f-lapinski)
