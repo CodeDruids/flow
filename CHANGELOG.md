@@ -100,6 +100,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1498](https://github.com/flow-php/flow/pull/1498) - **Allow to pass limit as null to avoid breaking a pipeline** - [@norberttech](https://github.com/norberttech)
 - [#1497](https://github.com/flow-php/flow/pull/1497) - **Renamed API of Http Bridge Stream Builder** - [@norberttech](https://github.com/norberttech)
 - [#1497](https://github.com/flow-php/flow/pull/1497) - **Moved generic Transformations from bridge to Core** - [@norberttech](https://github.com/norberttech)
 - [#1496](https://github.com/flow-php/flow/pull/1496) - **Removed readonly from Schema Definition** - [@norberttech](https://github.com/norberttech)
