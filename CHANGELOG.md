@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-02-25
 
 ### Added
+- [#1497](https://github.com/flow-php/flow/pull/1497) - **DSL for Symfony Http Bridge** - [@norberttech](https://github.com/norberttech)
 - [#1496](https://github.com/flow-php/flow/pull/1496) - **helper methods on Schema/Definition to manipulate metadata** - [@norberttech](https://github.com/norberttech)
 - [#1495](https://github.com/flow-php/flow/pull/1495) - **Adds method `TransformerLoader::closure()` to delegate generator stop signals to proxied loaders.** - [@christianc1](https://github.com/christianc1)
 - [#1468](https://github.com/flow-php/flow/pull/1468) - **Nix - for local development environment** - [@norberttech](https://github.com/norberttech)
@@ -99,6 +100,8 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1497](https://github.com/flow-php/flow/pull/1497) - **Renamed API of Http Bridge Stream Builder** - [@norberttech](https://github.com/norberttech)
+- [#1497](https://github.com/flow-php/flow/pull/1497) - **Moved generic Transformations from bridge to Core** - [@norberttech](https://github.com/norberttech)
 - [#1496](https://github.com/flow-php/flow/pull/1496) - **Removed readonly from Schema Definition** - [@norberttech](https://github.com/norberttech)
 - [#1493](https://github.com/flow-php/flow/pull/1493) - **Doctrine Dbal Adapter loader now expect options as an object** - [@norberttech](https://github.com/norberttech)
 - [#1488](https://github.com/flow-php/flow/pull/1488) - **Moved Transformations to ETL Core** - [@norberttech](https://github.com/norberttech)
@@ -175,6 +178,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1497](https://github.com/flow-php/flow/pull/1497) - **Fixed documentation** - [@norberttech](https://github.com/norberttech)
 - [457164](https://github.com/flow-php/flow/commit/457164b233c9168df44ccf298a777121e1891861) - **broken upsert example** - [@norberttech](https://github.com/norberttech)
 - [#1482](https://github.com/flow-php/flow/pull/1482) - **JSON was being double encoded.** - [@jmortlock](https://github.com/jmortlock)
 - [#1483](https://github.com/flow-php/flow/pull/1483) - **Fix typo in README.md** - [@jmortlock](https://github.com/jmortlock)
