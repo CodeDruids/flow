@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-02-23
+## [Unreleased] - 2025-02-25
 
 ### Added
 - [#1496](https://github.com/flow-php/flow/pull/1496) - **helper methods on Schema/Definition to manipulate metadata** - [@norberttech](https://github.com/norberttech)
