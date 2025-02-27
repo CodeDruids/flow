@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-02-26
+## [Unreleased] - 2025-02-27
 
 ### Added
+- [#1494](https://github.com/flow-php/flow/pull/1494) - **afterLast function with test coverage** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1497](https://github.com/flow-php/flow/pull/1497) - **DSL for Symfony Http Bridge** - [@norberttech](https://github.com/norberttech)
 - [#1496](https://github.com/flow-php/flow/pull/1496) - **helper methods on Schema/Definition to manipulate metadata** - [@norberttech](https://github.com/norberttech)
 - [#1495](https://github.com/flow-php/flow/pull/1495) - **Adds method `TransformerLoader::closure()` to delegate generator stop signals to proxied loaders.** - [@christianc1](https://github.com/christianc1)
@@ -180,6 +181,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1494](https://github.com/flow-php/flow/pull/1494) - **Add missing PHPDocs in Chain** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1499](https://github.com/flow-php/flow/pull/1499) - **Prevent double ETL evaluation in buffered response** - [@norberttech](https://github.com/norberttech)
 - [#1497](https://github.com/flow-php/flow/pull/1497) - **Fixed documentation** - [@norberttech](https://github.com/norberttech)
 - [457164](https://github.com/flow-php/flow/commit/457164b233c9168df44ccf298a777121e1891861) - **broken upsert example** - [@norberttech](https://github.com/norberttech)
