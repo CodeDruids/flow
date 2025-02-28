@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-02-27
+## [Unreleased] - 2025-02-28
 
 ### Added
 - [#1494](https://github.com/flow-php/flow/pull/1494) - **afterLast function with test coverage** - [@f-lapinski](https://github.com/f-lapinski)
