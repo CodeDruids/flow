@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-03-02
+## [Unreleased] - 2025-03-03
 
 ### Added
 - [#1507](https://github.com/flow-php/flow/pull/1507) - **Add string function BeforeLast with Tests** - [@f-lapinski](https://github.com/f-lapinski)
