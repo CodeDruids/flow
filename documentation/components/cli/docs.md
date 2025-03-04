@@ -18,6 +18,14 @@ composer global require flow-php/cli
 
 Now you can run the CLI using the `flow` command.
 
+### Docker
+
+Flow CLI application is also available as a docker image: 
+
+```shell
+docker run -v $(pwd):/flow-workspace -it ghcr.io/flow-php/flow:latest --version
+```
+
 ## Commands
 
 ### Config 
