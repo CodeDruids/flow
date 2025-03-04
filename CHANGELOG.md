@@ -187,6 +187,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1512](https://github.com/flow-php/flow/pull/1512) - **Add missing db drivers to docker image** - [@norberttech](https://github.com/norberttech)
 - [#1511](https://github.com/flow-php/flow/pull/1511) - **Too generic names of DbalMetadata keys** - [@norberttech](https://github.com/norberttech)
 - [#1507](https://github.com/flow-php/flow/pull/1507) - **Fix some variable names in previous functions tests** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1494](https://github.com/flow-php/flow/pull/1494) - **Add missing PHPDocs in Chain** - [@f-lapinski](https://github.com/f-lapinski)
