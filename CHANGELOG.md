@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-03-04
+## [Unreleased] - 2025-03-07
 
 ### Added
 - [6182e5](https://github.com/flow-php/flow/commit/6182e50e6adeb0b80313c7e7f47de74a266e7a42) - **instructions how to use Flow CLI through docker** - [@norberttech](https://github.com/norberttech)
