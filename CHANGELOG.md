@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-03-07
+## [Unreleased] - 2025-03-08
 
 ### Added
 - [6182e5](https://github.com/flow-php/flow/commit/6182e50e6adeb0b80313c7e7f47de74a266e7a42) - **instructions how to use Flow CLI through docker** - [@norberttech](https://github.com/norberttech)
@@ -187,6 +187,7 @@
 - [#1240](https://github.com/flow-php/flow/pull/1240) - **Update Homebrew TAP formula: flow-php to version: 0.10.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1518](https://github.com/flow-php/flow/pull/1518) - **Fixed pagination for queries with group by in dbal extractor** - [@norberttech](https://github.com/norberttech)
 - [#1513](https://github.com/flow-php/flow/pull/1513) - **Added missing library for postgresql into docker** - [@norberttech](https://github.com/norberttech)
 - [#1512](https://github.com/flow-php/flow/pull/1512) - **Add missing db drivers to docker image** - [@norberttech](https://github.com/norberttech)
 - [#1511](https://github.com/flow-php/flow/pull/1511) - **Too generic names of DbalMetadata keys** - [@norberttech](https://github.com/norberttech)
