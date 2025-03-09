@@ -108,6 +108,7 @@
 - [#1244](https://github.com/flow-php/flow/pull/1244) - **Added CLI command to read schema from a file** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [60267a](https://github.com/flow-php/flow/commit/60267affe4001da3137a591af04218d7a01735bd) - **Prepare release 0.11.0** - [@norberttech](https://github.com/norberttech)
 - [#1499](https://github.com/flow-php/flow/pull/1499) - **Return 204 for buffered response when dataset is empty** - [@norberttech](https://github.com/norberttech)
 - [#1498](https://github.com/flow-php/flow/pull/1498) - **Allow to pass limit as null to avoid breaking a pipeline** - [@norberttech](https://github.com/norberttech)
 - [#1497](https://github.com/flow-php/flow/pull/1497) - **Renamed API of Http Bridge Stream Builder** - [@norberttech](https://github.com/norberttech)
