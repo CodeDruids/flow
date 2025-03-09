@@ -60,10 +60,10 @@
     "replace": {
         "flow-php/array-dot": "self.version",
         "flow-php/azure-sdk": "self.version",
+        "flow-php/cli": "self.version",
         "flow-php/doctrine-dbal-bulk": "self.version",
         "flow-php/dremel": "self.version",
         "flow-php/etl": "self.version",
-        "flow-php/cli": "self.version",
         "flow-php/etl-adapter-avro": "self.version",
         "flow-php/etl-adapter-chartjs": "self.version",
         "flow-php/etl-adapter-csv": "self.version",
@@ -79,8 +79,10 @@
         "flow-php/etl-adapter-text": "self.version",
         "flow-php/etl-adapter-xml": "self.version",
         "flow-php/filesystem": "self.version",
-        "flow-php/filesytem-azure-bridge": "self.version",
+        "flow-php/filesystem-async-aws-bridge": "self.version",
+        "flow-php/filesystem-azure-bridge": "self.version",
         "flow-php/filesytem-async-aws-bridge": "self.version",
+        "flow-php/filesytem-azure-bridge": "self.version",
         "flow-php/monolog-http-bridge": "self.version",
         "flow-php/parquet": "self.version",
         "flow-php/parquet-viewer": "self.version",
@@ -105,8 +107,8 @@
                 "src/adapter/etl-adapter-parquet/src/Flow",
                 "src/adapter/etl-adapter-text/src/Flow",
                 "src/adapter/etl-adapter-xml/src/Flow",
-                "src/bridge/filesystem/azure/src/Flow",
                 "src/bridge/filesystem/async-aws/src/Flow",
+                "src/bridge/filesystem/azure/src/Flow",
                 "src/bridge/monolog/http/src/Flow",
                 "src/bridge/symfony/http-foundation/src/Flow",
                 "src/cli/src/Flow",
@@ -140,18 +142,18 @@
             "src/adapter/etl-adapter-parquet/src/Flow/ETL/Adapter/Parquet/functions.php",
             "src/adapter/etl-adapter-text/src/Flow/ETL/Adapter/Text/functions.php",
             "src/adapter/etl-adapter-xml/src/Flow/ETL/Adapter/XML/functions.php",
-            "src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/DSL/functions.php",
             "src/bridge/filesystem/async-aws/src/Flow/Filesystem/Bridge/AsyncAWS/DSL/functions.php",
-            "src/core/etl/src/Flow/ETL/DSL/functions.php",
+            "src/bridge/filesystem/azure/src/Flow/Filesystem/Bridge/Azure/DSL/functions.php",
+            "src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php",
             "src/cli/src/Flow/CLI/DSL/functions.php",
+            "src/core/etl/src/Flow/ETL/DSL/functions.php",
             "src/functions.php",
             "src/lib/array-dot/src/Flow/ArrayDot/array_dot.php",
             "src/lib/azure-sdk/src/Flow/Azure/SDK/DSL/functions.php",
             "src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php",
             "src/lib/parquet/src/Flow/Parquet/functions.php",
             "src/lib/parquet/src/stubs.php",
-            "src/lib/snappy/polyfill.php",
-            "src/bridge/symfony/http-foundation/src/Flow/Bridge/Symfony/HttpFoundation/functions.php"
+            "src/lib/snappy/polyfill.php"
         ]
     },
     "autoload-dev": {
@@ -170,8 +172,8 @@
                 "src/adapter/etl-adapter-parquet/tests/Flow",
                 "src/adapter/etl-adapter-text/tests/Flow",
                 "src/adapter/etl-adapter-xml/tests/Flow",
-                "src/bridge/filesystem/azure/tests/Flow",
                 "src/bridge/filesystem/async-aws/tests/Flow",
+                "src/bridge/filesystem/azure/tests/Flow",
                 "src/bridge/monolog/http/tests/Flow",
                 "src/bridge/symfony/http-foundation/tests/Flow",
                 "src/cli/tests/Flow",
@@ -331,7 +333,6 @@
             "tools/phpunit/vendor/bin/phpunit --testsuite=adapter-xml-unit --log-junit ./var/phpunit/logs/adapter-xml-unit.junit.xml --coverage-clover=./var/phpunit/coverage/clover/adapter-xml-unit.coverage.xml --coverage-html=./var/phpunit/coverage/html/adapter-xml-unit",
             "tools/phpunit/vendor/bin/phpunit --testsuite=adapter-xml-integration --log-junit ./var/phpunit/coverage/clover/adapter-xml-integration.junit.xml --coverage-clover=./var/phpunit/coverage/clover/adapter-xml-integration.coverage.xml --coverage-html=./var/phpunit/coverage/html/adapter-xml-integration"
         ],
-
         "test:docs": [
             "docker run -t --rm -v $PWD:/app norberttech/md-link-linter --exclude=vendor --exclude=.scratchpad --exclude=examples --exclude=documentation ."
         ],
@@ -400,7 +401,6 @@
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/lib.parquet.xml",
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/lib.parquet-viewer.xml",
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/lib.snappy.xml",
-
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/adapter.chartjs.xml",
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/adapter.csv.xml",
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/adapter.doctrine.xml",
@@ -413,7 +413,6 @@
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/adapter.parquet.xml",
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/adapter.text.xml",
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/adapter.xml.xml",
-
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/bridge.filesystem.async-aws.xml",
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/bridge.filesystem.azure.xml",
             "./tools/phpdocumentor/vendor/bin/phpdoc --config=./phpdoc/bridge.symfony.http-foundation.xml",
