@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-03-09
+## [0.11.0] - 2025-03-09
 
 ### Added
 - [#1519](https://github.com/flow-php/flow/pull/1519) - **Allow to select specific column in db:table:schema** - [@norberttech](https://github.com/norberttech)
