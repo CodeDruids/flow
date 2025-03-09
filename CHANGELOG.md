@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-03-08
+## [Unreleased] - 2025-03-09
 
 ### Added
+- [#1519](https://github.com/flow-php/flow/pull/1519) - **Allow to select specific column in db:table:schema** - [@norberttech](https://github.com/norberttech)
 - [6182e5](https://github.com/flow-php/flow/commit/6182e50e6adeb0b80313c7e7f47de74a266e7a42) - **instructions how to use Flow CLI through docker** - [@norberttech](https://github.com/norberttech)
 - [#1511](https://github.com/flow-php/flow/pull/1511) - **Databas to Flow schema converter** - [@norberttech](https://github.com/norberttech)
 - [#1511](https://github.com/flow-php/flow/pull/1511) - **Database table list in CLI** - [@norberttech](https://github.com/norberttech)
