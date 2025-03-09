@@ -264,6 +264,7 @@
 - [afb55b](https://github.com/flow-php/flow/commit/afb55b8a8d8f7678257b29cbd34737fbbb9f0fce) - **introduction.md** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
+- [#1520](https://github.com/flow-php/flow/pull/1520) - **RDSL library** - [@norberttech](https://github.com/norberttech)
 - [#1453](https://github.com/flow-php/flow/pull/1453) - **Previous StringCamle function, methods and tests** - [@f-lapinski](https://github.com/f-lapinski)
 - [#1415](https://github.com/flow-php/flow/pull/1415) - **EntryClass from Schema Definition** - [@norberttech](https://github.com/norberttech)
 - [#1402](https://github.com/flow-php/flow/pull/1402) - **EntryFactory interface** - [@mleczakm](https://github.com/mleczakm)
