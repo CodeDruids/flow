@@ -1,9 +1,11 @@
 ## [Unreleased] - 2025-03-14
 
 ### Added
+- [#1529](https://github.com/flow-php/flow/pull/1529) - **Type::isCompatible(self $type): bool - method** - [@norberttech](https://github.com/norberttech)
 - [#1527](https://github.com/flow-php/flow/pull/1527) - **Column statistics to pipeline execution report** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1529](https://github.com/flow-php/flow/pull/1529) - **Improve readability of schema validation exception** - [@norberttech](https://github.com/norberttech)
 - [#1526](https://github.com/flow-php/flow/pull/1526) - **Some documentation text.** - [@sprtk-ches](https://github.com/sprtk-ches)
 - [#1521](https://github.com/flow-php/flow/pull/1521) - **Update Homebrew TAP formula: flow-php to version: 0.11.0** - [@norberttech](https://github.com/norberttech)
 
