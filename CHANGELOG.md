@@ -10,6 +10,7 @@
 - [#1521](https://github.com/flow-php/flow/pull/1521) - **Update Homebrew TAP formula: flow-php to version: 0.11.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1530](https://github.com/flow-php/flow/pull/1530) - **Ignore metadata in Definition::isCompatible method to avoid schema validation failures** - [@norberttech](https://github.com/norberttech)
 - [#1526](https://github.com/flow-php/flow/pull/1526) - **A broken link** - [@sprtk-ches](https://github.com/sprtk-ches)
 
 ## [0.11.0] - 2025-03-09
