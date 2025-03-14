@@ -1,7 +1,11 @@
-## [Unreleased] - 2025-03-10
+## [Unreleased] - 2025-03-14
 
 ### Changed
+- [#1526](https://github.com/flow-php/flow/pull/1526) - **Some documentation text.** - [@sprtk-ches](https://github.com/sprtk-ches)
 - [#1521](https://github.com/flow-php/flow/pull/1521) - **Update Homebrew TAP formula: flow-php to version: 0.11.0** - [@norberttech](https://github.com/norberttech)
+
+### Fixed
+- [#1526](https://github.com/flow-php/flow/pull/1526) - **A broken link** - [@sprtk-ches](https://github.com/sprtk-ches)
 
 ## [0.11.0] - 2025-03-09
 
@@ -2265,6 +2269,7 @@
 - @radozato
 - @rzarno
 - @scyzoryck
+- @sprtk-ches
 - @stloyd
 - @szepeviktor
 - @tomaszhanc
