@@ -1,10 +1,14 @@
-## [Unreleased] - 2025-03-14
+## [Unreleased] - 2025-03-15
 
 ### Added
 - [#1529](https://github.com/flow-php/flow/pull/1529) - **Type::isCompatible(self $type): bool - method** - [@norberttech](https://github.com/norberttech)
 - [#1527](https://github.com/flow-php/flow/pull/1527) - **Column statistics to pipeline execution report** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1533](https://github.com/flow-php/flow/pull/1533) - **type_uuid no longer recognize symfony/ramsey objects as uuid** - [@norberttech](https://github.com/norberttech)
+- [#1533](https://github.com/flow-php/flow/pull/1533) - **EntryFactory decorates casting exception with entry name** - [@norberttech](https://github.com/norberttech)
+- [#1533](https://github.com/flow-php/flow/pull/1533) - **EntryFactory::create is now reusing more logic from EntryFactory::createAt** - [@norberttech](https://github.com/norberttech)
+- [#1533](https://github.com/flow-php/flow/pull/1533) - **Updated version of elasticsearch in tests** - [@norberttech](https://github.com/norberttech)
 - [#1529](https://github.com/flow-php/flow/pull/1529) - **Improve readability of schema validation exception** - [@norberttech](https://github.com/norberttech)
 - [#1526](https://github.com/flow-php/flow/pull/1526) - **Some documentation text.** - [@sprtk-ches](https://github.com/sprtk-ches)
 - [#1521](https://github.com/flow-php/flow/pull/1521) - **Update Homebrew TAP formula: flow-php to version: 0.11.0** - [@norberttech](https://github.com/norberttech)
