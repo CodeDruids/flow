@@ -20,6 +20,9 @@
 - [#1530](https://github.com/flow-php/flow/pull/1530) - **Ignore metadata in Definition::isCompatible method to avoid schema validation failures** - [@norberttech](https://github.com/norberttech)
 - [#1526](https://github.com/flow-php/flow/pull/1526) - **A broken link** - [@sprtk-ches](https://github.com/sprtk-ches)
 
+### Updated
+- [3012b9](https://github.com/flow-php/flow/commit/3012b95beeee03ce16e6bcdcec100435a6f0fc4f) - **installation.md** - [@norberttech](https://github.com/norberttech)
+
 ## [0.11.0] - 2025-03-09
 
 ### Added
