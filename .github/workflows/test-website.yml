@@ -33,6 +33,14 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v4"
+        with:
+          fetch-depth: 0
+
+      - name: "Get Flow Version"
+        id: flow_version
+        uses: "WyriHaximus/github-action-get-previous-tag@v1"
+        with:
+          fallback: 1.x-dev
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@v2"
@@ -70,4 +78,5 @@ jobs:
         env:
           SCHEME: https
           DOMAIN: flow-php.com
+          FLOW_VERSION: ${{ steps.flow_version.outputs.tag }}
 
