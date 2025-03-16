@@ -1,6 +1,8 @@
-## [Unreleased] - 2025-03-15
+## [Unreleased] - 2025-03-16
 
 ### Added
+- [#1535](https://github.com/flow-php/flow/pull/1535) - **Get latest version** - [@norberttech](https://github.com/norberttech)
+- [#1534](https://github.com/flow-php/flow/pull/1534) - **Blog Post - new release cycle** - [@norberttech](https://github.com/norberttech)
 - [#1529](https://github.com/flow-php/flow/pull/1529) - **Type::isCompatible(self $type): bool - method** - [@norberttech](https://github.com/norberttech)
 - [#1527](https://github.com/flow-php/flow/pull/1527) - **Column statistics to pipeline execution report** - [@norberttech](https://github.com/norberttech)
 
