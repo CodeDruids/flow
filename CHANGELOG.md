@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-03-16
+## [Unreleased] - 2025-03-17
 
 ### Added
 - [#1535](https://github.com/flow-php/flow/pull/1535) - **Get latest version** - [@norberttech](https://github.com/norberttech)
@@ -7,6 +7,7 @@
 - [#1527](https://github.com/flow-php/flow/pull/1527) - **Column statistics to pipeline execution report** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [66fbc2](https://github.com/flow-php/flow/commit/66fbc210e7dd593568ae8118f15c6b46d2713764) - **Prepare release 0.12.0** - [@norberttech](https://github.com/norberttech)
 - [#1533](https://github.com/flow-php/flow/pull/1533) - **type_uuid no longer recognize symfony/ramsey objects as uuid** - [@norberttech](https://github.com/norberttech)
 - [#1533](https://github.com/flow-php/flow/pull/1533) - **EntryFactory decorates casting exception with entry name** - [@norberttech](https://github.com/norberttech)
 - [#1533](https://github.com/flow-php/flow/pull/1533) - **EntryFactory::create is now reusing more logic from EntryFactory::createAt** - [@norberttech](https://github.com/norberttech)
