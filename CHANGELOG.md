@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-03-17
+## [0.12.0] - 2025-03-17
 
 ### Added
 - [#1535](https://github.com/flow-php/flow/pull/1535) - **Get latest version** - [@norberttech](https://github.com/norberttech)
