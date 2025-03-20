@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-03-20
 
 ### Added
+- [#1543](https://github.com/flow-php/flow/pull/1543) - **modifyDateTime scalar function** - [@norberttech](https://github.com/norberttech)
 - [#1541](https://github.com/flow-php/flow/pull/1541) - **DataFrame::duplicateRow() method** - [@norberttech](https://github.com/norberttech)
 - [#1541](https://github.com/flow-php/flow/pull/1541) - **with_entry() function** - [@norberttech](https://github.com/norberttech)
 
