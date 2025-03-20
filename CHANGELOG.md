@@ -6,6 +6,7 @@
 - [#1541](https://github.com/flow-php/flow/pull/1541) - **with_entry() function** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1545](https://github.com/flow-php/flow/pull/1545) - **Make Date and DateTime comparable** - [@norberttech](https://github.com/norberttech)
 - [#1541](https://github.com/flow-php/flow/pull/1541) - **DataFrame::with/transform/withEntries now also accepts WithEntry instance** - [@norberttech](https://github.com/norberttech)
 - [#1538](https://github.com/flow-php/flow/pull/1538) - **Improved cookie baner experience by showing also current status accepted/rejected/undecided** - [@norberttech](https://github.com/norberttech)
 - [#1536](https://github.com/flow-php/flow/pull/1536) - **Update Homebrew TAP formula: flow-php to version: 0.12.0** - [@norberttech](https://github.com/norberttech)
