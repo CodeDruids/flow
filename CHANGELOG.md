@@ -17,6 +17,7 @@
 - [#1536](https://github.com/flow-php/flow/pull/1536) - **Update Homebrew TAP formula: flow-php to version: 0.12.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1559](https://github.com/flow-php/flow/pull/1559) - **Merging two definitions created from null does not remove FROM_NULL metadata** - [@norberttech](https://github.com/norberttech)
 - [#1556](https://github.com/flow-php/flow/pull/1556) - **Collecting date & time based statistics** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
