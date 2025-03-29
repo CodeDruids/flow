@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-03-29
 
 ### Added
+- [#1562](https://github.com/flow-php/flow/pull/1562) - **libs.tech recommendation badge to the README** - [@Krizhnikov](https://github.com/Krizhnikov)
 - [#1561](https://github.com/flow-php/flow/pull/1561) - **codeowners definition** - [@norberttech](https://github.com/norberttech)
 - [#1556](https://github.com/flow-php/flow/pull/1556) - **Analyze profile allowing to define more precisely how pipeline execution is going to be analyzed** - [@norberttech](https://github.com/norberttech)
 - [#1557](https://github.com/flow-php/flow/pull/1557) - **Added release cycle link to website** - [@norberttech](https://github.com/norberttech)
@@ -2305,6 +2306,7 @@
 - @jmortlock
 - @jpiatko
 - @jwojtyra-aterian
+- @Krizhnikov
 - @mleczakm
 - @norbertmwk
 - @norberttech
