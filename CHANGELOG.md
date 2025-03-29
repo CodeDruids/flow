@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-03-29
 
 ### Added
+- [#1556](https://github.com/flow-php/flow/pull/1556) - **Analyze profile allowing to define more precisely how pipeline execution is going to be analyzed** - [@norberttech](https://github.com/norberttech)
 - [#1557](https://github.com/flow-php/flow/pull/1557) - **Added release cycle link to website** - [@norberttech](https://github.com/norberttech)
 - [#1547](https://github.com/flow-php/flow/pull/1547) - **DataFrame::constrain(Constraint $constraint) : self** - [@norberttech](https://github.com/norberttech)
 - [#1547](https://github.com/flow-php/flow/pull/1547) - **Unique Constraint** - [@norberttech](https://github.com/norberttech)
@@ -9,10 +10,14 @@
 - [#1541](https://github.com/flow-php/flow/pull/1541) - **with_entry() function** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1556](https://github.com/flow-php/flow/pull/1556) - **Analyze is no longer automatically collecting columns / schema statitiscs** - [@norberttech](https://github.com/norberttech)
 - [#1545](https://github.com/flow-php/flow/pull/1545) - **Make Date and DateTime comparable** - [@norberttech](https://github.com/norberttech)
 - [#1541](https://github.com/flow-php/flow/pull/1541) - **DataFrame::with/transform/withEntries now also accepts WithEntry instance** - [@norberttech](https://github.com/norberttech)
 - [#1538](https://github.com/flow-php/flow/pull/1538) - **Improved cookie baner experience by showing also current status accepted/rejected/undecided** - [@norberttech](https://github.com/norberttech)
 - [#1536](https://github.com/flow-php/flow/pull/1536) - **Update Homebrew TAP formula: flow-php to version: 0.12.0** - [@norberttech](https://github.com/norberttech)
+
+### Fixed
+- [#1556](https://github.com/flow-php/flow/pull/1556) - **Collecting date & time based statistics** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
 - [#1538](https://github.com/flow-php/flow/pull/1538) - **Google Ads** - [@norberttech](https://github.com/norberttech)
