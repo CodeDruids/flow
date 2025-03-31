@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-03-31
+## [0.13.0] - 2025-03-31
 
 ### Added
 - [3db9c7](https://github.com/flow-php/flow/commit/3db9c780a80632ecec75c55fd1efee52b820c7be) - **a Recommendation Badge from libs.tech (#1562)** - [@Krizhnikov](https://github.com/Krizhnikov)
