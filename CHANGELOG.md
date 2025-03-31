@@ -1,7 +1,7 @@
-## [Unreleased] - 2025-03-29
+## [Unreleased] - 2025-03-31
 
 ### Added
-- [#1562](https://github.com/flow-php/flow/pull/1562) - **libs.tech recommendation badge to the README** - [@Krizhnikov](https://github.com/Krizhnikov)
+- [3db9c7](https://github.com/flow-php/flow/commit/3db9c780a80632ecec75c55fd1efee52b820c7be) - **a Recommendation Badge from libs.tech (#1562)** - [@Krizhnikov](https://github.com/Krizhnikov)
 - [#1561](https://github.com/flow-php/flow/pull/1561) - **codeowners definition** - [@norberttech](https://github.com/norberttech)
 - [#1556](https://github.com/flow-php/flow/pull/1556) - **Analyze profile allowing to define more precisely how pipeline execution is going to be analyzed** - [@norberttech](https://github.com/norberttech)
 - [#1557](https://github.com/flow-php/flow/pull/1557) - **Added release cycle link to website** - [@norberttech](https://github.com/norberttech)
@@ -12,6 +12,7 @@
 - [#1541](https://github.com/flow-php/flow/pull/1541) - **with_entry() function** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [d4cf6b](https://github.com/flow-php/flow/commit/d4cf6b36c67aaf962240401a1b3c934bbc052110) - **Prepare release 0.13.0** - [@norberttech](https://github.com/norberttech)
 - [#1561](https://github.com/flow-php/flow/pull/1561) - **Analyze will only take column type from schema when available to display column statistics** - [@norberttech](https://github.com/norberttech)
 - [#1556](https://github.com/flow-php/flow/pull/1556) - **Analyze is no longer automatically collecting columns / schema statitiscs** - [@norberttech](https://github.com/norberttech)
 - [#1545](https://github.com/flow-php/flow/pull/1545) - **Make Date and DateTime comparable** - [@norberttech](https://github.com/norberttech)
@@ -22,6 +23,9 @@
 ### Fixed
 - [#1559](https://github.com/flow-php/flow/pull/1559) - **Merging two definitions created from null does not remove FROM_NULL metadata** - [@norberttech](https://github.com/norberttech)
 - [#1556](https://github.com/flow-php/flow/pull/1556) - **Collecting date & time based statistics** - [@norberttech](https://github.com/norberttech)
+
+### Updated
+- [7cfc5e](https://github.com/flow-php/flow/commit/7cfc5ee9d73b76e9f780ab27bc2811c6cce588b1) - **dependencies and cs fixes** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
 - [#1561](https://github.com/flow-php/flow/pull/1561) - **Entry object from column statistics, use reference instead** - [@norberttech](https://github.com/norberttech)
