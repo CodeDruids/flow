@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Flow\Filesystem\Bridge\Azure;
 
 use Flow\Azure\SDK\BlobServiceInterface;
-use Flow\Filesystem\Path\Filter;
-use Flow\Filesystem\Path\Filter\KeepAll;
 use Flow\Filesystem\{DestinationStream,
     Exception\RuntimeException,
     FileStatus,
@@ -14,6 +12,8 @@ use Flow\Filesystem\{DestinationStream,
     Path,
     Protocol,
     SourceStream};
+use Flow\Filesystem\Path\Filter;
+use Flow\Filesystem\Path\Filter\KeepAll;
 
 final readonly class AzureBlobFilesystem implements Filesystem
 {

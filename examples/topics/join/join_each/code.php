@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use function Flow\ETL\DSL\{data_frame, df, equal, int_entry, join_on, row, rows, str_entry, to_stream};
-use Flow\ETL\Join\Join;
 use Flow\ETL\{DataFrame, DataFrameFactory, Extractor, FlowContext, Row, Rows};
+use Flow\ETL\Join\Join;
 
 require __DIR__ . '/vendor/autoload.php';
 

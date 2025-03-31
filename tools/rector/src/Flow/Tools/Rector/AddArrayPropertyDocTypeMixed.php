@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Flow\Tools\Rector;
 
 use PhpParser\Node;
-use PhpParser\Node\Stmt\Property;
 use PhpParser\Node\{Identifier, NullableType, UnionType};
+use PhpParser\Node\Stmt\Property;
 use Rector\BetterPhpDocParser\PhpDocInfo\PhpDocInfoFactory;
 use Rector\BetterPhpDocParser\PhpDocManipulator\PhpDocTypeChanger;
 use Rector\Rector\AbstractRector;

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Flow\Azure\SDK\BlobService\GetBlockBlobBlockList;
 
-use Flow\Azure\SDK\Endpoints\UserAgentHeader;
 use Flow\Azure\SDK\{BlobService, EndpointOptions};
+use Flow\Azure\SDK\Endpoints\UserAgentHeader;
 
 final class GetBlockBlobBlockListOptions implements EndpointOptions
 {

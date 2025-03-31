@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Flow\Azure\SDK\DSL;
 
 use Flow\Azure\SDK\AuthorizationFactory\SharedKeyFactory;
+use Flow\Azure\SDK\{AuthorizationFactory, BlobService, BlobServiceInterface, HttpFactory, URLFactory};
 use Flow\Azure\SDK\BlobService\Configuration;
 use Flow\Azure\SDK\BlobService\URLFactory\{AzureURLFactory, AzuriteURLFactory};
-use Flow\Azure\SDK\{AuthorizationFactory, BlobService, BlobServiceInterface, HttpFactory, URLFactory};
 use Flow\ETL\Attribute\{DocumentationDSL, Module, Type};
 use Http\Discovery\{Psr17FactoryDiscovery, Psr18ClientDiscovery};
 use Psr\Http\Client\ClientInterface;

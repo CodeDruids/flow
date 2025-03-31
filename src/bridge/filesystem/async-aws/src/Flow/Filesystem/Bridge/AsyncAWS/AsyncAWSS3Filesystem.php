@@ -6,8 +6,6 @@ namespace Flow\Filesystem\Bridge\AsyncAWS;
 
 use AsyncAws\S3\Exception\NoSuchKeyException;
 use AsyncAws\S3\S3Client;
-use Flow\Filesystem\Path\Filter;
-use Flow\Filesystem\Path\Filter\KeepAll;
 use Flow\Filesystem\{DestinationStream,
     Exception\InvalidArgumentException,
     Exception\RuntimeException,
@@ -16,6 +14,8 @@ use Flow\Filesystem\{DestinationStream,
     Path,
     Protocol,
     SourceStream};
+use Flow\Filesystem\Path\Filter;
+use Flow\Filesystem\Path\Filter\KeepAll;
 
 final readonly class AsyncAWSS3Filesystem implements Filesystem
 {

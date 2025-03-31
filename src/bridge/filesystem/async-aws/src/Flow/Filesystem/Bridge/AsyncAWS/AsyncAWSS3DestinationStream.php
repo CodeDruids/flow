@@ -8,10 +8,10 @@ use AsyncAws\S3\Exception\NoSuchKeyException;
 use AsyncAws\S3\Input\CreateMultipartUploadRequest;
 use AsyncAws\S3\S3Client;
 use Flow\Filesystem\Bridge\AsyncAWS\AsyncAWSS3DesintationStream\AsyncAWSS3BlockLifecycle;
+use Flow\Filesystem\{DestinationStream, Path, SizeUnits};
 use Flow\Filesystem\Exception\InvalidArgumentException;
 use Flow\Filesystem\Stream\Block\NativeLocalFileBlocksFactory;
 use Flow\Filesystem\Stream\{BlockFactory, Blocks};
-use Flow\Filesystem\{DestinationStream, Path, SizeUnits};
 
 final class AsyncAWSS3DestinationStream implements DestinationStream
 {

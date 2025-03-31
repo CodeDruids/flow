@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Flow\Azure\SDK;
 
-use Flow\Azure\SDK\BlobService\GetBlob\{BlobContent, GetBlobOptions};
-use Flow\Azure\SDK\BlobService\ListBlobs\{Blob, ListBlobOptions};
 use Flow\Azure\SDK\BlobService\{
     BlockBlob\Block,
     BlockBlob\BlockList,
@@ -25,6 +23,8 @@ use Flow\Azure\SDK\BlobService\{
     PutBlockBlobBlock\PutBlockBlobBlockOptions,
     PutBlockBlob\PutBlockBlobOptions
 };
+use Flow\Azure\SDK\BlobService\GetBlob\{BlobContent, GetBlobOptions};
+use Flow\Azure\SDK\BlobService\ListBlobs\{Blob, ListBlobOptions};
 use Flow\Azure\SDK\Exception\{AzureException, InvalidArgumentException};
 use Flow\Azure\SDK\Normalizer\SimpleXMLNormalizer;
 use Psr\Http\Client\{ClientExceptionInterface, ClientInterface};

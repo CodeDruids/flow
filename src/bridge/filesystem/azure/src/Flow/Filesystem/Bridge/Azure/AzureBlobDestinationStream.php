@@ -6,12 +6,12 @@ namespace Flow\Filesystem\Bridge\Azure;
 
 use Flow\Azure\SDK\BlobService\BlockBlob\BlockList;
 use Flow\Azure\SDK\BlobServiceInterface;
-use Flow\Filesystem\Exception\InvalidArgumentException;
-use Flow\Filesystem\Stream\{Block, BlockFactory, Blocks};
 use Flow\Filesystem\{Bridge\Azure\AzureBlobDestinationStream\AzureBlobBlockLifecycle,
     DestinationStream,
     Exception\RuntimeException,
     Path};
+use Flow\Filesystem\Exception\InvalidArgumentException;
+use Flow\Filesystem\Stream\{Block, BlockFactory, Blocks};
 
 final class AzureBlobDestinationStream implements DestinationStream
 {
