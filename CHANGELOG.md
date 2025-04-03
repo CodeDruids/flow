@@ -1,7 +1,10 @@
-## [Unreleased] - 2025-03-31
+## [Unreleased] - 2025-04-03
 
 ### Changed
 - [#1572](https://github.com/flow-php/flow/pull/1572) - **Update Homebrew TAP formula: flow-php to version: 0.13.0** - [@norberttech](https://github.com/norberttech)
+
+### Fixed
+- [#1574](https://github.com/flow-php/flow/pull/1574) - **Entry TValue and TType templates definitions** - [@norberttech](https://github.com/norberttech)
 
 ## [0.13.0] - 2025-03-31
 
