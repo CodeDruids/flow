@@ -5,6 +5,7 @@
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **bcmath extension with polyfill** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1580](https://github.com/flow-php/flow/pull/1580) - **Renamed DataFrame::validate() into DataFrame::match()** - [@norberttech](https://github.com/norberttech)
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **Float type toString now display precision** - [@norberttech](https://github.com/norberttech)
 - [#1575](https://github.com/flow-php/flow/pull/1575) - **Update Homebrew TAP formula: flow-php to version: 0.13.1** - [@norberttech](https://github.com/norberttech)
 
