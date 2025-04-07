@@ -1,10 +1,13 @@
 ## [Unreleased] - 2025-04-07
 
 ### Added
+- [#1584](https://github.com/flow-php/flow/pull/1584) - **spaze/phpstan-disallowed-calls** - [@norberttech](https://github.com/norberttech)
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **ScalarFunctionResult** - [@norberttech](https://github.com/norberttech)
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **bcmath extension with polyfill** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1584](https://github.com/flow-php/flow/pull/1584) - **Replaced BCmath calculator with brick/math library** - [@norberttech](https://github.com/norberttech)
+- [#1584](https://github.com/flow-php/flow/pull/1584) - **Divide on floats will expect to provide scale & rounding** - [@norberttech](https://github.com/norberttech)
 - [#1580](https://github.com/flow-php/flow/pull/1580) - **Renamed DataFrame::validate() into DataFrame::match()** - [@norberttech](https://github.com/norberttech)
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **Float type toString now display precision** - [@norberttech](https://github.com/norberttech)
 - [#1575](https://github.com/flow-php/flow/pull/1575) - **Update Homebrew TAP formula: flow-php to version: 0.13.1** - [@norberttech](https://github.com/norberttech)
@@ -16,6 +19,8 @@
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **Merging lists/maps of floats to use higher precision** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
+- [#1584](https://github.com/flow-php/flow/pull/1584) - **FloatType::toString will no longer print precision** - [@norberttech](https://github.com/norberttech)
+- [#1584](https://github.com/flow-php/flow/pull/1584) - **bcmath polyfill dependency** - [@norberttech](https://github.com/norberttech)
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **TypeScalarFunctionInterface** - [@norberttech](https://github.com/norberttech)
 
 ## [0.13.1] - 2025-04-03
