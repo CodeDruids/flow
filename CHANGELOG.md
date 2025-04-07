@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-04-06
+## [Unreleased] - 2025-04-07
 
 ### Added
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **ScalarFunctionResult** - [@norberttech](https://github.com/norberttech)
@@ -10,6 +10,7 @@
 - [#1575](https://github.com/flow-php/flow/pull/1575) - **Update Homebrew TAP formula: flow-php to version: 0.13.1** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1581](https://github.com/flow-php/flow/pull/1581) - **accessing entries through reference alias** - [@norberttech](https://github.com/norberttech)
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **Merging float definitions with different precisions** - [@norberttech](https://github.com/norberttech)
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **Merging floats and integer to use float precision** - [@norberttech](https://github.com/norberttech)
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **Merging lists/maps of floats to use higher precision** - [@norberttech](https://github.com/norberttech)
