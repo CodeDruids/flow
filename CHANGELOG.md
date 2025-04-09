@@ -19,6 +19,9 @@
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **Merging floats and integer to use float precision** - [@norberttech](https://github.com/norberttech)
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **Merging lists/maps of floats to use higher precision** - [@norberttech](https://github.com/norberttech)
 
+### Updated
+- [673ad4](https://github.com/flow-php/flow/commit/673ad462af446aef4987abc7f98a3772a6b1c925) - **test-suite.yml** - [@norberttech](https://github.com/norberttech)
+
 ### Removed
 - [#1584](https://github.com/flow-php/flow/pull/1584) - **FloatType::toString will no longer print precision** - [@norberttech](https://github.com/norberttech)
 - [#1584](https://github.com/flow-php/flow/pull/1584) - **bcmath polyfill dependency** - [@norberttech](https://github.com/norberttech)
