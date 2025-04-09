@@ -6,6 +6,7 @@
 - [#1577](https://github.com/flow-php/flow/pull/1577) - **bcmath extension with polyfill** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1588](https://github.com/flow-php/flow/pull/1588) - **Allow to pass options to cast scalar function** - [@norberttech](https://github.com/norberttech)
 - [#1584](https://github.com/flow-php/flow/pull/1584) - **Replaced BCmath calculator with brick/math library** - [@norberttech](https://github.com/norberttech)
 - [#1584](https://github.com/flow-php/flow/pull/1584) - **Divide on floats will expect to provide scale & rounding** - [@norberttech](https://github.com/norberttech)
 - [#1580](https://github.com/flow-php/flow/pull/1580) - **Renamed DataFrame::validate() into DataFrame::match()** - [@norberttech](https://github.com/norberttech)
