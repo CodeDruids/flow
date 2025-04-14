@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-04-14
+## [0.14.0] - 2025-04-14
 
 ### Added
 - [#1584](https://github.com/flow-php/flow/pull/1584) - **spaze/phpstan-disallowed-calls** - [@norberttech](https://github.com/norberttech)
