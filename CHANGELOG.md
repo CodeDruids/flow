@@ -1,4 +1,7 @@
-## [Unreleased] - 2025-04-15
+## [Unreleased] - 2025-04-26
+
+### Added
+- [#1603](https://github.com/flow-php/flow/pull/1603) - **Dbal KeySet extractor** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
 - [#1599](https://github.com/flow-php/flow/pull/1599) - **cleanup schema namespace** - [@norberttech](https://github.com/norberttech)
