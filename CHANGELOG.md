@@ -4,6 +4,7 @@
 - [#1603](https://github.com/flow-php/flow/pull/1603) - **Dbal KeySet extractor** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1606](https://github.com/flow-php/flow/pull/1606) - **[GoogleSheet] Prevent fatal error when extracted columns don't match headers amount** - [@stloyd](https://github.com/stloyd)
 - [#1599](https://github.com/flow-php/flow/pull/1599) - **cleanup schema namespace** - [@norberttech](https://github.com/norberttech)
 - [#1596](https://github.com/flow-php/flow/pull/1596) - **Update Homebrew TAP formula: flow-php to version: 0.14.0** - [@norberttech](https://github.com/norberttech)
 
