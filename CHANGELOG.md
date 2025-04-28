@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-04-28
+## [0.15.0] - 2025-04-28
 
 ### Added
 - [#1603](https://github.com/flow-php/flow/pull/1603) - **Dbal KeySet extractor** - [@norberttech](https://github.com/norberttech)
