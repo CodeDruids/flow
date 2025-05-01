@@ -1,7 +1,10 @@
-## [Unreleased] - 2025-04-28
+## [Unreleased] - 2025-05-01
 
 ### Changed
 - [#1610](https://github.com/flow-php/flow/pull/1610) - **Update Homebrew TAP formula: flow-php to version: 0.15.0** - [@norberttech](https://github.com/norberttech)
+
+### Fixed
+- [#1613](https://github.com/flow-php/flow/pull/1613) - **key set pagination query for ambiguous column names** - [@norberttech](https://github.com/norberttech)
 
 ## [0.15.0] - 2025-04-28
 
