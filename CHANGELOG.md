@@ -1,7 +1,20 @@
-## [Unreleased] - 2025-05-03
+## [Unreleased] - 2025-05-04
+
+### Added
+- [#1615](https://github.com/flow-php/flow/pull/1615) - **Add a new `DataFrame::renameEach()`** - [@stloyd](https://github.com/stloyd)
+- [#1615](https://github.com/flow-php/flow/pull/1615) - **Add a new functions `rename_style()`, `rename_replace()` & `rename_transliterate()`** - [@stloyd](https://github.com/stloyd)
 
 ### Changed
 - [#1614](https://github.com/flow-php/flow/pull/1614) - **Update Homebrew TAP formula: flow-php to version: 0.15.1** - [@norberttech](https://github.com/norberttech)
+
+### Deprecated
+- [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAll()`** - [@stloyd](https://github.com/stloyd)
+- [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAllLowerCase()`** - [@stloyd](https://github.com/stloyd)
+- [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAllUpperCase()`** - [@stloyd](https://github.com/stloyd)
+- [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAllUpperCaseFirst()`** - [@stloyd](https://github.com/stloyd)
+- [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAllUpperCaseWord()`** - [@stloyd](https://github.com/stloyd)
+- [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\RenameAllCaseTransformer`** - [@stloyd](https://github.com/stloyd)
+- [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\RenameStrReplaceAllEntriesTransformer`** - [@stloyd](https://github.com/stloyd)
 
 ## [0.15.1] - 2025-05-01
 
