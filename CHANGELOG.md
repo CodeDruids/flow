@@ -10,6 +10,7 @@
 - [#1614](https://github.com/flow-php/flow/pull/1614) - **Update Homebrew TAP formula: flow-php to version: 0.15.1** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1632](https://github.com/flow-php/flow/pull/1632) - **error message when to_parquet is not available** - [@bendavies](https://github.com/bendavies)
 - [#1631](https://github.com/flow-php/flow/pull/1631) - **fix: error message when to_csv is not available** - [@bendavies](https://github.com/bendavies)
 
 ### Deprecated
