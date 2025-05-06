@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-05-04
+## [Unreleased] - 2025-05-06
 
 ### Added
 - [#1617](https://github.com/flow-php/flow/pull/1617) - **Added new `Style::ASCII`, `Style::CAMEL`, `Style::TITLE` & `Style::SLUG`** - [@stloyd](https://github.com/stloyd)
@@ -8,6 +8,9 @@
 ### Changed
 - [#1617](https://github.com/flow-php/flow/pull/1617) - **Rework `rename_transliterate` to use Symfony String** - [@stloyd](https://github.com/stloyd)
 - [#1614](https://github.com/flow-php/flow/pull/1614) - **Update Homebrew TAP formula: flow-php to version: 0.15.1** - [@norberttech](https://github.com/norberttech)
+
+### Fixed
+- [#1631](https://github.com/flow-php/flow/pull/1631) - **fix: error message when to_csv is not available** - [@bendavies](https://github.com/bendavies)
 
 ### Deprecated
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAll()`** - [@stloyd](https://github.com/stloyd)
@@ -2385,6 +2388,7 @@
 
 - @alexislefebvre
 - @Bellangelo
+- @bendavies
 - @christianc1
 - @DawidSajdak
 - @drupol
