@@ -6,6 +6,7 @@
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Add a new functions `rename_style()`, `rename_replace()` & `rename_transliterate()`** - [@stloyd](https://github.com/stloyd)
 
 ### Changed
+- [#1634](https://github.com/flow-php/flow/pull/1634) - **Adjust `DataFrame::renameEach()` to allow multiple strategies at once** - [@stloyd](https://github.com/stloyd)
 - [#1633](https://github.com/flow-php/flow/pull/1633) - **Rework `RenameReplaceEntryStrategy` to allow multiple strings** - [@stloyd](https://github.com/stloyd)
 - [#1617](https://github.com/flow-php/flow/pull/1617) - **Rework `rename_transliterate` to use Symfony String** - [@stloyd](https://github.com/stloyd)
 - [#1614](https://github.com/flow-php/flow/pull/1614) - **Update Homebrew TAP formula: flow-php to version: 0.15.1** - [@norberttech](https://github.com/norberttech)
