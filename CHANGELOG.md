@@ -19,6 +19,9 @@
 - [#1632](https://github.com/flow-php/flow/pull/1632) - **error message when to_parquet is not available** - [@bendavies](https://github.com/bendavies)
 - [#1631](https://github.com/flow-php/flow/pull/1631) - **fix: error message when to_csv is not available** - [@bendavies](https://github.com/bendavies)
 
+### Removed
+- [#1641](https://github.com/flow-php/flow/pull/1641) - **redundant creation of cache folder** - [@norberttech](https://github.com/norberttech)
+
 ### Deprecated
 - [#1635](https://github.com/flow-php/flow/pull/1635) - **`Flow\ETL\Function\StyleConverter\StringStyles` in favor of `Flow\ETL\Style\StringStyles`** - [@stloyd](https://github.com/stloyd)
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAll()`** - [@stloyd](https://github.com/stloyd)
