@@ -6,6 +6,7 @@
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Add a new functions `rename_style()`, `rename_replace()` & `rename_transliterate()`** - [@stloyd](https://github.com/stloyd)
 
 ### Changed
+- [#1635](https://github.com/flow-php/flow/pull/1635) - **Merge `Rename\Style` with `StringStyles`** - [@stloyd](https://github.com/stloyd)
 - [#1639](https://github.com/flow-php/flow/pull/1639) - **Dont truncate ascii table output schema** - [@norberttech](https://github.com/norberttech)
 - [#1634](https://github.com/flow-php/flow/pull/1634) - **Adjust `DataFrame::renameEach()` to allow multiple strategies at once** - [@stloyd](https://github.com/stloyd)
 - [#1633](https://github.com/flow-php/flow/pull/1633) - **Rework `RenameReplaceEntryStrategy` to allow multiple strings** - [@stloyd](https://github.com/stloyd)
@@ -13,10 +14,13 @@
 - [#1614](https://github.com/flow-php/flow/pull/1614) - **Update Homebrew TAP formula: flow-php to version: 0.15.1** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1640](https://github.com/flow-php/flow/pull/1640) - **batch size optimization for deeply nested pipelines** - [@norberttech](https://github.com/norberttech)
+- [#1635](https://github.com/flow-php/flow/pull/1635) - **`StringStyles` related code to work with UTF-8** - [@stloyd](https://github.com/stloyd)
 - [#1632](https://github.com/flow-php/flow/pull/1632) - **error message when to_parquet is not available** - [@bendavies](https://github.com/bendavies)
 - [#1631](https://github.com/flow-php/flow/pull/1631) - **fix: error message when to_csv is not available** - [@bendavies](https://github.com/bendavies)
 
 ### Deprecated
+- [#1635](https://github.com/flow-php/flow/pull/1635) - **`Flow\ETL\Function\StyleConverter\StringStyles` in favor of `Flow\ETL\Style\StringStyles`** - [@stloyd](https://github.com/stloyd)
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAll()`** - [@stloyd](https://github.com/stloyd)
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAllLowerCase()`** - [@stloyd](https://github.com/stloyd)
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Deprecate `Flow\ETL\DataFrame::renameAllUpperCase()`** - [@stloyd](https://github.com/stloyd)
