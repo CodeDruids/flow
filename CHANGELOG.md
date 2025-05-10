@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-05-08
+## [Unreleased] - 2025-05-10
 
 ### Added
+- [#1642](https://github.com/flow-php/flow/pull/1642) - **Add a new `RenameEachEntryTransformerBench` benchmark** - [@stloyd](https://github.com/stloyd)
 - [#1617](https://github.com/flow-php/flow/pull/1617) - **Added new `Style::ASCII`, `Style::CAMEL`, `Style::TITLE` & `Style::SLUG`** - [@stloyd](https://github.com/stloyd)
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Add a new `DataFrame::renameEach()`** - [@stloyd](https://github.com/stloyd)
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Add a new functions `rename_style()`, `rename_replace()` & `rename_transliterate()`** - [@stloyd](https://github.com/stloyd)
