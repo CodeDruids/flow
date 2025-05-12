@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-05-10
+## [Unreleased] - 2025-05-12
 
 ### Added
 - [#1642](https://github.com/flow-php/flow/pull/1642) - **Add a new `RenameEachEntryTransformerBench` benchmark** - [@stloyd](https://github.com/stloyd)
@@ -7,6 +7,7 @@
 - [#1615](https://github.com/flow-php/flow/pull/1615) - **Add a new functions `rename_style()`, `rename_replace()` & `rename_transliterate()`** - [@stloyd](https://github.com/stloyd)
 
 ### Changed
+- [6b5d0f](https://github.com/flow-php/flow/commit/6b5d0f685d344e61a048c3e62ed5e239c2611fc7) - **Prepared release 0.16.0** - [@norberttech](https://github.com/norberttech)
 - [#1635](https://github.com/flow-php/flow/pull/1635) - **Merge `Rename\Style` with `StringStyles`** - [@stloyd](https://github.com/stloyd)
 - [#1639](https://github.com/flow-php/flow/pull/1639) - **Dont truncate ascii table output schema** - [@norberttech](https://github.com/norberttech)
 - [#1634](https://github.com/flow-php/flow/pull/1634) - **Adjust `DataFrame::renameEach()` to allow multiple strategies at once** - [@stloyd](https://github.com/stloyd)
