@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-05-12
+## [0.16.0] - 2025-05-12
 
 ### Added
 - [#1642](https://github.com/flow-php/flow/pull/1642) - **Add a new `RenameEachEntryTransformerBench` benchmark** - [@stloyd](https://github.com/stloyd)
