@@ -1,7 +1,11 @@
-## [Unreleased] - 2025-05-12
+## [Unreleased] - 2025-05-14
 
 ### Changed
 - [#1644](https://github.com/flow-php/flow/pull/1644) - **Update Homebrew TAP formula: flow-php to version: 0.16.0** - [@norberttech](https://github.com/norberttech)
+
+### Fixed
+- [#1647](https://github.com/flow-php/flow/pull/1647) - **Dates befor 1970-01-01 conversion to/from parquet** - [@norberttech](https://github.com/norberttech)
+- [#1647](https://github.com/flow-php/flow/pull/1647) - **nix shell starship configuration loading** - [@norberttech](https://github.com/norberttech)
 
 ## [0.16.0] - 2025-05-12
 
