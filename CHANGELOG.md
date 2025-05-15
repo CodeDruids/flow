@@ -1,3 +1,8 @@
+## [Unreleased] - 2025-05-15
+
+### Changed
+- [#1651](https://github.com/flow-php/flow/pull/1651) - **Rework `RenameEachEntryTransformer` to a single instance on multiple strategies** - [@stloyd](https://github.com/stloyd)
+
 ## [0.16.2] - 2025-05-15
 
 ### Changed
