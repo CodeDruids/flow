@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-05-15
+## [Unreleased] - 2025-05-16
 
 ### Changed
+- [#1653](https://github.com/flow-php/flow/pull/1653) - **Update Homebrew TAP formula: flow-php to version: 0.16.2** - [@norberttech](https://github.com/norberttech)
 - [#1651](https://github.com/flow-php/flow/pull/1651) - **Rework `RenameEachEntryTransformer` to a single instance on multiple strategies** - [@stloyd](https://github.com/stloyd)
 
 ## [0.16.2] - 2025-05-15
