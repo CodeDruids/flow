@@ -88,7 +88,8 @@
         "flow-php/parquet": "self.version",
         "flow-php/parquet-viewer": "self.version",
         "flow-php/snappy": "self.version",
-        "flow-php/symfony-http-foundation-bridge": "self.version"
+        "flow-php/symfony-http-foundation-bridge": "self.version",
+        "flow-php/types": "self.version"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -155,8 +156,8 @@
             "src/lib/filesystem/src/Flow/Filesystem/DSL/functions.php",
             "src/lib/parquet/src/Flow/Parquet/functions.php",
             "src/lib/parquet/src/stubs.php",
-            "src/lib/types/src/Flow/Types/DSL/functions.php",
-            "src/lib/snappy/polyfill.php"
+            "src/lib/snappy/polyfill.php",
+            "src/lib/types/src/Flow/Types/DSL/functions.php"
         ]
     },
     "autoload-dev": {
