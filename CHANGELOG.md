@@ -1,11 +1,18 @@
 ## [Unreleased] - 2025-05-16
 
 ### Added
+- [#1645](https://github.com/flow-php/flow/pull/1645) - **UnionType to Types** - [@norberttech](https://github.com/norberttech)
+- [#1645](https://github.com/flow-php/flow/pull/1645) - **OptionalType to Types** - [@norberttech](https://github.com/norberttech)
+- [#1645](https://github.com/flow-php/flow/pull/1645) - **nullable property to Schema\Definition** - [@norberttech](https://github.com/norberttech)
 - [#1655](https://github.com/flow-php/flow/pull/1655) - **Schema Evolving Validator** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1645](https://github.com/flow-php/flow/pull/1645) - **Moved all Types related classes to flow-php/types component** - [@norberttech](https://github.com/norberttech)
 - [#1653](https://github.com/flow-php/flow/pull/1653) - **Update Homebrew TAP formula: flow-php to version: 0.16.2** - [@norberttech](https://github.com/norberttech)
 - [#1651](https://github.com/flow-php/flow/pull/1651) - **Rework `RenameEachEntryTransformer` to a single instance on multiple strategies** - [@stloyd](https://github.com/stloyd)
+
+### Removed
+- [#1645](https://github.com/flow-php/flow/pull/1645) - **nullable property from all types** - [@norberttech](https://github.com/norberttech)
 
 ## [0.16.2] - 2025-05-15
 
