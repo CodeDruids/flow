@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-05-16
+## [Unreleased] - 2025-05-17
 
 ### Added
 - [bcab86](https://github.com/flow-php/flow/commit/bcab86f9bb38b4b4df11b06aaeed7b32f87eaa7b) - **flow-php/types dependency to flow-php/etl** - [@norberttech](https://github.com/norberttech)
@@ -11,6 +11,9 @@
 - [#1645](https://github.com/flow-php/flow/pull/1645) - **Moved all Types related classes to flow-php/types component** - [@norberttech](https://github.com/norberttech)
 - [#1653](https://github.com/flow-php/flow/pull/1653) - **Update Homebrew TAP formula: flow-php to version: 0.16.2** - [@norberttech](https://github.com/norberttech)
 - [#1651](https://github.com/flow-php/flow/pull/1651) - **Rework `RenameEachEntryTransformer` to a single instance on multiple strategies** - [@stloyd](https://github.com/stloyd)
+
+### Updated
+- [bdfa42](https://github.com/flow-php/flow/commit/bdfa420b34ca4d825af562a2bb0a3d20c8299560) - **dependencies** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
 - [#1645](https://github.com/flow-php/flow/pull/1645) - **nullable property from all types** - [@norberttech](https://github.com/norberttech)
