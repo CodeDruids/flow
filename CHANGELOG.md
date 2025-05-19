@@ -1,6 +1,8 @@
 ## [Unreleased] - 2025-05-19
 
 ### Added
+- [#1658](https://github.com/flow-php/flow/pull/1658) - **type_positive_integer()** - [@norberttech](https://github.com/norberttech)
+- [#1658](https://github.com/flow-php/flow/pull/1658) - **type_non_empty_string()** - [@norberttech](https://github.com/norberttech)
 - [#1643](https://github.com/flow-php/flow/pull/1643) - **Add a new Excel Adapter with simple extractor** - [@stloyd](https://github.com/stloyd)
 - [bcab86](https://github.com/flow-php/flow/commit/bcab86f9bb38b4b4df11b06aaeed7b32f87eaa7b) - **flow-php/types dependency to flow-php/etl** - [@norberttech](https://github.com/norberttech)
 - [#1645](https://github.com/flow-php/flow/pull/1645) - **UnionType to Types** - [@norberttech](https://github.com/norberttech)
@@ -13,6 +15,9 @@
 - [#1645](https://github.com/flow-php/flow/pull/1645) - **Moved all Types related classes to flow-php/types component** - [@norberttech](https://github.com/norberttech)
 - [#1653](https://github.com/flow-php/flow/pull/1653) - **Update Homebrew TAP formula: flow-php to version: 0.16.2** - [@norberttech](https://github.com/norberttech)
 - [#1651](https://github.com/flow-php/flow/pull/1651) - **Rework `RenameEachEntryTransformer` to a single instance on multiple strategies** - [@stloyd](https://github.com/stloyd)
+
+### Fixed
+- [#1658](https://github.com/flow-php/flow/pull/1658) - **Removed references to Flow\ETL namespace from Flow\Types** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
 - [850f2c](https://github.com/flow-php/flow/commit/850f2c571033afd64e9b35cda235812aed1bc88f) - **README.md** - [@norberttech](https://github.com/norberttech)
