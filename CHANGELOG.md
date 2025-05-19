@@ -11,6 +11,7 @@
 - [#1655](https://github.com/flow-php/flow/pull/1655) - **Schema Evolving Validator** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1660](https://github.com/flow-php/flow/pull/1660) - **Renamed is_nullable() into type_is_nullable()** - [@norberttech](https://github.com/norberttech)
 - [#1656](https://github.com/flow-php/flow/pull/1656) - **Update Excel reading example** - [@stloyd](https://github.com/stloyd)
 - [#1645](https://github.com/flow-php/flow/pull/1645) - **Moved all Types related classes to flow-php/types component** - [@norberttech](https://github.com/norberttech)
 - [#1653](https://github.com/flow-php/flow/pull/1653) - **Update Homebrew TAP formula: flow-php to version: 0.16.2** - [@norberttech](https://github.com/norberttech)
