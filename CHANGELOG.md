@@ -20,6 +20,7 @@
 - [#1658](https://github.com/flow-php/flow/pull/1658) - **Removed references to Flow\ETL namespace from Flow\Types** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
+- [ef1e3d](https://github.com/flow-php/flow/commit/ef1e3de7d65a957e406471b180c6b144cd624b47) - **types.md** - [@norberttech](https://github.com/norberttech)
 - [850f2c](https://github.com/flow-php/flow/commit/850f2c571033afd64e9b35cda235812aed1bc88f) - **README.md** - [@norberttech](https://github.com/norberttech)
 - [bdfa42](https://github.com/flow-php/flow/commit/bdfa420b34ca4d825af562a2bb0a3d20c8299560) - **dependencies** - [@norberttech](https://github.com/norberttech)
 
