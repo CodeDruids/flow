@@ -9,6 +9,7 @@
 - [#1655](https://github.com/flow-php/flow/pull/1655) - **Schema Evolving Validator** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1656](https://github.com/flow-php/flow/pull/1656) - **Update Excel reading example** - [@stloyd](https://github.com/stloyd)
 - [#1645](https://github.com/flow-php/flow/pull/1645) - **Moved all Types related classes to flow-php/types component** - [@norberttech](https://github.com/norberttech)
 - [#1653](https://github.com/flow-php/flow/pull/1653) - **Update Homebrew TAP formula: flow-php to version: 0.16.2** - [@norberttech](https://github.com/norberttech)
 - [#1651](https://github.com/flow-php/flow/pull/1651) - **Rework `RenameEachEntryTransformer` to a single instance on multiple strategies** - [@stloyd](https://github.com/stloyd)
