@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-05-17
+## [Unreleased] - 2025-05-19
 
 ### Added
+- [#1643](https://github.com/flow-php/flow/pull/1643) - **Add a new Excel Adapter with simple extractor** - [@stloyd](https://github.com/stloyd)
 - [bcab86](https://github.com/flow-php/flow/commit/bcab86f9bb38b4b4df11b06aaeed7b32f87eaa7b) - **flow-php/types dependency to flow-php/etl** - [@norberttech](https://github.com/norberttech)
 - [#1645](https://github.com/flow-php/flow/pull/1645) - **UnionType to Types** - [@norberttech](https://github.com/norberttech)
 - [#1645](https://github.com/flow-php/flow/pull/1645) - **OptionalType to Types** - [@norberttech](https://github.com/norberttech)
