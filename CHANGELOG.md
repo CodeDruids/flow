@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-05-19
+## [Unreleased] - 2025-05-20
 
 ### Added
 - [#1658](https://github.com/flow-php/flow/pull/1658) - **type_positive_integer()** - [@norberttech](https://github.com/norberttech)
@@ -19,6 +19,8 @@
 - [#1651](https://github.com/flow-php/flow/pull/1651) - **Rework `RenameEachEntryTransformer` to a single instance on multiple strategies** - [@stloyd](https://github.com/stloyd)
 
 ### Fixed
+- [#1659](https://github.com/flow-php/flow/pull/1659) - **Close Excel extractor when limit is reached** - [@stloyd](https://github.com/stloyd)
+- [#1659](https://github.com/flow-php/flow/pull/1659) - **Prevent memory leak in `ExcelExtractor` by not copying each row in loop** - [@stloyd](https://github.com/stloyd)
 - [#1658](https://github.com/flow-php/flow/pull/1658) - **Removed references to Flow\ETL namespace from Flow\Types** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
