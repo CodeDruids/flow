@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-05-20
+## [Unreleased] - 2025-05-22
 
 ### Added
 - [#1663](https://github.com/flow-php/flow/pull/1663) - **Add a benchmark for Excel Extractor with an ODS file** - [@stloyd](https://github.com/stloyd)
@@ -12,6 +12,7 @@
 - [#1655](https://github.com/flow-php/flow/pull/1655) - **Schema Evolving Validator** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1665](https://github.com/flow-php/flow/pull/1665) - **Improve the `CSVExtractor` by removing duplicated operations** - [@stloyd](https://github.com/stloyd)
 - [#1664](https://github.com/flow-php/flow/pull/1664) - **Improve reading of headers in the `CSVExtractor`** - [@stloyd](https://github.com/stloyd)
 - [#1661](https://github.com/flow-php/flow/pull/1661) - **Simplify Excel & GoogleSheet extractor cell expanding** - [@stloyd](https://github.com/stloyd)
 - [#1660](https://github.com/flow-php/flow/pull/1660) - **Renamed is_nullable() into type_is_nullable()** - [@norberttech](https://github.com/norberttech)
