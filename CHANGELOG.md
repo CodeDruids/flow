@@ -33,6 +33,7 @@
 - [bdfa42](https://github.com/flow-php/flow/commit/bdfa420b34ca4d825af562a2bb0a3d20c8299560) - **dependencies** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
+- [#1674](https://github.com/flow-php/flow/pull/1674) - **labeler action from pr-check workflow** - [@norberttech](https://github.com/norberttech)
 - [#1645](https://github.com/flow-php/flow/pull/1645) - **nullable property from all types** - [@norberttech](https://github.com/norberttech)
 
 ## [0.16.2] - 2025-05-15
