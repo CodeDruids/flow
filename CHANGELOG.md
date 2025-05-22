@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-05-22
 
 ### Added
+- [#1670](https://github.com/flow-php/flow/pull/1670) - **memory consumption to dataset report** - [@norberttech](https://github.com/norberttech)
 - [#1663](https://github.com/flow-php/flow/pull/1663) - **Add a benchmark for Excel Extractor with an ODS file** - [@stloyd](https://github.com/stloyd)
 - [#1658](https://github.com/flow-php/flow/pull/1658) - **type_positive_integer()** - [@norberttech](https://github.com/norberttech)
 - [#1658](https://github.com/flow-php/flow/pull/1658) - **type_non_empty_string()** - [@norberttech](https://github.com/norberttech)
