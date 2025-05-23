@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-05-22
+## [Unreleased] - 2025-05-23
 
 ### Added
 - [#1670](https://github.com/flow-php/flow/pull/1670) - **memory consumption to dataset report** - [@norberttech](https://github.com/norberttech)
@@ -23,6 +23,7 @@
 - [#1651](https://github.com/flow-php/flow/pull/1651) - **Rework `RenameEachEntryTransformer` to a single instance on multiple strategies** - [@stloyd](https://github.com/stloyd)
 
 ### Fixed
+- [#1677](https://github.com/flow-php/flow/pull/1677) - **parquet normalizer for nullable entries** - [@norberttech](https://github.com/norberttech)
 - [#1659](https://github.com/flow-php/flow/pull/1659) - **Close Excel extractor when limit is reached** - [@stloyd](https://github.com/stloyd)
 - [#1659](https://github.com/flow-php/flow/pull/1659) - **Prevent memory leak in `ExcelExtractor` by not copying each row in loop** - [@stloyd](https://github.com/stloyd)
 - [#1658](https://github.com/flow-php/flow/pull/1658) - **Removed references to Flow\ETL namespace from Flow\Types** - [@norberttech](https://github.com/norberttech)
