@@ -25,12 +25,12 @@ body:
       render: php
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     id: data
     attributes:
       label: Data required to reproduce bug locally
       description: |
-        If given bug requires more data to reproduce, please provide it here in a convinient format.
+        If given bug requires more data to reproduce, please provide it here in a convenient format.
             - php array
             - csv
             - json
@@ -51,11 +51,5 @@ body:
       label: Relevant error output
       description: Please copy and paste any relevant error output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+    validations:
+      required: true
