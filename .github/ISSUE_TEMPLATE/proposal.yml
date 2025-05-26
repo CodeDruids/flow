@@ -38,9 +38,9 @@ body:
         It's perfectly fine to just propose changes and wait for others to pick them up.
       multiple: false
       options:
-        - Yes
-        - No
-        - Maybe
+        - 'Yes'
+        - 'No'
+        - 'Maybe'
 
   - type: dropdown
     id: sponsor
@@ -51,9 +51,9 @@ body:
 
       multiple: false
       options:
-        - Yes
-        - No
-        - Maybe
+        - 'Yes'
+        - 'No'
+        - 'Maybe'
 
   - type: textarea
     id: integration
