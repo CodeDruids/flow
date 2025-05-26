@@ -1,6 +1,10 @@
 ## [Unreleased] - 2025-05-26
 
+### Added
+- [#1673](https://github.com/flow-php/flow/pull/1673) - **Issue Templates** - [@norberttech](https://github.com/norberttech)
+
 ### Changed
+- [#1673](https://github.com/flow-php/flow/pull/1673) - **Contributing guildelines** - [@norberttech](https://github.com/norberttech)
 - [#1681](https://github.com/flow-php/flow/pull/1681) - **Update Homebrew TAP formula: flow-php to version: 0.17.0** - [@norberttech](https://github.com/norberttech)
 
 ## [0.17.0] - 2025-05-26
