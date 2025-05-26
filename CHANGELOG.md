@@ -16,6 +16,7 @@
 - [#1655](https://github.com/flow-php/flow/pull/1655) - **Schema Evolving Validator** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [1a046a](https://github.com/flow-php/flow/commit/1a046ac684c297729d36dcddcb8b0b3f8d78b289) - **Prepared release 0.17.0** - [@norberttech](https://github.com/norberttech)
 - [#1680](https://github.com/flow-php/flow/pull/1680) - **Unified types test suite** - [@norberttech](https://github.com/norberttech)
 - [#1680](https://github.com/flow-php/flow/pull/1680) - **Moved Type interface to Flow\Types namespace** - [@norberttech](https://github.com/norberttech)
 - [#1665](https://github.com/flow-php/flow/pull/1665) - **Improve the `CSVExtractor` by removing duplicated operations** - [@stloyd](https://github.com/stloyd)
