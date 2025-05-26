@@ -4,6 +4,7 @@
 - [#1682](https://github.com/flow-php/flow/pull/1682) - **Update Homebrew TAP formula: flow-php to version: 0.17.1** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
+- [bcbd17](https://github.com/flow-php/flow/commit/bcbd17194ee5dcfa8e44da12089ecb1996d87281) - **bug.yml** - [@norberttech](https://github.com/norberttech)
 - [0eb36b](https://github.com/flow-php/flow/commit/0eb36bc69b0bcfe28755218430548b478aabaff2) - **bug.yml** - [@norberttech](https://github.com/norberttech)
 
 ## [0.17.1] - 2025-05-26
