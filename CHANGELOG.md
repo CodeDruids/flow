@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-05-26
+## [0.17.0] - 2025-05-26
 
 ### Added
 - [#1680](https://github.com/flow-php/flow/pull/1680) - **Types Library architecture documnetation** - [@norberttech](https://github.com/norberttech)
