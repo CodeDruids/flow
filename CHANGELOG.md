@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-05-26
+## [0.17.1] - 2025-05-26
 
 ### Added
 - [#1673](https://github.com/flow-php/flow/pull/1673) - **Issue Templates** - [@norberttech](https://github.com/norberttech)
