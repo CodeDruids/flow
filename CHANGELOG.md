@@ -8,6 +8,7 @@
 - [#1681](https://github.com/flow-php/flow/pull/1681) - **Update Homebrew TAP formula: flow-php to version: 0.17.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [b46480](https://github.com/flow-php/flow/commit/b46480fc9f54aaaf7c222b061558b7e0ed52ed65) - **dsl definition** - [@norberttech](https://github.com/norberttech)
 - [b45520](https://github.com/flow-php/flow/commit/b455208687fce1b0ca942724e5cab7200ca68cbb) - **types for complex schema types, prepared release 0.17.1** - [@norberttech](https://github.com/norberttech)
 
 ## [0.17.0] - 2025-05-26
