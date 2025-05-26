@@ -1,55 +1,48 @@
-name: "🐛Bug Report"
-description: "File a bug report. Bug report can be anything, from poor UX, through incorrect behavior to performance degradation."
+name: "🐛 Bug Report"
+description: "File a bug report for poor UX, incorrect behavior, or performance issues."
 title: "[Bug]: "
 labels: ["triage"]
 projects: ["flow-php/projects/1"]
-assignees: [norberttech]
+assignees: ["norberttech"]
 body:
   - type: markdown
     attributes:
       value: |
         **Thanks for taking the time to fill out this bug report!**
-  - type: markdown
+  - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      value: Tell us what you see and what you expected to happen.
     validations:
       required: true
   - type: textarea
     id: how-to-reproduce
     attributes:
-      label: How to reproduce?
-      description: Please provide a code required to reproduce given issue. This will be automatically formatted into a php code, so no need for backticks.
+      value: Provide PHP code to reproduce the issue (no backticks needed).
       render: php
     validations:
       required: true
   - type: textarea
     id: data
     attributes:
-      label: Data required to reproduce bug locally
-      description: |
-        If given bug requires more data to reproduce, please provide it here in a convenient format.
-            - php array
-            - csv
-            - json
-            - any other format if bug is format specific
+      value: |
+        If the bug requires specific data, provide it here in a convenient format:
+        - PHP array
+        - CSV
+        - JSON
+        - Other format if bug is format-specific
     validations:
       required: false
   - type: input
     id: version
     attributes:
-      label: Version
-      description: What version of Flow are you using?
-      placeholder: "0.17.*"
+      value: What version of Flow are you using? (e.g., 0.17.*)
     validations:
       required: true
   - type: textarea
     id: output
     attributes:
-      label: Relevant error output
-      description: Please copy and paste any relevant error output. This will be automatically formatted into code, so no need for backticks.
+      value: Copy and paste any relevant error output (no backticks needed).
       render: shell
     validations:
       required: true
