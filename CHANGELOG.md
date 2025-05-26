@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-05-24
+## [Unreleased] - 2025-05-26
 
 ### Added
+- [#1680](https://github.com/flow-php/flow/pull/1680) - **Types Library architecture documnetation** - [@norberttech](https://github.com/norberttech)
 - [#1678](https://github.com/flow-php/flow/pull/1678) - **type_mixed()** - [@norberttech](https://github.com/norberttech)
 - [#1678](https://github.com/flow-php/flow/pull/1678) - **more tests in optional type** - [@norberttech](https://github.com/norberttech)
 - [#1670](https://github.com/flow-php/flow/pull/1670) - **memory consumption to dataset report** - [@norberttech](https://github.com/norberttech)
@@ -15,6 +16,8 @@
 - [#1655](https://github.com/flow-php/flow/pull/1655) - **Schema Evolving Validator** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1680](https://github.com/flow-php/flow/pull/1680) - **Unified types test suite** - [@norberttech](https://github.com/norberttech)
+- [#1680](https://github.com/flow-php/flow/pull/1680) - **Moved Type interface to Flow\Types namespace** - [@norberttech](https://github.com/norberttech)
 - [#1665](https://github.com/flow-php/flow/pull/1665) - **Improve the `CSVExtractor` by removing duplicated operations** - [@stloyd](https://github.com/stloyd)
 - [#1664](https://github.com/flow-php/flow/pull/1664) - **Improve reading of headers in the `CSVExtractor`** - [@stloyd](https://github.com/stloyd)
 - [#1661](https://github.com/flow-php/flow/pull/1661) - **Simplify Excel & GoogleSheet extractor cell expanding** - [@stloyd](https://github.com/stloyd)
