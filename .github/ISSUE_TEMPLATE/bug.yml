@@ -12,12 +12,14 @@ body:
   - type: textarea
     id: what-happened
     attributes:
+      label: What happened?
       value: Tell us what you see and what you expected to happen.
     validations:
       required: true
   - type: textarea
     id: how-to-reproduce
     attributes:
+      label: How to reproduce?
       value: Provide PHP code to reproduce the issue (no backticks needed).
       render: php
     validations:
@@ -25,8 +27,9 @@ body:
   - type: textarea
     id: data
     attributes:
+      label: Data required to reproduce bug locally
       value: |
-        If the bug requires specific data, provide it here in a convenient format:
+        If the bug requires specific data, provide it here:
         - PHP array
         - CSV
         - JSON
@@ -36,12 +39,14 @@ body:
   - type: input
     id: version
     attributes:
+      label: Version
       value: What version of Flow are you using? (e.g., 0.17.*)
     validations:
       required: true
   - type: textarea
     id: output
     attributes:
+      label: Relevant error output
       value: Copy and paste any relevant error output (no backticks needed).
       render: shell
     validations:
