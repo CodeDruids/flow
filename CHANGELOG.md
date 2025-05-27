@@ -1,4 +1,7 @@
-## [Unreleased] - 2025-05-26
+## [Unreleased] - 2025-05-27
+
+### Added
+- [#1684](https://github.com/flow-php/flow/pull/1684) - **type_intersection** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
 - [#1682](https://github.com/flow-php/flow/pull/1682) - **Update Homebrew TAP formula: flow-php to version: 0.17.1** - [@norberttech](https://github.com/norberttech)
