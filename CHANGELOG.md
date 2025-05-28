@@ -1,6 +1,9 @@
-## [Unreleased] - 2025-05-27
+## [Unreleased] - 2025-05-28
 
 ### Added
+- [#1687](https://github.com/flow-php/flow/pull/1687) - **Dbal Bulk::delete()** - [@norberttech](https://github.com/norberttech)
+- [#1687](https://github.com/flow-php/flow/pull/1687) - **to_dbal_table_delete()** - [@norberttech](https://github.com/norberttech)
+- [#1687](https://github.com/flow-php/flow/pull/1687) - **Tested dbal adapter elements at all supported db engines** - [@norberttech](https://github.com/norberttech)
 - [#1684](https://github.com/flow-php/flow/pull/1684) - **type_intersection** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
