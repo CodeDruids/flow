@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-05-28
+## [Unreleased] - 2025-05-29
 
 ### Added
+- [#1685](https://github.com/flow-php/flow/pull/1685) - **Add withBomRemoval() method to enable/disable BOM removal (enabled by default)** - [@broncha](https://github.com/broncha)
 - [#1687](https://github.com/flow-php/flow/pull/1687) - **Dbal Bulk::delete()** - [@norberttech](https://github.com/norberttech)
 - [#1687](https://github.com/flow-php/flow/pull/1687) - **to_dbal_table_delete()** - [@norberttech](https://github.com/norberttech)
 - [#1687](https://github.com/flow-php/flow/pull/1687) - **Tested dbal adapter elements at all supported db engines** - [@norberttech](https://github.com/norberttech)
@@ -2495,6 +2496,7 @@
 - @alexislefebvre
 - @Bellangelo
 - @bendavies
+- @broncha
 - @christianc1
 - @DawidSajdak
 - @drupol
