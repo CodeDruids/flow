@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-05-29
+## [Unreleased] - 2025-05-30
 
 ### Added
+- [#1699](https://github.com/flow-php/flow/pull/1699) - **Configurable Sanitizers to PSR7Processor** - [@norberttech](https://github.com/norberttech)
 - [#1685](https://github.com/flow-php/flow/pull/1685) - **Add withBomRemoval() method to enable/disable BOM removal (enabled by default)** - [@broncha](https://github.com/broncha)
 - [#1687](https://github.com/flow-php/flow/pull/1687) - **Dbal Bulk::delete()** - [@norberttech](https://github.com/norberttech)
 - [#1687](https://github.com/flow-php/flow/pull/1687) - **to_dbal_table_delete()** - [@norberttech](https://github.com/norberttech)
