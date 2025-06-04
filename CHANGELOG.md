@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-06-02
+## [Unreleased] - 2025-06-04
 
 ### Added
 - [#1699](https://github.com/flow-php/flow/pull/1699) - **Configurable Sanitizers to PSR7Processor** - [@norberttech](https://github.com/norberttech)
