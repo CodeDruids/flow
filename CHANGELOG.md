@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-06-04
+## [Unreleased] - 2025-06-05
 
 ### Added
 - [#1699](https://github.com/flow-php/flow/pull/1699) - **Configurable Sanitizers to PSR7Processor** - [@norberttech](https://github.com/norberttech)
@@ -12,6 +12,7 @@
 - [#1682](https://github.com/flow-php/flow/pull/1682) - **Update Homebrew TAP formula: flow-php to version: 0.17.1** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
+- [0d0a73](https://github.com/flow-php/flow/commit/0d0a7329e208ae89a09a85f5f2b3f5b97424a8e8) - **dependencies** - [@norberttech](https://github.com/norberttech)
 - [0e1f6a](https://github.com/flow-php/flow/commit/0e1f6a44573073a6783f02ea61aa6d6760ba400c) - **dependecies** - [@norberttech](https://github.com/norberttech)
 - [e8d7de](https://github.com/flow-php/flow/commit/e8d7de6277e71ff6c2ca21106cfba0e4f85014df) - **proposal.yml** - [@norberttech](https://github.com/norberttech)
 - [47487c](https://github.com/flow-php/flow/commit/47487c1438dc6dfd71e7919d614c6338b94d0947) - **proposal.yml** - [@norberttech](https://github.com/norberttech)
