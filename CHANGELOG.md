@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-06-05
+## [Unreleased] - 2025-06-06
 
 ### Added
+- [#1706](https://github.com/flow-php/flow/pull/1706) - **Rending mermaidjs charts** - [@norberttech](https://github.com/norberttech)
 - [#1699](https://github.com/flow-php/flow/pull/1699) - **Configurable Sanitizers to PSR7Processor** - [@norberttech](https://github.com/norberttech)
 - [#1685](https://github.com/flow-php/flow/pull/1685) - **Add withBomRemoval() method to enable/disable BOM removal (enabled by default)** - [@broncha](https://github.com/broncha)
 - [#1687](https://github.com/flow-php/flow/pull/1687) - **Dbal Bulk::delete()** - [@norberttech](https://github.com/norberttech)
@@ -9,6 +10,7 @@
 - [#1684](https://github.com/flow-php/flow/pull/1684) - **type_intersection** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1706](https://github.com/flow-php/flow/pull/1706) - **Documentation navigation on mobile** - [@norberttech](https://github.com/norberttech)
 - [#1682](https://github.com/flow-php/flow/pull/1682) - **Update Homebrew TAP formula: flow-php to version: 0.17.1** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
