@@ -1,6 +1,8 @@
-## [Unreleased] - 2025-06-06
+## [Unreleased] - 2025-06-08
 
 ### Added
+- [#1708](https://github.com/flow-php/flow/pull/1708) - **CallUserFunc Scalar Function** - [@norberttech](https://github.com/norberttech)
+- [#1708](https://github.com/flow-php/flow/pull/1708) - **CallUserFunc Example to Website** - [@norberttech](https://github.com/norberttech)
 - [#1706](https://github.com/flow-php/flow/pull/1706) - **Rending mermaidjs charts** - [@norberttech](https://github.com/norberttech)
 - [#1699](https://github.com/flow-php/flow/pull/1699) - **Configurable Sanitizers to PSR7Processor** - [@norberttech](https://github.com/norberttech)
 - [#1685](https://github.com/flow-php/flow/pull/1685) - **Add withBomRemoval() method to enable/disable BOM removal (enabled by default)** - [@broncha](https://github.com/broncha)
