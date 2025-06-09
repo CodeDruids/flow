@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-06-08
+## [Unreleased] - 2025-06-09
 
 ### Added
 - [#1708](https://github.com/flow-php/flow/pull/1708) - **CallUserFunc Scalar Function** - [@norberttech](https://github.com/norberttech)
@@ -12,6 +12,7 @@
 - [#1684](https://github.com/flow-php/flow/pull/1684) - **type_intersection** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [4a26f3](https://github.com/flow-php/flow/commit/4a26f324b5460c341044ce6fad2144652e6e1f6c) - **Prepared release 0.18.0** - [@norberttech](https://github.com/norberttech)
 - [#1706](https://github.com/flow-php/flow/pull/1706) - **Documentation navigation on mobile** - [@norberttech](https://github.com/norberttech)
 - [#1682](https://github.com/flow-php/flow/pull/1682) - **Update Homebrew TAP formula: flow-php to version: 0.17.1** - [@norberttech](https://github.com/norberttech)
 
