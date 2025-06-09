@@ -493,12 +493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl.git",
-                "reference": "706d82f5780dd61910ef25150a9e1aaf2f53347b"
+                "reference": "d1a53e32aded7767e2927e4dea2921c9569f0556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl/zipball/706d82f5780dd61910ef25150a9e1aaf2f53347b",
-                "reference": "706d82f5780dd61910ef25150a9e1aaf2f53347b",
+                "url": "https://api.github.com/repos/flow-php/etl/zipball/d1a53e32aded7767e2927e4dea2921c9569f0556",
+                "reference": "d1a53e32aded7767e2927e4dea2921c9569f0556",
                 "shasum": ""
             },
             "require": {
@@ -546,7 +546,7 @@
             ],
             "support": {
                 "issues": "https://github.com/flow-php/etl/issues",
-                "source": "https://github.com/flow-php/etl/tree/0.17.1"
+                "source": "https://github.com/flow-php/etl/tree/1.x"
             },
             "funding": [
                 {
@@ -558,7 +558,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-26T15:46:11+00:00"
+            "time": "2025-06-08T13:22:37+00:00"
         },
         {
             "name": "flow-php/etl-adapter-http",
@@ -4809,16 +4809,16 @@
         },
         {
             "name": "symfony/stimulus-bundle",
-            "version": "v2.26.0",
+            "version": "v2.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stimulus-bundle.git",
-                "reference": "750c770f66b45b40135eb32d753dbd7d84182c92"
+                "reference": "82c174ebe564e6ecc1412974b6380b86d450675f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/750c770f66b45b40135eb32d753dbd7d84182c92",
-                "reference": "750c770f66b45b40135eb32d753dbd7d84182c92",
+                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/82c174ebe564e6ecc1412974b6380b86d450675f",
+                "reference": "82c174ebe564e6ecc1412974b6380b86d450675f",
                 "shasum": ""
             },
             "require": {
@@ -4858,7 +4858,7 @@
                 "symfony-ux"
             ],
             "support": {
-                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.26.0"
+                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.26.1"
             },
             "funding": [
                 {
@@ -4874,7 +4874,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-23T09:27:30+00:00"
+            "time": "2025-06-05T17:25:17+00:00"
         },
         {
             "name": "symfony/string",
