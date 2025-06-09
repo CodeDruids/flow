@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-06-09
+## [0.18.0] - 2025-06-09
 
 ### Added
 - [#1708](https://github.com/flow-php/flow/pull/1708) - **CallUserFunc Scalar Function** - [@norberttech](https://github.com/norberttech)
