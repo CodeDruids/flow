@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-06-21
 
 ### Added
+- [#1720](https://github.com/flow-php/flow/pull/1720) - **`match_cases` and `match_condition` scalar functions** - [@norberttech](https://github.com/norberttech)
 - [#1719](https://github.com/flow-php/flow/pull/1719) - **NumericString Type to Flow Types library** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
