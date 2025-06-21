@@ -1,10 +1,13 @@
-## [Unreleased] - 2025-06-17
+## [Unreleased] - 2025-06-21
 
 ### Added
 - [#1719](https://github.com/flow-php/flow/pull/1719) - **NumericString Type to Flow Types library** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
 - [#1710](https://github.com/flow-php/flow/pull/1710) - **Update Homebrew TAP formula: flow-php to version: 0.18.0** - [@norberttech](https://github.com/norberttech)
+
+### Fixed
+- [#1724](https://github.com/flow-php/flow/pull/1724) - **length of auto generate aliases in dbal key set extractor** - [@norberttech](https://github.com/norberttech)
 
 ## [0.18.0] - 2025-06-09
 
