@@ -1,10 +1,11 @@
-## [Unreleased] - 2025-06-21
+## [Unreleased] - 2025-06-23
 
 ### Added
 - [#1720](https://github.com/flow-php/flow/pull/1720) - **`match_cases` and `match_condition` scalar functions** - [@norberttech](https://github.com/norberttech)
 - [#1719](https://github.com/flow-php/flow/pull/1719) - **NumericString Type to Flow Types library** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [f4542b](https://github.com/flow-php/flow/commit/f4542bd21fc757f18376aac6f32ae708bde97aaf) - **Prepared release 0.19.0** - [@norberttech](https://github.com/norberttech)
 - [#1710](https://github.com/flow-php/flow/pull/1710) - **Update Homebrew TAP formula: flow-php to version: 0.18.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
