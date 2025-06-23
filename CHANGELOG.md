@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-06-23
+## [0.19.0] - 2025-06-23
 
 ### Added
 - [#1720](https://github.com/flow-php/flow/pull/1720) - **`match_cases` and `match_condition` scalar functions** - [@norberttech](https://github.com/norberttech)
