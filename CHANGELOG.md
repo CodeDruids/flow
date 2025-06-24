@@ -1,5 +1,8 @@
 ## [Unreleased] - 2025-06-24
 
+### Added
+- [#1731](https://github.com/flow-php/flow/pull/1731) - **literal type to types library** - [@norberttech](https://github.com/norberttech)
+
 ### Changed
 - [#1727](https://github.com/flow-php/flow/pull/1727) - **Update Homebrew TAP formula: flow-php to version: 0.19.0** - [@norberttech](https://github.com/norberttech)
 
