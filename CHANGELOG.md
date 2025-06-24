@@ -1,6 +1,7 @@
 ## [Unreleased] - 2025-06-24
 
 ### Added
+- [#1730](https://github.com/flow-php/flow/pull/1730) - **class-string type to types library** - [@norberttech](https://github.com/norberttech)
 - [#1731](https://github.com/flow-php/flow/pull/1731) - **literal type to types library** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
