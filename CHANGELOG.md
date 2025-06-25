@@ -14,6 +14,9 @@
 - [#1723](https://github.com/flow-php/flow/pull/1723) - **StructureType narrowing through dedicated phpstan extension** - [@norberttech](https://github.com/norberttech)
 - [52096e](https://github.com/flow-php/flow/commit/52096ec1924c4ff13d8cde849d404c0260c4f4c4) - **coding standards** - [@norberttech](https://github.com/norberttech)
 
+### Removed
+- [#1734](https://github.com/flow-php/flow/pull/1734) - **empty_schema leftover from DSL** - [@norberttech](https://github.com/norberttech)
+
 ## [0.19.0] - 2025-06-23
 
 ### Added
