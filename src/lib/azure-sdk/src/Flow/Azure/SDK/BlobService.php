@@ -66,7 +66,7 @@ final readonly class BlobService implements BlobServiceInterface
             ));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $this->logger->info('Azure - Blob Service - Copy Blob', ['request' => $request]);
@@ -102,7 +102,7 @@ final readonly class BlobService implements BlobServiceInterface
         $request = $request->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $this->logger->info('Azure - Blob Service - Delete Blob', ['request' => $request]);
@@ -137,7 +137,7 @@ final readonly class BlobService implements BlobServiceInterface
         $request = $request->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $this->logger->info('Azure - Blob Service - Delete Container', ['request' => $request]);
@@ -173,7 +173,7 @@ final readonly class BlobService implements BlobServiceInterface
         $request = $request->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $this->logger->info('Azure - Blob Service - Get Blob', ['request' => $request]);
@@ -211,7 +211,7 @@ final readonly class BlobService implements BlobServiceInterface
         $request = $request->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $this->logger->info('Azure - Blob Service - Get Blob Properties', ['request' => $request]);
@@ -251,7 +251,7 @@ final readonly class BlobService implements BlobServiceInterface
         $request = $request->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $this->logger->info('Azure - Blob Service - Get Block Blob Block List', ['request' => $request]);
@@ -273,21 +273,61 @@ final readonly class BlobService implements BlobServiceInterface
         $blocks = [];
 
         if (\array_key_exists('CommittedBlocks', $normalized) && \is_array($normalized['CommittedBlocks'])) {
-            if (isset($normalized['CommittedBlocks']['Block']['Name'])) {
-                $blocks[] = new Block($normalized['CommittedBlocks']['Block']['Name'], BlockState::COMMITTED, (int) $normalized['CommittedBlocks']['Block']['Size']);
-            } else {
-                foreach ($normalized['CommittedBlocks']['Block'] as $block) {
-                    $blocks[] = new Block($block['Name'], BlockState::COMMITTED, (int) $block['Size']);
+            $committedBlocks = $normalized['CommittedBlocks'];
+
+            if (\array_key_exists('Block', $committedBlocks)) {
+                $blockData = $committedBlocks['Block'];
+
+                if (\is_array($blockData) && \array_key_exists('Name', $blockData) && \array_key_exists('Size', $blockData)) {
+                    // Single block case
+                    $name = $blockData['Name'];
+                    $size = $blockData['Size'];
+
+                    if (\is_string($name) && (\is_int($size) || \is_string($size))) {
+                        $blocks[] = new Block($name, BlockState::COMMITTED, (int) $size);
+                    }
+                } elseif (\is_array($blockData)) {
+                    // Multiple blocks case
+                    foreach ($blockData as $block) {
+                        if (\is_array($block) && \array_key_exists('Name', $block) && \array_key_exists('Size', $block)) {
+                            $name = $block['Name'];
+                            $size = $block['Size'];
+
+                            if (\is_string($name) && (\is_int($size) || \is_string($size))) {
+                                $blocks[] = new Block($name, BlockState::COMMITTED, (int) $size);
+                            }
+                        }
+                    }
                 }
             }
         }
 
         if (\array_key_exists('UncommittedBlocks', $normalized) && \is_array($normalized['UncommittedBlocks'])) {
-            if (isset($normalized['UncommittedBlocks']['Block']['Name'])) {
-                $blocks[] = new Block($normalized['UncommittedBlocks']['Block']['Name'], BlockState::UNCOMMITTED, (int) $normalized['UncommittedBlocks']['Block']['Size']);
-            } else {
-                foreach ($normalized['UncommittedBlocks']['Block'] as $block) {
-                    $blocks[] = new Block($block['Name'], BlockState::UNCOMMITTED, (int) $block['Size']);
+            $uncommittedBlocks = $normalized['UncommittedBlocks'];
+
+            if (\array_key_exists('Block', $uncommittedBlocks)) {
+                $blockData = $uncommittedBlocks['Block'];
+
+                if (\is_array($blockData) && \array_key_exists('Name', $blockData) && \array_key_exists('Size', $blockData)) {
+                    // Single block case
+                    $name = $blockData['Name'];
+                    $size = $blockData['Size'];
+
+                    if (\is_string($name) && (\is_int($size) || \is_string($size))) {
+                        $blocks[] = new Block($name, BlockState::UNCOMMITTED, (int) $size);
+                    }
+                } elseif (\is_array($blockData)) {
+                    // Multiple blocks case
+                    foreach ($blockData as $block) {
+                        if (\is_array($block) && \array_key_exists('Name', $block) && \array_key_exists('Size', $block)) {
+                            $name = $block['Name'];
+                            $size = $block['Size'];
+
+                            if (\is_string($name) && (\is_int($size) || \is_string($size))) {
+                                $blocks[] = new Block($name, BlockState::UNCOMMITTED, (int) $size);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -315,7 +355,7 @@ final readonly class BlobService implements BlobServiceInterface
         $request = $request->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $this->logger->info('Azure - Blob Service - Get Container Properties', ['request' => $request]);
@@ -360,7 +400,7 @@ final readonly class BlobService implements BlobServiceInterface
         $request = $request->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $this->logger->info('Azure - Blob Service - List Blobs', ['request' => $request]);
@@ -383,14 +423,26 @@ final readonly class BlobService implements BlobServiceInterface
             return;
         }
 
-        if (isset($normalized['Blobs']['Blob']['Name'])) {
-            yield new Blob($normalized['Blobs']['Blob']);
+        $blobsData = $normalized['Blobs'];
 
-            return;
-        }
+        if (\is_array($blobsData) && \array_key_exists('Blob', $blobsData)) {
+            $blobData = $blobsData['Blob'];
 
-        foreach ($normalized['Blobs']['Blob'] as $blobData) {
-            yield new Blob($blobData);
+            if (\is_array($blobData) && \array_key_exists('Name', $blobData)) {
+                // Single blob case
+                yield new Blob($blobData);
+
+                return;
+            }
+
+            if (\is_array($blobData)) {
+                // Multiple blobs case
+                foreach ($blobData as $blob) {
+                    if (\is_array($blob)) {
+                        yield new Blob($blob);
+                    }
+                }
+            }
         }
 
         if ($normalized['NextMarker'] !== null) {
@@ -429,7 +481,7 @@ final readonly class BlobService implements BlobServiceInterface
             ->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         if ($content) {
@@ -482,7 +534,7 @@ final readonly class BlobService implements BlobServiceInterface
             ->withHeader('content-length', (string) $size);
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $request = $request
@@ -524,7 +576,7 @@ final readonly class BlobService implements BlobServiceInterface
             ->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $request = $request
@@ -566,7 +618,7 @@ final readonly class BlobService implements BlobServiceInterface
         $request = $request->withHeader('date', \gmdate('D, d M Y H:i:s T', time()));
 
         foreach ($options->toHeaders() as $header => $value) {
-            $request = $request->withHeader($header, $value);
+            $request = $request->withHeader($header, (string) $value);
         }
 
         $this->logger->info('Azure - Blob Service - Put Container', ['request' => $request]);

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Flow\Documentation\Models;
 
+use function Flow\Types\DSL\{type_boolean, type_optional, type_string, type_structure};
+
 final class TypeModel
 {
     public function __construct(
@@ -14,8 +16,18 @@ final class TypeModel
     ) {
     }
 
+    /**
+     * @param array<string, mixed> $data
+     */
     public static function fromArray(array $data) : self
     {
+        $data = type_structure([
+            'name' => type_string(),
+            'namespace' => type_optional(type_string()),
+            'is_nullable' => type_boolean(),
+            'is_variadic' => type_boolean(),
+        ])->assert($data);
+
         return new self(
             $data['name'],
             $data['namespace'],
@@ -60,6 +72,9 @@ final class TypeModel
         return null;
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function normalize() : array
     {
         return [

@@ -4,15 +4,25 @@ declare(strict_types=1);
 
 namespace Flow\Documentation\Models;
 
+use function Flow\Types\DSL\{type_array, type_list};
+
 final class AttributesModel
 {
+    /**
+     * @param array<AttributeModel> $attributes
+     */
     public function __construct(
         public readonly array $attributes,
     ) {
     }
 
+    /**
+     * @param array<array<string, mixed>> $data
+     */
     public static function fromArray(array $data) : self
     {
+        type_list(type_array())->assert($data);
+
         return new self(
             array_map(static fn (array $attribute) => AttributeModel::fromArray($attribute), $data),
         );
@@ -42,6 +52,9 @@ final class AttributesModel
         return null;
     }
 
+    /**
+     * @return array<array<string, mixed>>
+     */
     public function normalize() : array
     {
         return array_map(fn (AttributeModel $attribute) => $attribute->normalize(), $this->attributes);

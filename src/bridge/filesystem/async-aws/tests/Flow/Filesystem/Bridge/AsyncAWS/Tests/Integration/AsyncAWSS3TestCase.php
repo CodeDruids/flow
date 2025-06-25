@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Flow\Filesystem\Bridge\AsyncAWS\Tests\Integration;
 
 use function Flow\Filesystem\Bridge\AsyncAWS\DSL\aws_s3_client;
+use function Flow\Types\DSL\type_string;
 use AsyncAws\S3\S3Client;
 use Flow\ETL\Tests\FlowIntegrationTestCase;
 use Flow\Filesystem\Path;
@@ -18,8 +19,12 @@ abstract class AsyncAWSS3TestCase extends FlowIntegrationTestCase
         $buckets = $this->s3Client()->listBuckets();
 
         foreach ($buckets->getBuckets() as $bucket) {
-            $this->deleteBucketContents($this->s3Client(), $bucket->getName());
-            $this->s3Client()->deleteBucket(['Bucket' => $bucket->getName()]);
+            $bucketName = $bucket->getName();
+
+            if ($bucketName !== null) {
+                $this->deleteBucketContents($this->s3Client(), $bucketName);
+                $this->s3Client()->deleteBucket(['Bucket' => $bucketName]);
+            }
         }
 
         $this->s3Client()->createBucket(['Bucket' => $this->bucket()]);
@@ -32,14 +37,18 @@ abstract class AsyncAWSS3TestCase extends FlowIntegrationTestCase
         $buckets = $this->s3Client()->listBuckets();
 
         foreach ($buckets->getBuckets() as $bucket) {
-            $this->deleteBucketContents($this->s3Client(), $bucket->getName());
-            $this->s3Client()->deleteBucket(['Bucket' => $bucket->getName()]);
+            $bucketName = $bucket->getName();
+
+            if ($bucketName !== null) {
+                $this->deleteBucketContents($this->s3Client(), $bucketName);
+                $this->s3Client()->deleteBucket(['Bucket' => $bucketName]);
+            }
         }
     }
 
     public function bucket() : string
     {
-        return $_ENV['S3_BUCKET'];
+        return type_string()->assert($_ENV['S3_BUCKET']);
     }
 
     public function s3Client() : S3Client
@@ -67,7 +76,11 @@ abstract class AsyncAWSS3TestCase extends FlowIntegrationTestCase
         $objects = $s3Client->listObjectsV2(['Bucket' => $bucket]);
 
         foreach ($objects->getContents() as $object) {
-            $s3Client->deleteObject(['Bucket' => $bucket, 'Key' => ltrim((string) $object->getKey(), '/')]);
+            $objectKey = $object->getKey();
+
+            if ($objectKey !== null) {
+                $s3Client->deleteObject(['Bucket' => $bucket, 'Key' => ltrim($objectKey, '/')]);
+            }
         }
     }
 }
