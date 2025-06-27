@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-06-26
+## [Unreleased] - 2025-06-27
 
 ### Added
 - [#1735](https://github.com/flow-php/flow/pull/1735) - **trigger gc_collect_cycles before starting pipeline execution hr time** - [@norberttech](https://github.com/norberttech)
@@ -15,6 +15,7 @@
 - [#1727](https://github.com/flow-php/flow/pull/1727) - **Update Homebrew TAP formula: flow-php to version: 0.19.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1740](https://github.com/flow-php/flow/pull/1740) - **reading multiline strings in CSV files** - [@norberttech](https://github.com/norberttech)
 - [#1739](https://github.com/flow-php/flow/pull/1739) - **performance of comparison transformations** - [@norberttech](https://github.com/norberttech)
 - [#1739](https://github.com/flow-php/flow/pull/1739) - **performance of calculating rows/nulls in parquet row groups** - [@norberttech](https://github.com/norberttech)
 - [#1739](https://github.com/flow-php/flow/pull/1739) - **make json and string types comparable** - [@norberttech](https://github.com/norberttech)
