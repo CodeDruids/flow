@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-07-08
+## [0.20.0] - 2025-07-08
 
 ### Added
 - [#1735](https://github.com/flow-php/flow/pull/1735) - **trigger gc_collect_cycles before starting pipeline execution hr time** - [@norberttech](https://github.com/norberttech)
