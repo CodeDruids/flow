@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-07-04
+## [Unreleased] - 2025-07-08
 
 ### Added
 - [#1735](https://github.com/flow-php/flow/pull/1735) - **trigger gc_collect_cycles before starting pipeline execution hr time** - [@norberttech](https://github.com/norberttech)
@@ -10,6 +10,7 @@
 - [#1731](https://github.com/flow-php/flow/pull/1731) - **literal type to types library** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [31ad0f](https://github.com/flow-php/flow/commit/31ad0f563c8f12415fbb6e633fceda903b866840) - **Prepared release 0.20.0** - [@norberttech](https://github.com/norberttech)
 - [#1753](https://github.com/flow-php/flow/pull/1753) - **Moved Filesystem test double to Filesystem package** - [@norberttech](https://github.com/norberttech)
 - [#1739](https://github.com/flow-php/flow/pull/1739) - **updated nix packages version in nix shell** - [@norberttech](https://github.com/norberttech)
 - [#1723](https://github.com/flow-php/flow/pull/1723) - **Increased phpstan lvl to 9** - [@norberttech](https://github.com/norberttech)
