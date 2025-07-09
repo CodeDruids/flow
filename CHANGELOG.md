@@ -1,7 +1,10 @@
-## [Unreleased] - 2025-07-08
+## [Unreleased] - 2025-07-09
 
 ### Changed
 - [#1758](https://github.com/flow-php/flow/pull/1758) - **Update Homebrew TAP formula: flow-php to version: 0.20.0** - [@norberttech](https://github.com/norberttech)
+
+### Fixed
+- [#1757](https://github.com/flow-php/flow/pull/1757) - **high memory consumption even when reading small chunks** - [@norberttech](https://github.com/norberttech)
 
 ## [0.20.0] - 2025-07-08
 
