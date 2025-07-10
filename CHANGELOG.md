@@ -1,4 +1,7 @@
-## [Unreleased] - 2025-07-09
+## [Unreleased] - 2025-07-10
+
+### Added
+- [#1760](https://github.com/flow-php/flow/pull/1760) - **OpenAPI Specification Bridge** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
 - [#1758](https://github.com/flow-php/flow/pull/1758) - **Update Homebrew TAP formula: flow-php to version: 0.20.0** - [@norberttech](https://github.com/norberttech)
