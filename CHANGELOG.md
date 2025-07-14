@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-07-13
+## [Unreleased] - 2025-07-14
 
 ### Added
+- [#1769](https://github.com/flow-php/flow/pull/1769) - **Allow to set custom compression algorithm for columns** - [@norberttech](https://github.com/norberttech)
 - [#1765](https://github.com/flow-php/flow/pull/1765) - **Allow to chose encoding for parquet columns** - [@norberttech](https://github.com/norberttech)
 - [#1764](https://github.com/flow-php/flow/pull/1764) - **Support for Delta Binary Packed encoding in Parquet** - [@norberttech](https://github.com/norberttech)
 - [#1760](https://github.com/flow-php/flow/pull/1760) - **OpenAPI Specification Bridge** - [@norberttech](https://github.com/norberttech)
