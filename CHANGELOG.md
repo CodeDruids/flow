@@ -15,6 +15,7 @@
 - [#1758](https://github.com/flow-php/flow/pull/1758) - **Update Homebrew TAP formula: flow-php to version: 0.20.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
+- [#1778](https://github.com/flow-php/flow/pull/1778) - **handling comparison between entries that are unknonw type (created from null)** - [@norberttech](https://github.com/norberttech)
 - [#1776](https://github.com/flow-php/flow/pull/1776) - **unknown db types while writing to db** - [@norberttech](https://github.com/norberttech)
 - [#1774](https://github.com/flow-php/flow/pull/1774) - **Adjusted parquet default values for page/row group size** - [@norberttech](https://github.com/norberttech)
 - [#1772](https://github.com/flow-php/flow/pull/1772) - **Calculation of definition level in Parquet DremelShredder implementation** - [@norberttech](https://github.com/norberttech)
