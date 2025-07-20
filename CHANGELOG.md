@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-07-19
+## [Unreleased] - 2025-07-20
 
 ### Added
+- [#1777](https://github.com/flow-php/flow/pull/1777) - **Option to choose if we dbal bulk data should use positional or named parameter** - [@norberttech](https://github.com/norberttech)
 - [#1776](https://github.com/flow-php/flow/pull/1776) - **option to pass column types to DbalLoader to avoid auto detection** - [@norberttech](https://github.com/norberttech)
 - [#1776](https://github.com/flow-php/flow/pull/1776) - **DbalTypesDetector that detects target types from dataset schema** - [@norberttech](https://github.com/norberttech)
 - [#1769](https://github.com/flow-php/flow/pull/1769) - **Allow to set custom compression algorithm for columns** - [@norberttech](https://github.com/norberttech)
@@ -9,6 +10,7 @@
 - [#1760](https://github.com/flow-php/flow/pull/1760) - **OpenAPI Specification Bridge** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1777](https://github.com/flow-php/flow/pull/1777) - **DbalBulk to use positional instead of named parameters by default** - [@norberttech](https://github.com/norberttech)
 - [#1758](https://github.com/flow-php/flow/pull/1758) - **Update Homebrew TAP formula: flow-php to version: 0.20.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
