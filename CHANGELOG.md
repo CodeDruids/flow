@@ -10,6 +10,7 @@
 - [#1760](https://github.com/flow-php/flow/pull/1760) - **OpenAPI Specification Bridge** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [5091b7](https://github.com/flow-php/flow/commit/5091b7b6cc3f80eb2cb48af46eeb75af09ae6537) - **interdependencies from specific versions to self.version** - [@norberttech](https://github.com/norberttech)
 - [#1777](https://github.com/flow-php/flow/pull/1777) - **DbalBulk to use positional instead of named parameters by default** - [@norberttech](https://github.com/norberttech)
 - [#1758](https://github.com/flow-php/flow/pull/1758) - **Update Homebrew TAP formula: flow-php to version: 0.20.0** - [@norberttech](https://github.com/norberttech)
 
