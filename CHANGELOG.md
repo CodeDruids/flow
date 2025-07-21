@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-07-20
+## [Unreleased] - 2025-07-21
 
 ### Added
 - [#1777](https://github.com/flow-php/flow/pull/1777) - **Option to choose if we dbal bulk data should use positional or named parameter** - [@norberttech](https://github.com/norberttech)
