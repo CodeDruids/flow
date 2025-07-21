@@ -474,7 +474,7 @@
             ],
             "support": {
                 "issues": "https://github.com/flow-php/array-dot/issues",
-                "source": "https://github.com/flow-php/array-dot/tree/1.x"
+                "source": "https://github.com/flow-php/array-dot/tree/0.20.0"
             },
             "funding": [
                 {
@@ -494,21 +494,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl.git",
-                "reference": "6c27d07e298abc5e384627ceee1c5fdd42527fff"
+                "reference": "d8fb475a873aadba97ed9fbf793d26c455f9bfa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl/zipball/6c27d07e298abc5e384627ceee1c5fdd42527fff",
-                "reference": "6c27d07e298abc5e384627ceee1c5fdd42527fff",
+                "url": "https://api.github.com/repos/flow-php/etl/zipball/d8fb475a873aadba97ed9fbf793d26c455f9bfa1",
+                "reference": "d8fb475a873aadba97ed9fbf793d26c455f9bfa1",
                 "shasum": ""
             },
             "require": {
                 "brick/math": "^0.11 || ^0.12 || ^0.13",
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "flow-php/array-dot": "^0.20.0 || 1.x-dev",
-                "flow-php/filesystem": "^0.20.0 || 1.x-dev",
-                "flow-php/types": "^0.20.0 || 1.x-dev",
+                "flow-php/array-dot": "self.version",
+                "flow-php/filesystem": "self.version",
+                "flow-php/types": "self.version",
                 "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
                 "psr/clock": "^1.0",
                 "psr/simple-cache": "^1.0 || ^2.0 || ^3.0",
@@ -559,7 +559,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-08T02:00:16+00:00"
+            "time": "2025-07-20T20:58:30+00:00"
         },
         {
             "name": "flow-php/etl-adapter-http",
@@ -567,17 +567,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-http.git",
-                "reference": "92d1cdf22d6ffa84c092fb178503c71113aa32e5"
+                "reference": "46ccbabdab7af5cc55778966364d89f4c58f6828"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-http/zipball/92d1cdf22d6ffa84c092fb178503c71113aa32e5",
-                "reference": "92d1cdf22d6ffa84c092fb178503c71113aa32e5",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-http/zipball/46ccbabdab7af5cc55778966364d89f4c58f6828",
+                "reference": "46ccbabdab7af5cc55778966364d89f4c58f6828",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "flow-php/etl": "^0.20.0 || 1.x-dev",
+                "flow-php/etl": "self.version",
                 "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
                 "psr/http-client": "^1.0"
             },
@@ -620,7 +620,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-08T02:00:40+00:00"
+            "time": "2025-07-20T12:35:34+00:00"
         },
         {
             "name": "flow-php/filesystem",
@@ -670,7 +670,7 @@
             ],
             "support": {
                 "issues": "https://github.com/flow-php/filesystem/issues",
-                "source": "https://github.com/flow-php/filesystem/tree/1.x"
+                "source": "https://github.com/flow-php/filesystem/tree/0.20.0"
             },
             "funding": [
                 {
@@ -724,7 +724,7 @@
             ],
             "support": {
                 "issues": "https://github.com/flow-php/types/issues",
-                "source": "https://github.com/flow-php/types/tree/1.x"
+                "source": "https://github.com/flow-php/types/tree/0.20.0"
             },
             "funding": [
                 {
