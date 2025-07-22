@@ -1,5 +1,8 @@
 ## [Unreleased] - 2025-07-22
 
+### Added
+- [#1782](https://github.com/flow-php/flow/pull/1782) - **Covered functions from Symfony/String component with Scalar Functions** - [@norberttech](https://github.com/norberttech)
+
 ### Changed
 - [#1780](https://github.com/flow-php/flow/pull/1780) - **Update Homebrew TAP formula: flow-php to version: 0.21.0** - [@norberttech](https://github.com/norberttech)
 
