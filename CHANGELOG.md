@@ -9,6 +9,9 @@
 ### Changed
 - [#1780](https://github.com/flow-php/flow/pull/1780) - **Update Homebrew TAP formula: flow-php to version: 0.21.0** - [@norberttech](https://github.com/norberttech)
 
+### Fixed
+- [#1785](https://github.com/flow-php/flow/pull/1785) - **Inconsistent behavior of CLI analyze and schema commands** - [@norberttech](https://github.com/norberttech)
+
 ## [0.21.0] - 2025-07-21
 
 ### Added
