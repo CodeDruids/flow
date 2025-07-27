@@ -1,6 +1,9 @@
-## [Unreleased] - 2025-07-22
+## [Unreleased] - 2025-07-27
 
 ### Added
+- [#1784](https://github.com/flow-php/flow/pull/1784) - **examples documentation** - [@norberttech](https://github.com/norberttech)
+- [#1784](https://github.com/flow-php/flow/pull/1784) - **monorepo validation to static analysis composer command** - [@norberttech](https://github.com/norberttech)
+- [#1784](https://github.com/flow-php/flow/pull/1784) - **more columns to FakeRandomOrdersExtractor** - [@norberttech](https://github.com/norberttech)
 - [#1782](https://github.com/flow-php/flow/pull/1782) - **Covered functions from Symfony/String component with Scalar Functions** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
