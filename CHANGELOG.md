@@ -1,6 +1,9 @@
 ## [Unreleased] - 2025-07-28
 
 ### Added
+- [#1792](https://github.com/flow-php/flow/pull/1792) - **Rows::head()** - [@norberttech](https://github.com/norberttech)
+- [#1792](https://github.com/flow-php/flow/pull/1792) - **Rows::tail()** - [@norberttech](https://github.com/norberttech)
+- [#1792](https://github.com/flow-php/flow/pull/1792) - **Rows::last()** - [@norberttech](https://github.com/norberttech)
 - [#1790](https://github.com/flow-php/flow/pull/1790) - **DataFrame::offset method** - [@norberttech](https://github.com/norberttech)
 - [#1790](https://github.com/flow-php/flow/pull/1790) - **Support for offset method in Flow CLI** - [@norberttech](https://github.com/norberttech)
 - [#1787](https://github.com/flow-php/flow/pull/1787) - **--ouput-columns to CLI read command** - [@norberttech](https://github.com/norberttech)
