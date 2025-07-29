@@ -13,6 +13,7 @@
 - [#1782](https://github.com/flow-php/flow/pull/1782) - **Covered functions from Symfony/String component with Scalar Functions** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [9a0f08](https://github.com/flow-php/flow/commit/9a0f08742282b73b21d35e94dcc97fc97355eac8) - **Create CODE_OF_CONDUCT.md** - [@norberttech](https://github.com/norberttech)
 - [#1793](https://github.com/flow-php/flow/pull/1793) - **Updated DataFrame documentation** - [@norberttech](https://github.com/norberttech)
 - [#1780](https://github.com/flow-php/flow/pull/1780) - **Update Homebrew TAP formula: flow-php to version: 0.21.0** - [@norberttech](https://github.com/norberttech)
 
