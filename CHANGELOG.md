@@ -19,6 +19,9 @@
 ### Fixed
 - [#1785](https://github.com/flow-php/flow/pull/1785) - **Inconsistent behavior of CLI analyze and schema commands** - [@norberttech](https://github.com/norberttech)
 
+### Updated
+- [6cf21b](https://github.com/flow-php/flow/commit/6cf21b315372bf1925052ec0aee6782ff30070de) - **project dependencies** - [@norberttech](https://github.com/norberttech)
+
 ## [0.21.0] - 2025-07-21
 
 ### Added
