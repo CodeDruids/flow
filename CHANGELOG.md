@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-07-28
+## [Unreleased] - 2025-07-29
 
 ### Added
 - [#1792](https://github.com/flow-php/flow/pull/1792) - **Rows::head()** - [@norberttech](https://github.com/norberttech)
@@ -13,6 +13,7 @@
 - [#1782](https://github.com/flow-php/flow/pull/1782) - **Covered functions from Symfony/String component with Scalar Functions** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1793](https://github.com/flow-php/flow/pull/1793) - **Updated DataFrame documentation** - [@norberttech](https://github.com/norberttech)
 - [#1780](https://github.com/flow-php/flow/pull/1780) - **Update Homebrew TAP formula: flow-php to version: 0.21.0** - [@norberttech](https://github.com/norberttech)
 
 ### Fixed
