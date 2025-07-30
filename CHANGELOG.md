@@ -1,4 +1,4 @@
-## [Unreleased] - 2025-07-29
+## [Unreleased] - 2025-07-30
 
 ### Added
 - [#1792](https://github.com/flow-php/flow/pull/1792) - **Rows::head()** - [@norberttech](https://github.com/norberttech)
@@ -13,6 +13,7 @@
 - [#1782](https://github.com/flow-php/flow/pull/1782) - **Covered functions from Symfony/String component with Scalar Functions** - [@norberttech](https://github.com/norberttech)
 
 ### Changed
+- [#1797](https://github.com/flow-php/flow/pull/1797) - **Delayed initialization of Google Analytics after user accepts cookies** - [@norberttech](https://github.com/norberttech)
 - [9a0f08](https://github.com/flow-php/flow/commit/9a0f08742282b73b21d35e94dcc97fc97355eac8) - **Create CODE_OF_CONDUCT.md** - [@norberttech](https://github.com/norberttech)
 - [#1793](https://github.com/flow-php/flow/pull/1793) - **Updated DataFrame documentation** - [@norberttech](https://github.com/norberttech)
 - [#1780](https://github.com/flow-php/flow/pull/1780) - **Update Homebrew TAP formula: flow-php to version: 0.21.0** - [@norberttech](https://github.com/norberttech)
@@ -22,6 +23,9 @@
 
 ### Updated
 - [6cf21b](https://github.com/flow-php/flow/commit/6cf21b315372bf1925052ec0aee6782ff30070de) - **project dependencies** - [@norberttech](https://github.com/norberttech)
+
+### Removed
+- [#1797](https://github.com/flow-php/flow/pull/1797) - **Website cookies page** - [@norberttech](https://github.com/norberttech)
 
 ## [0.21.0] - 2025-07-21
 
