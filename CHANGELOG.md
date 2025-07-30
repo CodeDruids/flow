@@ -22,6 +22,7 @@
 - [#1785](https://github.com/flow-php/flow/pull/1785) - **Inconsistent behavior of CLI analyze and schema commands** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
+- [978efa](https://github.com/flow-php/flow/commit/978efad7b1079b302f38fba6d74b07fc32e7d058) - **Flow PHP Banner** - [@norberttech](https://github.com/norberttech)
 - [6cf21b](https://github.com/flow-php/flow/commit/6cf21b315372bf1925052ec0aee6782ff30070de) - **project dependencies** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
