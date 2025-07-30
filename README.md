@@ -1,4 +1,4 @@
-![img](documentation/assets/img/flow_php_banner_02_2022.png)
+![img](documentation/assets/img/flow_php_banner_01_2025.png)
 
 Flow is a PHP-based, strongly typed data processing framework with a low memory footprint.
 
