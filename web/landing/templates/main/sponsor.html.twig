@@ -17,7 +17,7 @@
 {% endblock %}
 
 {% block main %}
-    <div class="max-w-screen-xl mx-auto" data-controller="cookie-fallback">
+    <div class="max-w-screen-xl mx-auto">
         <section class="mx-auto my-10 px-2">
             <h1 class="font-bold text-6xl">Sponsor Flow <img src="{{ asset('images/icons/heart.svg') }}" alt="external resource" width="64" height="64" class="ml-1 inline"></h1>
             <p class="mt-4">
@@ -44,6 +44,25 @@
             <p>
                 Please find more at <a href="https://norbert.tech/consulting" target="_blank">https://norbert.tech/consulting</a>
             </p>
+            <hr class="mt-4" />
+        </section>
+    </div>
+    <div class="max-w-screen-xl mx-auto">
+        <section class="mx-auto my-10 px-2">
+            <h2 class="font-bold text-5xl mb-5">Sponsors</h2>
+
+            <div class="grid grid-cols-2 p-4">
+                <div class="text-center">
+                    <a href="https://blackfire.io/" target="_blank" class="bg-white inline-block">
+                        <img src="https://i0.wp.com/blog.blackfire.io/wp-content/uploads/2023/06/BFlogo_aPSHproduct_Color_H.png?fit=3650%2C1599&ssl=1" alt="Blackfire.io" class="inline-block !w-[450px] !h-[150px]" />
+                    </a>
+                </div>
+                <div class="text-center">
+                    <a href="https://www.digitalocean.com/?refcode=0313c3031eb9&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank">
+                        <img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg" alt="Digital Ocean" class="inline-block !w-[450px] !h-[150px]"/>
+                    </a>
+                </div>
+            </div>
         </section>
     </div>
 {% endblock %}

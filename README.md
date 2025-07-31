@@ -62,5 +62,6 @@ Join us in shaping the future of data processing in PHP — every contribution, 
 
 Flow PHP is sponsored by:
 
-- [Blackfire](https://blackfire.io/) - the best PHP profiling and monitoring tool! 
-
+[![Blackfire](https://www.blackfire.io/static/b73011a539f8d0af0ba02077b77f174e/1144f/blackfire-logo-positive.webp)](https://blackfire.io/) 
+  
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=0313c3031eb9&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
