@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-07-30
+## [Unreleased] - 2025-07-31
 
 ### Added
+- [bfdd28](https://github.com/flow-php/flow/commit/bfdd28900ac5cc0d590eb907ef0d89cbfebbd7ba) - **digital ocean to sponsors list** - [@norberttech](https://github.com/norberttech)
 - [#1792](https://github.com/flow-php/flow/pull/1792) - **Rows::head()** - [@norberttech](https://github.com/norberttech)
 - [#1792](https://github.com/flow-php/flow/pull/1792) - **Rows::tail()** - [@norberttech](https://github.com/norberttech)
 - [#1792](https://github.com/flow-php/flow/pull/1792) - **Rows::last()** - [@norberttech](https://github.com/norberttech)
