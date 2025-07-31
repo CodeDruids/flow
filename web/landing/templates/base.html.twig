@@ -37,19 +37,10 @@
     {% endblock %}
 
     {% block tracking %}
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("consent", "default", {
-            ad_user_data: 'denied',
-            ad_personalization: 'denied',
-            ad_storage: 'denied',
-            analytics_storage: 'denied'
-        });
-        gtag('config', '{{ google_analytics_id }}');
-    </script>
+        {% if umami_id|length %}
+            <script defer src="https://cloud.umami.is/script.js" data-website-id="{{ umami_id }}"></script>
+        {% endif %}
+        {{ importmap() }}
     {% endblock %}
 
     {% block javascripts %}
@@ -153,45 +144,5 @@
             <a href="https://github.com/flow-php">&copy; Copyright {{ 'now' | date('Y') }} Flow PHP</a>
         </div>
     </footer>
-
-    <div data-controller="cookie-consent" data-cookie-consent-ga-id-value="{{ google_analytics_id }}">
-        <div data-cookie-consent-target="banner"
-             class="border-t-4 border-orange-100 hidden fixed bottom-0 left-0 w-full bg-black text-white text-lg p-5 flex flex-col items-center justify-center space-y-2 md:space-y-0 md:flex-row md:justify-between z-50"
-        >
-            <span>
-                Oops, sorry we have to ask this—but we need your okay to use cookies for page view stats. <br/>
-                It helps us improve this open-source project and keep it awesome!<br/>
-                Care to help out?
-            </span>
-            <span data-cookie-consent-target="status">Status: Undecided</span>
-
-            <div class="flex space-x-4 mt-2 md:mt-0">
-                <button
-                        type="button"
-                        class="bg-blue-100 hover:bg-blue-200 text-white px-4 py-2 rounded ml-4"
-                        data-action="click->cookie-consent#accept"
-                >
-                    Accept All
-                </button>
-                <button
-                        type="button"
-                        class="border border-blue-100 hover:border-blue-200 text-white px-4 py-2 rounded"
-                        data-action="click->cookie-consent#reject"
-                >
-                    Reject All
-                </button>
-            </div>
-        </div>
-
-        <div class="fixed bottom-4 left-4 bg-orange-100 rounded-md shadow hidden" data-cookie-consent-target="button">
-            <button
-                type="button"
-                class="fixed bottom-4 left-4 bg-orange-100 text-white p-2 rounded-full shadow-lg hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-orange-100 focus:ring-opacity-50"
-                data-action="click->cookie-consent#showBanner"
-            >
-                <img src="{{ asset('images/icons/cookie.svg') }}" width="32" height="32" alt="scroll back to top" class="inline text-black">
-            </button>
-        </div>
-    </div>
 </body>
 </html>
