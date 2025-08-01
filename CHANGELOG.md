@@ -32,6 +32,7 @@
 - [6cf21b](https://github.com/flow-php/flow/commit/6cf21b315372bf1925052ec0aee6782ff30070de) - **project dependencies** - [@norberttech](https://github.com/norberttech)
 
 ### Removed
+- [b5d157](https://github.com/flow-php/flow/commit/b5d1578ff91c554be62c9008e4fe03025cffd658) - **redundant second import of importmap in landing page** - [@norberttech](https://github.com/norberttech)
 - [#1797](https://github.com/flow-php/flow/pull/1797) - **Website cookies page** - [@norberttech](https://github.com/norberttech)
 
 ## [0.21.0] - 2025-07-21
