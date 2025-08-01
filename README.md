@@ -65,3 +65,5 @@ Flow PHP is sponsored by:
 [![Blackfire](https://www.blackfire.io/static/b73011a539f8d0af0ba02077b77f174e/1144f/blackfire-logo-positive.webp)](https://blackfire.io/) 
   
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=0313c3031eb9&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
+[![Sentry](https://i0.wp.com/softwareengineeringdaily.com/wp-content/uploads/2020/07/sentry-logo-black.png?fit=718%2C250&ssl=1)](https://sentry.io/)
