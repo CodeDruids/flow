@@ -28,6 +28,7 @@
 - [#1785](https://github.com/flow-php/flow/pull/1785) - **Inconsistent behavior of CLI analyze and schema commands** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
+- [f2e5a2](https://github.com/flow-php/flow/commit/f2e5a2b274496fe6e22981cfd6c224e32f85f98d) - **dependencies** - [@norberttech](https://github.com/norberttech)
 - [b3669e](https://github.com/flow-php/flow/commit/b3669e4b025073af729fc714011c9067b2e5c6ef) - **baseline.yml** - [@norberttech](https://github.com/norberttech)
 - [978efa](https://github.com/flow-php/flow/commit/978efad7b1079b302f38fba6d74b07fc32e7d058) - **Flow PHP Banner** - [@norberttech](https://github.com/norberttech)
 - [6cf21b](https://github.com/flow-php/flow/commit/6cf21b315372bf1925052ec0aee6782ff30070de) - **project dependencies** - [@norberttech](https://github.com/norberttech)
