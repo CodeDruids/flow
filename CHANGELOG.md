@@ -28,6 +28,7 @@
 - [#1785](https://github.com/flow-php/flow/pull/1785) - **Inconsistent behavior of CLI analyze and schema commands** - [@norberttech](https://github.com/norberttech)
 
 ### Updated
+- [b82858](https://github.com/flow-php/flow/commit/b828581c05316c9645854c8c3c41407c3a5054ca) - **website dependencies** - [@norberttech](https://github.com/norberttech)
 - [afadb3](https://github.com/flow-php/flow/commit/afadb36ad5a5f67e452c0e6197059c5c60e7be9c) - **DSL definitions** - [@norberttech](https://github.com/norberttech)
 - [f2e5a2](https://github.com/flow-php/flow/commit/f2e5a2b274496fe6e22981cfd6c224e32f85f98d) - **dependencies** - [@norberttech](https://github.com/norberttech)
 - [b3669e](https://github.com/flow-php/flow/commit/b3669e4b025073af729fc714011c9067b2e5c6ef) - **baseline.yml** - [@norberttech](https://github.com/norberttech)
