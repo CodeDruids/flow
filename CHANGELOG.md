@@ -1,6 +1,7 @@
-## [Unreleased] - 2025-08-01
+## [Unreleased] - 2025-08-04
 
 ### Added
+- [#1811](https://github.com/flow-php/flow/pull/1811) - **OpenApiMetadata allowing for passing extra details when generating open api specification from flow schema** - [@norberttech](https://github.com/norberttech)
 - [76d7d1](https://github.com/flow-php/flow/commit/76d7d1f5d98441ddbc9ebba67962e2049d91557a) - **sentry to list of sponsors** - [@norberttech](https://github.com/norberttech)
 - [#1801](https://github.com/flow-php/flow/pull/1801) - **link to umami public statistics for website** - [@norberttech](https://github.com/norberttech)
 - [bfdd28](https://github.com/flow-php/flow/commit/bfdd28900ac5cc0d590eb907ef0d89cbfebbd7ba) - **digital ocean to sponsors list** - [@norberttech](https://github.com/norberttech)
