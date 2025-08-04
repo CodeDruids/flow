@@ -9,14 +9,14 @@ final class DSLDefinition
     /**
      * @param array{
      *      repository_path: string,
-     *      start_line_in_file: int|false,
+     *      start_line_in_file: false|int,
      *      slug: string,
      *      name: string,
      *      namespace: string,
      *      parameters: array<mixed>,
      *      return_type: array<mixed>,
      *      attributes: array<mixed>,
-     *      doc_comment: string|null,
+     *      doc_comment: null|string,
      *  } $data
      */
     public function __construct(private readonly array $data)
