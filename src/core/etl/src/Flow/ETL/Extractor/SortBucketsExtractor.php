@@ -9,7 +9,7 @@ use Flow\ETL\{Extractor, FlowContext, Rows, Sort\ExternalSort\Bucket, Sort\Exter
 /**
  * @internal created and used by ExternalSort algorithm
  */
-final readonly class SortBucketsExtractor implements Extractor
+final class SortBucketsExtractor implements Extractor
 {
     /**
      * @param array<Bucket> $sortBuckets

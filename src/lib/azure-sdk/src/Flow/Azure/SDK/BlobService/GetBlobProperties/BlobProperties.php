@@ -6,7 +6,7 @@ namespace Flow\Azure\SDK\BlobService\GetBlobProperties;
 
 use Psr\Http\Message\ResponseInterface;
 
-final readonly class BlobProperties
+final class BlobProperties
 {
     public function __construct(private ResponseInterface $response)
     {

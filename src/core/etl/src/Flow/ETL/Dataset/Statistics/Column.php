@@ -11,7 +11,10 @@ use Flow\Types\Value\Uuid;
 
 final class Column
 {
-    private readonly DistinctCounter $distinctCounter;
+    /**
+     * @readonly
+     */
+    private DistinctCounter $distinctCounter;
 
     private int|float|\DateTimeInterface|bool|null $max = null;
 
@@ -27,7 +30,10 @@ final class Column
 
     private int $nullsCount = 0;
 
-    private readonly Reference $reference;
+    /**
+     * @readonly
+     */
+    private Reference $reference;
 
     /**
      * @param Entry<mixed> $entry

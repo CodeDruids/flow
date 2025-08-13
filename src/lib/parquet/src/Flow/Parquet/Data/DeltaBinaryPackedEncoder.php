@@ -7,7 +7,7 @@ namespace Flow\Parquet\Data;
 use Flow\Parquet\BinaryWriter\BinaryBufferWriter;
 use Flow\Parquet\Exception\InvalidArgumentException;
 
-final readonly class DeltaBinaryPackedEncoder
+final class DeltaBinaryPackedEncoder
 {
     private const DEFAULT_BLOCK_SIZE = 128;
 
@@ -16,9 +16,12 @@ final readonly class DeltaBinaryPackedEncoder
     public function __construct(
         private int $blockSize = self::DEFAULT_BLOCK_SIZE,
         private int $miniblockSize = self::DEFAULT_MINIBLOCK_SIZE,
-        private DeltaCalculator $deltaCalculator = new DeltaCalculator(),
-        private ZigZag $zigzag = new ZigZag(),
+        private ?DeltaCalculator $deltaCalculator = null,
+        private ?ZigZag $zigzag = null,
     ) {
+        $this->deltaCalculator = $deltaCalculator ?? new DeltaCalculator();
+        $this->zigzag = $zigzag ?? new ZigZag();
+
         if ($this->blockSize % 128 !== 0) {
             throw new InvalidArgumentException('Block size must be a multiple of 128');
         }

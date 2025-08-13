@@ -24,7 +24,7 @@ final class JsonLinesExtractor implements Extractor, FileExtractor, LimitableExt
     private ?Schema $schema = null;
 
     public function __construct(
-        private readonly Path $path,
+        private Path $path,
     ) {
         $this->resetLimit();
     }

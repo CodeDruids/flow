@@ -6,7 +6,7 @@ namespace Flow\Clock;
 
 use Psr\Clock\ClockInterface;
 
-final readonly class SystemClock implements ClockInterface
+final class SystemClock implements ClockInterface
 {
     public function __construct(private \DateTimeZone $timezone)
     {

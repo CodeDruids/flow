@@ -7,7 +7,7 @@ namespace Flow\ETL\Schema\Formatter;
 use Flow\ETL\Schema;
 use Flow\ETL\Schema\SchemaFormatter;
 
-final readonly class JsonSchemaFormatter implements SchemaFormatter
+final class JsonSchemaFormatter implements SchemaFormatter
 {
     public function __construct(private bool $pretty = false)
     {

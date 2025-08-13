@@ -14,14 +14,14 @@ use UnitEnum;
  *
  * @implements Type<T>
  */
-final readonly class EnumType implements Type
+final class EnumType implements Type
 {
     /**
      * @param class-string<T> $class
      */
     public function __construct(public string $class)
     {
-        if ($class !== \UnitEnum::class && $this->class !== \BackedEnum::class && !\enum_exists($class)) {
+        if ($class !== \UnitEnum::class && $this->class !== \BackedEnum::class && !class_exists($class)) {
             throw new InvalidArgumentException("Enum {$class} not found");
         }
     }

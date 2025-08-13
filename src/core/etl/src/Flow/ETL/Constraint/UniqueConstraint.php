@@ -11,7 +11,10 @@ use Flow\ETL\Row\{Reference, References};
 
 final class UniqueConstraint implements Constraint
 {
-    private readonly References $reference;
+    /**
+     * @readonly
+     */
+    private References $reference;
 
     private Storage $storage;
 

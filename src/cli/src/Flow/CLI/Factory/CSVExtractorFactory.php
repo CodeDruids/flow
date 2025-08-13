@@ -10,7 +10,7 @@ use Flow\ETL\Adapter\CSV\CSVExtractor;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class CSVExtractorFactory
+final class CSVExtractorFactory
 {
     public function __construct(
         private Path $path,

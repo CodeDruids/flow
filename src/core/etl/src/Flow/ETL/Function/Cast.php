@@ -18,8 +18,8 @@ final class Cast extends ScalarFunctionChain
      * @param string|Type<mixed> $type
      */
     public function __construct(
-        private readonly mixed $value,
-        private readonly Type|string $type,
+        private mixed $value,
+        private Type|string $type,
     ) {
     }
 

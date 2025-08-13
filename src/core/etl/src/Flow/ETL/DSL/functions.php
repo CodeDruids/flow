@@ -289,8 +289,11 @@ function files(string|Path $directory) : FilesExtractor
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::DATA_FRAME)]
-function filesystem_cache(Path|string|null $cache_dir = null, Filesystem $filesystem = new NativeLocalFilesystem(), Serializer $serializer = new NativePHPSerializer()) : FilesystemCache
+function filesystem_cache(Path|string|null $cache_dir = null, ?Filesystem $filesystem = null, ?Serializer $serializer = null) : FilesystemCache
 {
+    $filesystem ??= new NativeLocalFilesystem();
+    $serializer ??= new NativePHPSerializer();
+
     return new FilesystemCache($filesystem, $serializer, \is_string($cache_dir) ? Path::realpath($cache_dir) : $cache_dir);
 }
 
@@ -370,26 +373,38 @@ function to_array(array &$array) : ArrayLoader
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::LOADER)]
-function to_output(int|bool $truncate = 20, Output $output = Output::rows, Formatter $formatter = new AsciiTableFormatter(), SchemaFormatter $schemaFormatter = new ASCIISchemaFormatter()) : StreamLoader
+function to_output(int|bool $truncate = 20, Output $output = Output::rows, ?Formatter $formatter = null, ?SchemaFormatter $schemaFormatter = null) : StreamLoader
 {
+    $formatter ??= new AsciiTableFormatter();
+    $schemaFormatter ??= new ASCIISchemaFormatter();
+
     return StreamLoader::output($truncate, $output, $formatter, $schemaFormatter);
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::LOADER)]
-function to_stderr(int|bool $truncate = 20, Output $output = Output::rows, Formatter $formatter = new AsciiTableFormatter(), SchemaFormatter $schemaFormatter = new ASCIISchemaFormatter()) : StreamLoader
+function to_stderr(int|bool $truncate = 20, Output $output = Output::rows, ?Formatter $formatter = null, ?SchemaFormatter $schemaFormatter = null) : StreamLoader
 {
+    $formatter ??= new AsciiTableFormatter();
+    $schemaFormatter ??= new ASCIISchemaFormatter();
+
     return StreamLoader::stderr($truncate, $output, $formatter, $schemaFormatter);
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::LOADER)]
-function to_stdout(int|bool $truncate = 20, Output $output = Output::rows, Formatter $formatter = new AsciiTableFormatter(), SchemaFormatter $schemaFormatter = new ASCIISchemaFormatter()) : StreamLoader
+function to_stdout(int|bool $truncate = 20, Output $output = Output::rows, ?Formatter $formatter = null, ?SchemaFormatter $schemaFormatter = null) : StreamLoader
 {
+    $formatter ??= new AsciiTableFormatter();
+    $schemaFormatter ??= new ASCIISchemaFormatter();
+
     return StreamLoader::stdout($truncate, $output, $formatter, $schemaFormatter);
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::LOADER)]
-function to_stream(string $uri, int|bool $truncate = 20, Output $output = Output::rows, string $mode = 'w', Formatter $formatter = new AsciiTableFormatter(), SchemaFormatter $schemaFormatter = new ASCIISchemaFormatter()) : StreamLoader
+function to_stream(string $uri, int|bool $truncate = 20, Output $output = Output::rows, string $mode = 'w', ?Formatter $formatter = null, ?SchemaFormatter $schemaFormatter = null) : StreamLoader
 {
+    $formatter ??= new AsciiTableFormatter();
+    $schemaFormatter ??= new ASCIISchemaFormatter();
+
     return new StreamLoader($uri, Mode::from($mode), $truncate, $output, $formatter, $schemaFormatter, StreamLoader\Type::custom);
 }
 
@@ -1171,8 +1186,10 @@ function array_reverse(ScalarFunction|array $function, ScalarFunction|bool $pres
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::SCALAR_FUNCTION)]
-function now(\DateTimeZone|ScalarFunction $time_zone = new \DateTimeZone('UTC')) : Now
+function now(\DateTimeZone|ScalarFunction|null $time_zone = null) : Now
 {
+    $time_zone ??= new \DateTimeZone('UTC');
+
     return new Now($time_zone);
 }
 
@@ -1183,14 +1200,18 @@ function between(mixed $value, mixed $lower_bound, mixed $upper_bound, ScalarFun
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::SCALAR_FUNCTION)]
-function to_date_time(mixed $ref, ScalarFunction|string $format = 'Y-m-d H:i:s', ScalarFunction|\DateTimeZone $timeZone = new \DateTimeZone('UTC')) : ToDateTime
+function to_date_time(mixed $ref, ScalarFunction|string $format = 'Y-m-d H:i:s', ScalarFunction|\DateTimeZone|null $timeZone = null) : ToDateTime
 {
+    $timeZone ??= new \DateTimeZone('UTC');
+
     return new ToDateTime($ref, $format, $timeZone);
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::SCALAR_FUNCTION)]
-function to_date(mixed $ref, ScalarFunction|string $format = 'Y-m-d', ScalarFunction|\DateTimeZone $timeZone = new \DateTimeZone('UTC')) : ToDate
+function to_date(mixed $ref, ScalarFunction|string $format = 'Y-m-d', ScalarFunction|\DateTimeZone|null $timeZone = null) : ToDate
 {
+    $timeZone ??= new \DateTimeZone('UTC');
+
     return new ToDate($ref, $format, $timeZone);
 }
 
@@ -1235,8 +1256,10 @@ function concat_ws(ScalarFunction|string $separator, ScalarFunction|string ...$f
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::SCALAR_FUNCTION)]
-function hash(mixed $value, Algorithm $algorithm = new NativePHPHash()) : Hash
+function hash(mixed $value, ?Algorithm $algorithm = null) : Hash
 {
+    $algorithm ??= new NativePHPHash();
+
     return new Hash($value, $algorithm);
 }
 
@@ -1473,8 +1496,10 @@ function number_format(ScalarFunction|int|float $value, ScalarFunction|int $deci
  * @return Entry<mixed>
  */
 #[DocumentationDSL(module: Module::CORE, type: DSLType::DATA_FRAME)]
-function to_entry(string $name, mixed $data, EntryFactory $entryFactory = new EntryFactory()) : Entry
+function to_entry(string $name, mixed $data, ?EntryFactory $entryFactory = null) : Entry
 {
+    $entryFactory ??= new EntryFactory();
+
     return $entryFactory->create($name, $data);
 }
 
@@ -1484,8 +1509,9 @@ function to_entry(string $name, mixed $data, EntryFactory $entryFactory = new En
  * @param null|Schema $schema
  */
 #[DocumentationDSL(module: Module::CORE, type: DSLType::DATA_FRAME)]
-function array_to_row(array $data, EntryFactory $entryFactory = new EntryFactory(), array|Partitions $partitions = [], ?Schema $schema = null) : Row
+function array_to_row(array $data, ?EntryFactory $entryFactory = null, array|Partitions $partitions = [], ?Schema $schema = null) : Row
 {
+    $entryFactory ??= new EntryFactory();
     $entries = [];
 
     foreach ($data as $key => $value) {
@@ -1529,8 +1555,9 @@ function array_to_row(array $data, EntryFactory $entryFactory = new EntryFactory
  * @param null|Schema $schema
  */
 #[DocumentationDSL(module: Module::CORE, type: DSLType::DATA_FRAME)]
-function array_to_rows(array $data, EntryFactory $entryFactory = new EntryFactory(), array|Partitions $partitions = [], ?Schema $schema = null) : Rows
+function array_to_rows(array $data, ?EntryFactory $entryFactory = null, array|Partitions $partitions = [], ?Schema $schema = null) : Rows
 {
+    $entryFactory ??= new EntryFactory();
     $partitions = \is_array($partitions) ? new Partitions(...$partitions) : $partitions;
 
     $isRows = true;
@@ -1677,8 +1704,11 @@ function schema_to_json(Schema $schema, bool $pretty = false) : string
  * @param Schema $schema
  */
 #[DocumentationDSL(module: Module::CORE, type: DSLType::HELPER)]
-function schema_to_php(Schema $schema, ValueFormatter $valueFormatter = new ValueFormatter(), TypeFormatter $typeFormatter = new TypeFormatter()) : string
+function schema_to_php(Schema $schema, ?ValueFormatter $valueFormatter = null, ?TypeFormatter $typeFormatter = null) : string
 {
+    $valueFormatter ??= new ValueFormatter();
+    $typeFormatter ??= new TypeFormatter();
+
     return (new PHPSchemaFormatter($valueFormatter, $typeFormatter))->format($schema);
 }
 
@@ -1696,8 +1726,10 @@ function schema_to_ascii(Schema $schema, ?SchemaFormatter $formatter = null) : s
  * @param Schema $given
  */
 #[DocumentationDSL(module: Module::CORE, type: DSLType::HELPER)]
-function schema_validate(Schema $expected, Schema $given, SchemaValidator $validator = new StrictValidator()) : bool
+function schema_validate(Schema $expected, Schema $given, ?SchemaValidator $validator = null) : bool
 {
+    $validator ??= new StrictValidator();
+
     return $validator->isValid($expected, $given);
 }
 
@@ -2104,6 +2136,26 @@ function is_type(Type|array $type, mixed $value) : bool
 
     foreach ($type as $nextType) {
         if (\is_string($nextType)) {
+            $arrayIsListFunction = function (array $array) : bool {
+                if (function_exists('array_is_list')) {
+                    return array_is_list($array);
+                }
+
+                if ($array === []) {
+                    return true;
+                }
+                $current_key = 0;
+
+                foreach ($array as $key => $noop) {
+                    if ($key !== $current_key) {
+                        return false;
+                    }
+                    $current_key++;
+                }
+
+                return true;
+            };
+
             if (match (\strtolower($nextType)) {
                 'str', 'string' => \is_string($value),
                 'int', 'integer' => \is_int($value),
@@ -2111,8 +2163,8 @@ function is_type(Type|array $type, mixed $value) : bool
                 'null' => null === $value,
                 'object' => \is_object($value),
                 'array' => \is_array($value),
-                'list' => \is_array($value) && \array_is_list($value),
-                default => match (\class_exists($nextType) || \enum_exists($nextType)) {
+                'list' => \is_array($value) && $arrayIsListFunction($value),
+                default => match (\class_exists($nextType) || class_exists($nextType)) {
                     true => $value instanceof $nextType,
                     false => throw new RuntimeException('Unexpected type: ' . $nextType),
                 },
@@ -2159,22 +2211,28 @@ function type_is_any(Type $type, string $typeClass, string ...$typeClasses) : bo
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::DATA_FRAME)]
-function generate_random_string(int $length = 32, NativePHPRandomValueGenerator $generator = new NativePHPRandomValueGenerator()) : string
+function generate_random_string(int $length = 32, ?NativePHPRandomValueGenerator $generator = null) : string
 {
+    $generator ??= new NativePHPRandomValueGenerator();
+
     return $generator->string($length);
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::DATA_FRAME)]
-function generate_random_int(int $start = PHP_INT_MIN, int $end = PHP_INT_MAX, NativePHPRandomValueGenerator $generator = new NativePHPRandomValueGenerator()) : int
+function generate_random_int(int $start = PHP_INT_MIN, int $end = PHP_INT_MAX, ?NativePHPRandomValueGenerator $generator = null) : int
 {
+    $generator ??= new NativePHPRandomValueGenerator();
+
     return $generator->int($start, $end);
 }
 
 #[DocumentationDSL(module: Module::CORE, type: DSLType::DATA_FRAME)]
 function random_string(
     int|ScalarFunction $length,
-    RandomValueGenerator $generator = new NativePHPRandomValueGenerator(),
+    ?RandomValueGenerator $generator = null,
 ) : RandomString {
+    $generator ??= new NativePHPRandomValueGenerator();
+
     return new RandomString($length, $generator);
 }
 

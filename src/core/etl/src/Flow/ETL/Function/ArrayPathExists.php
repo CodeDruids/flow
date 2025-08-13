@@ -15,8 +15,8 @@ final class ArrayPathExists extends ScalarFunctionChain
      * @param ScalarFunction|string $path
      */
     public function __construct(
-        private readonly ScalarFunction|array $array,
-        private readonly ScalarFunction|string $path,
+        private ScalarFunction|array $array,
+        private ScalarFunction|string $path,
     ) {
     }
 

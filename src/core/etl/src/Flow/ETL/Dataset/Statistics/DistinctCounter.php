@@ -23,7 +23,7 @@ final class DistinctCounter
             $value = $value->getTimestamp();
         }
 
-        $hash = \hash('xxh32', (string) $value);
+        $hash = \hash('md5', (string) $value);
 
         if (!\array_key_exists($hash, $this->hashSet)) {
             $this->hashSet[$hash] = true;

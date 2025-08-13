@@ -13,7 +13,7 @@ final class Headers implements \Countable
      */
     private ?array $names = null;
 
-    public function __construct(private readonly Rows $rows)
+    public function __construct(private Rows $rows)
     {
     }
 

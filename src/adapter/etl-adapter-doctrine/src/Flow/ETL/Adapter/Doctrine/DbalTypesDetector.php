@@ -9,10 +9,11 @@ use Flow\ETL\Schema;
 use Flow\Types\Type as FlowType;
 use Flow\Types\Type\Logical\{ListType, MapType, StructureType};
 
-final readonly class DbalTypesDetector
+final class DbalTypesDetector
 {
-    public function __construct(private TypesMap $typesMap = new TypesMap([]))
+    public function __construct(private ?TypesMap $typesMap = null)
     {
+        $this->typesMap = $typesMap ?? new TypesMap([]);
     }
 
     /**

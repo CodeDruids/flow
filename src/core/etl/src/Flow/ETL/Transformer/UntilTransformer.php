@@ -12,7 +12,7 @@ final class UntilTransformer implements Transformer
 {
     private bool $limitReached = false;
 
-    public function __construct(private readonly ScalarFunction $function)
+    public function __construct(private ScalarFunction $function)
     {
     }
 

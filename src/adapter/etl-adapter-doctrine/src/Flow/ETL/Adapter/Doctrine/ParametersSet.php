@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Flow\ETL\Adapter\Doctrine;
 
-final readonly class ParametersSet
+final class ParametersSet
 {
     /**
      * @var array<array<string, mixed>>|array<list<mixed>>
+     *
+     * @readonly
      */
     private array $parameters;
 

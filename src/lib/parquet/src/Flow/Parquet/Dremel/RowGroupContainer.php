@@ -6,7 +6,7 @@ namespace Flow\Parquet\Dremel;
 
 use Flow\Parquet\ParquetFile\RowGroup;
 
-final readonly class RowGroupContainer
+final class RowGroupContainer
 {
     public function __construct(
         public string $binaryBuffer,

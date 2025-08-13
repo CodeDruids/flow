@@ -10,10 +10,10 @@ use Flow\ETL\Row;
 final class Divide extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|int|float|string $left,
-        private readonly ScalarFunction|int|float|string $right,
-        private readonly ScalarFunction|int|null $scale = null,
-        private readonly ScalarFunction|Rounding|null $rounding = null,
+        private ScalarFunction|int|float|string $left,
+        private ScalarFunction|int|float|string $right,
+        private ScalarFunction|int|null $scale = null,
+        private ScalarFunction|Rounding|null $rounding = null,
     ) {
     }
 

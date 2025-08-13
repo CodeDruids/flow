@@ -13,7 +13,7 @@ final class EntryReference extends ScalarFunctionChain implements Reference
 
     private SortOrder $sort = SortOrder::ASC;
 
-    public function __construct(private readonly string $entry)
+    public function __construct(private string $entry)
     {
     }
 

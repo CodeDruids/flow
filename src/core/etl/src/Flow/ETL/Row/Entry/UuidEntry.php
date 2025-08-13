@@ -22,8 +22,10 @@ final class UuidEntry implements Entry
 
     /**
      * @var Type<Uuid>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
     private ?Uuid $value;
 
@@ -31,7 +33,7 @@ final class UuidEntry implements Entry
      * @throws InvalidArgumentException
      */
     public function __construct(
-        private readonly string $name,
+        private string $name,
         Uuid|string|null $value,
         ?Metadata $metadata = null,
     ) {

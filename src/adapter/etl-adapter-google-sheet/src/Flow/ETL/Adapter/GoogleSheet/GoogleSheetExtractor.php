@@ -26,9 +26,9 @@ final class GoogleSheetExtractor implements Extractor, LimitableExtractor
     private bool $withHeader = true;
 
     public function __construct(
-        private readonly Sheets $service,
-        private readonly string $spreadsheetId,
-        private readonly Columns $columnRange,
+        private Sheets $service,
+        private string $spreadsheetId,
+        private Columns $columnRange,
     ) {
         $this->resetLimit();
     }

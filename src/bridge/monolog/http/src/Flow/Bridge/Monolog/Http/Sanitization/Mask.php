@@ -6,7 +6,7 @@ namespace Flow\Bridge\Monolog\Http\Sanitization;
 
 use function Flow\Types\DSL\{type_integer, type_literal, type_string, type_structure};
 
-final readonly class Mask implements Sanitizer
+final class Mask implements Sanitizer
 {
     /**
      * @param string $character - character used for masking

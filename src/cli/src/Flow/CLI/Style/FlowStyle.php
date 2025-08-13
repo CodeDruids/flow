@@ -12,7 +12,7 @@ use Symfony\Component\Console\Style\{SymfonyStyle};
 
 final class FlowStyle extends SymfonyStyle
 {
-    public function __construct(InputInterface $input, private readonly OutputInterface $output)
+    public function __construct(InputInterface $input, private OutputInterface $output)
     {
         parent::__construct($input, $output);
 

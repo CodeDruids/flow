@@ -12,11 +12,17 @@ use PhpBench\Attributes\Groups;
 #[Groups(['parquet-library'])]
 final class ParquetWriterBench
 {
-    private readonly string $outputPath;
+    /**
+     * @readonly
+     */
+    private string $outputPath;
 
     private array $rows;
 
-    private readonly Schema $schema;
+    /**
+     * @readonly
+     */
+    private Schema $schema;
 
     public function __construct()
     {

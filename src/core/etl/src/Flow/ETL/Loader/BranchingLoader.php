@@ -14,8 +14,8 @@ final class BranchingLoader implements Closure, Loader, OverridingLoader
     private ?Transformation $transformation = null;
 
     public function __construct(
-        private readonly ScalarFunction $condition,
-        private readonly Loader $loader,
+        private ScalarFunction $condition,
+        private Loader $loader,
     ) {
     }
 

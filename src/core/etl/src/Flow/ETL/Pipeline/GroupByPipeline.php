@@ -6,7 +6,7 @@ namespace Flow\ETL\Pipeline;
 
 use Flow\ETL\{Extractor, FlowContext, GroupBy, Loader, Pipeline, Transformer};
 
-final readonly class GroupByPipeline implements OverridingPipeline, Pipeline
+final class GroupByPipeline implements OverridingPipeline, Pipeline
 {
     public function __construct(public GroupBy $groupBy, private Pipeline $pipeline)
     {

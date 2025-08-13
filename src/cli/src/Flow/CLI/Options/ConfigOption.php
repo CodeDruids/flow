@@ -12,7 +12,7 @@ use Flow\Filesystem\Local\NativeLocalFilesystem;
 use Symfony\Component\Console\Exception\InvalidArgumentException;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class ConfigOption
+final class ConfigOption
 {
     public function __construct(private string $optionName)
     {

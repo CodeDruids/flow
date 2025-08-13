@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class Power extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|int|float $left,
-        private readonly ScalarFunction|int $right,
+        private ScalarFunction|int|float $left,
+        private ScalarFunction|int $right,
     ) {
     }
 

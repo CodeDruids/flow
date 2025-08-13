@@ -6,7 +6,7 @@ namespace Flow\ETL\Transformation;
 
 use Flow\ETL\{DataFrame, Transformation};
 
-final readonly class Limit implements Transformation
+final class Limit implements Transformation
 {
     public function __construct(private ?int $limit)
     {

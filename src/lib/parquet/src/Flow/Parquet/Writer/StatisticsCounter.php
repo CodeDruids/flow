@@ -14,7 +14,10 @@ use Flow\Parquet\ParquetFile\Statistics;
 
 final class StatisticsCounter
 {
-    private readonly Comparator $comparator;
+    /**
+     * @readonly
+     */
+    private Comparator $comparator;
 
     private mixed $max;
 
@@ -24,7 +27,7 @@ final class StatisticsCounter
 
     private int $valuesCount;
 
-    public function __construct(private readonly FlatColumn $column)
+    public function __construct(private FlatColumn $column)
     {
         $this->nullCount = 0;
         $this->valuesCount = 0;

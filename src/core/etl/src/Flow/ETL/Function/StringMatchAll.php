@@ -9,8 +9,8 @@ use Flow\ETL\Row;
 final class StringMatchAll extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $haystack,
-        private readonly ScalarFunction|string $pattern,
+        private ScalarFunction|string $haystack,
+        private ScalarFunction|string $pattern,
     ) {
     }
 

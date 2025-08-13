@@ -6,7 +6,7 @@ namespace Flow\ETL;
 
 use Flow\ETL\Function\ScalarFunction;
 
-final readonly class WithEntry
+final class WithEntry
 {
     public function __construct(public string $name, public ScalarFunction $function)
     {

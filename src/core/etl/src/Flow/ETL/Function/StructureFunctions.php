@@ -6,7 +6,7 @@ namespace Flow\ETL\Function;
 
 use Flow\ETL\Row\Reference;
 
-final readonly class StructureFunctions
+final class StructureFunctions
 {
     public function __construct(private Reference $ref)
     {

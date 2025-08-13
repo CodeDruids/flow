@@ -8,10 +8,12 @@ use Flow\ETL\Join\Comparison;
 use Flow\ETL\Row;
 use Flow\ETL\Row\Reference;
 
-final readonly class Any implements Comparison
+final class Any implements Comparison
 {
     /**
      * @var array<Comparison>
+     *
+     * @readonly
      */
     private array $comparisons;
 

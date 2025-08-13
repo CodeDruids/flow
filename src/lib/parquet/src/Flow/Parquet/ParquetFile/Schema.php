@@ -16,7 +16,7 @@ final class Schema
     private array $cache = [];
 
     public function __construct(
-        private readonly NestedColumn $schemaRoot,
+        private NestedColumn $schemaRoot,
     ) {
     }
 

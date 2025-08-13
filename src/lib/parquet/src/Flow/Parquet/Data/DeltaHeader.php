@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Parquet\Data;
 
-final readonly class DeltaHeader
+final class DeltaHeader
 {
     public function __construct(
         public int $blockSize,

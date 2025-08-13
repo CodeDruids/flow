@@ -7,7 +7,7 @@ namespace Flow\Filesystem;
 use Flow\ETL\Exception\InvalidArgumentException;
 use Flow\Filesystem\Exception\InvalidSchemeException;
 
-final readonly class Protocol
+final class Protocol
 {
     public function __construct(public string $name)
     {

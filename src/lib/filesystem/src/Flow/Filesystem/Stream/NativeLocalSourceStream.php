@@ -17,7 +17,7 @@ final class NativeLocalSourceStream implements SourceStream
      * @param Path $path
      * @param resource $handle
      */
-    public function __construct(private readonly Path $path, $handle)
+    public function __construct(private Path $path, $handle)
     {
         if (!\is_resource($handle)) {
             throw new InvalidArgumentException('SourceStream expects resource type, given: ' . \gettype($handle));

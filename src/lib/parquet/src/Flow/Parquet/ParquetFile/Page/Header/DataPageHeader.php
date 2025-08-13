@@ -6,7 +6,7 @@ namespace Flow\Parquet\ParquetFile\Page\Header;
 
 use Flow\Parquet\ParquetFile\Encodings;
 
-final readonly class DataPageHeader
+final class DataPageHeader
 {
     public function __construct(
         private Encodings $encoding,

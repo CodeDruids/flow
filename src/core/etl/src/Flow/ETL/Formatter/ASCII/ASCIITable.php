@@ -6,7 +6,7 @@ namespace Flow\ETL\Formatter\ASCII;
 
 use Flow\ETL\Rows;
 
-final readonly class ASCIITable
+final class ASCIITable
 {
     public function __construct(private Rows $rows)
     {

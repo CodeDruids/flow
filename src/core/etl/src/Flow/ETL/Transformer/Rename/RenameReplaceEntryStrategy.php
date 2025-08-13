@@ -6,7 +6,7 @@ namespace Flow\ETL\Transformer\Rename;
 
 use Flow\ETL\{FlowContext, Row, Row\Entry};
 
-final readonly class RenameReplaceEntryStrategy implements RenameEntryStrategy
+final class RenameReplaceEntryStrategy implements RenameEntryStrategy
 {
     /**
      * @param array<string>|string $search

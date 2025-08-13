@@ -25,7 +25,7 @@ final class CSVLoader implements Closure, FileLoader, Loader
     private string $separator = ',';
 
     public function __construct(
-        private readonly Path $path,
+        private Path $path,
     ) {
     }
 

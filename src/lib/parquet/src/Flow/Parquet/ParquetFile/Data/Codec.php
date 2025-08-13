@@ -7,7 +7,7 @@ namespace Flow\Parquet\ParquetFile\Data;
 use Flow\Parquet\Exception\RuntimeException;
 use Flow\Parquet\{Option, Options, ParquetFile\Compressions};
 
-final readonly class Codec
+final class Codec
 {
     public function __construct(
         private Options $options,

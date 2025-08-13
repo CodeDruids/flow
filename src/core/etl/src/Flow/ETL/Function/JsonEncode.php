@@ -9,8 +9,8 @@ use Flow\ETL\Row;
 final class JsonEncode extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction $value,
-        private readonly ScalarFunction|int $flags = JSON_THROW_ON_ERROR,
+        private ScalarFunction $value,
+        private ScalarFunction|int $flags = JSON_THROW_ON_ERROR,
     ) {
     }
 

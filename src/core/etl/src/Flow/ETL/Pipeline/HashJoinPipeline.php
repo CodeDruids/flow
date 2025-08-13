@@ -12,8 +12,11 @@ use Flow\ETL\Join\{Expression, Join};
 use Flow\ETL\Pipeline\HashJoin\HashTable;
 use Flow\ETL\Row\Entry;
 
-final readonly class HashJoinPipeline implements OverridingPipeline, Pipeline
+final class HashJoinPipeline implements OverridingPipeline, Pipeline
 {
+    /**
+     * @readonly
+     */
     private Extractor $extractor;
 
     public function __construct(

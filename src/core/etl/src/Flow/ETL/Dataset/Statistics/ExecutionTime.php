@@ -6,7 +6,7 @@ namespace Flow\ETL\Dataset\Statistics;
 
 use Flow\ETL\Exception\InvalidArgumentException;
 
-final readonly class ExecutionTime
+final class ExecutionTime
 {
     public function __construct(
         public \DateTimeImmutable $startedAt,

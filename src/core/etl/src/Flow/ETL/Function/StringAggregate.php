@@ -16,7 +16,7 @@ final class StringAggregate implements AggregatingFunction
      */
     private array $values = [];
 
-    public function __construct(private readonly Reference $ref, private readonly string $separator, private readonly ?SortOrder $sort = null)
+    public function __construct(private Reference $ref, private string $separator, private ?SortOrder $sort = null)
     {
     }
 

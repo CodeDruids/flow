@@ -15,7 +15,7 @@ use Flow\Types\Type\Native\UnionType;
  *
  * @implements Type<T>
  */
-final readonly class OptionalType implements Type
+final class OptionalType implements Type
 {
     /**
      * @param Type<T> $base

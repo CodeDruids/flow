@@ -35,7 +35,10 @@ final class GroupBy
      */
     private array $pivotedTable;
 
-    private readonly References $refs;
+    /**
+     * @readonly
+     */
+    private References $refs;
 
     public function __construct(string|Reference ...$entries)
     {

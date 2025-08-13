@@ -150,7 +150,7 @@ final class Comparator
      */
     public function isAny(Type $type, string $typeClass, string ...$typeClasses) : bool
     {
-        $classes = [$typeClass, ...$typeClasses];
+        $classes = array_merge([$typeClass], $typeClasses);
 
         foreach ($classes as $class) {
             if ($this->is($type, $class)) {

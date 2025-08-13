@@ -22,7 +22,7 @@ final class FilesystemStreams implements \Countable, \IteratorAggregate
      */
     private array $writingStreams = [];
 
-    public function __construct(private readonly FilesystemTable $fstab)
+    public function __construct(private FilesystemTable $fstab)
     {
     }
 

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Azure\SDK\BlobService\BlockBlob;
 
-final readonly class Block
+final class Block
 {
     public function __construct(public string $id, public BlockState $state, public ?int $size = null)
     {

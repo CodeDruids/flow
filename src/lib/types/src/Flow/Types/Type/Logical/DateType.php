@@ -11,7 +11,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<\DateTimeInterface>
  */
-final readonly class DateType implements Type
+final class DateType implements Type
 {
     public function assert(mixed $value) : \DateTimeInterface
     {

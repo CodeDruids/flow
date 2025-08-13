@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\CLI\Formatter;
 
-final readonly class ValueFormatter
+final class ValueFormatter
 {
     public function __construct(private string $nullValue = '-')
     {

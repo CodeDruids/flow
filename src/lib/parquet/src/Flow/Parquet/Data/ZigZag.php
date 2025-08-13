@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Parquet\Data;
 
-final readonly class ZigZag
+final class ZigZag
 {
     /**
      * Decode a ZigZag encoded value back to signed integer.

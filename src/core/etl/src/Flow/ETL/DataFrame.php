@@ -227,8 +227,9 @@ final class DataFrame
      *
      * @throws InvalidArgumentException
      */
-    public function display(int $limit = 20, int|bool $truncate = 20, Formatter $formatter = new AsciiTableFormatter()) : string
+    public function display(int $limit = 20, int|bool $truncate = 20, ?Formatter $formatter = null) : string
     {
+        $formatter ??= new AsciiTableFormatter();
         $clone = clone $this;
         $clone->limit($limit);
 
@@ -621,8 +622,9 @@ final class DataFrame
     /**
      * @trigger
      */
-    public function printRows(?int $limit = 20, int|bool $truncate = 20, Formatter $formatter = new AsciiTableFormatter()) : void
+    public function printRows(?int $limit = 20, int|bool $truncate = 20, ?Formatter $formatter = null) : void
     {
+        $formatter ??= new AsciiTableFormatter();
         $clone = clone $this;
 
         if ($limit !== null) {
@@ -637,8 +639,9 @@ final class DataFrame
     /**
      * @trigger
      */
-    public function printSchema(?int $limit = 20, SchemaFormatter $formatter = new ASCIISchemaFormatter()) : void
+    public function printSchema(?int $limit = 20, ?SchemaFormatter $formatter = null) : void
     {
+        $formatter ??= new ASCIISchemaFormatter();
         $clone = clone $this;
 
         if ($limit !== null) {
@@ -745,8 +748,9 @@ final class DataFrame
         return $this;
     }
 
-    public function reorderEntries(Comparator $comparator = new TypeComparator()) : self
+    public function reorderEntries(?Comparator $comparator = null) : self
     {
+        $comparator ??= new TypeComparator();
         $this->pipeline->add(new OrderEntriesTransformer($comparator));
 
         return $this;

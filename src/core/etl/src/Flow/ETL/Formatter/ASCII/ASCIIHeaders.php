@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\ETL\Formatter\ASCII;
 
-final readonly class ASCIIHeaders
+final class ASCIIHeaders
 {
     public function __construct(private Headers $headers, private Body $body)
     {

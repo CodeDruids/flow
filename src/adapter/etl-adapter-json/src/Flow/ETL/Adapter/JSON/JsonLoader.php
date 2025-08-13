@@ -22,7 +22,7 @@ final class JsonLoader implements Closure, FileLoader, Loader
      */
     private array $writes = [];
 
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
     }
 

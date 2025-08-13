@@ -383,8 +383,8 @@ final class MockConverter implements Converter
     public int $toParquetTypeCallCount = 0;
 
     public function __construct(
-        private readonly bool $isForResult,
-        private readonly mixed $conversionResult,
+        private bool $isForResult,
+        private mixed $conversionResult,
     ) {
     }
 
@@ -422,8 +422,8 @@ final class SelectiveMockConverter implements Converter
     public int $toParquetTypeCallCount = 0;
 
     public function __construct(
-        private readonly string $matchingColumnName,
-        private readonly mixed $conversionResult,
+        private string $matchingColumnName,
+        private mixed $conversionResult,
     ) {
     }
 

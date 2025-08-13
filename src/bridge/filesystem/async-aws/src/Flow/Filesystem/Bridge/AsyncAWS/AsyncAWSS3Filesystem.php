@@ -17,7 +17,7 @@ use Flow\Filesystem\{DestinationStream,
 use Flow\Filesystem\Path\Filter;
 use Flow\Filesystem\Path\Filter\KeepAll;
 
-final readonly class AsyncAWSS3Filesystem implements Filesystem
+final class AsyncAWSS3Filesystem implements Filesystem
 {
     public function __construct(private string $bucket, private S3Client $s3Client, private Options $options)
     {
@@ -42,8 +42,9 @@ final readonly class AsyncAWSS3Filesystem implements Filesystem
         return $this->options->tmpDir();
     }
 
-    public function list(Path $path, Filter $pathFilter = new KeepAll()) : \Generator
+    public function list(Path $path, ?Filter $pathFilter = null) : \Generator
     {
+        $pathFilter ??= new KeepAll();
         $this->protocol()->validateScheme($path);
 
         if ($path->isPattern()) {

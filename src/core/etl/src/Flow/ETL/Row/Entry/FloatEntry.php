@@ -23,13 +23,18 @@ final class FloatEntry implements Entry
 
     /**
      * @var Type<float>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
-    private readonly ?float $value;
+    /**
+     * @readonly
+     */
+    private ?float $value;
 
     public function __construct(
-        private readonly string $name,
+        private string $name,
         float|int|string|null $value,
         ?Metadata $metadata = null,
     ) {

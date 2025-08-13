@@ -7,7 +7,7 @@ namespace Flow\ETL\Config\Cache;
 use Flow\ETL\Cache;
 use Flow\Filesystem\Path;
 
-final readonly class CacheConfig
+final class CacheConfig
 {
     public const CACHE_DIR_ENV = 'FLOW_LOCAL_FILESYSTEM_CACHE_DIR';
 

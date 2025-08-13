@@ -15,11 +15,11 @@ final class ParameterModel
      * @param bool $isVariadic
      */
     public function __construct(
-        public readonly string $name,
-        public readonly TypesModel $type,
-        public readonly bool $hasDefaultValue,
-        public readonly bool $isNullable,
-        public readonly bool $isVariadic,
+        public string $name,
+        public TypesModel $type,
+        public bool $hasDefaultValue,
+        public bool $isNullable,
+        public bool $isVariadic,
     ) {
     }
 

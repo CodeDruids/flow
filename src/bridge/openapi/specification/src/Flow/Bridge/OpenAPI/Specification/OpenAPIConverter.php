@@ -185,7 +185,7 @@ final class OpenAPIConverter
         $enumClass = $type->class;
         $values = [];
 
-        if (\enum_exists($enumClass)) {
+        if (class_exists($enumClass)) {
             $values = \array_map(
                 static fn (\UnitEnum $case) => $case instanceof \BackedEnum ? $case->value : $case->name,
                 $enumClass::cases()

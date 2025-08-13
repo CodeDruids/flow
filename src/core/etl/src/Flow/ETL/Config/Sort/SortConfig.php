@@ -7,7 +7,7 @@ namespace Flow\ETL\Config\Sort;
 use Flow\ETL\Dataset\Memory\Unit;
 use Flow\ETL\Sort\SortAlgorithms;
 
-final readonly class SortConfig
+final class SortConfig
 {
     public const SORT_MAX_MEMORY_ENV = 'FLOW_SORT_MAX_MEMORY';
 

@@ -21,13 +21,15 @@ final class BooleanEntry implements Entry
 
     /**
      * @var Type<bool>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
     /**
      * @throws InvalidArgumentException
      */
-    public function __construct(private readonly string $name, private readonly ?bool $value, ?Metadata $metadata = null)
+    public function __construct(private string $name, private ?bool $value, ?Metadata $metadata = null)
     {
         if ('' === $name) {
             throw InvalidArgumentException::because('Entry name cannot be empty');

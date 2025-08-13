@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class Repeat extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|int $times,
+        private ScalarFunction|string $value,
+        private ScalarFunction|int $times,
     ) {
     }
 

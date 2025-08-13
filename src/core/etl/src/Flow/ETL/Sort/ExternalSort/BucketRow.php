@@ -6,7 +6,7 @@ namespace Flow\ETL\Sort\ExternalSort;
 
 use Flow\ETL\Row;
 
-final readonly class BucketRow
+final class BucketRow
 {
     public function __construct(
         public Row $row,

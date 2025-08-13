@@ -22,13 +22,18 @@ final class XMLEntry implements Entry
 
     /**
      * @var Type<\DOMDocument>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
-    private readonly ?\DOMDocument $value;
+    /**
+     * @readonly
+     */
+    private ?\DOMDocument $value;
 
     public function __construct(
-        private readonly string $name,
+        private string $name,
         \DOMDocument|string|null $value,
         ?Metadata $metadata = null,
     ) {

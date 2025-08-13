@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\ETL\Adapter\Doctrine;
 
-final readonly class Table
+final class Table
 {
     /**
      * @param string $name

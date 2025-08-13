@@ -25,7 +25,7 @@ final class Bucket implements \Countable
     /**
      * @param string $hash - hash of the bucket calculated from join expression columns and row
      */
-    public function __construct(public readonly string $hash)
+    public function __construct(public string $hash)
     {
         $this->rowsArray = [];
         $this->rows = null;

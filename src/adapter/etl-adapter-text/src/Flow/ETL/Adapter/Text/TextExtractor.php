@@ -15,7 +15,7 @@ final class TextExtractor implements Extractor, FileExtractor, LimitableExtracto
     use PathFiltering;
 
     public function __construct(
-        private readonly Path $path,
+        private Path $path,
     ) {
         $this->resetLimit();
     }

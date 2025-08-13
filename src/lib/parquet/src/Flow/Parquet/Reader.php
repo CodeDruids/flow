@@ -7,12 +7,11 @@ namespace Flow\Parquet;
 use Flow\Filesystem\{Path, SourceStream, Stream\NativeLocalSourceStream};
 use Flow\Parquet\ParquetFile\Data\DataConverter;
 
-final readonly class Reader
+final class Reader
 {
-    public function __construct(
-        private ByteOrder $byteOrder = ByteOrder::LITTLE_ENDIAN,
-        public Options $options = new Options(),
-    ) {
+    public function __construct(private ByteOrder $byteOrder = ByteOrder::LITTLE_ENDIAN, public ?Options $options = null)
+    {
+        $this->options = $options ?? new Options();
     }
 
     public function read(string $path) : ParquetFile

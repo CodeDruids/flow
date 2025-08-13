@@ -8,7 +8,7 @@ use Flow\ETL\Row\EntryFactory;
 use Flow\ETL\{Row, Rows};
 use Meilisearch\Search\SearchResult;
 
-final readonly class SearchResults
+final class SearchResults
 {
     public function __construct(private SearchResult $results)
     {

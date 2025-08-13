@@ -9,10 +9,10 @@ use Flow\ETL\Row;
 final class StrPad extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|int $length,
-        private readonly ScalarFunction|string $padString = ' ',
-        private readonly ScalarFunction|int $type = STR_PAD_RIGHT,
+        private ScalarFunction|string $value,
+        private ScalarFunction|int $length,
+        private ScalarFunction|string $padString = ' ',
+        private ScalarFunction|int $type = STR_PAD_RIGHT,
     ) {
     }
 

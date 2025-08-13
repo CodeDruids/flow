@@ -6,7 +6,7 @@ namespace Flow\Parquet\ParquetFile\Schema\LogicalType;
 
 use Flow\Parquet\Thrift\DecimalType;
 
-final readonly class Decimal
+final class Decimal
 {
     public function __construct(
         private int $scale,

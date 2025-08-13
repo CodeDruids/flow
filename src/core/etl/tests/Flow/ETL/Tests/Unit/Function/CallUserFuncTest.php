@@ -42,7 +42,7 @@ final class CallUserFuncTest extends FlowTestCase
         self::assertSame(
             3,
             ref('list')
-                ->call(lit($calculator->count(...)))
+                ->call(lit(\Closure::fromCallable([$calculator, 'count'])))
                 ->eval($row)
         );
     }

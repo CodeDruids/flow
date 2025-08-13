@@ -14,8 +14,10 @@ final class HashIdFactory implements IdFactory
 {
     /**
      * @var array<string>
+     *
+     * @readonly
      */
-    private readonly array $entryNames;
+    private array $entryNames;
 
     private Algorithm $hashAlgorithm;
 

@@ -6,10 +6,12 @@ namespace Flow\Doctrine\Bulk;
 
 use Flow\Doctrine\Bulk\Exception\RuntimeException;
 
-final readonly class Columns
+final class Columns
 {
     /**
      * @var array<string>
+     *
+     * @readonly
      */
     private array $columns;
 

@@ -10,10 +10,10 @@ use Flow\ETL\Row;
 final class Between extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly mixed $value,
-        private readonly mixed $lowerBoundRef,
-        private readonly mixed $upperBoundRef,
-        private readonly ScalarFunction|Boundary $boundary = Boundary::LEFT_INCLUSIVE,
+        private mixed $value,
+        private mixed $lowerBoundRef,
+        private mixed $upperBoundRef,
+        private ScalarFunction|Boundary $boundary = Boundary::LEFT_INCLUSIVE,
     ) {
     }
 

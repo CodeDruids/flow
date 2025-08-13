@@ -8,11 +8,9 @@ use Flow\ETL\Row;
 
 final class ToDate extends ScalarFunctionChain
 {
-    public function __construct(
-        private readonly mixed $value,
-        private readonly ScalarFunction|string $format,
-        private readonly ScalarFunction|\DateTimeZone $timeZone = new \DateTimeZone('UTC'),
-    ) {
+    public function __construct(private mixed $value, private ScalarFunction|string $format, private ScalarFunction|\DateTimeZone|null $timeZone = null)
+    {
+        $this->timeZone = $timeZone ?? new \DateTimeZone('UTC');
     }
 
     public function eval(Row $row) : ?\DateTimeInterface

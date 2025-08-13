@@ -14,7 +14,7 @@ final class AvroExtractor implements Extractor, FileExtractor, LimitableExtracto
     use Limitable;
     use PathFiltering;
 
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
         throw new RuntimeException('Avro integration was abandoned due to lack of availability of good Avro libraries.');
     }

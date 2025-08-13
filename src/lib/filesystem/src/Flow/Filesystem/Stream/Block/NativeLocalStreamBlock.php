@@ -11,7 +11,7 @@ final class NativeLocalStreamBlock
 {
     private int $currentSize = 0;
 
-    public function __construct(private readonly string $id, private readonly int $size, private readonly NativeLocalDestinationStream $stream)
+    public function __construct(private string $id, private int $size, private NativeLocalDestinationStream $stream)
     {
         if (!$stream->path()->protocol()->is('file')) {
             throw new RuntimeException('FileBlock can be used only with file:// protocol, got: ' . $stream->path()->protocol()->scheme());

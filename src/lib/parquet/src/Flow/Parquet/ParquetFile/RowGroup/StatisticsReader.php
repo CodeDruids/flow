@@ -10,7 +10,7 @@ use Flow\Parquet\Options;
 use Flow\Parquet\ParquetFile\Schema\{ColumnPrimitiveType, FlatColumn};
 use Flow\Parquet\ParquetFile\Statistics;
 
-final readonly class StatisticsReader
+final class StatisticsReader
 {
     public function __construct(private Statistics $statistics, private Options $options)
     {

@@ -12,7 +12,7 @@ use Flow\ETL\Row\References;
 use Flow\ETL\Sort\ExternalSort\BucketsCache\FilesystemBucketsCache;
 use Flow\ETL\Sort\{ExternalSort, MemorySort};
 
-final readonly class SortingPipeline implements OverridingPipeline, Pipeline
+final class SortingPipeline implements OverridingPipeline, Pipeline
 {
     public function __construct(private Pipeline $pipeline, private References $refs)
     {

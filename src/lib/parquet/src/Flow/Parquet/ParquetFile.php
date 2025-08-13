@@ -25,15 +25,18 @@ final class ParquetFile
 {
     public const PARQUET_MAGIC_NUMBER = 'PAR1';
 
-    private readonly DremelAssembler $dremelAssembler;
+    /**
+     * @readonly
+     */
+    private DremelAssembler $dremelAssembler;
 
     private ?Metadata $metadata = null;
 
     public function __construct(
-        private readonly SourceStream $stream,
-        private readonly ByteOrder $byteOrder,
-        private readonly DataConverter $dataConverter,
-        private readonly Options $options,
+        private SourceStream $stream,
+        private ByteOrder $byteOrder,
+        private DataConverter $dataConverter,
+        private Options $options,
     ) {
         $this->dremelAssembler = new DremelAssembler($this->dataConverter);
     }

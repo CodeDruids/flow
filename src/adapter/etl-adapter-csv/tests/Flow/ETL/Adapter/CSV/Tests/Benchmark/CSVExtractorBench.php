@@ -9,9 +9,11 @@ use function Flow\ETL\DSL\{config, flow_context};
 use Flow\ETL\{FlowContext};
 use PhpBench\Attributes\Groups;
 
-#[Groups(['extractor'])]
-final readonly class CSVExtractorBench
+#[Groups(['extractor'])] final class CSVExtractorBench
 {
+    /**
+     * @readonly
+     */
     private FlowContext $context;
 
     public function __construct()

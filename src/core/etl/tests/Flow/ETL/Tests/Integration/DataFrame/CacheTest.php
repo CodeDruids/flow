@@ -18,7 +18,10 @@ final class CacheTest extends FlowIntegrationTestCase
         $spyExtractor = new class(20) implements Extractor {
             public int $extractions = 0;
 
-            private readonly Extractor $extractor;
+            /**
+             * @readonly
+             */
+            private Extractor $extractor;
 
             public function __construct(int $rowsets)
             {

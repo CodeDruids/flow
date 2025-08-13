@@ -21,7 +21,7 @@ final class NativeLocalDestinationStream implements DestinationStream
      * @param Path $path
      * @param resource $handle
      */
-    public function __construct(private readonly Path $path, $handle)
+    public function __construct(private Path $path, $handle)
     {
         if (!\is_resource($handle)) {
             throw new InvalidArgumentException('DestinationStream expects resource type, given: ' . \gettype($handle));

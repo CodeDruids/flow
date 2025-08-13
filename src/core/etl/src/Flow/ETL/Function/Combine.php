@@ -13,8 +13,8 @@ final class Combine extends ScalarFunctionChain
      * @param array<array-key, mixed>|ScalarFunction $values
      */
     public function __construct(
-        private readonly ScalarFunction|array $keys,
-        private readonly ScalarFunction|array $values,
+        private ScalarFunction|array $keys,
+        private ScalarFunction|array $values,
     ) {
     }
 
@@ -33,8 +33,27 @@ final class Combine extends ScalarFunctionChain
         if ([] === $keys) {
             return [];
         }
+        $arrayIsListFunction = function (array $array) : bool {
+            if (function_exists('array_is_list')) {
+                return array_is_list($array);
+            }
 
-        if (!\array_is_list($keys)) {
+            if ($array === []) {
+                return true;
+            }
+            $current_key = 0;
+
+            foreach ($array as $key => $noop) {
+                if ($key !== $current_key) {
+                    return false;
+                }
+                $current_key++;
+            }
+
+            return true;
+        };
+
+        if (!$arrayIsListFunction($keys)) {
             return null;
         }
 

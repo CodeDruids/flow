@@ -10,7 +10,7 @@ use Symfony\Component\Console\Helper\TableSeparator;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
-final readonly class PipelineReportFormatter
+final class PipelineReportFormatter
 {
     public function __construct(private Report $report, private SymfonyStyle $style, private InputInterface $input)
     {

@@ -32,8 +32,8 @@ final class XMLReaderExtractor implements Extractor, FileExtractor, LimitableExt
      * @param string $xmlNodePath
      */
     public function __construct(
-        private readonly Path $path,
-        private readonly string $xmlNodePath = '',
+        private Path $path,
+        private string $xmlNodePath = '',
     ) {
         if (!$this->path->isLocal()) {
             throw new InvalidArgumentException('XMLReaderExtractor supports only local files, please use XMLParserExtractor that depends on php-xml extension.');

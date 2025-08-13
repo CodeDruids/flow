@@ -8,8 +8,11 @@ use Flow\ETL\Config\ConfigBuilder;
 use Flow\ETL\Extractor\RowsExtractor;
 use Flow\ETL\Pipeline\SynchronousPipeline;
 
-final readonly class Flow
+final class Flow
 {
+    /**
+     * @readonly
+     */
     private Config $config;
 
     public function __construct(Config|ConfigBuilder|null $config = null)

@@ -20,7 +20,7 @@ use Flow\Types\Type;
  *
  * @implements Type<array<TKey, TValue>>
  */
-final readonly class MapType implements Type
+final class MapType implements Type
 {
     /**
      * @param Type<TKey> $key

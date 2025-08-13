@@ -11,10 +11,12 @@ use Flow\ETL\{Exception\InvalidArgumentException,
     Transformer,
     Transformer\Rename\RenameEntryStrategy};
 
-final readonly class RenameEachEntryTransformer implements Transformer
+final class RenameEachEntryTransformer implements Transformer
 {
     /**
      * @var array<RenameEntryStrategy>
+     *
+     * @readonly
      */
     private array $strategies;
 

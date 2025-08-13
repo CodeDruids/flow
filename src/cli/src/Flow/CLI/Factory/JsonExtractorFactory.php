@@ -9,7 +9,7 @@ use Flow\ETL\Adapter\JSON\JSONMachine\JsonExtractor;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class JsonExtractorFactory
+final class JsonExtractorFactory
 {
     public function __construct(
         private Path $path,

@@ -16,7 +16,7 @@ final class Last implements AggregatingFunction
      */
     private ?Entry $last;
 
-    public function __construct(private readonly Reference $ref)
+    public function __construct(private Reference $ref)
     {
         $this->last = null;
     }

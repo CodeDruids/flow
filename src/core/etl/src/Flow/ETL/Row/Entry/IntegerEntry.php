@@ -21,15 +21,17 @@ final class IntegerEntry implements Entry
 
     /**
      * @var Type<int>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
     /**
      * @throws InvalidArgumentException
      */
     public function __construct(
-        private readonly string $name,
-        private readonly ?int $value,
+        private string $name,
+        private ?int $value,
         ?Metadata $metadata = null,
     ) {
         if ('' === $name) {

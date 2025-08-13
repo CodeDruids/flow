@@ -11,7 +11,7 @@ use Flow\ETL\Loader;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class LoaderFactory
+final class LoaderFactory
 {
     public function __construct(
         private Path $path,

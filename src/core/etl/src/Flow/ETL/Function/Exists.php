@@ -9,7 +9,7 @@ use Flow\ETL\Row\Reference;
 
 final class Exists extends ScalarFunctionChain
 {
-    public function __construct(private readonly ScalarFunction $ref)
+    public function __construct(private ScalarFunction $ref)
     {
     }
 

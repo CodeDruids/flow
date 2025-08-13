@@ -7,10 +7,12 @@ namespace Flow\ETL\Transformer;
 use Flow\ETL\{FlowContext, Rows, Transformer, WithEntry};
 use Flow\ETL\Function\Parameter;
 
-final readonly class DuplicateRowTransformer implements Transformer
+final class DuplicateRowTransformer implements Transformer
 {
     /**
      * @var array<WithEntry>
+     *
+     * @readonly
      */
     private array $entries;
 

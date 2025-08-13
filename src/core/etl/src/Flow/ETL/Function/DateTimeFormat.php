@@ -9,8 +9,8 @@ use Flow\ETL\Row;
 final class DateTimeFormat extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|\DateTimeInterface $dateTime,
-        private readonly ScalarFunction|string $format,
+        private ScalarFunction|\DateTimeInterface $dateTime,
+        private ScalarFunction|string $format,
     ) {
     }
 

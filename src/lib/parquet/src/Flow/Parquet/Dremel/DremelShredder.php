@@ -8,7 +8,7 @@ use Flow\Parquet\Dremel\ColumnData\{FlatValue};
 use Flow\Parquet\ParquetFile\Data\DataConverter;
 use Flow\Parquet\ParquetFile\Schema\{Column, FlatColumn, NestedColumn};
 
-final readonly class DremelShredder
+final class DremelShredder
 {
     public function __construct(
         private Validator $validator,

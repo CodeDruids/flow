@@ -9,7 +9,7 @@ use Flow\ETL\Row;
 
 final class DOMElementValue extends ScalarFunctionChain
 {
-    public function __construct(private readonly ScalarFunction|\DOMNode $node)
+    public function __construct(private ScalarFunction|\DOMNode $node)
     {
     }
 

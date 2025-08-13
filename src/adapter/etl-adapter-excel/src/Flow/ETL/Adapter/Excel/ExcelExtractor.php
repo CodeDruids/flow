@@ -32,7 +32,7 @@ final class ExcelExtractor implements Extractor, FileExtractor, LimitableExtract
 
     private bool $withHeader = true;
 
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
         if (!$this->path->isLocal()) {
             // We can't use resources (returned by \fopen) since they are not supported by the OpenSpout library.

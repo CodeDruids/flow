@@ -9,8 +9,8 @@ use Flow\ETL\Row;
 final class ModifyDateTime extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly mixed $reference,
-        private readonly string|ScalarFunction $modifier,
+        private mixed $reference,
+        private string|ScalarFunction $modifier,
     ) {
     }
 

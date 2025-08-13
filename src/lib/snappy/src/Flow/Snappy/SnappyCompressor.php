@@ -15,7 +15,10 @@ final class SnappyCompressor
 
     private const MAX_HASH_TABLE_BITS = 14;
 
-    private readonly int $arrayLength;
+    /**
+     * @readonly
+     */
+    private int $arrayLength;
 
     /**
      * @var array<int, array<int, int>>
@@ -25,7 +28,7 @@ final class SnappyCompressor
     /**
      * @param array<int> $array
      */
-    public function __construct(private readonly array $array)
+    public function __construct(private array $array)
     {
         $this->arrayLength = \count($this->array);
     }

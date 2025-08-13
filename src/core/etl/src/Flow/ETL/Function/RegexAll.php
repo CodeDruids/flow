@@ -15,10 +15,10 @@ final class RegexAll extends ScalarFunctionChain
      * @param int|ScalarFunction $offset
      */
     public function __construct(
-        private readonly ScalarFunction|string $pattern,
-        private readonly ScalarFunction|string|array $subject,
-        private readonly ScalarFunction|int $flags = 0,
-        private readonly ScalarFunction|int $offset = 0,
+        private ScalarFunction|string $pattern,
+        private ScalarFunction|string|array $subject,
+        private ScalarFunction|int $flags = 0,
+        private ScalarFunction|int $offset = 0,
     ) {
     }
 

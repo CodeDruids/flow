@@ -8,7 +8,7 @@ use Flow\ETL\Row;
 
 final class Not extends ScalarFunctionChain
 {
-    public function __construct(private readonly ScalarFunction $value)
+    public function __construct(private ScalarFunction $value)
     {
     }
 

@@ -26,10 +26,11 @@ use Flow\Parquet\ParquetFile\Compressions;
 function from_parquet(
     string|Path $path,
     array $columns = [],
-    Options $options = new Options(),
+    ?Options $options = null,
     ByteOrder $byte_order = ByteOrder::LITTLE_ENDIAN,
     ?int $offset = null,
 ) : ParquetExtractor {
+    $options ??= new Options();
     $loader = (new ParquetExtractor(\is_string($path) ? Path::realpath($path) : $path))
         ->withOptions($options)
         ->withByteOrder($byte_order);

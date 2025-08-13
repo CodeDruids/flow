@@ -15,7 +15,7 @@ use Flow\Filesystem\Exception\InvalidArgumentException;
  * Normally flow allows to use batch size -1 (which means no batches) but it defeats the purpose of using this transformation on
  * Data Streams.
  */
-final readonly class BatchSize implements Transformation
+final class BatchSize implements Transformation
 {
     /**
      * @param int<1, max> $size

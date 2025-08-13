@@ -8,12 +8,17 @@ use Flow\Parquet\Dremel\ColumnData\{FlatValue, ReadFlatColumnValues};
 use Flow\Parquet\Exception\InvalidArgumentException;
 use Flow\Parquet\ParquetFile\Schema\{Column, FlatColumn, NestedColumn};
 
-final readonly class ReadColumnData
+final class ReadColumnData
 {
+    /**
+     * @readonly
+     */
     public Column $column;
 
     /**
      * @var array<string, ReadFlatColumnValues>
+     *
+     * @readonly
      */
     public array $flatValues;
 

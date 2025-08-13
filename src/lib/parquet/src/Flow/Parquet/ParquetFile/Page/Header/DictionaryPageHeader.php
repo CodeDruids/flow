@@ -6,7 +6,7 @@ namespace Flow\Parquet\ParquetFile\Page\Header;
 
 use Flow\Parquet\ParquetFile\Encodings;
 
-final readonly class DictionaryPageHeader
+final class DictionaryPageHeader
 {
     public function __construct(
         private Encodings $encoding,

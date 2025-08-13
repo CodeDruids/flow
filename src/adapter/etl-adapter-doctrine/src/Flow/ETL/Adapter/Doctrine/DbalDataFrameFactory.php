@@ -14,8 +14,10 @@ final class DbalDataFrameFactory implements DataFrameFactory
 
     /**
      * @var array<QueryParameter>
+     *
+     * @readonly
      */
-    private readonly array $parameters;
+    private array $parameters;
 
     /**
      * @var null|Schema
@@ -28,8 +30,8 @@ final class DbalDataFrameFactory implements DataFrameFactory
      * @param QueryParameter ...$parameters
      */
     public function __construct(
-        private readonly array $connectionParams,
-        private readonly string $query,
+        private array $connectionParams,
+        private string $query,
         QueryParameter ...$parameters,
     ) {
         $this->parameters = $parameters;

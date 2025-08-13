@@ -25,8 +25,10 @@ final class StructureEntry implements Entry
 
     /**
      * @var Type<array<string, T>>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
     /**
      * @param ?array<array-key, mixed> $value
@@ -35,8 +37,8 @@ final class StructureEntry implements Entry
      * @throws InvalidArgumentException
      */
     public function __construct(
-        private readonly string $name,
-        private readonly ?array $value,
+        private string $name,
+        private ?array $value,
         Type $type,
         ?Metadata $metadata = null,
     ) {

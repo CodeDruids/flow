@@ -15,19 +15,23 @@ final class FlowBufferedResponse extends Response
 {
     private bool $buffered = false;
 
-    private readonly Config|ConfigBuilder $config;
+    /**
+     * @readonly
+     */
+    private Config|ConfigBuilder $config;
 
     /**
      * @param array<string, mixed> $headers
      */
     public function __construct(
-        private readonly Extractor $extractor,
-        private readonly Output $output,
-        private readonly Transformation $transformations = new Transformations(),
+        private Extractor $extractor,
+        private Output $output,
+        private ?Transformation $transformations = null,
         int $status = 200,
         array $headers = [],
         Config|ConfigBuilder|null $config = null,
     ) {
+        $this->transformations = $transformations ?? new Transformations();
         $this->config = $config ?? Config::default();
 
         parent::__construct(null, $status, $headers);

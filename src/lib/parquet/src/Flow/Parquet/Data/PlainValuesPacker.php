@@ -7,7 +7,7 @@ namespace Flow\Parquet\Data;
 use Flow\Parquet\BinaryWriter;
 use Flow\Parquet\ParquetFile\Schema\{FlatColumn, LogicalType, PhysicalType};
 
-final readonly class PlainValuesPacker
+final class PlainValuesPacker
 {
     public function __construct(private BinaryWriter $writer)
     {

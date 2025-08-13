@@ -7,7 +7,7 @@ namespace Flow\Types\Value;
 use Flow\Types\Exception\{InvalidArgumentException, RuntimeException};
 use Ramsey\Uuid\UuidInterface;
 
-final readonly class Uuid implements \Stringable
+final class Uuid implements \Stringable
 {
     /**
      * This regexp is a port of the Uuid library,
@@ -15,6 +15,9 @@ final readonly class Uuid implements \Stringable
      */
     public const UUID_REGEXP = '/\A[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\z/ms';
 
+    /**
+     * @readonly
+     */
     private string $value;
 
     /**

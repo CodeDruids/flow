@@ -14,7 +14,7 @@ final class MeilisearchContext
 {
     private ?Client $client = null;
 
-    public function __construct(private readonly string $url, private readonly string $apiKey)
+    public function __construct(private string $url, private string $apiKey)
     {
     }
 

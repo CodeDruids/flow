@@ -7,7 +7,7 @@ namespace Flow\Doctrine\Bulk\Dialect;
 use function Flow\Types\DSL\{type_boolean, type_list, type_optional, type_string, type_structure};
 use Flow\Doctrine\Bulk\InsertOptions;
 
-final readonly class MySQLInsertOptions implements InsertOptions
+final class MySQLInsertOptions implements InsertOptions
 {
     /**
      * @param null|bool $skipConflicts

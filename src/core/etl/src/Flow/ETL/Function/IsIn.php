@@ -13,8 +13,8 @@ final class IsIn extends ScalarFunctionChain
      * @param mixed $needle
      */
     public function __construct(
-        private readonly ScalarFunction|array $haystack,
-        private readonly mixed $needle,
+        private ScalarFunction|array $haystack,
+        private mixed $needle,
     ) {
     }
 

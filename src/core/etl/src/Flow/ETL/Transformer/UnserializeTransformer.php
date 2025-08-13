@@ -9,7 +9,7 @@ use Flow\ETL\{FlowContext, Row, Rows, Transformer};
 use Flow\ETL\Row\Reference;
 use Flow\Serializer\Exception\SerializationException;
 
-final readonly class UnserializeTransformer implements Transformer
+final class UnserializeTransformer implements Transformer
 {
     /**
      * @param Reference|string $source

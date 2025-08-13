@@ -8,7 +8,7 @@ use function Flow\ETL\DSL\string_entry;
 use function Flow\Types\DSL\type_string;
 use Flow\ETL\{FlowContext, Row, Rows, Transformer};
 
-final readonly class AddStampToStringEntryTransformer implements Transformer
+final class AddStampToStringEntryTransformer implements Transformer
 {
     public function __construct(private string $entryName, private string $stamp, private string $divider)
     {

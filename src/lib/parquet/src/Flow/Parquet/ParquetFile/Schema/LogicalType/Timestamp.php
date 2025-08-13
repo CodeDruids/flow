@@ -6,7 +6,7 @@ namespace Flow\Parquet\ParquetFile\Schema\LogicalType;
 
 use Flow\Parquet\Thrift\TimestampType;
 
-final readonly class Timestamp
+final class Timestamp
 {
     public function __construct(
         private bool $isAdjustedToUTC,

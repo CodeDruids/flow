@@ -6,12 +6,11 @@ namespace Flow\Bridge\Monolog\Http;
 
 use Flow\Bridge\Monolog\Http\Config\{RequestConfig, ResponseConfig};
 
-final readonly class Config
+final class Config
 {
-    public function __construct(
-        public RequestConfig $request = new RequestConfig(),
-        public ResponseConfig $response = new ResponseConfig(),
-    ) {
-
+    public function __construct(public ?RequestConfig $request = null, public ?ResponseConfig $response = null)
+    {
+        $this->request = $request ?? new RequestConfig();
+        $this->response = $response ?? new ResponseConfig();
     }
 }

@@ -7,9 +7,9 @@ namespace Flow\ETL\Exception;
 final class ConstraintViolationException extends RuntimeException
 {
     public function __construct(
-        private readonly string $constraint,
-        private readonly string $violation,
-        private readonly int $rowIndex,
+        private string $constraint,
+        private string $violation,
+        private int $rowIndex,
     ) {
         parent::__construct("Constraint violation: {$this->constraint} - {$this->violation} in row: {$this->rowIndex}");
     }

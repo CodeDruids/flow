@@ -11,8 +11,8 @@ use Flow\ETL\Row;
 final class ArrayGet extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction $ref,
-        private readonly ScalarFunction|string $path,
+        private ScalarFunction $ref,
+        private ScalarFunction|string $path,
     ) {
     }
 

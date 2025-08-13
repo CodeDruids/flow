@@ -24,8 +24,8 @@ final class PsrHttpClientDynamicExtractor implements Extractor
     private $preRequest;
 
     public function __construct(
-        private readonly ClientInterface $client,
-        private readonly NextRequestFactory $requestFactory,
+        private ClientInterface $client,
+        private NextRequestFactory $requestFactory,
     ) {
     }
 

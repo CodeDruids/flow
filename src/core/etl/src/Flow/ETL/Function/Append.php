@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class Append extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|string $suffix,
+        private ScalarFunction|string $value,
+        private ScalarFunction|string $suffix,
     ) {
     }
 

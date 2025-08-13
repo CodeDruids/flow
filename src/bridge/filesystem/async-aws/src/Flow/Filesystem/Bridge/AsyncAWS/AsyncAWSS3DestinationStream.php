@@ -18,12 +18,12 @@ final class AsyncAWSS3DestinationStream implements DestinationStream
     private bool $closed;
 
     public function __construct(
-        private readonly S3Client $s3Client,
-        private readonly string $uploadId,
-        private readonly string $bucket,
-        private readonly Path $path,
-        private readonly Blocks $blocks,
-        private readonly BlockList $blockList,
+        private S3Client $s3Client,
+        private string $uploadId,
+        private string $bucket,
+        private Path $path,
+        private Blocks $blocks,
+        private BlockList $blockList,
     ) {
         $this->closed = false;
     }
@@ -32,9 +32,11 @@ final class AsyncAWSS3DestinationStream implements DestinationStream
         S3Client $s3Client,
         string $bucket,
         Path $path,
-        BlockFactory $blockFactory = new NativeLocalFileBlocksFactory(),
+        ?BlockFactory $blockFactory = null,
         int $blockSize = 1024 * 1024 * 4,
     ) : self {
+
+        $blockFactory ??= new NativeLocalFileBlocksFactory();
 
         try {
             $objectHead = $s3Client->headObject([
@@ -115,10 +117,11 @@ final class AsyncAWSS3DestinationStream implements DestinationStream
         S3Client $s3Client,
         string $bucket,
         Path $path,
-        BlockFactory $blockFactory = new NativeLocalFileBlocksFactory(),
+        ?BlockFactory $blockFactory = null,
         int $blockSize = 1024 * 1024 * 4,
     ) : self {
 
+        $blockFactory ??= new NativeLocalFileBlocksFactory();
         $response = $s3Client->createMultipartUpload(new CreateMultipartUploadRequest([
             'Bucket' => $bucket,
             'Key' => \ltrim($path->path(), '/'),

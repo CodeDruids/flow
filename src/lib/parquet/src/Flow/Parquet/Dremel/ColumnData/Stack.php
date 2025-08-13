@@ -14,7 +14,7 @@ final class Stack
     private array $stack;
 
     public function __construct(
-        private readonly int $maxRepetitionLevel,
+        private int $maxRepetitionLevel,
     ) {
         $this->stack = [];
     }

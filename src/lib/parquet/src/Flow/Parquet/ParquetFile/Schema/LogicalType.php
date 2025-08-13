@@ -8,7 +8,7 @@ use Flow\Parquet\Exception\InvalidArgumentException;
 use Flow\Parquet\ParquetFile\Schema\LogicalType\{Decimal, Time, Timestamp};
 use Flow\Parquet\Thrift\{BsonType, DateType, DecimalType, EnumType, IntType, JsonType, ListType, MapType, MicroSeconds, MilliSeconds, NanoSeconds, NullType, StringType, TimeType, TimeUnit, TimestampType, UUIDType};
 
-final readonly class LogicalType
+final class LogicalType
 {
     public const BSON = 'BSON';
 

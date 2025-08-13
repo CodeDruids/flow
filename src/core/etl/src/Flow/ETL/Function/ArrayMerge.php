@@ -15,7 +15,7 @@ final class ArrayMerge extends ScalarFunctionChain
      * @param array<array-key, mixed>|ScalarFunction $left
      * @param array<array-key, mixed>|ScalarFunction $right
      */
-    public function __construct(private readonly ScalarFunction|array $left, private readonly ScalarFunction|array $right)
+    public function __construct(private ScalarFunction|array $left, private ScalarFunction|array $right)
     {
     }
 

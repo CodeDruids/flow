@@ -10,7 +10,7 @@ use Flow\Filesystem\Exception\RuntimeException;
 use Flow\Filesystem\Path;
 use Flow\Filesystem\Stream\{Block, BlockLifecycle};
 
-final readonly class AsyncAWSS3BlockLifecycle implements BlockLifecycle
+final class AsyncAWSS3BlockLifecycle implements BlockLifecycle
 {
     public function __construct(
         private S3Client $s3Client,

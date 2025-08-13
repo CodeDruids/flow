@@ -10,9 +10,9 @@ use Flow\ETL\Row;
 final class ArrayKeyRename extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction $ref,
-        private readonly ScalarFunction|string $path,
-        private readonly ScalarFunction|string $newName,
+        private ScalarFunction $ref,
+        private ScalarFunction|string $path,
+        private ScalarFunction|string $newName,
     ) {
     }
 

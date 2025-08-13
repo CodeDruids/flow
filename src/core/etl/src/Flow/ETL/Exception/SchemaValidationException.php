@@ -8,7 +8,7 @@ use Flow\ETL\Schema;
 
 final class SchemaValidationException extends RuntimeException
 {
-    public function __construct(private readonly Schema $expected, private readonly Schema $given)
+    public function __construct(private Schema $expected, private Schema $given)
     {
         /**
          * @var array<string> $missingDefinitions

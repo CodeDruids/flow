@@ -9,7 +9,7 @@ use Flow\ETL\Join\Comparison\{All, Equal};
 use Flow\ETL\Row\Reference;
 use Flow\ETL\{Row};
 
-final readonly class Expression
+final class Expression
 {
     public function __construct(
         private Comparison $comparison,

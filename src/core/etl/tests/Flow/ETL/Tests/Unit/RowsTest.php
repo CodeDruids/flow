@@ -989,8 +989,9 @@ final class RowsTest extends FlowTestCase
     }
 
     #[DataProvider('unique_rows_provider')]
-    public function test_rows_unique(Rows $expected, Rows $notUnique, Comparator $comparator = new NativeComparator()) : void
+    public function test_rows_unique(Rows $expected, Rows $notUnique, ?Comparator $comparator = null) : void
     {
+        $comparator ??= new NativeComparator();
         self::assertEquals($expected, $notUnique->unique($comparator));
     }
 

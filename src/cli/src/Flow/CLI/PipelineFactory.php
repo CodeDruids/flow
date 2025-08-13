@@ -8,7 +8,7 @@ use Flow\ETL\DataFrame;
 use Flow\ETL\Exception\{InvalidArgumentException, InvalidFileFormatException};
 use Flow\Filesystem\Path;
 
-final readonly class PipelineFactory
+final class PipelineFactory
 {
     public function __construct(private Path $path)
     {

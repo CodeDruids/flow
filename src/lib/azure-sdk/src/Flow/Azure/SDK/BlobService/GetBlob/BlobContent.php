@@ -7,7 +7,7 @@ namespace Flow\Azure\SDK\BlobService\GetBlob;
 use Flow\Azure\SDK\Exception\Exception;
 use Psr\Http\Message\ResponseInterface;
 
-final readonly class BlobContent
+final class BlobContent
 {
     public function __construct(private ResponseInterface $response)
     {

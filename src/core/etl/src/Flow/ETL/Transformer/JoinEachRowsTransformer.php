@@ -7,7 +7,7 @@ namespace Flow\ETL\Transformer;
 use Flow\ETL\{DataFrameFactory, Exception\InvalidArgumentException, FlowContext, Rows, Transformer};
 use Flow\ETL\Join\{Expression, Join};
 
-final readonly class JoinEachRowsTransformer implements Transformer
+final class JoinEachRowsTransformer implements Transformer
 {
     private function __construct(
         private DataFrameFactory $factory,

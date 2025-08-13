@@ -16,10 +16,12 @@ use Flow\Types\Type\{Logical\OptionalType, TypeFactory, Types};
  *
  * @implements Type<TLeft&TRight>
  */
-final readonly class IntersectionType implements Type
+final class IntersectionType implements Type
 {
     /**
      * @var Types<TLeft|TRight>
+     *
+     * @readonly
      */
     private Types $flatTypes;
 
@@ -36,13 +38,13 @@ final readonly class IntersectionType implements Type
         $types = [];
 
         if ($this->left instanceof self) {
-            $types = [...$types, ...$this->left->types()->all()];
+            $types = array_merge($types, $this->left->types()->all());
         } else {
             $types[] = $this->left;
         }
 
         if ($this->right instanceof self) {
-            $types = [...$types, ...$this->right->types()->all()];
+            $types = array_merge($types, $this->right->types()->all());
         } else {
             $types[] = $this->right;
         }

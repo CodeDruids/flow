@@ -20,7 +20,7 @@ final class HashTable
      */
     private array $bucketsMatches;
 
-    public function __construct(private readonly Algorithm $hashAlgorithm)
+    public function __construct(private Algorithm $hashAlgorithm)
     {
         $this->buckets = [];
         $this->bucketsMatches = [];

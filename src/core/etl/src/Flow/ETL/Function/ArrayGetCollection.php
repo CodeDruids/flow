@@ -15,9 +15,9 @@ final class ArrayGetCollection extends ScalarFunctionChain
      * @param array<array-key, mixed> $keys
      */
     public function __construct(
-        private readonly ScalarFunction $ref,
-        private readonly ScalarFunction|array $keys,
-        private readonly ScalarFunction|string $index = '*',
+        private ScalarFunction $ref,
+        private ScalarFunction|array $keys,
+        private ScalarFunction|string $index = '*',
     ) {
     }
 

@@ -9,7 +9,7 @@ use Flow\ETL\Row;
 
 final class ArrayExpand extends ScalarFunctionChain implements ExpandResults
 {
-    public function __construct(private readonly ScalarFunction $ref, private readonly ArrayExpand\ArrayExpand $expand)
+    public function __construct(private ScalarFunction $ref, private ArrayExpand\ArrayExpand $expand)
     {
     }
 

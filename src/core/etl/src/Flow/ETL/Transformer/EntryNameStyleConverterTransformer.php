@@ -12,8 +12,11 @@ use Flow\ETL\{FlowContext,
     Transformer};
 use Flow\ETL\Row\Entry;
 
-final readonly class EntryNameStyleConverterTransformer implements Transformer
+final class EntryNameStyleConverterTransformer implements Transformer
 {
+    /**
+     * @readonly
+     */
     private StringStyles $style;
 
     public function __construct(OldStringStyles|StringStyles $style)

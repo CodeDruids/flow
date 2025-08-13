@@ -14,15 +14,19 @@ use Flow\Types\Type\Native\UnionType;
  *
  * @template-covariant  T
  */
-final readonly class Types implements \Countable, \Stringable
+final class Types implements \Countable, \Stringable
 {
     /**
      * @var ?Type<T>
+     *
+     * @readonly
      */
     private ?Type $first;
 
     /**
      * @var array<Type<T>>
+     *
+     * @readonly
      */
     private array $types;
 

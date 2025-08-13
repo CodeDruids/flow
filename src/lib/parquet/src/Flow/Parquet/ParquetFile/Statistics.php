@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Parquet\ParquetFile;
 
-final readonly class Statistics
+final class Statistics
 {
     public function __construct(
         public ?string $max,

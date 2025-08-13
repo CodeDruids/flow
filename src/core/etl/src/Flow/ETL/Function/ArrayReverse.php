@@ -12,7 +12,7 @@ final class ArrayReverse extends ScalarFunctionChain
      * @param array<array-key, mixed>|ScalarFunction $array
      * @param bool|ScalarFunction $preserveKeys
      */
-    public function __construct(private readonly ScalarFunction|array $array, private readonly ScalarFunction|bool $preserveKeys)
+    public function __construct(private ScalarFunction|array $array, private ScalarFunction|bool $preserveKeys)
     {
     }
 

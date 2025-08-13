@@ -14,7 +14,7 @@ final class ArrayExtractor implements Extractor
     /**
      * @param iterable<array<mixed>> $dataset
      */
-    public function __construct(private readonly iterable $dataset)
+    public function __construct(private iterable $dataset)
     {
     }
 

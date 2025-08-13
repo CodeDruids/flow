@@ -9,7 +9,7 @@ use function Flow\Types\DSL\{type_float, type_integer, type_list, type_string, t
 use Faker\Factory;
 use Flow\ETL\{Extractor, FlowContext, Schema};
 
-final readonly class FakeRandomOrdersExtractor implements Extractor
+final class FakeRandomOrdersExtractor implements Extractor
 {
     public function __construct(private int $count = 1_000)
     {

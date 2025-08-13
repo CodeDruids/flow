@@ -14,7 +14,7 @@ final class MatchCases extends ScalarFunctionChain
      * @param array<MatchCondition> $cases
      * @param mixed $default
      */
-    public function __construct(private readonly array $cases, private readonly mixed $default = null)
+    public function __construct(private array $cases, private mixed $default = null)
     {
 
     }

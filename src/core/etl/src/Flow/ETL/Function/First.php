@@ -16,7 +16,7 @@ final class First implements AggregatingFunction
      */
     private ?Entry $first;
 
-    public function __construct(private readonly Reference $ref)
+    public function __construct(private Reference $ref)
     {
         $this->first = null;
     }

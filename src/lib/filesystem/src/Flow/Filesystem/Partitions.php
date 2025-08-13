@@ -10,10 +10,12 @@ use Flow\ETL\Exception\{InvalidArgumentException, RuntimeException};
  * @implements \ArrayAccess<int, Partition>
  * @implements \IteratorAggregate<int, Partition>
  */
-final readonly class Partitions implements \ArrayAccess, \Countable, \IteratorAggregate
+final class Partitions implements \ArrayAccess, \Countable, \IteratorAggregate
 {
     /**
      * @var array<int, Partition>
+     *
+     * @readonly
      */
     private array $partitions;
 
@@ -65,7 +67,7 @@ final readonly class Partitions implements \ArrayAccess, \Countable, \IteratorAg
             $id .= $partition->name . '_' . $partition->value . '|';
         }
 
-        return \hash('xxh128', $id);
+        return \hash('md5', $id);
     }
 
     public function offsetExists(mixed $offset) : bool

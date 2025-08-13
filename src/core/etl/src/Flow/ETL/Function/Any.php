@@ -6,10 +6,12 @@ namespace Flow\ETL\Function;
 
 use Flow\ETL\Row;
 
-final readonly class Any implements ScalarFunction
+final class Any implements ScalarFunction
 {
     /**
      * @var array<ScalarFunction>
+     *
+     * @readonly
      */
     private array $functions;
 

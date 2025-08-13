@@ -8,7 +8,7 @@ use Flow\Parquet\{BinaryWriter, ByteOrder, DataSize};
 
 final class BinaryBufferWriter implements BinaryWriter
 {
-    public function __construct(private string &$buffer, private readonly ByteOrder $byteOrder = ByteOrder::LITTLE_ENDIAN)
+    public function __construct(private string &$buffer, private ByteOrder $byteOrder = ByteOrder::LITTLE_ENDIAN)
     {
         $this->buffer = '';
     }

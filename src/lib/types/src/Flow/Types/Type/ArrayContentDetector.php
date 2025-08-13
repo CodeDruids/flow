@@ -9,20 +9,30 @@ use Flow\Types\Exception\InvalidArgumentException;
 use Flow\Types\Type;
 use Flow\Types\Type\Native\{IntegerType, NullType, StringType};
 
-final readonly class ArrayContentDetector
+final class ArrayContentDetector
 {
     /**
      * @var null|Type<array-key>
+     *
+     * @readonly
      */
     private ?Type $firstKeyType;
 
     /**
      * @var null|Type<mixed>
+     *
+     * @readonly
      */
     private ?Type $firstValueType;
 
+    /**
+     * @readonly
+     */
     private int $uniqueKeysTypeCount;
 
+    /**
+     * @readonly
+     */
     private int $uniqueValuesTypeCount;
 
     /**

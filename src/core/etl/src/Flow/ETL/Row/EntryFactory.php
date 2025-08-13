@@ -55,7 +55,7 @@ use Flow\Types\Type\Native\String\StringTypeChecker;
 use Flow\Types\Type\{TypeDetector};
 use Flow\Types\Value\Uuid;
 
-final readonly class EntryFactory
+final class EntryFactory
 {
     /**
      * @param null|Definition<mixed>|Schema $schema

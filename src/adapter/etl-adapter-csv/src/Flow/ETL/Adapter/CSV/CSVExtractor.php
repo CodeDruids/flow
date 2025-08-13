@@ -34,7 +34,7 @@ final class CSVExtractor implements Extractor, FileExtractor, LimitableExtractor
 
     private bool $withHeader = true;
 
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
         $this->resetLimit();
     }

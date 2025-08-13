@@ -14,7 +14,7 @@ use function Flow\Types\DSL\{get_type,
     type_uuid};
 use Flow\Types\Type\Native\String\StringTypeChecker;
 
-final readonly class AutoCaster
+final class AutoCaster
 {
     public function cast(mixed $value) : mixed
     {

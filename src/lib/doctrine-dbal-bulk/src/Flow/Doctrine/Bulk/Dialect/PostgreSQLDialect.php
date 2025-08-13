@@ -8,7 +8,7 @@ use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Flow\Doctrine\Bulk\{BulkData, Columns, InsertOptions, TableDefinition, UpdateOptions};
 use Flow\Doctrine\Bulk\Exception\RuntimeException;
 
-final readonly class PostgreSQLDialect implements Dialect
+final class PostgreSQLDialect implements Dialect
 {
     public function __construct(private AbstractPlatform $platform)
     {

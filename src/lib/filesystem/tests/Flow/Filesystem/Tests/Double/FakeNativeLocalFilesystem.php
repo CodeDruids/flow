@@ -39,8 +39,9 @@ final class FakeNativeLocalFilesystem implements Filesystem
         return new Path(\sys_get_temp_dir());
     }
 
-    public function list(Path $path, Filter $pathFilter = new OnlyFiles()) : \Generator
+    public function list(Path $path, ?Filter $pathFilter = null) : \Generator
     {
+        $pathFilter ??= new OnlyFiles();
         $this->protocol()->validateScheme($path);
 
         if (!$path->isPattern()) {

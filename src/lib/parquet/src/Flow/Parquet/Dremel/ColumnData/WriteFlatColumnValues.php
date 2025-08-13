@@ -16,7 +16,7 @@ final class WriteFlatColumnValues
      * @param array<null|scalar> $values
      */
     public function __construct(
-        public readonly FlatColumn $column,
+        public FlatColumn $column,
         private array $repetitionLevels = [],
         private array $definitionLevels = [],
         private array $values = [],

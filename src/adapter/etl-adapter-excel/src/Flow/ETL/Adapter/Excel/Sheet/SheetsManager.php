@@ -7,7 +7,7 @@ namespace Flow\ETL\Adapter\Excel\Sheet;
 use Flow\ETL\Exception\InvalidArgumentException;
 use OpenSpout\Reader\{SheetInterface, SheetIteratorInterface};
 
-final readonly class SheetsManager
+final class SheetsManager
 {
     public function __construct(private SheetIteratorInterface $sheets)
     {

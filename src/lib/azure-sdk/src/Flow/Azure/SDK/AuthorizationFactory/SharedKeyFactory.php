@@ -7,7 +7,7 @@ namespace Flow\Azure\SDK\AuthorizationFactory;
 use Flow\Azure\SDK\AuthorizationFactory;
 use Psr\Http\Message\RequestInterface;
 
-final readonly class SharedKeyFactory implements AuthorizationFactory
+final class SharedKeyFactory implements AuthorizationFactory
 {
     public function __construct(
         #[\SensitiveParameter]

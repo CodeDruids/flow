@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Azure\SDK\BlobService\ListBlobs;
 
-final readonly class Blob
+final class Blob
 {
     /**
      * @param array<array-key, mixed> $data

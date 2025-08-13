@@ -3,7 +3,7 @@ name: 'Packages Split'
 on:
   push:
     branches:
-      - 1.x
+      - php-8.1-downgrade-0.22.0
     tags:
       - '*'
     paths-ignore:
@@ -23,21 +23,21 @@ jobs:
         package:
           - local_path: 'src/core/etl'
             split_repository: 'etl'
-          - local_path: 'src/cli'
-            split_repository: 'cli'
+          # - local_path: 'src/cli'
+          #   split_repository: 'cli'
 
           - local_path: 'src/lib/array-dot'
             split_repository: 'array-dot'
-          - local_path: 'src/lib/azure-sdk'
-            split_repository: 'azure-sdk'
+          # - local_path: 'src/lib/azure-sdk'
+          #   split_repository: 'azure-sdk'
           - local_path: 'src/lib/doctrine-dbal-bulk'
             split_repository: 'doctrine-dbal-bulk'
           - local_path: 'src/lib/parquet'
             split_repository: 'parquet'
-          - local_path: 'src/lib/parquet-viewer'
-            split_repository: 'parquet-viewer'
-          - local_path: 'src/lib/dremel'
-            split_repository: 'dremel'
+          # - local_path: 'src/lib/parquet-viewer'
+          #   split_repository: 'parquet-viewer'
+          # - local_path: 'src/lib/dremel'
+          #   split_repository: 'dremel'
           - local_path: 'src/lib/filesystem'
             split_repository: 'filesystem'
           - local_path: 'src/lib/snappy'
@@ -45,48 +45,48 @@ jobs:
           - local_path: 'src/lib/types'
             split_repository: 'types'
 
-          - local_path: 'src/adapter/etl-adapter-avro'
-            split_repository: 'etl-adapter-avro'
-          - local_path: 'src/adapter/etl-adapter-chartjs'
-            split_repository: 'etl-adapter-chartjs'
-          - local_path: 'src/adapter/etl-adapter-csv'
-            split_repository: 'etl-adapter-csv'
+          # - local_path: 'src/adapter/etl-adapter-avro'
+          #   split_repository: 'etl-adapter-avro'
+          # - local_path: 'src/adapter/etl-adapter-chartjs'
+          #   split_repository: 'etl-adapter-chartjs'
+          # - local_path: 'src/adapter/etl-adapter-csv'
+          #   split_repository: 'etl-adapter-csv'
           - local_path: 'src/adapter/etl-adapter-doctrine'
             split_repository: 'etl-adapter-doctrine'
-          - local_path: 'src/adapter/etl-adapter-elasticsearch'
-            split_repository: 'etl-adapter-elasticsearch'
-          - local_path: 'src/adapter/etl-adapter-excel'
-            split_repository: 'etl-adapter-excel'
-          - local_path: 'src/adapter/etl-adapter-google-sheet'
-            split_repository: 'etl-adapter-google-sheet'
-          - local_path: 'src/adapter/etl-adapter-http'
-            split_repository: 'etl-adapter-http'
-          - local_path: 'src/adapter/etl-adapter-json'
-            split_repository: 'etl-adapter-json'
-          - local_path: 'src/adapter/etl-adapter-logger'
-            split_repository: 'etl-adapter-logger'
-          - local_path: 'src/adapter/etl-adapter-meilisearch'
-            split_repository: 'etl-adapter-meilisearch'
+          # - local_path: 'src/adapter/etl-adapter-elasticsearch'
+          #   split_repository: 'etl-adapter-elasticsearch'
+          # - local_path: 'src/adapter/etl-adapter-excel'
+          #   split_repository: 'etl-adapter-excel'
+          # - local_path: 'src/adapter/etl-adapter-google-sheet'
+          #   split_repository: 'etl-adapter-google-sheet'
+          # - local_path: 'src/adapter/etl-adapter-http'
+          #   split_repository: 'etl-adapter-http'
+          # - local_path: 'src/adapter/etl-adapter-json'
+          #   split_repository: 'etl-adapter-json'
+          # - local_path: 'src/adapter/etl-adapter-logger'
+          #   split_repository: 'etl-adapter-logger'
+          # - local_path: 'src/adapter/etl-adapter-meilisearch'
+          #   split_repository: 'etl-adapter-meilisearch'
           - local_path: 'src/adapter/etl-adapter-parquet'
             split_repository: 'etl-adapter-parquet'
-          - local_path: 'src/adapter/etl-adapter-text'
-            split_repository: 'etl-adapter-text'
-          - local_path: 'src/adapter/etl-adapter-xml'
-            split_repository: 'etl-adapter-xml'
+          # - local_path: 'src/adapter/etl-adapter-text'
+          #   split_repository: 'etl-adapter-text'
+          # - local_path: 'src/adapter/etl-adapter-xml'
+          #   split_repository: 'etl-adapter-xml'
 
-          - local_path: 'src/bridge/filesystem/azure'
-            split_repository: 'filesystem-azure-bridge'
-          - local_path: 'src/bridge/filesystem/async-aws'
-            split_repository: 'filesystem-async-aws-bridge'
-          - local_path: 'src/bridge/monolog/http'
-            split_repository: 'monolog-http-bridge'
-          - local_path: 'src/bridge/openapi/specification'
-            split_repository: 'openapi-specification-bridge'
-          - local_path: 'src/bridge/symfony/http-foundation'
-            split_repository: 'symfony-http-foundation-bridge'
+          # - local_path: 'src/bridge/filesystem/azure'
+          #   split_repository: 'filesystem-azure-bridge'
+          # - local_path: 'src/bridge/filesystem/async-aws'
+          #   split_repository: 'filesystem-async-aws-bridge'
+          # - local_path: 'src/bridge/monolog/http'
+          #   split_repository: 'monolog-http-bridge'
+          # - local_path: 'src/bridge/openapi/specification'
+          #   split_repository: 'openapi-specification-bridge'
+          # - local_path: 'src/bridge/symfony/http-foundation'
+          #   split_repository: 'symfony-http-foundation-bridge'
 
-          - local_path: 'src/tools/homebrew'
-            split_repository: 'homebrew-flow'
+          # - local_path: 'src/tools/homebrew'
+          #   split_repository: 'homebrew-flow'
 
     steps:
       - uses: actions/checkout@v4
@@ -98,12 +98,12 @@ jobs:
         with:
           package_directory: '${{ matrix.package.local_path }}'
 
-          branch: 1.x
-          repository_organization: 'flow-php'
+          branch: php-8.1-downgrade-0.22.0
+          repository_organization: 'CodeDruids'
           repository_name: '${{ matrix.package.split_repository }}'
 
-          user_name: "norberttech"
-          user_email: "norbert@orzechowicz.pl"
+          user_name: "leith"
+          user_email: "leith@codedruids.com"
 
       # with tag
       -
@@ -114,9 +114,9 @@ jobs:
 
           package_directory: '${{ matrix.package.local_path }}'
 
-          branch: 1.x
-          repository_organization: 'flow-php'
+          branch: php-8.1-downgrade-0.22.0
+          repository_organization: 'CodeDruids'
           repository_name: '${{ matrix.package.split_repository }}'
 
-          user_name: "norberttech"
-          user_email: "norbert@orzechowicz.pl"
+          user_name: "leith"
+          user_email: "leith@codedruids.com"

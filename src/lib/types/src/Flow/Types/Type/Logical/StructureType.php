@@ -19,15 +19,19 @@ use Flow\Types\Type;
  *
  * @implements Type<array<string, T>>
  */
-final readonly class StructureType implements Type
+final class StructureType implements Type
 {
     /**
      * @var array<string, Type<T>>
+     *
+     * @readonly
      */
     private array $elements;
 
     /**
      * @var array<string, Type<T>>
+     *
+     * @readonly
      */
     private array $optionalElements;
 
@@ -157,8 +161,27 @@ final readonly class StructureType implements Type
         if (!\is_array($value)) {
             return false;
         }
+        $arrayIsListFunction = function (array $array) : bool {
+            if (function_exists('array_is_list')) {
+                return array_is_list($array);
+            }
 
-        if (\array_is_list($value)) {
+            if ($array === []) {
+                return true;
+            }
+            $current_key = 0;
+
+            foreach ($array as $key => $noop) {
+                if ($key !== $current_key) {
+                    return false;
+                }
+                $current_key++;
+            }
+
+            return true;
+        };
+
+        if ($arrayIsListFunction($value)) {
             return false;
         }
 

@@ -6,7 +6,7 @@ namespace Flow\Parquet\Writer;
 
 use Flow\Parquet\ParquetFile\Page\PageHeader;
 
-final readonly class PageContainer
+final class PageContainer
 {
     /**
      * @param string $pageHeaderBuffer

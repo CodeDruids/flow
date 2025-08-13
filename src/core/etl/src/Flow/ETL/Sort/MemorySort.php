@@ -19,7 +19,10 @@ use Flow\ETL\Extractor\GeneratorExtractor;
 
 final class MemorySort implements SortingAlgorithm
 {
-    private readonly Configuration $configuration;
+    /**
+     * @readonly
+     */
+    private Configuration $configuration;
 
     public function __construct(
         private Unit $maximumMemory,

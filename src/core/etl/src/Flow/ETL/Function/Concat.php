@@ -11,8 +11,10 @@ final class Concat extends ScalarFunctionChain
 {
     /**
      * @var array<ScalarFunction|string>
+     *
+     * @readonly
      */
-    private readonly array $refs;
+    private array $refs;
 
     public function __construct(
         ScalarFunction|string ...$refs,

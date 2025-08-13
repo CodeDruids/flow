@@ -10,9 +10,9 @@ use Flow\ETL\Row;
 final class Trim extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|Type $type = Type::BOTH,
-        private readonly ScalarFunction|string $characters = " \t\n\r\0\x0B",
+        private ScalarFunction|string $value,
+        private ScalarFunction|Type $type = Type::BOTH,
+        private ScalarFunction|string $characters = " \t\n\r\0\x0B",
     ) {
     }
 

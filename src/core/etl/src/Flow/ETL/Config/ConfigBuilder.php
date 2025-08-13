@@ -20,9 +20,15 @@ use Psr\Clock\ClockInterface;
 
 final class ConfigBuilder
 {
-    public readonly CacheConfigBuilder $cache;
+    /**
+     * @readonly
+     */
+    public CacheConfigBuilder $cache;
 
-    public readonly SortConfigBuilder $sort;
+    /**
+     * @readonly
+     */
+    public SortConfigBuilder $sort;
 
     private ?ClockInterface $clock;
 
@@ -34,7 +40,10 @@ final class ConfigBuilder
 
     private bool $putInputIntoRows;
 
-    private readonly RandomValueGenerator $randomValueGenerator;
+    /**
+     * @readonly
+     */
+    private RandomValueGenerator $randomValueGenerator;
 
     private ?Serializer $serializer;
 

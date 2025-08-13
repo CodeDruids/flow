@@ -10,11 +10,13 @@ final class Sprintf extends ScalarFunctionChain
 {
     /**
      * @var array<null|float|int|ScalarFunction|string>
+     *
+     * @readonly
      */
-    private readonly array $values;
+    private array $values;
 
     public function __construct(
-        private readonly ScalarFunction|string $format,
+        private ScalarFunction|string $format,
         ScalarFunction|float|int|string|null ...$values,
     ) {
         $this->values = $values;

@@ -15,7 +15,7 @@ final class Elasticsearch8Context implements ElasticsearchContext
 {
     private ?Client $client = null;
 
-    public function __construct(private readonly array $hosts)
+    public function __construct(private array $hosts)
     {
     }
 

@@ -33,10 +33,12 @@ final class Blocks
      * @param int $blockSize block size in bytes
      */
     public function __construct(
-        private readonly int $blockSize,
-        private readonly BlockFactory $blockFactory = new NativeLocalFileBlocksFactory(),
-        private readonly BlockLifecycle $blockLifecycle = new BlockVoidLifecycle(),
+        private int $blockSize,
+        private ?BlockFactory $blockFactory = null,
+        private ?BlockLifecycle $blockLifecycle = null,
     ) {
+        $this->blockFactory = $blockFactory ?? new NativeLocalFileBlocksFactory();
+        $this->blockLifecycle = $blockLifecycle ?? new BlockVoidLifecycle();
         $this->currentBlock = $this->blockFactory->create($this->blockSize);
     }
 

@@ -6,7 +6,7 @@ namespace Flow\Filesystem\Stream;
 
 use Flow\Filesystem\Path;
 
-final readonly class ResourceContext
+final class ResourceContext
 {
     /**
      * @param array<mixed> $options

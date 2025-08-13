@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class Chunk extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|int $size,
+        private ScalarFunction|string $value,
+        private ScalarFunction|int $size,
     ) {
     }
 
@@ -33,6 +33,6 @@ final class Chunk extends ScalarFunctionChain
 
         $chunks = s($value)->chunk($size);
 
-        return array_map(static fn ($chunk) => $chunk->toString(), iterator_to_array($chunks));
+        return array_map(static fn ($chunk) => $chunk->toString(), iterator_to_array(is_array($chunks) ? new \ArrayIterator($chunks) : $chunks));
     }
 }

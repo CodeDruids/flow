@@ -13,7 +13,7 @@ final class AzureBlobSourceStream implements SourceStream
 {
     private ?BlobProperties $blobProperties = null;
 
-    public function __construct(private readonly Path $path, private readonly BlobServiceInterface $blobService)
+    public function __construct(private Path $path, private BlobServiceInterface $blobService)
     {
     }
 

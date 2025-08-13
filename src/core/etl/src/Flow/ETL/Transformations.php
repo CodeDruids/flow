@@ -8,10 +8,12 @@ namespace Flow\ETL;
  * Collection of transformations.
  * Transformations are applied in the order they are passed to the constructor.
  */
-final readonly class Transformations implements Transformation
+final class Transformations implements Transformation
 {
     /**
      * @var array<int, Transformation>
+     *
+     * @readonly
      */
     public array $transformations;
 

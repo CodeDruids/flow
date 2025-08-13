@@ -15,8 +15,8 @@ final class StringContainsAny extends ScalarFunctionChain
      * @param array<string>|ScalarFunction $needles
      */
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|array $needles,
+        private ScalarFunction|string $value,
+        private ScalarFunction|array $needles,
     ) {
     }
 

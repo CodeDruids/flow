@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class ToTimeZone extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|\DateTimeInterface $value,
-        private readonly ScalarFunction|\DateTimeZone|string $timezone,
+        private ScalarFunction|\DateTimeInterface $value,
+        private ScalarFunction|\DateTimeZone|string $timezone,
     ) {
     }
 

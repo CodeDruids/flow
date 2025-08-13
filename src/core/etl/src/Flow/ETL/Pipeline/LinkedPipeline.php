@@ -15,8 +15,11 @@ use Flow\ETL\{Extractor, FlowContext, Loader, Pipeline, Transformer};
  *
  * All new elements are added to the SyncPipeline
  */
-final readonly class LinkedPipeline implements OverridingPipeline, Pipeline
+final class LinkedPipeline implements OverridingPipeline, Pipeline
 {
+    /**
+     * @readonly
+     */
     private Pipeline $nextPipeline;
 
     public function __construct(

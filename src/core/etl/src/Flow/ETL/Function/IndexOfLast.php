@@ -11,10 +11,10 @@ use Flow\ETL\Row;
 final class IndexOfLast extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $string,
-        private readonly ScalarFunction|string $needle,
-        private readonly ScalarFunction|bool $ignoreCase = false,
-        private readonly ScalarFunction|int $offset = 0,
+        private ScalarFunction|string $string,
+        private ScalarFunction|string $needle,
+        private ScalarFunction|bool $ignoreCase = false,
+        private ScalarFunction|int $offset = 0,
     ) {
     }
 

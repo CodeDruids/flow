@@ -6,7 +6,7 @@ namespace Flow\Serializer;
 
 use Flow\Serializer\Exception\SerializationException;
 
-final readonly class Base64Serializer implements Serializer
+final class Base64Serializer implements Serializer
 {
     public function __construct(private Serializer $serializer)
     {

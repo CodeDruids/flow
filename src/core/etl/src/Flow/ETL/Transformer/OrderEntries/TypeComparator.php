@@ -6,10 +6,11 @@ namespace Flow\ETL\Transformer\OrderEntries;
 
 use Flow\ETL\Row\Entry;
 
-final readonly class TypeComparator implements Comparator
+final class TypeComparator implements Comparator
 {
-    public function __construct(private TypePriorities $priorities = new TypePriorities(), private Order $order = Order::ASC)
+    public function __construct(private ?TypePriorities $priorities = null, private Order $order = Order::ASC)
     {
+        $this->priorities = $priorities ?? new TypePriorities();
     }
 
     /**

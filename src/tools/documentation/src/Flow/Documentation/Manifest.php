@@ -7,10 +7,12 @@ namespace Flow\Documentation;
 use function Flow\Types\DSL\{type_array, type_string};
 use Flow\Documentation\Manifest\{Package, Type};
 
-final readonly class Manifest
+final class Manifest
 {
     /**
      * @var array<Package>
+     *
+     * @readonly
      */
     public array $packages;
 

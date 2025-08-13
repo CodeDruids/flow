@@ -10,7 +10,7 @@ use Flow\ETL\Extractor;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class ExtractorFactory
+final class ExtractorFactory
 {
     public function __construct(
         private Path $path,

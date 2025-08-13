@@ -7,10 +7,12 @@ namespace Flow\ETL\Extractor;
 use Flow\ETL\{Extractor, FlowContext};
 use Flow\ETL\Rows;
 
-final readonly class ChainExtractor implements Extractor, OverridingExtractor
+final class ChainExtractor implements Extractor, OverridingExtractor
 {
     /**
      * @var array<Extractor>
+     *
+     * @readonly
      */
     private array $extractors;
 

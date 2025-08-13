@@ -53,7 +53,7 @@ final class XMLParserExtractor implements Extractor, FileExtractor, LimitableExt
      *
      * @param Path $path
      */
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
         $this->resetLimit();
     }
@@ -218,8 +218,8 @@ final class XMLParserExtractor implements Extractor, FileExtractor, LimitableExt
         if ($this->parser === null) {
             $this->parser = xml_parser_create();
             xml_parser_set_option($this->parser, XML_OPTION_CASE_FOLDING, 0);
-            xml_set_element_handler($this->parser, $this->startElementHandler(...), $this->endElementHandler(...));
-            xml_set_character_data_handler($this->parser, $this->characterDataHandler(...));
+            xml_set_element_handler($this->parser, \Closure::fromCallable([$this, 'startElementHandler']), \Closure::fromCallable([$this, 'endElementHandler']));
+            xml_set_character_data_handler($this->parser, \Closure::fromCallable([$this, 'characterDataHandler']));
         }
 
         return $this->parser;

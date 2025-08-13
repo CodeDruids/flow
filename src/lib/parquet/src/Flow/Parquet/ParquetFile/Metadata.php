@@ -8,7 +8,7 @@ use Flow\Parquet\Options;
 use Flow\Parquet\ParquetFile\RowGroup\ColumnChunk;
 use Flow\Parquet\Thrift\FileMetaData;
 
-final readonly class Metadata
+final class Metadata
 {
     public function __construct(
         private Schema $schema,

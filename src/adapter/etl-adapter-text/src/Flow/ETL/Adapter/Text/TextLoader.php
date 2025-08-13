@@ -13,7 +13,7 @@ final class TextLoader implements Closure, FileLoader, Loader
 {
     private string $newLineSeparator = PHP_EOL;
 
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
     }
 

@@ -17,7 +17,7 @@ final class ConstrainedPipeline implements OverridingPipeline, Pipeline
      *
      * @throws InvalidArgumentException
      */
-    public function __construct(private readonly Pipeline $pipeline, private readonly array $constraints = [])
+    public function __construct(private Pipeline $pipeline, private array $constraints = [])
     {
         foreach ($constraints as $constraint) {
             if (!$constraint instanceof Constraint) {

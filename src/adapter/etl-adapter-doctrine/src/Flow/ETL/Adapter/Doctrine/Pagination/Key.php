@@ -7,7 +7,7 @@ namespace Flow\ETL\Adapter\Doctrine\Pagination;
 use Doctrine\DBAL\ParameterType;
 use Doctrine\DBAL\Types\Type;
 
-final readonly class Key
+final class Key
 {
     public function __construct(
         public string $column,

@@ -8,7 +8,7 @@ use function Flow\ETL\DSL\date_interval_to_microseconds;
 use Flow\ETL\Row\Entry;
 use Flow\ETL\Row\Entry\{DateEntry, DateTimeEntry, EnumEntry, JsonEntry, ListEntry, MapEntry, StructureEntry, TimeEntry, UuidEntry, XMLElementEntry, XMLEntry};
 
-final readonly class EntryNormalizer
+final class EntryNormalizer
 {
     public function __construct(
         private string $dateTimeFormat = \DateTimeInterface::ATOM,

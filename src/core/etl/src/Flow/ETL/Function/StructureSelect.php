@@ -8,10 +8,16 @@ use Flow\ETL\Row;
 use Flow\ETL\Row\Entry\StructureEntry;
 use Flow\ETL\Row\{EntryReference, Reference, References};
 
-final readonly class StructureSelect implements ScalarFunction
+final class StructureSelect implements ScalarFunction
 {
+    /**
+     * @readonly
+     */
     private Reference $ref;
 
+    /**
+     * @readonly
+     */
     private References $refs;
 
     public function __construct(

@@ -8,7 +8,7 @@ use function Flow\Types\DSL\type_string;
 use Flow\ETL\Row\Entry\{UuidEntry, XMLEntry};
 use Flow\ETL\{Rows, Schema};
 
-final readonly class RowsNormalizer
+final class RowsNormalizer
 {
     public function __construct()
     {

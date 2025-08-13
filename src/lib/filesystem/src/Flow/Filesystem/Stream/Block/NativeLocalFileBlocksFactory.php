@@ -9,8 +9,11 @@ use Flow\Filesystem\Exception\InvalidArgumentException;
 use Flow\Filesystem\Path;
 use Flow\Filesystem\Stream\{Block, BlockFactory};
 
-final readonly class NativeLocalFileBlocksFactory implements BlockFactory
+final class NativeLocalFileBlocksFactory implements BlockFactory
 {
+    /**
+     * @readonly
+     */
     private string $blockLocation;
 
     /**

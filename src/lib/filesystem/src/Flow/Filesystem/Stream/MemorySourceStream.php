@@ -6,7 +6,7 @@ namespace Flow\Filesystem\Stream;
 
 use Flow\Filesystem\{Exception\InvalidArgumentException, Path, SourceStream};
 
-final readonly class MemorySourceStream implements SourceStream
+final class MemorySourceStream implements SourceStream
 {
     /**
      * @param non-empty-string $content

@@ -13,7 +13,7 @@ final class Min implements AggregatingFunction
 {
     private float|\DateTimeInterface|null $min;
 
-    public function __construct(private readonly Reference $ref)
+    public function __construct(private Reference $ref)
     {
         $this->min = null;
     }

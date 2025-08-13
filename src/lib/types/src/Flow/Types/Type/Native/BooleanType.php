@@ -11,7 +11,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<bool>
  */
-final readonly class BooleanType implements Type
+final class BooleanType implements Type
 {
     public function assert(mixed $value) : bool
     {

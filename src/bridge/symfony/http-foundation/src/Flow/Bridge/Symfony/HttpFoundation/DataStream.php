@@ -29,7 +29,7 @@ final class DataStream
      */
     private array $transformations = [];
 
-    public function __construct(private readonly Extractor $extractor)
+    public function __construct(private Extractor $extractor)
     {
     }
 

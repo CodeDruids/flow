@@ -11,7 +11,10 @@ final class SearchParams
      */
     private array $params;
 
-    private readonly string $query;
+    /**
+     * @readonly
+     */
+    private string $query;
 
     /**
      * @param array{q: string, limit?: null|int, offset?: null|int, attributesToRetrieve?: null|array<string>, sort?: null|array<string>} $params See: https://www.meilisearch.com/docs/reference/api/search#search-parameters

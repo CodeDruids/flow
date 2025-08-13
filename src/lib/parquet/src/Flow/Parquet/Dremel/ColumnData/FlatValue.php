@@ -6,7 +6,7 @@ namespace Flow\Parquet\Dremel\ColumnData;
 
 use Flow\Parquet\ParquetFile\Schema\FlatColumn;
 
-final readonly class FlatValue
+final class FlatValue
 {
     public function __construct(
         public FlatColumn $column,

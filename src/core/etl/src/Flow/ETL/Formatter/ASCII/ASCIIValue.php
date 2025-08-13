@@ -14,7 +14,7 @@ final class ASCIIValue
     /**
      * @param null|array<mixed>|bool|Entry<mixed>|float|int|string $value
      */
-    public function __construct(private readonly string|int|bool|float|array|Entry|null $value)
+    public function __construct(private string|int|bool|float|array|Entry|null $value)
     {
     }
 

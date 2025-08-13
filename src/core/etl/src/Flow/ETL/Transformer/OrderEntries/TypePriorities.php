@@ -8,7 +8,7 @@ use Flow\ETL\Row\Entry;
 use Flow\ETL\Row\Entry\{BooleanEntry, DateTimeEntry, EnumEntry, FloatEntry, JsonEntry, ListEntry, MapEntry, StringEntry, StructureEntry, XMLElementEntry, XMLEntry};
 use Flow\ETL\Row\Entry\{IntegerEntry, UuidEntry};
 
-final readonly class TypePriorities
+final class TypePriorities
 {
     /**
      * @var array<class-string<Entry<mixed>>,int>

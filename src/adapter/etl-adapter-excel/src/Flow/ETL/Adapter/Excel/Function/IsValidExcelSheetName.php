@@ -8,7 +8,7 @@ use Flow\ETL\Adapter\Excel\Sheet\SheetNameAssertion;
 use Flow\ETL\Function\{Parameter, ScalarFunction};
 use Flow\ETL\Row;
 
-final readonly class IsValidExcelSheetName implements ScalarFunction
+final class IsValidExcelSheetName implements ScalarFunction
 {
     public function __construct(private ScalarFunction|string $sheetName)
     {

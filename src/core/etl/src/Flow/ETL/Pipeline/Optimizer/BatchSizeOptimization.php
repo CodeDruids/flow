@@ -43,7 +43,7 @@ final class BatchSizeOptimization implements Optimization
      * @param int<1, max> $batchSize
      * @param null|array<int, class-string<Loader>> $supportedLoaders
      */
-    public function __construct(private readonly int $batchSize = 1000, ?array $supportedLoaders = null)
+    public function __construct(private int $batchSize = 1000, ?array $supportedLoaders = null)
     {
         if ($supportedLoaders !== null) {
             $this->supportedLoaders = $supportedLoaders;
@@ -93,7 +93,7 @@ final class BatchSizeOptimization implements Optimization
             $pipelines[] = $pipeline;
 
             foreach ($pipeline->pipelines() as $nextPipeline) {
-                $pipelines = [...$pipelines, ...$this->allPipelines($nextPipeline)];
+                $pipelines = array_merge($pipelines, $this->allPipelines($nextPipeline));
             }
         } else {
             $pipelines[] = $pipeline;

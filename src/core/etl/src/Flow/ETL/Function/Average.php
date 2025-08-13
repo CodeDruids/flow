@@ -18,7 +18,7 @@ final class Average implements AggregatingFunction, WindowFunction
 
     private ?Window $window;
 
-    public function __construct(private readonly Reference $ref, private readonly int $scale = 2, private readonly Rounding $rounding = Rounding::HALF_UP)
+    public function __construct(private Reference $ref, private int $scale = 2, private Rounding $rounding = Rounding::HALF_UP)
     {
         $this->window = null;
         $this->count = 0;

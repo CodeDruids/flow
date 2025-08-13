@@ -24,13 +24,17 @@ final class JsonEntry implements Entry
 
     /**
      * @var Type<string>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
     /**
      * @var null|array<array-key, mixed>
+     *
+     * @readonly
      */
-    private readonly ?array $value;
+    private ?array $value;
 
     /**
      * @param null|array<array-key, mixed>|string $value
@@ -38,7 +42,7 @@ final class JsonEntry implements Entry
      * @throws InvalidArgumentException
      */
     public function __construct(
-        private readonly string $name,
+        private string $name,
         array|string|null $value,
         ?Metadata $metadata = null,
     ) {

@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class Plus extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|int|float $left,
-        private readonly ScalarFunction|int|float $right,
+        private ScalarFunction|int|float $left,
+        private ScalarFunction|int|float $right,
     ) {
     }
 

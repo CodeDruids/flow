@@ -8,8 +8,11 @@ use function Flow\ETL\DSL\{row, rows, str_entry};
 use Flow\ETL\{FlowContext, Rows, Transformer};
 use Flow\ETL\Row\{Reference, References};
 
-final readonly class SelectEntriesTransformer implements Transformer
+final class SelectEntriesTransformer implements Transformer
 {
+    /**
+     * @readonly
+     */
     private References $refs;
 
     public function __construct(string|Reference ...$refs)

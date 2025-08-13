@@ -23,7 +23,7 @@ use Flow\ETL\Row\Entry\{BooleanEntry,
 use Flow\Types\Type;
 use Flow\Types\Type\Logical\{MapType, StructureType};
 
-final readonly class EntryNormalizer
+final class EntryNormalizer
 {
     public function __construct(
         private PHPValueNormalizer $valueNormalizer,

@@ -13,7 +13,7 @@ use Flow\Types\Type;
  *
  * @implements Type<T>
  */
-final readonly class InstanceOfType implements Type
+final class InstanceOfType implements Type
 {
     /**
      * @param class-string<T> $class

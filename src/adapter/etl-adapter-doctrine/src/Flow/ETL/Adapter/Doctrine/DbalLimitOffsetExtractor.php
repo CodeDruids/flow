@@ -22,8 +22,8 @@ final class DbalLimitOffsetExtractor implements Extractor
     private ?Schema $schema = null;
 
     public function __construct(
-        private readonly Connection $connection,
-        private readonly QueryBuilder $queryBuilder,
+        private Connection $connection,
+        private QueryBuilder $queryBuilder,
     ) {
     }
 

@@ -13,7 +13,7 @@ use Flow\Parquet\ThriftStream\TPhpFileStream;
 use Thrift\Protocol\TCompactProtocol;
 use Thrift\Transport\TBufferedTransport;
 
-final readonly class ColumnChunkViewer
+final class ColumnChunkViewer
 {
     public function __construct(private Options $options)
     {

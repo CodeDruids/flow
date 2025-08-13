@@ -6,7 +6,7 @@ namespace Flow\ETL\Transformer\OrderEntries;
 
 use Flow\ETL\Row\Entry;
 
-final readonly class CombinedComparator implements Comparator
+final class CombinedComparator implements Comparator
 {
     public function __construct(private Comparator $first, private Comparator $second)
     {

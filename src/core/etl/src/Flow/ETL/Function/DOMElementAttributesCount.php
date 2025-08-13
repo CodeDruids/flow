@@ -8,7 +8,7 @@ use Flow\ETL\Row;
 
 final class DOMElementAttributesCount extends ScalarFunctionChain
 {
-    public function __construct(private readonly ScalarFunction|\DOMNode $domElement)
+    public function __construct(private ScalarFunction|\DOMNode $domElement)
     {
     }
 

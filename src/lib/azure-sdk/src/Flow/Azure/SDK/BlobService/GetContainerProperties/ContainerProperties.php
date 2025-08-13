@@ -7,7 +7,7 @@ namespace Flow\Azure\SDK\BlobService\GetContainerProperties;
 use Flow\Azure\SDK\Exception\InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 
-final readonly class ContainerProperties
+final class ContainerProperties
 {
     public function __construct(private ResponseInterface $response)
     {

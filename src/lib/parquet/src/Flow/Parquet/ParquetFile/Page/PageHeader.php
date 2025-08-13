@@ -8,7 +8,7 @@ use Flow\Parquet\{Options};
 use Flow\Parquet\ParquetFile\Encodings;
 use Flow\Parquet\ParquetFile\Page\Header\{DataPageHeader, DataPageHeaderV2, DictionaryPageHeader, Type};
 
-final readonly class PageHeader
+final class PageHeader
 {
     public function __construct(
         private Type $type,

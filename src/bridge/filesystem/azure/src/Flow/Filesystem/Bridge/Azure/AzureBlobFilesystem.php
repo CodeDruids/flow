@@ -15,7 +15,7 @@ use Flow\Filesystem\{DestinationStream,
 use Flow\Filesystem\Path\Filter;
 use Flow\Filesystem\Path\Filter\KeepAll;
 
-final readonly class AzureBlobFilesystem implements Filesystem
+final class AzureBlobFilesystem implements Filesystem
 {
     public function __construct(private BlobServiceInterface $blobService, private Options $options)
     {
@@ -42,8 +42,9 @@ final readonly class AzureBlobFilesystem implements Filesystem
         return $this->options->tmpDir();
     }
 
-    public function list(Path $path, Filter $pathFilter = new KeepAll()) : \Generator
+    public function list(Path $path, ?Filter $pathFilter = null) : \Generator
     {
+        $pathFilter ??= new KeepAll();
         $this->protocol()->validateScheme($path);
 
         if ($path->isPattern()) {

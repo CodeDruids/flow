@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Azure\SDK\BlobService\GetBlob;
 
-final readonly class Range
+final class Range
 {
     public function __construct(private int $start, private ?int $end = null)
     {

@@ -11,7 +11,7 @@ final class CacheIndex
      */
     private array $index = [];
 
-    public function __construct(public readonly string $key)
+    public function __construct(public string $key)
     {
     }
 

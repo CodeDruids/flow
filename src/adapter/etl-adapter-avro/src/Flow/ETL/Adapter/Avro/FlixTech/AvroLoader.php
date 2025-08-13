@@ -9,7 +9,7 @@ use Flow\ETL\Loader\{Closure, FileLoader};
 use Flow\ETL\Schema;
 use Flow\Filesystem\Path;
 
-final readonly class AvroLoader implements Closure, FileLoader, Loader
+final class AvroLoader implements Closure, FileLoader, Loader
 {
     public function __construct(
         private Path $path,

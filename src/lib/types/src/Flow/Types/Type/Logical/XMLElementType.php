@@ -12,7 +12,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<\DOMElement>
  */
-final readonly class XMLElementType implements Type
+final class XMLElementType implements Type
 {
     public function assert(mixed $value) : \DOMElement
     {

@@ -11,7 +11,7 @@ use Flow\Types\Type\Logical\{DateTimeType, InstanceOfType, JsonType, ListType, M
 use Flow\Types\Type\Native\{ArrayType, BooleanType, EnumType, FloatType, IntegerType, StringType};
 use Flow\Types\{Type};
 
-final readonly class PHPValueNormalizer
+final class PHPValueNormalizer
 {
     public function __construct(
         public string $attributePrefix = '_',

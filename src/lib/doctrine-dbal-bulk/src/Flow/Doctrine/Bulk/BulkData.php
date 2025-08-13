@@ -7,12 +7,17 @@ namespace Flow\Doctrine\Bulk;
 use Doctrine\DBAL\Types\{Type};
 use Flow\Doctrine\Bulk\Exception\RuntimeException;
 
-final readonly class BulkData
+final class BulkData
 {
+    /**
+     * @readonly
+     */
     private Columns $columns;
 
     /**
      * @var array<int, array<string, mixed>>
+     *
+     * @readonly
      */
     private array $rows;
 

@@ -40,8 +40,8 @@ final class XMLLoader implements Closure, FileLoader, Loader
     private array $xmlAttributes = ['version' => '1.0', 'encoding' => 'UTF-8'];
 
     public function __construct(
-        private readonly Path $path,
-        private readonly XMLWriter $xmlWriter,
+        private Path $path,
+        private XMLWriter $xmlWriter,
     ) {
     }
 

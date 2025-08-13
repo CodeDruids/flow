@@ -19,7 +19,9 @@ function aws_s3_client(array $configuration) : S3Client
 }
 
 #[DocumentationDSL(module: Module::S3_FILESYSTEM, type: Type::HELPER)]
-function aws_s3_filesystem(string $bucket, S3Client $s3Client, Options $options = new Options()) : AsyncAWSS3Filesystem
+function aws_s3_filesystem(string $bucket, S3Client $s3Client, ?Options $options = null) : AsyncAWSS3Filesystem
 {
+    $options ??= new Options();
+
     return new AsyncAWSS3Filesystem($bucket, $s3Client, $options);
 }

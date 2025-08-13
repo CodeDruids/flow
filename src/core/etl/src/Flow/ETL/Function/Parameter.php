@@ -13,8 +13,11 @@ use Flow\ETL\Schema\Metadata;
 use Flow\Types\Type;
 use UnitEnum;
 
-final readonly class Parameter
+final class Parameter
 {
+    /**
+     * @readonly
+     */
     private ScalarFunction $function;
 
     public function __construct(mixed $function)

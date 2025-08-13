@@ -8,7 +8,7 @@ use Flow\ETL\Exception\{InvalidArgumentException};
 use Flow\ETL\Extractor;
 use Flow\ETL\{FlowContext, Loader, Pipeline, Transformer};
 
-final readonly class OffsetPipeline implements OverridingPipeline, Pipeline
+final class OffsetPipeline implements OverridingPipeline, Pipeline
 {
     /**
      * @param int<0, max> $offset

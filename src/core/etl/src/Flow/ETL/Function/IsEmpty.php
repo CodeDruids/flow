@@ -10,7 +10,7 @@ use Flow\ETL\Row;
 final class IsEmpty extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
+        private ScalarFunction|string $value,
     ) {
     }
 

@@ -8,7 +8,7 @@ use function Flow\CLI\option_string;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class FileFormatOption
+final class FileFormatOption
 {
     public function __construct(private Path $filePath, private string $inputFormatOption)
     {

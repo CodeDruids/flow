@@ -11,9 +11,9 @@ use Flow\ETL\Row;
 final class StringBefore extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $string,
-        private readonly ScalarFunction|string $needle,
-        private readonly ScalarFunction|bool $includeNeedle = false,
+        private ScalarFunction|string $string,
+        private ScalarFunction|string $needle,
+        private ScalarFunction|bool $includeNeedle = false,
     ) {
     }
 

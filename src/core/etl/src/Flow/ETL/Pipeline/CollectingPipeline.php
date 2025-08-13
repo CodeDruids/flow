@@ -9,7 +9,7 @@ use Flow\ETL\{Extractor, FlowContext, Loader, Pipeline, Rows, Transformer};
 /**
  * @internal
  */
-final readonly class CollectingPipeline implements OverridingPipeline, Pipeline
+final class CollectingPipeline implements OverridingPipeline, Pipeline
 {
     public function __construct(private Pipeline $pipeline)
     {

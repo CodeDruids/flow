@@ -10,13 +10,11 @@ use Flow\ETL\Exception\KeyNotInCacheException;
 use Flow\Serializer\{NativePHPSerializer, Serializer};
 use Psr\SimpleCache\{CacheInterface, InvalidArgumentException};
 
-final readonly class PSRSimpleCache implements Cache
+final class PSRSimpleCache implements Cache
 {
-    public function __construct(
-        private CacheInterface $cache,
-        private int|\DateInterval|null $ttl = null,
-        private Serializer $serializer = new NativePHPSerializer(),
-    ) {
+    public function __construct(private CacheInterface $cache, private int|\DateInterval|null $ttl = null, private ?Serializer $serializer = null)
+    {
+        $this->serializer = $serializer ?? new NativePHPSerializer();
     }
 
     public function clear() : void

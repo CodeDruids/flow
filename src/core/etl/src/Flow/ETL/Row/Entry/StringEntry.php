@@ -23,15 +23,17 @@ final class StringEntry implements Entry
 
     /**
      * @var Type<string>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
     /**
      * @throws InvalidArgumentException
      */
     public function __construct(
-        private readonly string $name,
-        private readonly ?string $value,
+        private string $name,
+        private ?string $value,
         ?Metadata $metadata = null,
     ) {
         if ('' === $name) {

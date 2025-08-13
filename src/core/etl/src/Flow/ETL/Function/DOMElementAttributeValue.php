@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class DOMElementAttributeValue extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|\DOMNode $domElement,
-        private readonly ScalarFunction|string $attribute,
+        private ScalarFunction|\DOMNode $domElement,
+        private ScalarFunction|string $attribute,
     ) {
     }
 

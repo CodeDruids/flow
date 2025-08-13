@@ -11,10 +11,16 @@ use Flow\ETL\Extractor\Signal;
 use Flow\ETL\{Extractor, FlowContext, Loader, Pipeline, Rows, Transformer};
 use Flow\ETL\Loader\Closure;
 
-final readonly class SynchronousPipeline implements Pipeline
+final class SynchronousPipeline implements Pipeline
 {
+    /**
+     * @readonly
+     */
     private Extractor $extractor;
 
+    /**
+     * @readonly
+     */
     private Pipes $pipes;
 
     public function __construct(?Extractor $extractor = null)

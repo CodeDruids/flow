@@ -6,7 +6,7 @@ namespace Flow\ETL\Adapter\GoogleSheet;
 
 use Flow\ETL\Exception\InvalidArgumentException;
 
-final readonly class Columns
+final class Columns
 {
     public function __construct(
         public string $sheetName,

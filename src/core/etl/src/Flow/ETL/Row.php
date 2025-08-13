@@ -8,7 +8,7 @@ use Flow\ETL\Exception\InvalidArgumentException;
 use Flow\ETL\Hash\{Algorithm, NativePHPHash};
 use Flow\ETL\Row\{Entries, Entry, Reference};
 
-final readonly class Row
+final class Row
 {
     public function __construct(private Entries $entries)
     {
@@ -67,8 +67,9 @@ final readonly class Row
         return $this->entries->has($reference);
     }
 
-    public function hash(Algorithm $algorithm = new NativePHPHash()) : string
+    public function hash(?Algorithm $algorithm = null) : string
     {
+        $algorithm ??= new NativePHPHash();
         $string = '';
 
         foreach ($this->entries->sort()->all() as $entry) {

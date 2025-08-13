@@ -36,8 +36,8 @@ final class ElasticsearchExtractor implements Extractor
      * @param array<mixed> $parameters - https://www.elastic.co/guide/en/elasticsearch/reference/master/search-search.html
      */
     public function __construct(
-        private readonly array $config,
-        private readonly array $parameters,
+        private array $config,
+        private array $parameters,
     ) {
         $this->client = null;
     }

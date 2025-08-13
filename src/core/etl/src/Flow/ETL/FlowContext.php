@@ -17,7 +17,7 @@ final class FlowContext
 {
     private ErrorHandler $errorHandler;
 
-    public function __construct(public readonly Config $config)
+    public function __construct(public Config $config)
     {
         $this->errorHandler = new ThrowError();
     }

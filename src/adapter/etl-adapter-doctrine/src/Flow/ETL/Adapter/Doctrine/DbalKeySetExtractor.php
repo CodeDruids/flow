@@ -31,9 +31,9 @@ final class DbalKeySetExtractor implements Extractor
     private ?Schema $schema = null;
 
     public function __construct(
-        private readonly Connection $connection,
-        private readonly QueryBuilder $queryBuilder,
-        private readonly KeySet $keySet,
+        private Connection $connection,
+        private QueryBuilder $queryBuilder,
+        private KeySet $keySet,
     ) {
         $qb = clone $this->queryBuilder;
 

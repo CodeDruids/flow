@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\ETL\Extractor\SequenceGenerator;
 
-final readonly class DatePeriodSequenceGenerator implements SequenceGenerator
+final class DatePeriodSequenceGenerator implements SequenceGenerator
 {
     /**
      * @param \DatePeriod<\DateTimeInterface, \DateTimeInterface, null>|\DatePeriod<\DateTimeInterface, null, int> $period

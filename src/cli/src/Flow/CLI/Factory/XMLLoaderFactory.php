@@ -10,7 +10,7 @@ use Flow\ETL\Adapter\XML\Loader\XMLLoader;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class XMLLoaderFactory
+final class XMLLoaderFactory
 {
     public function __construct(
         private Path $path,

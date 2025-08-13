@@ -15,7 +15,7 @@ use Flow\Parquet\ThriftStream\{TPhpFileStream};
 use Thrift\Protocol\TCompactProtocol;
 use Thrift\Transport\{TBufferedTransport};
 
-final readonly class ColumnChunkReader
+final class ColumnChunkReader
 {
     public function __construct(
         private PageReader $pageReader,

@@ -19,12 +19,12 @@ final class NestedColumn implements Column
      * @param array<Column> $children
      */
     public function __construct(
-        private readonly string $name,
+        private string $name,
         private ?Repetition $repetition,
-        private readonly array $children,
-        private readonly ?ConvertedType $convertedType = null,
-        private readonly ?LogicalType $logicalType = null,
-        public readonly bool $schemaRoot = false,
+        private array $children,
+        private ?ConvertedType $convertedType = null,
+        private ?LogicalType $logicalType = null,
+        public bool $schemaRoot = false,
     ) {
         foreach ($children as $child) {
             $child->setParent($this);

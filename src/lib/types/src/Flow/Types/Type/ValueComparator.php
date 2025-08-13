@@ -8,10 +8,11 @@ use Flow\Types\Exception\InvalidArgumentException;
 use Flow\Types\Type;
 use Flow\Types\Type\Comparison\Operator;
 
-final readonly class ValueComparator
+final class ValueComparator
 {
-    public function __construct(private Comparator $comparator = new Comparator())
+    public function __construct(private ?Comparator $comparator = null)
     {
+        $this->comparator = $comparator ?? new Comparator();
     }
 
     /**

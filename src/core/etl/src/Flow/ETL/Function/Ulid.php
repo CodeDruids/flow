@@ -13,7 +13,7 @@ if (!\class_exists(\Symfony\Component\Uid\Ulid::class)) {
 
 final class Ulid extends ScalarFunctionChain
 {
-    public function __construct(private readonly ScalarFunction|string|null $ref = null)
+    public function __construct(private ScalarFunction|string|null $ref = null)
     {
     }
 

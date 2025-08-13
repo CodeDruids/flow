@@ -20,15 +20,18 @@ final class Definition
 {
     private Metadata $metadata;
 
-    private readonly Reference $ref;
+    /**
+     * @readonly
+     */
+    private Reference $ref;
 
     /**
      * @param Type<T> $type
      */
     public function __construct(
         string|Reference $ref,
-        private readonly Type $type,
-        private readonly bool $nullable = false,
+        private Type $type,
+        private bool $nullable = false,
         ?Metadata $metadata = null,
     ) {
         if ($type instanceof UnionType || $type instanceof OptionalType) {
@@ -72,7 +75,7 @@ final class Definition
      */
     public static function enum(string|Reference $entry, string $type, bool $nullable = false, ?Metadata $metadata = null) : self
     {
-        if (!\enum_exists($type)) {
+        if (!class_exists($type)) {
             throw new InvalidArgumentException("Enum of type \"{$type}\" not found");
         }
 

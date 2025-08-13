@@ -8,7 +8,7 @@ use Flow\ETL\{FlowContext, Row, Rows, Transformer};
 use Flow\ETL\Function\ScalarFunction;
 use Flow\ETL\Function\ScalarFunction\ScalarResult;
 
-final readonly class ScalarFunctionFilterTransformer implements Transformer
+final class ScalarFunctionFilterTransformer implements Transformer
 {
     public function __construct(
         public ScalarFunction $function,

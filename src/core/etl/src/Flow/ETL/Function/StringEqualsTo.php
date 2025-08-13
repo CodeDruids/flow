@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class StringEqualsTo extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|string $string,
+        private ScalarFunction|string $value,
+        private ScalarFunction|string $string,
     ) {
     }
 

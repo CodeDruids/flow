@@ -19,8 +19,11 @@ use Flow\ETL\Extractor\CollectingExtractor;
 use Flow\ETL\Row\Reference;
 use Flow\Filesystem\Partition;
 
-final readonly class PartitioningPipeline implements OverridingPipeline, Pipeline
+final class PartitioningPipeline implements OverridingPipeline, Pipeline
 {
+    /**
+     * @readonly
+     */
     private Algorithm $hashAlgorithm;
 
     /**

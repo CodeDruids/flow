@@ -10,7 +10,7 @@ use Flow\ETL\Adapter\Parquet\ParquetExtractor;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class ParquetExtractorFactory
+final class ParquetExtractorFactory
 {
     public function __construct(
         private Path $path,

@@ -10,7 +10,7 @@ use Flow\ETL\Adapter\XML\XMLParserExtractor;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class XMLExtractorFactory
+final class XMLExtractorFactory
 {
     public function __construct(
         private Path $path,

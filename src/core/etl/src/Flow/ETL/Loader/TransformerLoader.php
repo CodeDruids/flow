@@ -7,7 +7,7 @@ namespace Flow\ETL\Loader;
 use function Flow\ETL\DSL\{df, from_rows};
 use Flow\ETL\{FlowContext, Loader, Rows, Transformation, Transformer};
 
-final readonly class TransformerLoader implements Closure, Loader, OverridingLoader
+final class TransformerLoader implements Closure, Loader, OverridingLoader
 {
     public function __construct(
         private Transformer|Transformation $transformer,

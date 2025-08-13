@@ -13,7 +13,7 @@ use Flow\Types\Type\Native\String\StringTypeChecker;
 /**
  * @implements Type<string>
  */
-final readonly class JsonType implements Type
+final class JsonType implements Type
 {
     public function assert(mixed $value) : string
     {

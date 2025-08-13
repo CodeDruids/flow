@@ -6,7 +6,7 @@ namespace Flow\Parquet\ParquetFile\Schema\LogicalType;
 
 use Flow\Parquet\Thrift\TimeType;
 
-final readonly class Time
+final class Time
 {
     public function __construct(
         private bool $isAdjustedToUTC,

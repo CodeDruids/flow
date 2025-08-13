@@ -15,11 +15,17 @@ final class ParquetLoader implements Closure, FileLoader, Loader
 {
     private Compressions $compressions = Compressions::SNAPPY;
 
-    private readonly SchemaConverter $converter;
+    /**
+     * @readonly
+     */
+    private SchemaConverter $converter;
 
     private ?Schema $inferredSchema = null;
 
-    private readonly RowsNormalizer $normalizer;
+    /**
+     * @readonly
+     */
+    private RowsNormalizer $normalizer;
 
     private Options $options;
 
@@ -30,7 +36,7 @@ final class ParquetLoader implements Closure, FileLoader, Loader
      */
     private array $writers = [];
 
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
         $this->converter = new SchemaConverter();
         $this->normalizer = new RowsNormalizer();

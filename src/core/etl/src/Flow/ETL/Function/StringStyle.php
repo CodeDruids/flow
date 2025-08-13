@@ -12,8 +12,8 @@ use Flow\ETL\String\StringStyles;
 final class StringStyle extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $string,
-        private readonly ScalarFunction|string|OldStringStyles|StringStyles $style,
+        private ScalarFunction|string $string,
+        private ScalarFunction|string|OldStringStyles|StringStyles $style,
     ) {
     }
 

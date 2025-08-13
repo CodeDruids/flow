@@ -11,7 +11,7 @@ final class MemoryStream implements DestinationStream, SourceStream
     /**
      * @param resource $handle
      */
-    public function __construct(private $handle, private readonly Path $path)
+    public function __construct(private $handle, private Path $path)
     {
         if (!\is_resource($this->handle)) {
             throw new InvalidArgumentException('Invalid memory stream handle');

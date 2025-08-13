@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Filesystem;
 
-final readonly class FileStatus
+final class FileStatus
 {
     public function __construct(
         public Path $path,

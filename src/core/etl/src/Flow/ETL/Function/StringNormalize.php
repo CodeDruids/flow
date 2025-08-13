@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class StringNormalize extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|int $form = \Normalizer::NFC,
+        private ScalarFunction|string $value,
+        private ScalarFunction|int $form = \Normalizer::NFC,
     ) {
     }
 

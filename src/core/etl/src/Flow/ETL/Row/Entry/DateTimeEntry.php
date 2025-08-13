@@ -21,16 +21,21 @@ final class DateTimeEntry implements Entry
 
     /**
      * @var Type<\DateTimeInterface>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
-    private readonly ?\DateTimeInterface $value;
+    /**
+     * @readonly
+     */
+    private ?\DateTimeInterface $value;
 
     /**
      * @throws InvalidArgumentException
      */
     public function __construct(
-        private readonly string $name,
+        private string $name,
         \DateTimeInterface|string|null $value,
         ?Metadata $metadata = null,
     ) {

@@ -13,7 +13,7 @@ if (!function_exists('Flow\ETL\Adapter\JSON\to_json')) {
     throw new \RuntimeException('Flow\ETL\Adapter\JSON\to_json function is not available. Make sure that composer require flow-php/etl-adapter-json dependency is present in your composer.json.');
 }
 
-final readonly class JsonOutput implements Output
+final class JsonOutput implements Output
 {
     public function __construct(
         private int $flags = JSON_THROW_ON_ERROR,

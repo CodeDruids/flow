@@ -306,8 +306,10 @@ abstract class ScalarFunctionChain implements ScalarFunction
         return new GreaterThanEqual($this, $ref);
     }
 
-    public function hash(Algorithm $algorithm = new NativePHPHash()) : Hash
+    public function hash(?Algorithm $algorithm = null) : Hash
     {
+        $algorithm ??= new NativePHPHash();
+
         return new Hash($this, $algorithm);
     }
 
@@ -701,8 +703,10 @@ abstract class ScalarFunctionChain implements ScalarFunction
     /**
      * @param ScalarFunction|string $format - current format of the date that will be used to create DateTimeImmutable instance
      */
-    public function toDate(ScalarFunction|string $format = \DateTimeInterface::RFC3339, ScalarFunction|\DateTimeZone $timeZone = new \DateTimeZone('UTC')) : ToDate
+    public function toDate(ScalarFunction|string $format = \DateTimeInterface::RFC3339, ScalarFunction|\DateTimeZone|null $timeZone = null) : ToDate
     {
+        $timeZone ??= new \DateTimeZone('UTC');
+
         return new ToDate($this, $format, $timeZone);
     }
 
@@ -710,8 +714,10 @@ abstract class ScalarFunctionChain implements ScalarFunction
      * @param ScalarFunction|string $format - current format of the date that will be used to create DateTimeImmutable instance
      * @param \DateTimeZone|ScalarFunction $timeZone
      */
-    public function toDateTime(ScalarFunction|string $format = 'Y-m-d H:i:s', ScalarFunction|\DateTimeZone $timeZone = new \DateTimeZone('UTC')) : ToDateTime
+    public function toDateTime(ScalarFunction|string $format = 'Y-m-d H:i:s', ScalarFunction|\DateTimeZone|null $timeZone = null) : ToDateTime
     {
+        $timeZone ??= new \DateTimeZone('UTC');
+
         return new ToDateTime($this, $format, $timeZone);
     }
 

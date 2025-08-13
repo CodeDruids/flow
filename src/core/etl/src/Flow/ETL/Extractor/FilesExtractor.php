@@ -13,7 +13,7 @@ final class FilesExtractor implements Extractor, FileExtractor, LimitableExtract
     use Limitable;
     use PathFiltering;
 
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
     }
 

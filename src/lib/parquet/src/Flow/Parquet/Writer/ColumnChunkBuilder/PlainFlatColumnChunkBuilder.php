@@ -43,7 +43,10 @@ final class PlainFlatColumnChunkBuilder implements ColumnChunkBuilder
 
     private int $nullCount = 0;
 
-    private readonly PageContainers $pages;
+    /**
+     * @readonly
+     */
+    private PageContainers $pages;
 
     private StatisticsCounter $pageStatistics;
 
@@ -54,12 +57,15 @@ final class PlainFlatColumnChunkBuilder implements ColumnChunkBuilder
 
     private int $rowsCount = 0;
 
-    private readonly ValueStorage $valueStorage;
+    /**
+     * @readonly
+     */
+    private ValueStorage $valueStorage;
 
     public function __construct(
-        private readonly FlatColumn $column,
-        private readonly Options $options,
-        private readonly Compressions $compression,
+        private FlatColumn $column,
+        private Options $options,
+        private Compressions $compression,
     ) {
         $this->pages = new PageContainers();
         $this->chunkStatistics = new StatisticsCounter($this->column);

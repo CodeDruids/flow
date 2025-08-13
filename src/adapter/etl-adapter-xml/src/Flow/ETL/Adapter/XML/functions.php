@@ -53,8 +53,10 @@ function to_xml(
     string $row_element_name = 'row',
     string $attribute_prefix = '_',
     string $date_time_format = 'Y-m-d\TH:i:s.uP',
-    XMLWriter $xml_writer = new DOMDocumentWriter(),
+    ?XMLWriter $xml_writer = null,
 ) : XMLLoader {
+    $xml_writer ??= new DOMDocumentWriter();
+
     return (new XMLLoader(
         \is_string($path) ? Path::realpath($path) : $path,
         $xml_writer

@@ -24,7 +24,7 @@ use Flow\Types\Type\Logical\{DateTimeType,
     XMLType};
 use Flow\Types\Type\Native\{BooleanType, FloatType, IntegerType, StringType};
 
-final readonly class SchemaConverter
+final class SchemaConverter
 {
     public const DEFAULT_TYPES = [
         StringType::class => \Doctrine\DBAL\Types\StringType::class,
@@ -43,6 +43,9 @@ final readonly class SchemaConverter
         StructureType::class => \Doctrine\DBAL\Types\JsonType::class,
     ];
 
+    /**
+     * @readonly
+     */
     private TypesMap $typesMap;
 
     /**

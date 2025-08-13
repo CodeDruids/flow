@@ -11,7 +11,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<int<0, max>>
  */
-final readonly class PositiveIntegerType implements Type
+final class PositiveIntegerType implements Type
 {
     public function assert(mixed $value) : int
     {

@@ -16,9 +16,9 @@ final class DatabaseContext
     private array $createdTables = [];
 
     public function __construct(
-        private readonly Connection $connection,
-        private readonly InsertQueryCounter $insertQueryCounter,
-        private readonly SelectQueryCounter $selectQueryCounter,
+        private Connection $connection,
+        private InsertQueryCounter $insertQueryCounter,
+        private SelectQueryCounter $selectQueryCounter,
     ) {
     }
 

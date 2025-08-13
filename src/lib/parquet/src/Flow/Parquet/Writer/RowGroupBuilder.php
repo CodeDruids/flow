@@ -9,15 +9,18 @@ use Flow\Parquet\{Option, Options, ParquetFile\Compressions, ParquetFile\RowGrou
 
 final class RowGroupBuilder
 {
-    private readonly ColumnChunkBuilders $columnChunkBuilders;
+    /**
+     * @readonly
+     */
+    private ColumnChunkBuilders $columnChunkBuilders;
 
     private int $rowsCount = 0;
 
     public function __construct(
-        private readonly Schema $schema,
-        private readonly Compressions $compression,
-        private readonly Options $options,
-        private readonly DremelShredder $shredder,
+        private Schema $schema,
+        private Compressions $compression,
+        private Options $options,
+        private DremelShredder $shredder,
     ) {
         $this->columnChunkBuilders = ColumnChunkBuilders::initialize($this->schema, $this->options, $this->compression);
     }

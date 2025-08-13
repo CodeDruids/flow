@@ -18,7 +18,7 @@ final class MeilisearchLoader implements Loader
      */
     public function __construct(
         private array $config,
-        private readonly string $index,
+        private string $index,
     ) {
     }
 

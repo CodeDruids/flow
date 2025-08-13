@@ -8,7 +8,7 @@ use Flow\ETL\Row;
 
 final class ToUpper extends ScalarFunctionChain
 {
-    public function __construct(private readonly ScalarFunction|string $value)
+    public function __construct(private ScalarFunction|string $value)
     {
     }
 

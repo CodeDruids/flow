@@ -17,7 +17,7 @@ final class TableDefinition
      */
     private ?array $columns = null;
 
-    public function __construct(private readonly string $name, private readonly Connection $connection)
+    public function __construct(private string $name, private Connection $connection)
     {
     }
 

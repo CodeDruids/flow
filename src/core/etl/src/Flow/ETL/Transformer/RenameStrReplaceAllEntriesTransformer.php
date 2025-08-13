@@ -9,8 +9,11 @@ use Flow\ETL\{FlowContext, Row, Rows, Transformer, Transformer\Rename\RenameRepl
 /**
  * @deprecated Use `DataFrame::renameEach()` and `RenameReplaceStrategy`
  */
-final readonly class RenameStrReplaceAllEntriesTransformer implements Transformer
+final class RenameStrReplaceAllEntriesTransformer implements Transformer
 {
+    /**
+     * @readonly
+     */
     private RenameReplaceEntryStrategy $transformer;
 
     public function __construct(

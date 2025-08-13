@@ -11,10 +11,10 @@ use Flow\ETL\Row;
 final class Wordwrap extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|int $width,
-        private readonly ScalarFunction|string $break = "\n",
-        private readonly ScalarFunction|bool $cut = false,
+        private ScalarFunction|string $value,
+        private ScalarFunction|int $width,
+        private ScalarFunction|string $break = "\n",
+        private ScalarFunction|bool $cut = false,
     ) {
     }
 

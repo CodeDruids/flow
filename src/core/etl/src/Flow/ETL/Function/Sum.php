@@ -16,7 +16,7 @@ final class Sum implements AggregatingFunction, WindowFunction
 
     private ?Window $window;
 
-    public function __construct(private readonly Reference $ref)
+    public function __construct(private Reference $ref)
     {
         $this->sum = 0;
         $this->window = null;

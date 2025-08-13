@@ -8,8 +8,11 @@ use Doctrine\DBAL\{Connection, DriverManager};
 use Doctrine\DBAL\Schema\Table;
 use Doctrine\DBAL\Tools\DsnParser;
 
-final readonly class DatabaseContext
+final class DatabaseContext
 {
+    /**
+     * @readonly
+     */
     private Connection $connection;
 
     public function __construct()

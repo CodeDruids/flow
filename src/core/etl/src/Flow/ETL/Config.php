@@ -18,7 +18,7 @@ use Psr\Clock\ClockInterface;
  * Immutable configuration that can be used to initialize many contexts.
  * Configuration must not be changed after it's passed to FlowContext.
  */
-final readonly class Config
+final class Config
 {
     /**
      * @deprecated Use CacheConfig::CACHE_DIR_ENV instead

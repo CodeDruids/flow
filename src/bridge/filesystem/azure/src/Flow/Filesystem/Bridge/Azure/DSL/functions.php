@@ -15,7 +15,9 @@ function azure_filesystem_options() : Options
 }
 
 #[DocumentationDSL(module: Module::AZURE_FILESYSTEM, type: Type::HELPER)]
-function azure_filesystem(BlobServiceInterface $blob_service, Options $options = new Options()) : AzureBlobFilesystem
+function azure_filesystem(BlobServiceInterface $blob_service, ?Options $options = null) : AzureBlobFilesystem
 {
+    $options ??= new Options();
+
     return new AzureBlobFilesystem($blob_service, $options);
 }

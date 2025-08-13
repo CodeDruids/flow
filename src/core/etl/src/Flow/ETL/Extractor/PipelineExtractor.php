@@ -6,7 +6,7 @@ namespace Flow\ETL\Extractor;
 
 use Flow\ETL\{Extractor, FlowContext, Pipeline, Rows};
 
-final readonly class PipelineExtractor implements Extractor
+final class PipelineExtractor implements Extractor
 {
     public function __construct(
         private Pipeline $pipeline,

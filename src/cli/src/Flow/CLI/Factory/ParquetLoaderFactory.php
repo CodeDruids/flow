@@ -9,7 +9,7 @@ use Flow\ETL\Adapter\Parquet\ParquetLoader;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class ParquetLoaderFactory
+final class ParquetLoaderFactory
 {
     public function __construct(
         private Path $path,

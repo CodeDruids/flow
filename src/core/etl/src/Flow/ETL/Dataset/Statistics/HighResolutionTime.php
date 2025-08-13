@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\ETL\Dataset\Statistics;
 
-final readonly class HighResolutionTime implements \Stringable
+final class HighResolutionTime implements \Stringable
 {
     /**
      * @param int $seconds

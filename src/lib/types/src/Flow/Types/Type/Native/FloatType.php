@@ -10,7 +10,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<float>
  */
-final readonly class FloatType implements Type
+final class FloatType implements Type
 {
     public function assert(mixed $value) : float
     {

@@ -11,7 +11,7 @@ use Flow\ETL\Schema\{Definition, SchemaFormatter};
 use Flow\Types\Type;
 use Flow\Types\Type\Logical\StructureType;
 
-final readonly class ASCIISchemaFormatter implements SchemaFormatter
+final class ASCIISchemaFormatter implements SchemaFormatter
 {
     public function __construct(private bool $asTable = false, private bool $withMetadata = true)
     {

@@ -11,7 +11,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<resource>
  */
-final readonly class ResourceType implements Type
+final class ResourceType implements Type
 {
     public function assert(mixed $value) : mixed
     {

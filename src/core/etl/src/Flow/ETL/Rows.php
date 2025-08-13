@@ -25,8 +25,10 @@ final class Rows implements \ArrayAccess, \Countable, \IteratorAggregate
 
     /**
      * @var array<int, Row>
+     *
+     * @readonly
      */
-    private readonly array $rows;
+    private array $rows;
 
     public function __construct(Row ...$rows)
     {
@@ -37,8 +39,10 @@ final class Rows implements \ArrayAccess, \Countable, \IteratorAggregate
     /**
      * @param array<array-key, mixed> $data
      */
-    public static function fromArray(array $data, EntryFactory $entryFactory = new EntryFactory()) : self
+    public static function fromArray(array $data, ?EntryFactory $entryFactory = null) : self
     {
+        $entryFactory ??= new EntryFactory();
+
         return array_to_rows($data, $entryFactory);
     }
 
@@ -290,8 +294,9 @@ final class Rows implements \ArrayAccess, \Countable, \IteratorAggregate
         return new \ArrayIterator($this->rows);
     }
 
-    public function hash(Algorithm $algorithm = new NativePHPHash()) : string
+    public function hash(?Algorithm $algorithm = null) : string
     {
+        $algorithm ??= new NativePHPHash();
         $hash = '';
 
         foreach ($this->rows as $row) {
@@ -820,8 +825,9 @@ final class Rows implements \ArrayAccess, \Countable, \IteratorAggregate
         return $array;
     }
 
-    public function unique(Comparator $comparator = new NativeComparator()) : self
+    public function unique(?Comparator $comparator = null) : self
     {
+        $comparator ??= new NativeComparator();
         /**
          * @var array<Row> $uniqueRows
          */

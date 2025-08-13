@@ -8,7 +8,7 @@ use Flow\Parquet\BinaryWriter\BinaryBufferWriter;
 use Flow\Parquet\Data\BitWidth;
 use Flow\Parquet\Data\{RLEBitPackedHybrid};
 
-final readonly class RLEBitPackedPacker
+final class RLEBitPackedPacker
 {
     public function __construct(
         private RLEBitPackedHybrid $bitPackedHybrid,

@@ -10,10 +10,10 @@ use Flow\ETL\Row;
 final class ArraySort extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction $ref,
-        private readonly ScalarFunction|Sort $sortFunction,
-        private readonly ScalarFunction|int|null $flags,
-        private readonly ScalarFunction|bool $recursive,
+        private ScalarFunction $ref,
+        private ScalarFunction|Sort $sortFunction,
+        private ScalarFunction|int|null $flags,
+        private ScalarFunction|bool $recursive,
     ) {
     }
 

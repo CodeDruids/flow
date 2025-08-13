@@ -19,19 +19,20 @@ final class AzureBlobDestinationStream implements DestinationStream
     private bool $closed = false;
 
     public function __construct(
-        private readonly BlobServiceInterface $blobService,
-        private readonly Path $path,
-        private readonly Blocks $blocks,
-        private readonly BlockList $blockList,
+        private BlobServiceInterface $blobService,
+        private Path $path,
+        private Blocks $blocks,
+        private BlockList $blockList,
     ) {
     }
 
     public static function openAppend(
         BlobServiceInterface $blobService,
         Path $path,
-        BlockFactory $blockFactory = new NativeLocalFileBlocksFactory(),
+        ?BlockFactory $blockFactory = null,
         int $blockSize = 1024 * 1024 * 4,
     ) : self {
+        $blockFactory ??= new NativeLocalFileBlocksFactory();
         $blocks = new Blocks(
             $blockSize,
             $blockFactory,
@@ -57,9 +58,11 @@ final class AzureBlobDestinationStream implements DestinationStream
     public static function openBlank(
         BlobServiceInterface $blobService,
         Path $path,
-        BlockFactory $blockFactory = new NativeLocalFileBlocksFactory(),
+        ?BlockFactory $blockFactory = null,
         int $blockSize = 1024 * 1024 * 4,
     ) : self {
+        $blockFactory ??= new NativeLocalFileBlocksFactory();
+
         return new self(
             $blobService,
             $path,

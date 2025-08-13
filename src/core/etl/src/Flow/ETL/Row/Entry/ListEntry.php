@@ -25,8 +25,10 @@ final class ListEntry implements Entry
 
     /**
      * @var Type<list<T>>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
     /**
      * @param ?list<T> $value
@@ -35,8 +37,8 @@ final class ListEntry implements Entry
      * @throws InvalidArgumentException
      */
     public function __construct(
-        private readonly string $name,
-        private readonly ?array $value,
+        private string $name,
+        private ?array $value,
         Type $type,
         ?Metadata $metadata = null,
     ) {

@@ -21,15 +21,20 @@ final class DateEntry implements Entry
 
     /**
      * @var Type<\DateTimeInterface>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
-    private readonly ?\DateTimeInterface $value;
+    /**
+     * @readonly
+     */
+    private ?\DateTimeInterface $value;
 
     /**
      * @throws InvalidArgumentException
      */
-    public function __construct(private readonly string $name, \DateTimeInterface|string|null $value, ?Metadata $metadata = null)
+    public function __construct(private string $name, \DateTimeInterface|string|null $value, ?Metadata $metadata = null)
     {
         if ($name === '') {
             throw InvalidArgumentException::because('Entry name cannot be empty');

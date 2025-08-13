@@ -11,7 +11,7 @@ final class ArrayKeep extends ScalarFunctionChain
     /**
      * @param array<array-key, mixed> $array
      */
-    public function __construct(private readonly ScalarFunction|array $array, private readonly mixed $value = null)
+    public function __construct(private ScalarFunction|array $array, private mixed $value = null)
     {
     }
 

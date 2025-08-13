@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class Contains extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $haystack,
-        private readonly ScalarFunction|string $needle,
+        private ScalarFunction|string $haystack,
+        private ScalarFunction|string $needle,
     ) {
     }
 

@@ -10,8 +10,11 @@ use GuzzleHttp\{Client as HttpClient, HandlerStack};
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;
 
-final readonly class GoogleSheetsContext
+final class GoogleSheetsContext
 {
+    /**
+     * @readonly
+     */
     private GoogleClient $client;
 
     public function __construct()

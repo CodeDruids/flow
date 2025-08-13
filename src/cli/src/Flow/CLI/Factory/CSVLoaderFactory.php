@@ -10,7 +10,7 @@ use Flow\ETL\Adapter\CSV\CSVLoader;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class CSVLoaderFactory
+final class CSVLoaderFactory
 {
     public function __construct(
         private Path $path,

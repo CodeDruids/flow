@@ -8,7 +8,7 @@ use function Flow\ETL\DSL\row;
 use Flow\ETL\{FlowContext, Row, Rows, Transformer};
 use Flow\ETL\Transformer\OrderEntries\Comparator;
 
-final readonly class OrderEntriesTransformer implements Transformer
+final class OrderEntriesTransformer implements Transformer
 {
     public function __construct(private Comparator $comparator)
     {

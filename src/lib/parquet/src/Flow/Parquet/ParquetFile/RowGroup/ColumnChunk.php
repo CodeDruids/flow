@@ -9,7 +9,7 @@ use Flow\Parquet\ParquetFile\{Compressions, Encodings, Statistics};
 use Flow\Parquet\ParquetFile\Schema\PhysicalType;
 use Flow\Parquet\Thrift\ColumnMetaData;
 
-final readonly class ColumnChunk
+final class ColumnChunk
 {
     /**
      * @param PhysicalType $type

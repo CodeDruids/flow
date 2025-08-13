@@ -7,7 +7,7 @@ namespace Flow\Azure\SDK\BlobService\URLFactory;
 use Flow\Azure\SDK\BlobService\{Configuration};
 use Flow\Azure\SDK\URLFactory;
 
-final readonly class AzuriteURLFactory implements URLFactory
+final class AzuriteURLFactory implements URLFactory
 {
     public function __construct(private string $host = '127.0.0.1', private string $port = '10000', private bool $secure = false)
     {

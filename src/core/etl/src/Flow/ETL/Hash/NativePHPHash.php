@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\ETL\Hash;
 
-final readonly class NativePHPHash implements Algorithm
+final class NativePHPHash implements Algorithm
 {
     /**
      * @param array<array-key, mixed> $options

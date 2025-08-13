@@ -10,7 +10,7 @@ use Flow\ETL\{Extractor, FlowContext, Rows};
 /**
  * @internal
  */
-final readonly class GeneratorExtractor implements Extractor
+final class GeneratorExtractor implements Extractor
 {
     /**
      * @param \Generator<Rows> $rows

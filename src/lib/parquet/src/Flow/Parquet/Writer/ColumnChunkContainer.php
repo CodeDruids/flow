@@ -6,7 +6,7 @@ namespace Flow\Parquet\Writer;
 
 use Flow\Parquet\ParquetFile\RowGroup\ColumnChunk;
 
-final readonly class ColumnChunkContainer
+final class ColumnChunkContainer
 {
     public function __construct(
         public string $binaryBuffer,

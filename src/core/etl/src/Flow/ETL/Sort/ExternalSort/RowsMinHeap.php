@@ -14,7 +14,10 @@ use Flow\ETL\Row\{Reference, References, SortOrder};
  */
 final class RowsMinHeap extends \SplMinHeap
 {
-    private readonly References $ref;
+    /**
+     * @readonly
+     */
+    private References $ref;
 
     public function __construct(Reference ...$refs)
     {

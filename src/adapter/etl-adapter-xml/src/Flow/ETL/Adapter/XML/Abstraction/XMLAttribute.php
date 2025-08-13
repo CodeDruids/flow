@@ -6,7 +6,7 @@ namespace Flow\ETL\Adapter\XML\Abstraction;
 
 use Flow\ETL\Exception\InvalidArgumentException;
 
-final readonly class XMLAttribute
+final class XMLAttribute
 {
     public function __construct(
         public string $name,

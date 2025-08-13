@@ -11,8 +11,11 @@ use Flow\ETL\Hash\NativePHPHash;
 use Flow\Filesystem\{Filesystem, Path};
 use Flow\Serializer\Serializer;
 
-final readonly class FilesystemCache implements Cache
+final class FilesystemCache implements Cache
 {
+    /**
+     * @readonly
+     */
     private Path $cacheDir;
 
     public function __construct(

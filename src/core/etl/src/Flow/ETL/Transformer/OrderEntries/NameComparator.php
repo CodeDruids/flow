@@ -6,7 +6,7 @@ namespace Flow\ETL\Transformer\OrderEntries;
 
 use Flow\ETL\Row\Entry;
 
-final readonly class NameComparator implements Comparator
+final class NameComparator implements Comparator
 {
     public function __construct(private Order $order = Order::ASC)
     {

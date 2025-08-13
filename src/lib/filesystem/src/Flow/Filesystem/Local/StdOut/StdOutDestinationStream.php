@@ -13,7 +13,7 @@ final class StdOutDestinationStream implements DestinationStream
      */
     private $handle;
 
-    public function __construct(private readonly Path $path, ?\php_user_filter $filter = null)
+    public function __construct(private Path $path, ?\php_user_filter $filter = null)
     {
         $outputStream = \mb_strtolower((string) $this->path->options()->getAsString('stream', 'stdout'));
 

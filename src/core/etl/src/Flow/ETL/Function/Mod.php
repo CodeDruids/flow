@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class Mod extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|int $left,
-        private readonly ScalarFunction|int $right,
+        private ScalarFunction|int $left,
+        private ScalarFunction|int $right,
     ) {
     }
 

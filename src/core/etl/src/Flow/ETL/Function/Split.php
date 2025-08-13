@@ -11,9 +11,9 @@ use Symfony\Component\String\AbstractString;
 final class Split extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|string $separator,
-        private readonly ScalarFunction|int $limit = PHP_INT_MAX,
+        private ScalarFunction|string $value,
+        private ScalarFunction|string $separator,
+        private ScalarFunction|int $limit = PHP_INT_MAX,
     ) {
     }
 

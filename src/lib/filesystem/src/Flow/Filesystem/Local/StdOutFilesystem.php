@@ -10,7 +10,7 @@ use Flow\Filesystem\Local\StdOut\StdOutDestinationStream;
 use Flow\Filesystem\Path\Filter;
 use Flow\Filesystem\Path\Filter\KeepAll;
 
-final readonly class StdOutFilesystem implements Filesystem
+final class StdOutFilesystem implements Filesystem
 {
     public function __construct(private ?\php_user_filter $filter = null)
     {
@@ -28,8 +28,9 @@ final readonly class StdOutFilesystem implements Filesystem
         throw new RuntimeException('StdOut does not have a system tmp directory');
     }
 
-    public function list(Path $path, Filter $pathFilter = new KeepAll()) : \Generator
+    public function list(Path $path, ?Filter $pathFilter = null) : \Generator
     {
+        $pathFilter ??= new KeepAll();
         yield from [];
     }
 

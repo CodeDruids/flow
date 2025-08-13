@@ -11,7 +11,7 @@ use Flow\Filesystem\{FileStatus, Partition};
 use Flow\Filesystem\Path\Filter;
 use Flow\Types\Type\AutoCaster;
 
-final readonly class ScalarFunctionFilter implements Filter
+final class ScalarFunctionFilter implements Filter
 {
     public function __construct(
         private ScalarFunction $function,

@@ -36,8 +36,8 @@ final class MapEntry implements Entry
      * @throws InvalidArgumentException
      */
     public function __construct(
-        private readonly string $name,
-        private readonly ?array $value,
+        private string $name,
+        private ?array $value,
         Type $type,
         ?Metadata $metadata = null,
     ) {

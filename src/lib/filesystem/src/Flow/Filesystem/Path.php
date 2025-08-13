@@ -11,21 +11,39 @@ use Flow\Filesystem\Stream\ResourceContext;
 
 final class Path
 {
-    private readonly string $basename;
+    /**
+     * @readonly
+     */
+    private string $basename;
 
-    private readonly string|false $extension;
+    /**
+     * @readonly
+     */
+    private string|false $extension;
 
-    private readonly string $filename;
+    /**
+     * @readonly
+     */
+    private string $filename;
 
     private ?bool $isPattern = null;
 
-    private readonly Options $options;
+    /**
+     * @readonly
+     */
+    private Options $options;
 
     private ?Partitions $partitions = null;
 
-    private readonly string $path;
+    /**
+     * @readonly
+     */
+    private string $path;
 
-    private readonly Protocol $protocol;
+    /**
+     * @readonly
+     */
+    private Protocol $protocol;
 
     /**
      * @param array<string, mixed>|Options $options

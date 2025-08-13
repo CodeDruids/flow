@@ -19,7 +19,7 @@ final class HashIdFactoryTest extends FlowTestCase
         self::assertEquals(
             string_entry(
                 'id',
-                \hash('xxh128', 'John:Doe')
+                \hash('md5', 'John:Doe')
             ),
             $factory->create(
                 row(str_entry('first_name', 'John'), str_entry('last_name', 'Doe'))

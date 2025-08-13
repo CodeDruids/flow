@@ -7,7 +7,7 @@ namespace Flow\ETL\Transformer;
 use Flow\ETL\{FlowContext, Row, Rows, Transformer};
 use Flow\ETL\Row\Entry\JsonEntry;
 
-final readonly class GroupToArrayTransformer implements Transformer
+final class GroupToArrayTransformer implements Transformer
 {
     public function __construct(private string $groupByEntry, private string $newEntryName)
     {

@@ -15,7 +15,7 @@ final class JsonLinesLoader implements Closure, FileLoader, Loader
 
     private int $flags = JSON_THROW_ON_ERROR;
 
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
     }
 

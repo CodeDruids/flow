@@ -14,7 +14,7 @@ final class PathPartitionsExtractor implements Extractor, FileExtractor, Limitab
     use Limitable;
     use PathFiltering;
 
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
     }
 

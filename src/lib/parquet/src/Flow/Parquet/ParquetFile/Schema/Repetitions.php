@@ -8,7 +8,10 @@ use Flow\Parquet\Exception\InvalidArgumentException;
 
 final class Repetitions implements \Countable, \Stringable
 {
-    public readonly string $id;
+    /**
+     * @readonly
+     */
+    public string $id;
 
     private ?int $maxDefinitionLevel = null;
 
@@ -16,8 +19,10 @@ final class Repetitions implements \Countable, \Stringable
 
     /**
      * Total count of REPEATED repetitions.
+     *
+     * @readonly
      */
-    private readonly int $repeatedCount;
+    private int $repeatedCount;
 
     /**
      * @var array<int, Repetition>

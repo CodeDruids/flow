@@ -30,7 +30,7 @@ use Flow\Azure\SDK\Normalizer\SimpleXMLNormalizer;
 use Psr\Http\Client\{ClientExceptionInterface, ClientInterface};
 use Psr\Log\{LoggerInterface};
 
-final readonly class BlobService implements BlobServiceInterface
+final class BlobService implements BlobServiceInterface
 {
     public const VERSION = '2024-08-04';
 
@@ -48,8 +48,9 @@ final readonly class BlobService implements BlobServiceInterface
      * @throws AzureException
      * @throws ClientExceptionInterface
      */
-    public function copyBlob(string $fromBlob, string $toBlob, CopyBlobOptions $options = new CopyBlobOptions()) : void
+    public function copyBlob(string $fromBlob, string $toBlob, ?CopyBlobOptions $options = null) : void
     {
+        $options ??= new CopyBlobOptions();
         $request = $this->httpFactory->put(
             $this->urlFactory->create(
                 $this->configuration,
@@ -89,8 +90,9 @@ final readonly class BlobService implements BlobServiceInterface
      * @throws AzureException
      * @throws ClientExceptionInterface
      */
-    public function deleteBlob(string $blob, DeleteBlobOptions $options = new DeleteBlobOptions()) : void
+    public function deleteBlob(string $blob, ?DeleteBlobOptions $options = null) : void
     {
+        $options ??= new DeleteBlobOptions();
         $request = $this->httpFactory->delete(
             $this->urlFactory->create(
                 $this->configuration,
@@ -124,8 +126,9 @@ final readonly class BlobService implements BlobServiceInterface
      * @throws AzureException
      * @throws ClientExceptionInterface
      */
-    public function deleteContainer(DeleteContainerOptions $options = new DeleteContainerOptions()) : void
+    public function deleteContainer(?DeleteContainerOptions $options = null) : void
     {
+        $options ??= new DeleteContainerOptions();
         $request = $this->httpFactory->delete(
             $this->urlFactory->create(
                 $this->configuration,
@@ -159,8 +162,9 @@ final readonly class BlobService implements BlobServiceInterface
      * @throws AzureException
      * @throws ClientExceptionInterface
      */
-    public function getBlob(string $blob, GetBlobOptions $options = new GetBlobOptions()) : BlobContent
+    public function getBlob(string $blob, ?GetBlobOptions $options = null) : BlobContent
     {
+        $options ??= new GetBlobOptions();
         $request = $this->httpFactory->get(
             $this->urlFactory->create(
                 $this->configuration,
@@ -197,8 +201,9 @@ final readonly class BlobService implements BlobServiceInterface
      * @throws AzureException
      * @throws ClientExceptionInterface
      */
-    public function getBlobProperties(string $blob, GetBlobPropertiesOptions $options = new GetBlobPropertiesOptions()) : ?BlobProperties
+    public function getBlobProperties(string $blob, ?GetBlobPropertiesOptions $options = null) : ?BlobProperties
     {
+        $options ??= new GetBlobPropertiesOptions();
         $request = $this->httpFactory->get(
             $this->urlFactory->create(
                 $this->configuration,
@@ -235,8 +240,9 @@ final readonly class BlobService implements BlobServiceInterface
         return new BlobProperties($response);
     }
 
-    public function getBlockBlobBlockList(string $blob, GetBlockBlobBlockListOptions $options = new GetBlockBlobBlockListOptions()) : BlockList
+    public function getBlockBlobBlockList(string $blob, ?GetBlockBlobBlockListOptions $options = null) : BlockList
     {
+        $options ??= new GetBlockBlobBlockListOptions();
         $request = $this->httpFactory->get(
             $this->urlFactory->create(
                 $this->configuration,
@@ -339,8 +345,9 @@ final readonly class BlobService implements BlobServiceInterface
      * @throws AzureException
      * @throws ClientExceptionInterface
      */
-    public function getContainerProperties(GetContainerPropertiesOptions $options = new GetContainerPropertiesOptions()) : ?ContainerProperties
+    public function getContainerProperties(?GetContainerPropertiesOptions $options = null) : ?ContainerProperties
     {
+        $options ??= new GetContainerPropertiesOptions();
         $request = $this->httpFactory->get(
             $this->urlFactory->create(
                 $this->configuration,
@@ -384,8 +391,9 @@ final readonly class BlobService implements BlobServiceInterface
      *
      * @return \Generator<Blob>
      */
-    public function listBlobs(ListBlobOptions $options = new ListBlobOptions()) : \Generator
+    public function listBlobs(?ListBlobOptions $options = null) : \Generator
     {
+        $options ??= new ListBlobOptions();
         $request = $this->httpFactory->get(
             $this->urlFactory->create(
                 $this->configuration,
@@ -455,8 +463,10 @@ final readonly class BlobService implements BlobServiceInterface
      *
      * @throws AzureException
      */
-    public function putBlockBlob(string $path, $content = null, ?int $size = null, PutBlockBlobOptions $options = new PutBlockBlobOptions()) : void
+    public function putBlockBlob(string $path, $content = null, ?int $size = null, ?PutBlockBlobOptions $options = null) : void
     {
+        $options ??= new PutBlockBlobOptions();
+
         if ($content !== null) {
             if (!\is_resource($content) && !\is_string($content)) {
                 throw new InvalidArgumentException('Content must be a resource or a string');
@@ -515,8 +525,9 @@ final readonly class BlobService implements BlobServiceInterface
      * @throws AzureException
      * @throws ClientExceptionInterface
      */
-    public function putBlockBlobBlock(string $path, string $blockId, $content, int $size, PutBlockBlobBlockOptions $options = new PutBlockBlobBlockOptions()) : void
+    public function putBlockBlobBlock(string $path, string $blockId, $content, int $size, ?PutBlockBlobBlockOptions $options = null) : void
     {
+        $options ??= new PutBlockBlobBlockOptions();
         $request = $this->httpFactory->put(
             $this->urlFactory->create(
                 $this->configuration,
@@ -558,8 +569,10 @@ final readonly class BlobService implements BlobServiceInterface
      * @throws AzureException
      * @throws ClientExceptionInterface
      */
-    public function putBlockBlobBlockList(string $path, BlockList $blockList, PutBlockBlobBlockListOptions $options = new PutBlockBlobBlockListOptions(), Serializer $serializer = new SimpleXMLSerializer()) : void
+    public function putBlockBlobBlockList(string $path, BlockList $blockList, ?PutBlockBlobBlockListOptions $options = null, ?Serializer $serializer = null) : void
     {
+        $options ??= new PutBlockBlobBlockListOptions();
+        $serializer ??= new SimpleXMLSerializer();
         $request = $this->httpFactory->put(
             $this->urlFactory->create(
                 $this->configuration,
@@ -602,8 +615,9 @@ final readonly class BlobService implements BlobServiceInterface
      * @throws AzureException
      * @throws ClientExceptionInterface
      */
-    public function putContainer(CreateContainerOptions $options = new CreateContainerOptions()) : void
+    public function putContainer(?CreateContainerOptions $options = null) : void
     {
+        $options ??= new CreateContainerOptions();
         $request = $this->httpFactory->put(
             $this->urlFactory->create(
                 $this->configuration,

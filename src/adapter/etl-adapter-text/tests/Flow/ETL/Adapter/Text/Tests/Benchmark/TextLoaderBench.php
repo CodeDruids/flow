@@ -12,9 +12,15 @@ use PhpBench\Attributes\Groups;
 #[Groups(['loader'])]
 final class TextLoaderBench
 {
-    private readonly FlowContext $context;
+    /**
+     * @readonly
+     */
+    private FlowContext $context;
 
-    private readonly string $outputPath;
+    /**
+     * @readonly
+     */
+    private string $outputPath;
 
     private Rows $rows;
 

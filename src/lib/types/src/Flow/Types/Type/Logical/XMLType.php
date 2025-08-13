@@ -12,7 +12,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<\DOMDocument>
  */
-final readonly class XMLType implements Type
+final class XMLType implements Type
 {
     public function assert(mixed $value) : \DOMDocument
     {

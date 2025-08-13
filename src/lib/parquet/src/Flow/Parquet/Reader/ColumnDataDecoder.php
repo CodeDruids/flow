@@ -19,7 +19,7 @@ use Flow\Parquet\ParquetFile\Page\{Dictionary};
 use Flow\Parquet\ParquetFile\Page\Header\{DataPageHeader, DataPageHeaderV2, DictionaryPageHeader};
 use Flow\Parquet\ParquetFile\Schema\{FlatColumn, PhysicalType};
 
-final readonly class ColumnDataDecoder
+final class ColumnDataDecoder
 {
     public function __construct(
         private Options $options,

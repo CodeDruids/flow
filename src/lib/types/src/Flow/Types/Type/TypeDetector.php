@@ -44,11 +44,30 @@ final class TypeDetector
             if ([] === $value) {
                 return type_array();
             }
+            $arrayIsListFunction = function (array $array) : bool {
+                if (function_exists('array_is_list')) {
+                    return array_is_list($array);
+                }
+
+                if ($array === []) {
+                    return true;
+                }
+                $current_key = 0;
+
+                foreach ($array as $key => $noop) {
+                    if ($key !== $current_key) {
+                        return false;
+                    }
+                    $current_key++;
+                }
+
+                return true;
+            };
 
             $detector = new ArrayContentDetector(
-                $keyTypes = types(...\array_map($this->detectType(...), \array_keys($value)))->deduplicate(),
-                $valueTypes = types(...\array_map($this->detectType(...), \array_values($value)))->deduplicate(),
-                \array_is_list($value)
+                $keyTypes = types(...\array_map(\Closure::fromCallable([$this, 'detectType']), \array_keys($value)))->deduplicate(),
+                $valueTypes = types(...\array_map(\Closure::fromCallable([$this, 'detectType']), \array_values($value)))->deduplicate(),
+                $arrayIsListFunction($value)
             );
 
             if ($detector->isList()) {

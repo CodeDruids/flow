@@ -11,8 +11,8 @@ final class CrossJoinRowsTransformer implements Transformer
     private ?Rows $rows = null;
 
     public function __construct(
-        private readonly DataFrame $dataFrame,
-        private readonly string $prefix = '',
+        private DataFrame $dataFrame,
+        private string $prefix = '',
     ) {
     }
 

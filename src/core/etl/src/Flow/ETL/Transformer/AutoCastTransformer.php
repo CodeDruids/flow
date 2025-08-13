@@ -8,7 +8,7 @@ use Flow\ETL\{FlowContext, Row, Rows, Transformer};
 use Flow\ETL\Row\Entry;
 use Flow\Types\Type\AutoCaster;
 
-final readonly class AutoCastTransformer implements Transformer
+final class AutoCastTransformer implements Transformer
 {
     public function __construct(private AutoCaster $caster)
     {

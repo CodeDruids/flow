@@ -8,8 +8,11 @@ use Flow\ETL\{Exception\InvalidArgumentException, Hash\NativePHPHash, Row, Rows,
 use Flow\Filesystem\{Filesystem, Path};
 use Flow\Serializer\{NativePHPSerializer, Serializer};
 
-final readonly class FilesystemBucketsCache implements BucketsCache
+final class FilesystemBucketsCache implements BucketsCache
 {
+    /**
+     * @readonly
+     */
     private Path $cacheDir;
 
     /**
@@ -19,10 +22,12 @@ final readonly class FilesystemBucketsCache implements BucketsCache
      */
     public function __construct(
         private Filesystem $filesystem,
-        private Serializer $serializer = new NativePHPSerializer(),
+        private ?Serializer $serializer = null,
         private int $chunkSize = 100,
         ?Path $cacheDir = null,
     ) {
+        $this->serializer = $serializer ?? new NativePHPSerializer();
+
         if ($this->chunkSize < 1) {
             throw new InvalidArgumentException('Chunk size must be greater than 0');
         }

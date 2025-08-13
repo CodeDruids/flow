@@ -30,8 +30,8 @@ final class ExternalSort implements SortingAlgorithm
      * @param int<1,max> $bucketsCount - Buckets counts defines how many rows are compared at time. Higher number can reduce IO but increase memory consumption
      */
     public function __construct(
-        private readonly BucketsCache $bucketsCache,
-        private readonly int $bucketsCount = 10,
+        private BucketsCache $bucketsCache,
+        private int $bucketsCount = 10,
     ) {
         if ($this->bucketsCount < 1) {
             throw new InvalidArgumentException('Buckets count must be greater than 0, given: ' . $this->bucketsCount);

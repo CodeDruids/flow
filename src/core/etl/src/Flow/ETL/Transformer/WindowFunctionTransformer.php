@@ -8,7 +8,7 @@ use Flow\ETL\Exception\{InvalidArgumentException, RuntimeException};
 use Flow\ETL\{FlowContext, Rows, Schema\Definition, Transformer};
 use Flow\ETL\Function\WindowFunction;
 
-final readonly class WindowFunctionTransformer implements Transformer
+final class WindowFunctionTransformer implements Transformer
 {
     /**
      * @param Definition<mixed>|string $entry

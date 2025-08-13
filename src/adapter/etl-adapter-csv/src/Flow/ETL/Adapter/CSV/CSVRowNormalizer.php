@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\ETL\Adapter\CSV;
 
-final readonly class CSVRowNormalizer
+final class CSVRowNormalizer
 {
     public function __construct(private bool $emptyToNull = true)
     {

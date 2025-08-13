@@ -6,12 +6,21 @@ namespace Flow\Parquet\BinaryReader;
 
 use Flow\Parquet\{BinaryReader, ByteOrder, DataSize};
 
-final readonly class BinaryBufferReader implements BinaryReader
+final class BinaryBufferReader implements BinaryReader
 {
+    /**
+     * @readonly
+     */
     private DataSize $length;
 
+    /**
+     * @readonly
+     */
     private DataSize $position;
 
+    /**
+     * @readonly
+     */
     private DataSize $remainingLength;
 
     public function __construct(private string $buffer, private ByteOrder $byteOrder = ByteOrder::LITTLE_ENDIAN)

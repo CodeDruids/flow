@@ -8,7 +8,7 @@ use function Flow\ETL\DSL\{array_to_rows, datetime_schema, float_schema, list_sc
 use function Flow\Types\DSL\{type_float, type_integer, type_list, type_string, type_structure};
 use Flow\ETL\{Extractor, FlowContext, Schema};
 
-final readonly class FakeStaticOrdersExtractor implements Extractor
+final class FakeStaticOrdersExtractor implements Extractor
 {
     public function __construct(private int $count = 1_000)
     {

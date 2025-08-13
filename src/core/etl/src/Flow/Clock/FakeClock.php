@@ -8,8 +8,9 @@ use Psr\Clock\ClockInterface;
 
 final class FakeClock implements ClockInterface
 {
-    public function __construct(private \DateTimeImmutable $dateTime = new \DateTimeImmutable('now'))
+    public function __construct(private ?\DateTimeImmutable $dateTime = null)
     {
+        $this->dateTime = $dateTime ?? new \DateTimeImmutable('now');
     }
 
     public function modify(string $modify) : void

@@ -12,7 +12,7 @@ final class TypesModel
      * @param array<TypeModel> $types
      */
     public function __construct(
-        public readonly array $types,
+        public array $types,
     ) {
     }
 

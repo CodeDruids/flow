@@ -6,8 +6,11 @@ namespace Flow\Types\Type\Native\String;
 
 use Flow\Types\Value\Uuid;
 
-final readonly class StringTypeChecker
+final class StringTypeChecker
 {
+    /**
+     * @readonly
+     */
     private string $string;
 
     public function __construct(string $string)

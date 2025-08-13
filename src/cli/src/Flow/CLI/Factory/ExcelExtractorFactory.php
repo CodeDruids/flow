@@ -10,7 +10,7 @@ use Flow\ETL\Adapter\Excel\{ExcelExtractor};
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class ExcelExtractorFactory
+final class ExcelExtractorFactory
 {
     public function __construct(
         private Path $path,

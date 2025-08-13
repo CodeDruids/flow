@@ -16,10 +16,10 @@ final class Slug extends ScalarFunctionChain
      * @param null|array<array-key, mixed>|ScalarFunction $symbolsMap
      */
     public function __construct(
-        private readonly ScalarFunction|string $string,
-        private readonly ScalarFunction|string $separator = '-',
-        private readonly ScalarFunction|string|null $locale = null,
-        private readonly ScalarFunction|array|null $symbolsMap = null,
+        private ScalarFunction|string $string,
+        private ScalarFunction|string $separator = '-',
+        private ScalarFunction|string|null $locale = null,
+        private ScalarFunction|array|null $symbolsMap = null,
     ) {
     }
 

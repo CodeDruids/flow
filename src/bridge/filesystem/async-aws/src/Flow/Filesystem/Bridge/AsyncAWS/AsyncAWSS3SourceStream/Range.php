@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Filesystem\Bridge\AsyncAWS\AsyncAWSS3SourceStream;
 
-final readonly class Range
+final class Range
 {
     /**
      * Constructor to initialize offset and limit.

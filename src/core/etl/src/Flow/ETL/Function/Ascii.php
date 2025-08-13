@@ -9,7 +9,7 @@ use Flow\ETL\Row;
 
 final class Ascii extends ScalarFunctionChain
 {
-    public function __construct(private readonly ScalarFunction|string $string)
+    public function __construct(private ScalarFunction|string $string)
     {
     }
 

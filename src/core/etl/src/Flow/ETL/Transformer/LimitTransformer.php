@@ -11,7 +11,7 @@ final class LimitTransformer implements Transformer
 {
     private int $rowsCount = 0;
 
-    public function __construct(public readonly int $limit)
+    public function __construct(public int $limit)
     {
         if ($this->limit <= 0) {
             throw new InvalidArgumentException("Limit can't be lower or equal zero, given: " . $this->limit);

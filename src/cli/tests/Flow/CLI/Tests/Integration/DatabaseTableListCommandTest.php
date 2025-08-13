@@ -63,13 +63,13 @@ final class DatabaseTableListCommandTest extends FlowTestCase
 │ table_01 │ public    │ 3       │
 │ table_02 │ public    │ 3       │
 └──────────┴───────────┴─────────┘
- ------------------ ----- 
-  Summary                 
- ------------------ ----- 
-  Total tables       2    
-  Total namespaces   1    
-  Total columns      6    
- ------------------ ----- 
+ ------------------ -----
+  Summary
+ ------------------ -----
+  Total tables       2
+  Total namespaces   1
+  Total columns      6
+ ------------------ -----
 
 
 OUTPUT,

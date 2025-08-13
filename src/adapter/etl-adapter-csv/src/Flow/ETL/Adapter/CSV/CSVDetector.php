@@ -13,8 +13,9 @@ final class CSVDetector
 {
     private Options $options;
 
-    public function __construct(private readonly SourceStream $stream, private readonly ?Option $fallback = new Option(',', '"', '\\'), ?Options $options = null)
+    public function __construct(private SourceStream $stream, private ?Option $fallback = null, ?Options $options = null)
     {
+        $this->fallback = $fallback ?? new Option(',', '"', '\\');
         $this->options = $options ?? Options::all();
     }
 

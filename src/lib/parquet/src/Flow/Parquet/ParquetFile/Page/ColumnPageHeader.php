@@ -7,7 +7,7 @@ namespace Flow\Parquet\ParquetFile\Page;
 use Flow\Parquet\ParquetFile\RowGroup\ColumnChunk;
 use Flow\Parquet\ParquetFile\Schema\FlatColumn;
 
-final readonly class ColumnPageHeader
+final class ColumnPageHeader
 {
     public function __construct(
         public FlatColumn $column,

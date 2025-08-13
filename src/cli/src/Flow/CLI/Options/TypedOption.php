@@ -7,7 +7,7 @@ namespace Flow\CLI\Options;
 use Symfony\Component\Console\Exception\InvalidArgumentException;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class TypedOption
+final class TypedOption
 {
     public function __construct(private string $name)
     {

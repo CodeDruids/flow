@@ -12,7 +12,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<\DateInterval>
  */
-final readonly class TimeType implements Type
+final class TimeType implements Type
 {
     public function assert(mixed $value) : \DateInterval
     {

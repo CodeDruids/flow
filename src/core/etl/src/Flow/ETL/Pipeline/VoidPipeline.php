@@ -6,7 +6,7 @@ namespace Flow\ETL\Pipeline;
 
 use Flow\ETL\{Extractor, FlowContext, Loader, Pipeline, Rows, Transformer};
 
-final readonly class VoidPipeline implements OverridingPipeline, Pipeline
+final class VoidPipeline implements OverridingPipeline, Pipeline
 {
     public function __construct(private Pipeline $pipeline)
     {

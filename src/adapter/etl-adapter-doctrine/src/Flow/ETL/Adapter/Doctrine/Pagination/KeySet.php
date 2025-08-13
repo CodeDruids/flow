@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Flow\ETL\Adapter\Doctrine\Pagination;
 
-final readonly class KeySet
+final class KeySet
 {
     /**
      * @var array<Key>
+     *
+     * @readonly
      */
     public array $keys;
 

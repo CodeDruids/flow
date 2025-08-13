@@ -13,22 +13,26 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class FlowStreamedResponse extends StreamedResponse
 {
-    private readonly Config|ConfigBuilder $config;
+    /**
+     * @readonly
+     */
+    private Config|ConfigBuilder $config;
 
     /**
      * @param array<string, mixed> $headers
      */
     public function __construct(
-        private readonly Extractor $extractor,
-        private readonly Output $output,
-        private readonly Transformation $transformations = new Transformations(),
+        private Extractor $extractor,
+        private Output $output,
+        private ?Transformation $transformations = null,
         int $status = 200,
         array $headers = [],
         Config|ConfigBuilder|null $config = null,
     ) {
+        $this->transformations = $transformations ?? new Transformations();
         $this->config = $config ?? Config::default();
 
-        parent::__construct($this->stream(...), $status, $headers);
+        parent::__construct(\Closure::fromCallable([$this, 'stream']), $status, $headers);
 
         if (!$this->headers->get('Content-Type')) {
             $this->headers->set('Content-Type', $this->output->type()->toContentTypeHeader());

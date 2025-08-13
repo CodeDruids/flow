@@ -19,7 +19,7 @@ final class ChartJSLoader implements Closure, Loader
 
     private Path $template;
 
-    public function __construct(private readonly Chart $type)
+    public function __construct(private Chart $type)
     {
         $this->template = new Path(__DIR__ . '/Resources/template/full_page.html');
     }

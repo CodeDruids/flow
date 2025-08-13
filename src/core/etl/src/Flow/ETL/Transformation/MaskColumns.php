@@ -11,7 +11,7 @@ use Flow\ETL\{DataFrame, Transformation};
  * Mask columns in DataFrame by replacing their values with a mask.
  * If column does not exist in DataFrame, it will be added with a mask value.
  */
-final readonly class MaskColumns implements Transformation
+final class MaskColumns implements Transformation
 {
     /**
      * @param array<int, string> $columns

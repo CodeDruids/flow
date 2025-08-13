@@ -11,7 +11,7 @@ final class ArrayMergeCollection extends ScalarFunctionChain
     /**
      * @param array<array-key, mixed>|ScalarFunction $array
      */
-    public function __construct(private readonly ScalarFunction|array $array)
+    public function __construct(private ScalarFunction|array $array)
     {
     }
 

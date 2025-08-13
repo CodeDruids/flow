@@ -9,7 +9,7 @@ use Flow\ETL\{FlowContext, Row, Rows, Schema\Definition, Transformer};
 use Flow\ETL\Function\ScalarFunction;
 use Flow\ETL\Function\ScalarFunction\{ExpandResults, ScalarResult, UnpackResults};
 
-final readonly class ScalarFunctionTransformer implements Transformer
+final class ScalarFunctionTransformer implements Transformer
 {
     /**
      * @param Definition<mixed>|string $entry

@@ -10,7 +10,7 @@ use Flow\ETL\Adapter\JSON\JsonLoader;
 use Flow\Filesystem\Path;
 use Symfony\Component\Console\Input\InputInterface;
 
-final readonly class JsonLoaderFactory
+final class JsonLoaderFactory
 {
     public function __construct(
         private Path $path,

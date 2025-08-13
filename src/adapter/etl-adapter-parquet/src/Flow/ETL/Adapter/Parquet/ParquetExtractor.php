@@ -31,7 +31,7 @@ final class ParquetExtractor implements Extractor, FileExtractor, LimitableExtra
     /**
      * @param Path $path
      */
-    public function __construct(private readonly Path $path)
+    public function __construct(private Path $path)
     {
         $this->resetLimit();
         $this->schemaConverter = new SchemaConverter();

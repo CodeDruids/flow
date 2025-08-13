@@ -6,7 +6,7 @@ namespace Flow\ETL\Formatter\ASCII;
 
 use Flow\ETL\Exception\InvalidArgumentException;
 
-final readonly class ASCIIBody
+final class ASCIIBody
 {
     public function __construct(private Headers $headers, private Body $body)
     {

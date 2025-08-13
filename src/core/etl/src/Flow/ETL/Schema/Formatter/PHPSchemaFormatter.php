@@ -23,12 +23,12 @@ use Flow\Types\Type\Logical\{DateTimeType,
     XMLType};
 use Flow\Types\Type\Native\{BooleanType, EnumType, FloatType, IntegerType, StringType};
 
-final readonly class PHPSchemaFormatter implements SchemaFormatter
+final class PHPSchemaFormatter implements SchemaFormatter
 {
-    public function __construct(
-        private ValueFormatter $valueFormatter = new ValueFormatter(),
-        private TypeFormatter $typeFormatter = new TypeFormatter(),
-    ) {
+    public function __construct(private ?ValueFormatter $valueFormatter = null, private ?TypeFormatter $typeFormatter = null)
+    {
+        $this->valueFormatter = $valueFormatter ?? new ValueFormatter();
+        $this->typeFormatter = $typeFormatter ?? new TypeFormatter();
     }
 
     /**

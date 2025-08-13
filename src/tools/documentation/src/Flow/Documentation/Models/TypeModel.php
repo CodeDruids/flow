@@ -9,10 +9,10 @@ use function Flow\Types\DSL\{type_boolean, type_optional, type_string, type_stru
 final class TypeModel
 {
     public function __construct(
-        public readonly string $name,
-        public readonly ?string $namespace,
-        public readonly bool $isNullable,
-        public readonly bool $isVariadic,
+        public string $name,
+        public ?string $namespace,
+        public bool $isNullable,
+        public bool $isVariadic,
     ) {
     }
 
@@ -44,7 +44,7 @@ final class TypeModel
 
         $name = $reflectionType->getName();
 
-        $isClass = \class_exists($name) || \interface_exists($name) || \enum_exists($name);
+        $isClass = \class_exists($name) || \interface_exists($name) || class_exists($name);
 
         return new self(
             $isClass ? (new \ReflectionClass($name))->getShortName() : $name,

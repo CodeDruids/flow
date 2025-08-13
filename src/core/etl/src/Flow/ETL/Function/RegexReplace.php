@@ -9,10 +9,10 @@ use Flow\ETL\Row;
 final class RegexReplace extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $pattern,
-        private readonly ScalarFunction|string $replacement,
-        private readonly ScalarFunction|string $subject,
-        private readonly ScalarFunction|int|null $limit = null,
+        private ScalarFunction|string $pattern,
+        private ScalarFunction|string $replacement,
+        private ScalarFunction|string $subject,
+        private ScalarFunction|int|null $limit = null,
     ) {
     }
 

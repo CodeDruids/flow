@@ -13,7 +13,7 @@ use Flow\Types\Type;
  *
  * @implements Type<T>
  */
-final readonly class LiteralType implements Type
+final class LiteralType implements Type
 {
     /**
      * @param T $value

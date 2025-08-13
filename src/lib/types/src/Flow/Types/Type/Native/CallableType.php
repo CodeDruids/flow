@@ -11,7 +11,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<callable>
  */
-final readonly class CallableType implements Type
+final class CallableType implements Type
 {
     public function assert(mixed $value) : callable
     {

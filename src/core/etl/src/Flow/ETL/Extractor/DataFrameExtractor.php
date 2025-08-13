@@ -6,7 +6,7 @@ namespace Flow\ETL\Extractor;
 
 use Flow\ETL\{DataFrame, Extractor, FlowContext};
 
-final readonly class DataFrameExtractor implements Extractor
+final class DataFrameExtractor implements Extractor
 {
     public function __construct(private DataFrame $dataFrame)
     {

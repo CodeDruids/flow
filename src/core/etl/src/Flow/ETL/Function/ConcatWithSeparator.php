@@ -12,11 +12,13 @@ final class ConcatWithSeparator extends ScalarFunctionChain
 {
     /**
      * @var array<ScalarFunction|string>
+     *
+     * @readonly
      */
-    private readonly array $refs;
+    private array $refs;
 
     public function __construct(
-        private readonly ScalarFunction|string $separator,
+        private ScalarFunction|string $separator,
         ScalarFunction|string ...$refs,
     ) {
         $this->refs = $refs;

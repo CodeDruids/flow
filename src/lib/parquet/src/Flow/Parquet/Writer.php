@@ -32,9 +32,11 @@ final class Writer
     private ?DestinationStream $stream = null;
 
     public function __construct(
-        private readonly Compressions $compression = Compressions::SNAPPY,
-        private readonly Options $options = new Options(),
+        private Compressions $compression = Compressions::SNAPPY,
+        private ?Options $options = null,
     ) {
+        $this->options = $options ?? new Options();
+
         switch ($this->compression) {
             case Compressions::UNCOMPRESSED:
             case Compressions::SNAPPY:

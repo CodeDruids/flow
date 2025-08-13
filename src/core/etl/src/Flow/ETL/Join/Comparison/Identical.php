@@ -8,7 +8,7 @@ use Flow\ETL\Join\Comparison;
 use Flow\ETL\Row;
 use Flow\ETL\Row\{EntryReference, Reference};
 
-final readonly class Identical implements Comparison
+final class Identical implements Comparison
 {
     public function __construct(
         private string|Reference $entryLeft,

@@ -13,7 +13,7 @@ use Flow\Types\Type;
  *
  * @implements Type<class-string<T>>
  */
-final readonly class ClassStringType implements Type
+final class ClassStringType implements Type
 {
     /**
      * @param null|class-string<T> $class

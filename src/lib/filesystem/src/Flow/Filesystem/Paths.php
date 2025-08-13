@@ -10,8 +10,10 @@ final class Paths
 
     /**
      * @var array<Path>
+     *
+     * @readonly
      */
-    private readonly array $paths;
+    private array $paths;
 
     public function __construct(Path ...$paths)
     {

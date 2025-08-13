@@ -6,7 +6,7 @@ namespace Flow\ETL\Pipeline;
 
 use Flow\ETL\{Cache\CacheIndex, Extractor, FlowContext, Loader, Pipeline, Transformer};
 
-final readonly class CachingPipeline implements OverridingPipeline, Pipeline
+final class CachingPipeline implements OverridingPipeline, Pipeline
 {
     public function __construct(private Pipeline $pipeline, private ?string $id = null)
     {

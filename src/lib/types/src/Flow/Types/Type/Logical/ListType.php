@@ -20,7 +20,7 @@ use Flow\Types\Type;
  *
  * @implements Type<list<T>>
  */
-final readonly class ListType implements Type
+final class ListType implements Type
 {
     /**
      * @param Type<T> $element
@@ -94,8 +94,27 @@ final readonly class ListType implements Type
 
             return false;
         }
+        $arrayIsListFunction = function (array $array) : bool {
+            if (function_exists('array_is_list')) {
+                return array_is_list($array);
+            }
 
-        if ([] !== $value && !\array_is_list($value)) {
+            if ($array === []) {
+                return true;
+            }
+            $current_key = 0;
+
+            foreach ($array as $key => $noop) {
+                if ($key !== $current_key) {
+                    return false;
+                }
+                $current_key++;
+            }
+
+            return true;
+        };
+
+        if ([] !== $value && !$arrayIsListFunction($value)) {
             return false;
         }
 

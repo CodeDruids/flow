@@ -9,9 +9,9 @@ use Flow\ETL\Row;
 final class Sanitize extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|string $placeholder,
-        private readonly ScalarFunction|int|null $skipCharacters = null,
+        private ScalarFunction|string $value,
+        private ScalarFunction|string $placeholder,
+        private ScalarFunction|int|null $skipCharacters = null,
     ) {
     }
 

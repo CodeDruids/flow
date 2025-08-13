@@ -16,7 +16,7 @@ final class Collect implements AggregatingFunction
      */
     private array $collection;
 
-    public function __construct(private readonly Reference $ref)
+    public function __construct(private Reference $ref)
     {
         $this->collection = [];
     }

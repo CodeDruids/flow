@@ -6,7 +6,7 @@ namespace Flow\ETL\Adapter\CSV;
 
 use Flow\Filesystem\SourceStream;
 
-final readonly class CSVLineReader
+final class CSVLineReader
 {
     /**
      * @param null|int<1, max> $charactersReadInLine

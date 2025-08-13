@@ -12,7 +12,7 @@ use Flow\Doctrine\Bulk\Exception\RuntimeException;
 /**
  * @infection-ignore-all
  */
-final readonly class DbalPlatform
+final class DbalPlatform
 {
     public function __construct(private AbstractPlatform $platform)
     {

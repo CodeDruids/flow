@@ -9,9 +9,9 @@ use Flow\ETL\Row;
 final class When extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly mixed $condition,
-        private readonly mixed $then,
-        private readonly mixed $else = null,
+        private mixed $condition,
+        private mixed $then,
+        private mixed $else = null,
     ) {
     }
 

@@ -13,7 +13,7 @@ final class Least extends ScalarFunctionChain
      * @param array<array-key, mixed> $values
      */
     public function __construct(
-        private readonly array $values,
+        private array $values,
     ) {
     }
 

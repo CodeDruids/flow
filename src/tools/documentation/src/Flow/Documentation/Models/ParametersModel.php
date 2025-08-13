@@ -12,7 +12,7 @@ final class ParametersModel
      * @param array<ParameterModel> $arguments
      */
     public function __construct(
-        public readonly array $arguments,
+        public array $arguments,
     ) {
     }
 

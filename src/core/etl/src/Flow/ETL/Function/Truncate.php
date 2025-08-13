@@ -10,9 +10,9 @@ use Flow\ETL\Row;
 final class Truncate extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $value,
-        private readonly ScalarFunction|int $length,
-        private readonly ScalarFunction|string $ellipsis = '...',
+        private ScalarFunction|string $value,
+        private ScalarFunction|int $length,
+        private ScalarFunction|string $ellipsis = '...',
     ) {
     }
 

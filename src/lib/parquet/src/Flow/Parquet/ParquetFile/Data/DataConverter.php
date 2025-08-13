@@ -26,7 +26,7 @@ final class DataConverter
     /**
      * @param array<Converter> $converters
      */
-    public function __construct(private readonly array $converters, private readonly Options $options)
+    public function __construct(private array $converters, private Options $options)
     {
         $this->cache = [];
     }

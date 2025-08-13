@@ -9,15 +9,23 @@ use Flow\ETL\{FlowContext, Hash\Algorithm, Hash\NativePHPHash, Rows, Transformer
 use Flow\ETL\Row\Reference;
 use Flow\ETL\Transformer\DropDuplicates\Hashes;
 
-final readonly class DropDuplicatesTransformer implements Transformer
+final class DropDuplicatesTransformer implements Transformer
 {
+    /**
+     * @readonly
+     */
     private Hashes $deduplication;
 
     /**
      * @var array<Reference|string>
+     *
+     * @readonly
      */
     private array $entries;
 
+    /**
+     * @readonly
+     */
     private Algorithm $hashAlgorithm;
 
     public function __construct(string|Reference ...$entries)

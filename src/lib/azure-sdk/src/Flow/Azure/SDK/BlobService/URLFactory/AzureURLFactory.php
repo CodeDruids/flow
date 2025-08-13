@@ -7,7 +7,7 @@ namespace Flow\Azure\SDK\BlobService\URLFactory;
 use Flow\Azure\SDK\BlobService\{Configuration};
 use Flow\Azure\SDK\URLFactory;
 
-final readonly class AzureURLFactory implements URLFactory
+final class AzureURLFactory implements URLFactory
 {
     public function __construct(private string $host = 'blob.core.windows.net')
     {

@@ -12,7 +12,7 @@ use Flow\Types\Value\Uuid;
 /**
  * @implements Type<Uuid>
  */
-final readonly class UuidType implements Type
+final class UuidType implements Type
 {
     public function assert(mixed $value) : Uuid
     {

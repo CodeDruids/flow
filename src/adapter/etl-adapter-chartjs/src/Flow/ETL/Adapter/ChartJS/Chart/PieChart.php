@@ -30,8 +30,8 @@ final class PieChart implements Chart
     private array $options = [];
 
     public function __construct(
-        private readonly Reference $label,
-        private readonly References $datasets,
+        private Reference $label,
+        private References $datasets,
     ) {
     }
 

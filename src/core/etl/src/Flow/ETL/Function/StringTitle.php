@@ -10,8 +10,8 @@ use Flow\ETL\Row;
 final class StringTitle extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|string $string,
-        private readonly ScalarFunction|bool $allWords = false,
+        private ScalarFunction|string $string,
+        private ScalarFunction|bool $allWords = false,
     ) {
     }
 

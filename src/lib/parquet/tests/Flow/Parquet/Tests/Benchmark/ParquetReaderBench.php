@@ -8,9 +8,11 @@ use Flow\Filesystem\{Path, Stream\NativeLocalSourceStream};
 use Flow\Parquet\{ByteOrder, Options, ParquetFile, ParquetFile\Data\DataConverter};
 use PhpBench\Attributes\Groups;
 
-#[Groups(['parquet-library'])]
-final readonly class ParquetReaderBench
+#[Groups(['parquet-library'])] final class ParquetReaderBench
 {
+    /**
+     * @readonly
+     */
     private ParquetFile $parquetFile;
 
     public function __construct()

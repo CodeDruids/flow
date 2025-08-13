@@ -16,9 +16,9 @@ final class OnEach extends ScalarFunctionChain
      * @param bool|ScalarFunction $preserveKeys
      */
     public function __construct(
-        private readonly ScalarFunction|array $array,
-        private readonly ScalarFunction $function,
-        private readonly ScalarFunction|bool $preserveKeys = true,
+        private ScalarFunction|array $array,
+        private ScalarFunction $function,
+        private ScalarFunction|bool $preserveKeys = true,
     ) {
     }
 

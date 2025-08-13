@@ -13,7 +13,7 @@ final class CacheExtractor implements Extractor
     private ?Extractor $fallbackExtractor = null;
 
     public function __construct(
-        private readonly string $id,
+        private string $id,
     ) {
     }
 

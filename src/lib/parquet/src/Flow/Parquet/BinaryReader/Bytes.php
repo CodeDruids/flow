@@ -10,11 +10,14 @@ final class Bytes implements \ArrayAccess, \Countable, \IteratorAggregate
 {
     private ?\ArrayIterator $iterator = null;
 
-    private readonly DataSize $size;
+    /**
+     * @readonly
+     */
+    private DataSize $size;
 
     public function __construct(
         private array $bytes,
-        private readonly ByteOrder $byteOrder = ByteOrder::LITTLE_ENDIAN,
+        private ByteOrder $byteOrder = ByteOrder::LITTLE_ENDIAN,
     ) {
         $this->size = new DataSize(\count($this->bytes) * 8);
     }

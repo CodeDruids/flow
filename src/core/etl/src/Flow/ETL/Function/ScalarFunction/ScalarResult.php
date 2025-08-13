@@ -8,10 +8,12 @@ use function Flow\Types\DSL\type_optional;
 use Flow\Types\Type;
 use Flow\Types\Type\{TypeDetector};
 
-final readonly class ScalarResult
+final class ScalarResult
 {
     /**
      * @var Type<mixed>
+     *
+     * @readonly
      */
     public Type $type;
 

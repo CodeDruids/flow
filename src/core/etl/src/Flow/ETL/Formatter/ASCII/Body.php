@@ -8,7 +8,7 @@ use Flow\ETL\Exception\InvalidArgumentException;
 use Flow\ETL\{Row, Rows};
 use Flow\Filesystem\Partition;
 
-final readonly class Body
+final class Body
 {
     public function __construct(private Rows $rows)
     {

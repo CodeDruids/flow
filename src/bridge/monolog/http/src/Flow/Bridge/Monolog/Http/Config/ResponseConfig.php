@@ -7,10 +7,12 @@ namespace Flow\Bridge\Monolog\Http\Config;
 use Flow\Bridge\Monolog\Http\Exception\InvalidArgumentException;
 use Flow\Bridge\Monolog\Http\Sanitization\{Sanitizer, SanitizerFactory};
 
-final readonly class ResponseConfig
+final class ResponseConfig
 {
     /**
      * @var array<string, array<string, mixed>|Sanitizer>
+     *
+     * @readonly
      */
     private array $sanitizers;
 

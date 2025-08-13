@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Parquet\Writer\PageBuilder;
 
-final readonly class Dictionary
+final class Dictionary
 {
     /**
      * @param array<int, mixed> $dictionary

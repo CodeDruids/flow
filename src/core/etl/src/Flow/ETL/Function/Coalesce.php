@@ -10,8 +10,10 @@ final class Coalesce extends ScalarFunctionChain
 {
     /**
      * @var array<ScalarFunction>
+     *
+     * @readonly
      */
-    private readonly array $values;
+    private array $values;
 
     public function __construct(
         ScalarFunction ...$values,

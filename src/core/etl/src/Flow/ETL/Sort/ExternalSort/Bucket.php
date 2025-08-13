@@ -6,7 +6,7 @@ namespace Flow\ETL\Sort\ExternalSort;
 
 use Flow\ETL\Row;
 
-final readonly class Bucket
+final class Bucket
 {
     /**
      * @param string $id

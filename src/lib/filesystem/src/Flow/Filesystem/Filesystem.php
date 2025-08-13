@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Flow\Filesystem;
 
 use Flow\Filesystem\Path\Filter;
-use Flow\Filesystem\Path\Filter\KeepAll;
 
 interface Filesystem
 {
@@ -16,7 +15,7 @@ interface Filesystem
     /**
      * @return \Generator<FileStatus>
      */
-    public function list(Path $path, Filter $pathFilter = new KeepAll()) : \Generator;
+    public function list(Path $path, ?Filter $pathFilter = null) : \Generator;
 
     public function mv(Path $from, Path $to) : bool;
 

@@ -9,10 +9,10 @@ use Flow\ETL\Row;
 final class NumberFormat extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|int|float $value,
-        private readonly ScalarFunction|int $decimals,
-        private readonly ScalarFunction|string $decimalSeparator = '.',
-        private readonly ScalarFunction|string $thousandsSeparator = ',',
+        private ScalarFunction|int|float $value,
+        private ScalarFunction|int $decimals,
+        private ScalarFunction|string $decimalSeparator = '.',
+        private ScalarFunction|string $thousandsSeparator = ',',
     ) {
     }
 

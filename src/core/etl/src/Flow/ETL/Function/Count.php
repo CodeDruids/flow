@@ -15,7 +15,7 @@ final class Count implements AggregatingFunction, WindowFunction
 
     private ?Window $window;
 
-    public function __construct(private readonly ?Reference $ref = null)
+    public function __construct(private ?Reference $ref = null)
     {
         $this->window = null;
         $this->count = 0;

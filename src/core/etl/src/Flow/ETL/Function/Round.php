@@ -9,9 +9,9 @@ use Flow\ETL\Row;
 final class Round extends ScalarFunctionChain
 {
     public function __construct(
-        private readonly ScalarFunction|int|float $value,
-        private readonly ScalarFunction|int $precision = 0,
-        private readonly ScalarFunction|int $mode = PHP_ROUND_HALF_UP,
+        private ScalarFunction|int|float $value,
+        private ScalarFunction|int $precision = 0,
+        private ScalarFunction|int $mode = PHP_ROUND_HALF_UP,
     ) {
     }
 

@@ -11,7 +11,7 @@ final class AsyncAWSS3SourceStream implements SourceStream
 {
     private ?int $size = null;
 
-    public function __construct(private readonly Path $path, private readonly string $bucket, private readonly S3Client $s3Client)
+    public function __construct(private Path $path, private string $bucket, private S3Client $s3Client)
     {
     }
 

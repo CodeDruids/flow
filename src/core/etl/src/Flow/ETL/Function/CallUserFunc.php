@@ -20,7 +20,7 @@ final class CallUserFunc extends ScalarFunctionChain
      * @param array<mixed> $parameters
      * @param null|Type<mixed> $returnType
      */
-    public function __construct(ScalarFunction|callable $callable, private readonly array $parameters, private readonly ?Type $returnType = null)
+    public function __construct(ScalarFunction|callable $callable, private array $parameters, private ?Type $returnType = null)
     {
         $this->callable = $callable;
     }

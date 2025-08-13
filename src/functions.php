@@ -37,8 +37,27 @@ if (!\function_exists('dj')) {
 
         print PHP_EOL . \str_repeat(' ', $indention) . $header . PHP_EOL;
         print \str_repeat(' ', $indention) . '[' . PHP_EOL;
+        $arrayIsListFunction = function (array $array) : bool {
+            if (function_exists('array_is_list')) {
+                return array_is_list($array);
+            }
 
-        if (\array_is_list($args)) {
+            if ($array === []) {
+                return true;
+            }
+            $current_key = 0;
+
+            foreach ($array as $key => $noop) {
+                if ($key !== $current_key) {
+                    return false;
+                }
+                $current_key++;
+            }
+
+            return true;
+        };
+
+        if ($arrayIsListFunction($args)) {
             foreach ($args as $i => $v) {
                 if (\is_object($v)) {
                     if (method_exists($v, '__debugInfo')) {

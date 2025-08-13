@@ -26,8 +26,8 @@ final class PsrHttpClientStaticExtractor implements Extractor
      * @param iterable<RequestInterface> $requests
      */
     public function __construct(
-        private readonly ClientInterface $client,
-        private readonly iterable $requests,
+        private ClientInterface $client,
+        private iterable $requests,
     ) {
     }
 

@@ -10,12 +10,11 @@ use Flow\Parquet\Dremel\ColumnData\{DefinitionConverter, NullLevel, Stack};
 use Flow\Parquet\ParquetFile\Data\DataConverter;
 use Flow\Parquet\ParquetFile\Schema\{Column, FlatColumn, NestedColumn};
 
-final readonly class DremelAssembler
+final class DremelAssembler
 {
-    public function __construct(
-        private DataConverter $dataConverter,
-        private DefinitionConverter $definitionConverter = new DefinitionConverter(),
-    ) {
+    public function __construct(private DataConverter $dataConverter, private ?DefinitionConverter $definitionConverter = null)
+    {
+        $this->definitionConverter = $definitionConverter ?? new DefinitionConverter();
     }
 
     /**

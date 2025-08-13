@@ -16,7 +16,7 @@ use Flow\Parquet\ParquetFile\Page\{Dictionary, PageHeader};
 use Flow\Parquet\ParquetFile\Page\Header\Type;
 use Flow\Parquet\ParquetFile\Schema\FlatColumn;
 
-final readonly class PageReader
+final class PageReader
 {
     public function __construct(
         private ByteOrder $byteOrder,

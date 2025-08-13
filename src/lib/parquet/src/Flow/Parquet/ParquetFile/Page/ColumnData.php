@@ -6,7 +6,7 @@ namespace Flow\Parquet\ParquetFile\Page;
 
 use Flow\Parquet\ParquetFile\Schema\{FlatColumn, LogicalType, PhysicalType};
 
-final readonly class ColumnData
+final class ColumnData
 {
     /**
      * @param PhysicalType $type

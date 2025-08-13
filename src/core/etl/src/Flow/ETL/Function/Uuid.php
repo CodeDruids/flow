@@ -19,8 +19,8 @@ if (!\class_exists(\Ramsey\Uuid\Uuid::class) && !\class_exists(\Symfony\Componen
 final class Uuid extends ScalarFunctionChain
 {
     private function __construct(
-        private readonly ScalarFunction|string $uuidVersion,
-        private readonly ScalarFunction|\DateTimeInterface|null $value = null,
+        private ScalarFunction|string $uuidVersion,
+        private ScalarFunction|\DateTimeInterface|null $value = null,
     ) {
     }
 

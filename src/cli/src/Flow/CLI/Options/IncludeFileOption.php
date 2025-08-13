@@ -13,7 +13,7 @@ use Symfony\Component\Console\Input\InputInterface;
 /**
  * @template ExpectedClass
  */
-final readonly class IncludeFileOption
+final class IncludeFileOption
 {
     /**
      * @param string $filePathOptionName

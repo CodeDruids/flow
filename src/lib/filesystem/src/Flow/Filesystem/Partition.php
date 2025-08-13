@@ -24,7 +24,7 @@ final class Partition
      */
     private static array $forbiddenCharacters = ['/', '\\', '=', ':', '>', '<', '|', '"', '?', '*'];
 
-    public function __construct(public readonly string $name, public readonly string $value)
+    public function __construct(public string $name, public string $value)
     {
         if ('' === $this->name) {
             throw new InvalidArgumentException("Partition name can't be empty");

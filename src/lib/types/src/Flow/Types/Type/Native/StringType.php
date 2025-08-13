@@ -12,7 +12,7 @@ use Flow\Types\Type;
 /**
  * @implements Type<string>
  */
-final readonly class StringType implements Type
+final class StringType implements Type
 {
     public function assert(mixed $value) : string
     {

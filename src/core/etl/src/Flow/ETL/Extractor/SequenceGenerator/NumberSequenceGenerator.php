@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\ETL\Extractor\SequenceGenerator;
 
-final readonly class NumberSequenceGenerator implements SequenceGenerator
+final class NumberSequenceGenerator implements SequenceGenerator
 {
     public function __construct(private string|int|float $start, private string|int|float $end, private int|float $step = 1)
     {

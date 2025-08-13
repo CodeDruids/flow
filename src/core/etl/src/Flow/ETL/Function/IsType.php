@@ -12,14 +12,16 @@ final class IsType extends ScalarFunctionChain
 {
     /**
      * @var array<string|Type<mixed>>
+     *
+     * @readonly
      */
-    private readonly array $types;
+    private array $types;
 
     /**
      * @param string|Type<mixed> ...$types
      */
     public function __construct(
-        private readonly mixed $value,
+        private mixed $value,
         string|Type ...$types,
     ) {
 

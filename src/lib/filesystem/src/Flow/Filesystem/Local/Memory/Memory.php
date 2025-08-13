@@ -19,7 +19,7 @@ final class Memory
      */
     private array $streams = [];
 
-    public function __construct(private readonly ?\php_user_filter $filter = null)
+    public function __construct(private ?\php_user_filter $filter = null)
     {
 
     }

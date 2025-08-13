@@ -17,14 +17,14 @@ final class FlatColumn implements Column
     private ?Repetitions $repetitions = null;
 
     public function __construct(
-        private readonly string $name,
-        private readonly PhysicalType $type,
-        private readonly ?ConvertedType $convertedType = null,
-        private readonly ?LogicalType $logicalType = null,
-        private readonly ?Repetition $repetition = Repetition::OPTIONAL,
-        private readonly ?int $precision = null,
-        private readonly ?int $scale = null,
-        private readonly ?int $typeLength = null,
+        private string $name,
+        private PhysicalType $type,
+        private ?ConvertedType $convertedType = null,
+        private ?LogicalType $logicalType = null,
+        private ?Repetition $repetition = Repetition::OPTIONAL,
+        private ?int $precision = null,
+        private ?int $scale = null,
+        private ?int $typeLength = null,
     ) {
     }
 

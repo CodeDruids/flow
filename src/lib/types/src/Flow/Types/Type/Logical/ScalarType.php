@@ -10,10 +10,12 @@ use Flow\Types\Type;
 /**
  * @implements Type<bool|float|int|string>
  */
-final readonly class ScalarType implements Type
+final class ScalarType implements Type
 {
     /**
      * @var Type<bool|float|int|string>
+     *
+     * @readonly
      */
     private Type $innerType;
 

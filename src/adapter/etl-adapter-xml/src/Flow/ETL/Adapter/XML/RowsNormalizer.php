@@ -8,7 +8,7 @@ use Flow\ETL\Adapter\XML\Abstraction\XMLNode;
 use Flow\ETL\Adapter\XML\RowsNormalizer\EntryNormalizer;
 use Flow\ETL\Rows;
 
-final readonly class RowsNormalizer
+final class RowsNormalizer
 {
     public function __construct(private EntryNormalizer $entryNormalizer, private string $rowNodeName = 'row')
     {

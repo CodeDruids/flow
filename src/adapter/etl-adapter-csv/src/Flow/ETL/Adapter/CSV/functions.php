@@ -91,7 +91,9 @@ function to_csv(
  * @param null|Options $options - options to use for detection, default is Options::all()
  */
 #[DocumentationDSL(module: Module::CSV, type: DSLType::HELPER)]
-function csv_detect_separator(SourceStream $stream, int $lines = 5, ?Option $fallback = new Option(',', '"', '\\'), ?Options $options = null) : Option
+function csv_detect_separator(SourceStream $stream, int $lines = 5, ?Option $fallback = null, ?Options $options = null) : Option
 {
+    $fallback ??= new Option(',', '"', '\\');
+
     return (new CSVDetector($stream, $fallback, $options))->detect($lines);
 }

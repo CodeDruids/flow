@@ -12,7 +12,7 @@ use Flow\Types\Type\Logical\XML\XMLConverter;
 /**
  * @implements Type<array>
  */
-final readonly class ArrayType implements Type
+final class ArrayType implements Type
 {
     /**
      * @return array<array-key, mixed>

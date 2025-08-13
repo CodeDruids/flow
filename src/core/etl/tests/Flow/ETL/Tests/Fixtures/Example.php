@@ -8,8 +8,9 @@ final class Example
 {
     public int $foo = 1;
 
-    /** @phpstan-ignore-next-line */
-    private readonly \DateTimeImmutable $bad;
+    /** @phpstan-ignore-next-line
+     * @readonly */
+    private \DateTimeImmutable $bad;
 
     /** @phpstan-ignore-next-line */
     private int $bar = 2;

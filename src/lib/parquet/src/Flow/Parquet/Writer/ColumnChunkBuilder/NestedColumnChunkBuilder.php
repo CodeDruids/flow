@@ -8,7 +8,7 @@ use Flow\Parquet\Dremel\WriteColumnData;
 use Flow\Parquet\ParquetFile\Schema\{Column, NestedColumn};
 use Flow\Parquet\Writer\ColumnChunkBuilder;
 
-final readonly class NestedColumnChunkBuilder implements ColumnChunkBuilder
+final class NestedColumnChunkBuilder implements ColumnChunkBuilder
 {
     /**
      * @param NestedColumn $column

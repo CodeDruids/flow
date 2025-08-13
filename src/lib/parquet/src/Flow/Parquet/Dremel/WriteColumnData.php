@@ -8,7 +8,7 @@ use Flow\Parquet\Dremel\ColumnData\{FlatValue, ReadFlatColumnValues, WriteFlatCo
 use Flow\Parquet\Exception\RuntimeException;
 use Flow\Parquet\ParquetFile\Schema\{Column, FlatColumn, NestedColumn};
 
-final readonly class WriteColumnData
+final class WriteColumnData
 {
     /**
      * @param Column $column

@@ -11,7 +11,10 @@ abstract class IntegrationTestCase extends TestCase
 {
     protected DatabaseContext $databaseContext;
 
-    protected readonly ProxyLogger $logger;
+    /**
+     * @readonly
+     */
+    protected ProxyLogger $logger;
 
     public function __construct(string $name)
     {

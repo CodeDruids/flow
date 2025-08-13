@@ -8,7 +8,7 @@ use function Flow\ETL\DSL\int_entry;
 use Flow\ETL\{DataFrame, Row, Transformation};
 use Flow\ETL\Transformation\AddRowIndex\StartFrom;
 
-final readonly class AddRowIndex implements Transformation
+final class AddRowIndex implements Transformation
 {
     public function __construct(private string $indexColumn = 'index', private StartFrom $startFrom = StartFrom::ZERO)
     {

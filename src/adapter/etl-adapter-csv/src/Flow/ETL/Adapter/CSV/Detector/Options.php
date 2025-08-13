@@ -6,7 +6,7 @@ namespace Flow\ETL\Adapter\CSV\Detector;
 
 use Flow\ETL\Adapter\CSV\Exception\CantDetectCSVOptions;
 
-final readonly class Options
+final class Options
 {
     /**
      * @param array<Option> $options

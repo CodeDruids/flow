@@ -13,7 +13,7 @@ final class Max implements AggregatingFunction
 {
     private float|\DateTimeInterface|null $max;
 
-    public function __construct(private readonly Reference $ref)
+    public function __construct(private Reference $ref)
     {
         $this->max = null;
     }

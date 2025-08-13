@@ -9,10 +9,9 @@ use Flow\ETL\Row;
 
 final class Hash extends ScalarFunctionChain
 {
-    public function __construct(
-        private readonly mixed $value,
-        private readonly Algorithm $algorithm = new NativePHPHash(),
-    ) {
+    public function __construct(private mixed $value, private ?Algorithm $algorithm = null)
+    {
+        $this->algorithm = $algorithm ?? new NativePHPHash();
     }
 
     public function eval(Row $row) : ?string

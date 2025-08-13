@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Parquet\Data;
 
-final readonly class DeltaCalculator
+final class DeltaCalculator
 {
     public function calculateDelta(int $previous, int $current) : int
     {

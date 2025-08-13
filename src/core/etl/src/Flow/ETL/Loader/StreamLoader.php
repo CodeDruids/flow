@@ -27,29 +27,40 @@ final class StreamLoader implements Closure, Loader
      * @param Formatter $formatter - if not passed AsciiTableFormatter is used
      */
     public function __construct(
-        private readonly string $url,
-        private readonly Mode $mode = Mode::WRITE,
-        private readonly int|bool $truncate = 20,
-        private readonly Output $output = Output::rows,
-        private readonly Formatter $formatter = new AsciiTableFormatter(),
-        private readonly SchemaFormatter $schemaFormatter = new ASCIISchemaFormatter(),
-        private readonly Type $type = Type::custom,
+        private string $url,
+        private Mode $mode = Mode::WRITE,
+        private int|bool $truncate = 20,
+        private Output $output = Output::rows,
+        private ?Formatter $formatter = null,
+        private ?SchemaFormatter $schemaFormatter = null,
+        private Type $type = Type::custom,
     ) {
+        $this->formatter = $formatter ?? new AsciiTableFormatter();
+        $this->schemaFormatter = $schemaFormatter ?? new ASCIISchemaFormatter();
         $this->stream = null;
     }
 
-    public static function output(int|bool $truncate = 20, Output $output = Output::rows, Formatter $formatter = new AsciiTableFormatter(), SchemaFormatter $schemaFormatter = new ASCIISchemaFormatter()) : self
+    public static function output(int|bool $truncate = 20, Output $output = Output::rows, ?Formatter $formatter = null, ?SchemaFormatter $schemaFormatter = null) : self
     {
+        $formatter ??= new AsciiTableFormatter();
+        $schemaFormatter ??= new ASCIISchemaFormatter();
+
         return new self('php://output', Mode::WRITE, $truncate, $output, $formatter, $schemaFormatter, Type::output);
     }
 
-    public static function stderr(int|bool $truncate = 20, Output $output = Output::rows, Formatter $formatter = new AsciiTableFormatter(), SchemaFormatter $schemaFormatter = new ASCIISchemaFormatter()) : self
+    public static function stderr(int|bool $truncate = 20, Output $output = Output::rows, ?Formatter $formatter = null, ?SchemaFormatter $schemaFormatter = null) : self
     {
+        $formatter ??= new AsciiTableFormatter();
+        $schemaFormatter ??= new ASCIISchemaFormatter();
+
         return new self('php://stderr', Mode::WRITE, $truncate, $output, $formatter, $schemaFormatter, Type::stderr);
     }
 
-    public static function stdout(int|bool $truncate = 20, Output $output = Output::rows, Formatter $formatter = new AsciiTableFormatter(), SchemaFormatter $schemaFormatter = new ASCIISchemaFormatter()) : self
+    public static function stdout(int|bool $truncate = 20, Output $output = Output::rows, ?Formatter $formatter = null, ?SchemaFormatter $schemaFormatter = null) : self
     {
+        $formatter ??= new AsciiTableFormatter();
+        $schemaFormatter ??= new ASCIISchemaFormatter();
+
         return new self('php://stdout', Mode::WRITE, $truncate, $output, $formatter, $schemaFormatter, Type::stdout);
     }
 

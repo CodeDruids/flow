@@ -20,12 +20,14 @@ final class EnumEntry implements Entry
 
     /**
      * @var Type<\UnitEnum>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
     public function __construct(
-        private readonly string $name,
-        private readonly ?\UnitEnum $value,
+        private string $name,
+        private ?\UnitEnum $value,
         ?Metadata $metadata = null,
     ) {
         $this->metadata = $metadata ?: Metadata::empty();

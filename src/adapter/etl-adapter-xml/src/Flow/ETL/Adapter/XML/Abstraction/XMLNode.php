@@ -6,7 +6,7 @@ namespace Flow\ETL\Adapter\XML\Abstraction;
 
 use Flow\ETL\Exception\InvalidArgumentException;
 
-final readonly class XMLNode
+final class XMLNode
 {
     /**
      * @param string $name
@@ -52,7 +52,7 @@ final readonly class XMLNode
             $this->name,
             $this->value,
             $this->type,
-            [...$this->attributes, $attribute],
+            array_merge($this->attributes, [$attribute]),
             $this->children
         );
     }
@@ -68,7 +68,7 @@ final readonly class XMLNode
             $this->value,
             $this->type,
             $this->attributes,
-            [...$this->children, $child]
+            array_merge($this->children, [$child])
         );
     }
 

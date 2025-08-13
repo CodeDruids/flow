@@ -8,7 +8,7 @@ use Flow\Parquet\{BinaryReader, Option, Options};
 use Flow\Parquet\Exception\RuntimeException;
 use Flow\Parquet\ParquetFile\Schema\{ConvertedType, FlatColumn, LogicalType, PhysicalType};
 
-final readonly class PlainValueUnpacker
+final class PlainValueUnpacker
 {
     public function __construct(
         private BinaryReader $reader,

@@ -12,9 +12,9 @@ final class AttributeModel
      * @param array<string, mixed> $arguments
      */
     public function __construct(
-        public readonly string $name,
-        public readonly string $namespace,
-        public readonly array $arguments,
+        public string $name,
+        public string $namespace,
+        public array $arguments,
     ) {
     }
 

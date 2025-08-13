@@ -22,21 +22,25 @@ final class TimeEntry implements Entry
 
     /**
      * @var Type<\DateInterval>
+     *
+     * @readonly
      */
-    private readonly Type $type;
+    private Type $type;
 
     /**
      * Time represented php \DateInterval.
      *
      * @var null|\DateInterval
+     *
+     * @readonly
      */
-    private readonly ?\DateInterval $value;
+    private ?\DateInterval $value;
 
     /**
      * @throws InvalidArgumentException
      */
     public function __construct(
-        private readonly string $name,
+        private string $name,
         \DateInterval|string|null $value,
         ?Metadata $metadata = null,
     ) {

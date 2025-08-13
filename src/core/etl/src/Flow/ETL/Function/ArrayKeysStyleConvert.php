@@ -13,7 +13,7 @@ final class ArrayKeysStyleConvert extends ScalarFunctionChain
     private StringStyles $style;
 
     public function __construct(
-        private readonly ScalarFunction $ref,
+        private ScalarFunction $ref,
         OldStringStyles|StringStyles $style,
     ) {
         if ($style instanceof OldStringStyles) {

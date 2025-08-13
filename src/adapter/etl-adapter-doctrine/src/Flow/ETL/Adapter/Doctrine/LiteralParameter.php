@@ -7,7 +7,7 @@ namespace Flow\ETL\Adapter\Doctrine;
 use Doctrine\DBAL\ArrayParameterType;
 use Flow\ETL\Rows;
 
-final readonly class LiteralParameter implements QueryParameter
+final class LiteralParameter implements QueryParameter
 {
     public function __construct(
         private string $queryParamName,

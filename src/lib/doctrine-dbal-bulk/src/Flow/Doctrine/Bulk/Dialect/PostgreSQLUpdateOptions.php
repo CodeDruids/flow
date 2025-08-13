@@ -7,7 +7,7 @@ namespace Flow\Doctrine\Bulk\Dialect;
 use function Flow\Types\DSL\{type_list, type_string, type_structure};
 use Flow\Doctrine\Bulk\UpdateOptions;
 
-final readonly class PostgreSQLUpdateOptions implements UpdateOptions
+final class PostgreSQLUpdateOptions implements UpdateOptions
 {
     /**
      * @param array<string> $primaryKeyColumns

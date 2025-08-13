@@ -10,10 +10,11 @@ use Monolog\LogRecord;
 use Monolog\Processor\ProcessorInterface;
 use Psr\Http\Message\{RequestInterface, ResponseInterface};
 
-final readonly class PSR7Processor implements ProcessorInterface
+final class PSR7Processor implements ProcessorInterface
 {
-    public function __construct(private Config $config = new Config())
+    public function __construct(private ?Config $config = null)
     {
+        $this->config = $config ?? new Config();
     }
 
     /**
@@ -87,7 +88,27 @@ final readonly class PSR7Processor implements ProcessorInterface
                 $decodedBody = \json_decode($body, true, 512, JSON_THROW_ON_ERROR);
                 $decodedBody = type_array()->assert($decodedBody);
                 /** @var array<string, mixed> $sanitizedBody */
-                $sanitizedBody = \array_is_list($decodedBody) ? [] : $decodedBody;
+                $arrayIsListFunction = function (array $array) : bool {
+                    if (function_exists('array_is_list')) {
+                        return array_is_list($array);
+                    }
+
+                    if ($array === []) {
+                        return true;
+                    }
+                    $current_key = 0;
+
+                    foreach ($array as $key => $noop) {
+                        if ($key !== $current_key) {
+                            return false;
+                        }
+                        $current_key++;
+                    }
+
+                    return true;
+                };
+                /** @var array<string, mixed> $sanitizedBody */
+                $sanitizedBody = $arrayIsListFunction($decodedBody) ? [] : $decodedBody;
                 $body = $this->recursiveSanitize($sanitizedBody, $this->config->request->sanitizers());
 
                 $requestData['body'] = \substr(\json_encode($body, JSON_THROW_ON_ERROR), 0, $this->config->request->bodySizeLimit());
@@ -138,7 +159,27 @@ final readonly class PSR7Processor implements ProcessorInterface
                 $decodedBody = \json_decode($body, true, 512, JSON_THROW_ON_ERROR);
                 $decodedBody = type_array()->assert($decodedBody);
                 /** @var array<string, mixed> $sanitizedBody */
-                $sanitizedBody = \array_is_list($decodedBody) ? [] : $decodedBody;
+                $arrayIsListFunction = function (array $array) : bool {
+                    if (function_exists('array_is_list')) {
+                        return array_is_list($array);
+                    }
+
+                    if ($array === []) {
+                        return true;
+                    }
+                    $current_key = 0;
+
+                    foreach ($array as $key => $noop) {
+                        if ($key !== $current_key) {
+                            return false;
+                        }
+                        $current_key++;
+                    }
+
+                    return true;
+                };
+                /** @var array<string, mixed> $sanitizedBody */
+                $sanitizedBody = $arrayIsListFunction($decodedBody) ? [] : $decodedBody;
                 $body = $this->recursiveSanitize($sanitizedBody, $this->config->response->sanitizers());
 
                 $responseData['body'] = \substr(\json_encode($body, JSON_THROW_ON_ERROR), 0, $this->config->response->bodySizeLimit());

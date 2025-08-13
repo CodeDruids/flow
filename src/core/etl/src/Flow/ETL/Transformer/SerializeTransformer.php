@@ -8,7 +8,7 @@ use function Flow\ETL\DSL\{ref, row, str_entry};
 use Flow\ETL\{FlowContext, Row, Rows, Transformer};
 use Flow\ETL\Row\Reference;
 
-final readonly class SerializeTransformer implements Transformer
+final class SerializeTransformer implements Transformer
 {
     public function __construct(private Reference|string $target, private bool $standalone = false)
     {

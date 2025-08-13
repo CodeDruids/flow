@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flow\Azure\SDK\BlobService;
 
-final readonly class Configuration
+final class Configuration
 {
     public function __construct(
         public string $account,
